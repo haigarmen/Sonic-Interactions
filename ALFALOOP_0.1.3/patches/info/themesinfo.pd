@@ -1,0 +1,7 @@
+#N canvas 791 163 578 357 11;
+#X obj 0 0 cnv 15 442 285 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X text 13 6 
+THEMES choose between dark and light or choose freely by changing background and font-color. With the +/- sign you can try to make the info-text fit into the window... There are only two choices - I hope that one of it does the job. If the text-lines fall out of the window try the "-". The first time you switch \, you may be left with the overlapping text still visible. Just close ALFALOOP and re-open it to remove the overlapping text.
+;
+#X coords 0 -1 1 1 442 280 2 0 0;

@@ -1,0 +1,7 @@
+#N canvas 791 163 578 357 11;
+#X obj 0 0 cnv 15 442 285 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X text 13 6 
+OVER(DUBBING) This is an ordinary overdub-button. Assign it to a midi or key-controller (footswitch). This button needs to be pressed and hold (nice for super short overdubbs). "over" is not active until the first recording. Overdubbing does never affect the delay-time. You can overdub while recording and vice versa. During recording \, "over" is still on the previous delay-time. Try the following: Make a really short loop (ca. 200ms). Now bring the "feedback" slowly down a bit. You hear the short loop fading out. Leave "feedback" half-open. With "ducking" still at 100% press and hold "over". Play... Now you can hear that the main engine of ALFALOOP is a delay. If you like what you hear \, try to record it: Hit "rec" while "over" still hold \, then \, in the middle of the recording release "over" \, play some dry notes \, then press/hold "over" again. Stop the recording with "rec" while overdubbing is still going on... While overdubbing \, the "ducking"-level \, as it is the case while recording \, ducks down the old recording...
+;
+#X coords 0 -1 1 1 442 280 2 0 0;

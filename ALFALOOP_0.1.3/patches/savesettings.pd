@@ -1,0 +1,2 @@
+#N canvas 988 175 334 325 10;
+#X obj 13 14 saveset fadeLength 100 \$1;

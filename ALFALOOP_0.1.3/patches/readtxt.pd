@@ -1,0 +1,18 @@
+#N canvas 833 192 513 341 10;
+#X msg 45 156 bang;
+#X msg 92 156 rewind;
+#X obj 45 112 t b b b;
+#X obj 45 86 inlet;
+#X obj 45 217 outlet;
+#X obj 147 128 symbol \$1;
+#X msg 147 156 read \$1;
+#X obj 45 191 textfile;
+#X connect 0 0 7 0;
+#X connect 1 0 7 0;
+#X connect 2 0 0 0;
+#X connect 2 1 1 0;
+#X connect 2 2 5 0;
+#X connect 3 0 2 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 4 0;

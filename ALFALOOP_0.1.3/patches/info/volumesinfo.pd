@@ -1,0 +1,7 @@
+#N canvas 791 163 578 357 11;
+#X obj 0 0 cnv 15 442 285 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X text 13 6 
+VOLUMES "loud(feedb)" means: Stay loud \, feedback! Assume you record with a feedback-level of less than 1\. This is nice \, for it let you blend to a new timing/loop. If you stop the recording \, though \, the feedback naturally carry on to diminish the loop-volume every loop-round. If "loud(feedb)" is set to "on" \, the feedback-level gets internally set to 100% again right after the recording. The "feedback"-canvas starts blinking and your feedback-pedal/fader will be taken out of order. Any touching of the feedback-control is useless \, it stays at 100%. Only turning your pedal/fader to full level will free the feedback-control again (steady color again). Same goes for "loud(over)" \, with a slight difference: The ducking-level does not affect the play-pack-volume after overdubbing. But \, if "auto-over" is set to "on" (with "ducking-level" less than 1) \, it easily happens that you instantly over-record your recordings after recording. "overkill" turns off overdubbing during recordings.
+;
+#X coords 0 -1 1 1 442 280 2 0 0;

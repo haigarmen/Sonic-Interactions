@@ -1,0 +1,7 @@
+#N canvas 791 163 578 357 11;
+#X obj 0 0 cnv 15 442 285 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X text 13 6 
+LOOP(CROSS-FADE/LENGTH) "x-fade" sets the length of the cross-fade of the delay/loop in milliseconds. "x-offset" is the location/beginning of the fade. With "mid-point" you can always set "x-offset" to its mid-point (50% before the starting-point of the loop \, 50% afterwards). "max-length" sets the maximum-length of the delay/loop in seconds(!). This has nothing to do with the fade-length. But by choosing a rather short maximum-length \, ALFALOOP asks for less disk-space. Stay with short loops anyway \, it is far more fun and easier to learn how ALFALOOP can be used. If you want super-fast response or if you are interested in fast time-shifting-things \, you want to have the "x-fade" short (say \, 5 \,10 or 20ms) and the "x-offset" dragged to the minimum. The array "delay:100" shows the delay-time (loop-length). If your recording is shorter than "x-fade" the recording is skipped \, and the previously delay remains untouched. That's another reason to choose a short "x-fade" over a long one.
+;
+#X coords 0 -1 1 1 442 280 2 0 0;

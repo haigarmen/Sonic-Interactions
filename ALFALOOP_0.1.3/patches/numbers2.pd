@@ -1,0 +1,38 @@
+#N canvas 0 0 450 300 10;
+#X obj 387 95 loadbang;
+#X obj 251 147 symbol \$1;
+#X obj 319 147 symbol \$2;
+#X obj 228 183 pack f s s f;
+#X msg 228 209 \; \$4-\$2CanvasIn label \$3:\$1;
+#X obj 104 100 nbx 9 18 0 22 0 0 \$5-\$1Ctl \$5-\$1CtlIn empty -8 0
+0 11 -262144 -1 -1 21 256;
+#X obj 100 100 cnv 15 104 18 \$5-\$1Canvas \$5-\$1CanvasIn background:21
+6 9 0 10 -262144 -1 0;
+#X obj 387 147 f \$5;
+#X obj 228 95 r \$5-\$1Ctl;
+#X obj 556 147 f \$4;
+#X obj 518 147 f \$3;
+#X obj 450 111 t b b;
+#X obj 593 147 f \$5;
+#X obj 450 183 pack s f f f;
+#X obj 450 147 symbol \$1;
+#X msg 450 209 \; \$4-\$1CtlIn range \$2 \$3;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 0 0 7 0;
+#X connect 0 0 11 0;
+#X connect 1 0 3 1;
+#X connect 2 0 3 2;
+#X connect 3 0 4 0;
+#X connect 7 0 3 3;
+#X connect 8 0 3 0;
+#X connect 9 0 13 2;
+#X connect 10 0 13 1;
+#X connect 11 0 14 0;
+#X connect 11 1 9 0;
+#X connect 11 1 12 0;
+#X connect 11 1 10 0;
+#X connect 12 0 13 3;
+#X connect 13 0 15 0;
+#X connect 14 0 13 0;
+#X coords 0 -1 1 1 104 18 2 100 100;

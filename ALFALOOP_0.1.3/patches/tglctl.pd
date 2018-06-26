@@ -1,0 +1,35 @@
+#N canvas 450 291 510 351 10;
+#X obj 233 53 sel 1 0;
+#X obj 233 165 symbol \$3;
+#X obj 301 118 symbol \$4;
+#X obj 233 27 r \$5-\$1Ctl;
+#X obj 368 144 ts \$2;
+#X obj 324 144 ts \$1;
+#X obj 412 165 lbf \$5;
+#X obj 301 181 pack s s s f;
+#X msg 301 207 \; \$4-\$2CanvasIn color 0 11 \; \$4-\$2CanvasIn label
+\$3: \; \$4-\$2Canvas2In label \$1;
+#X obj 9 0 hradio 18 1 0 5 empty empty empty 0 -8 0 10 -262144 -1 -1
+4;
+#X obj 38 79 noguitgl;
+#X obj 38 53 r \$5-\$1CtlIn;
+#X obj 38 105 s \$5-\$1Ctl;
+#X obj 6 63 t b;
+#X obj 0 0 cnv 15 104 18 \$5-\$1Canvas2 \$5-\$1Canvas2In on 80 9 0
+10 -24198 -1 0;
+#X obj 0 0 cnv 15 18 18 \$5-\$1Canvas \$5-\$1CanvasIn auto-over: 5
+9 0 10 -24198 -128992 0;
+#X connect 0 0 1 0;
+#X connect 0 1 2 0;
+#X connect 1 0 7 0;
+#X connect 2 0 7 0;
+#X connect 3 0 0 0;
+#X connect 4 0 7 2;
+#X connect 5 0 7 1;
+#X connect 6 0 7 3;
+#X connect 7 0 8 0;
+#X connect 9 0 13 0;
+#X connect 10 0 12 0;
+#X connect 11 0 10 0;
+#X connect 13 0 10 0;
+#X coords 0 -1 1 1 104 18 2 0 0;

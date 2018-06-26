@@ -1,0 +1,161 @@
+#N canvas 708 183 1124 973 10;
+#X obj 73 339 mtof;
+#X floatatom 73 311 5 0 0 0 - - -, f 5;
+#X floatatom 24 380 5 0 0 0 - - -, f 5;
+#X obj 73 379 osc~ 440;
+#X obj 72 456 dac~, f 6;
+#X obj 73 244 r note;
+#X obj 73 282 unpack;
+#X obj 74 99 metro 1000;
+#X obj 76 62 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X msg 141 66 125;
+#X msg 177 66 250;
+#X msg 218 66 500;
+#X obj 40 116 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 579 40 hsl 80 15 0 1023 0 0 empty empty empty -2 -8 0 10 -228856
+-1 -1 6400 1;
+#X obj 576 118 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 81.2294 256;
+#X obj 576 64 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 828.76 256;
+#X obj 576 89 mapper, f 12;
+#X obj 487 670 netreceive 3000;
+#X obj 487 734 s p1;
+#X obj 528 734 s p2;
+#X obj 570 733 s p3;
+#X obj 487 703 route 0 1 2 3, f 16;
+#X obj 616 733 s p4;
+#X text 572 17 input pot 1;
+#X text 670 17 pot range;
+#X text 672 79 new range;
+#X obj 577 178 hsl 80 15 0 1023 0 0 empty empty empty -2 -8 0 10 -228856
+-1 -1 6100 1;
+#X obj 574 256 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 0 256;
+#X obj 574 202 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 789.911 256;
+#X obj 574 227 mapper, f 12;
+#X text 570 155 input pot 2;
+#X obj 485 39 r p1;
+#X obj 488 178 r p2;
+#X obj 485 68 unpack;
+#X obj 488 207 unpack;
+#X text 716 39 low, f 5;
+#X text 717 62 high, f 5;
+#X text 718 100 low, f 5;
+#X text 719 123 high, f 5;
+#X msg 673 37 0;
+#X msg 674 60 1024;
+#X text 673 158 pot range;
+#X text 675 220 new range;
+#X text 719 180 low, f 5;
+#X text 720 203 high, f 5;
+#X text 721 241 low, f 5;
+#X text 722 264 high, f 5;
+#X msg 676 239 1000;
+#X msg 677 264 250;
+#X msg 676 178 0;
+#X msg 677 201 1024;
+#X obj 580 330 hsl 80 15 0 1023 0 0 empty empty empty -2 -8 0 10 -228856
+-1 -1 0 1;
+#X obj 577 408 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 0 256;
+#X obj 577 354 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 0 256;
+#X obj 577 379 mapper, f 12;
+#X obj 491 359 unpack;
+#X text 676 310 pot range;
+#X text 678 372 new range;
+#X text 722 332 low, f 5;
+#X text 723 355 high, f 5;
+#X text 724 393 low, f 5;
+#X text 725 416 high, f 5;
+#X msg 679 391 1000;
+#X msg 680 416 250;
+#X msg 679 330 0;
+#X msg 680 353 1024;
+#X text 573 307 input pot 3;
+#X obj 491 330 r p3;
+#X obj 580 468 hsl 80 15 0 1023 0 0 empty empty empty -2 -8 0 10 -228856
+-1 -1 0 1;
+#X obj 577 546 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 0 256;
+#X obj 577 492 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-228856 -1 -1 0 256;
+#X obj 577 517 mapper, f 12;
+#X obj 491 497 unpack;
+#X text 676 448 pot range;
+#X text 678 510 new range;
+#X text 722 470 low, f 5;
+#X text 723 493 high, f 5;
+#X text 724 531 low, f 5;
+#X text 725 554 high, f 5;
+#X msg 679 529 1000;
+#X msg 680 554 250;
+#X msg 679 468 0;
+#X msg 680 491 1024;
+#X text 573 445 input pot 4;
+#X obj 491 468 r p4;
+#X obj 478 141 s note;
+#X floatatom 162 267 5 0 0 0 - - -, f 5;
+#X text 484 633 Receive messages from Python and route them to the
+proper receive objects;
+#X msg 674 97 44;
+#X msg 675 119 90;
+#X connect 0 0 2 0;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 3 0 4 0;
+#X connect 3 0 4 1;
+#X connect 5 0 6 0;
+#X connect 5 0 86 0;
+#X connect 6 0 1 0;
+#X connect 7 0 12 0;
+#X connect 8 0 7 0;
+#X connect 9 0 7 1;
+#X connect 10 0 7 1;
+#X connect 11 0 7 1;
+#X connect 13 0 15 0;
+#X connect 14 0 85 0;
+#X connect 15 0 16 0;
+#X connect 16 0 14 0;
+#X connect 17 0 21 0;
+#X connect 21 0 18 0;
+#X connect 21 1 19 0;
+#X connect 21 2 20 0;
+#X connect 21 3 22 0;
+#X connect 26 0 28 0;
+#X connect 28 0 29 0;
+#X connect 29 0 27 0;
+#X connect 31 0 33 0;
+#X connect 32 0 34 0;
+#X connect 33 0 13 0;
+#X connect 34 0 26 0;
+#X connect 39 0 16 1;
+#X connect 40 0 16 2;
+#X connect 47 0 29 3;
+#X connect 48 0 29 4;
+#X connect 49 0 29 1;
+#X connect 50 0 29 2;
+#X connect 51 0 53 0;
+#X connect 53 0 54 0;
+#X connect 54 0 52 0;
+#X connect 55 0 51 0;
+#X connect 62 0 54 3;
+#X connect 63 0 54 4;
+#X connect 64 0 54 1;
+#X connect 65 0 54 2;
+#X connect 67 0 55 0;
+#X connect 68 0 70 0;
+#X connect 70 0 71 0;
+#X connect 71 0 69 0;
+#X connect 72 0 68 0;
+#X connect 79 0 71 3;
+#X connect 80 0 71 4;
+#X connect 81 0 71 1;
+#X connect 82 0 71 2;
+#X connect 84 0 72 0;
+#X connect 88 0 16 3;
+#X connect 89 0 16 4;

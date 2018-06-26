@@ -1,0 +1,4 @@
+#N canvas 76 118 1012 605 10;
+#X declare -path patches;
+#X obj 81 42 declare -path patches;
+#X obj 11 -33 alfaloop;

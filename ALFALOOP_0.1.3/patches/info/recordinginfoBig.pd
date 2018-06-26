@@ -1,0 +1,6 @@
+#N canvas 791 163 578 357 12;
+#X obj 0 0 cnv 15 442 285 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X text 13 6 RECORDING This panel refers to the recording to the hard-drive. If you push "recording" \, everything you hear gets recorded. Every recording is named "loop_nrX.wav" where X stands for an augmenting number (by 1 for every recording). "direct-rec" lets you choose if you want your direct-input (mic/line/whatever) to get recorded too. If set to on \, that will be the case. If set to "off" \, only the playback gets recorded (that's what you hear just by listening \, without recording). Latency-correction is working for the direct-in too \, but only while recording to hard-drive. In the end \, if you choose direct-in to be recorded too \, the result should be the same as when listening to the input with direct-monitoring.
+;
+#X coords 0 -1 1 1 442 280 2 0 0;

@@ -1,0 +1,7 @@
+#N canvas 791 163 578 357 11;
+#X obj 0 0 cnv 15 442 285 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X text 13 6 
+FEEDBACK Feedback-level of the dealy/loop. Assign it to a controller (pedal/fader/knob for midi) or to two different keys (up/down). ALFALOOP is a delay. It turns to a looper when the feedback is kept constantely at the maximum. If you lower the feedback \, the loop starts to fade out. All the touching of "feedback" is destructive. You can cut holes in your loop. You can do so \, also \, with a combination of "over" and "ducking" ("ducking"=0 \, then "over"). "feedback" and "ducking" have a lot in common \, but "feedback" is kind of real-time (allways ready to go) \, wheras "ducking" works only during overdubbing and/or recording. To mute the loop \, bring "feedback" all the way down. If you leave it down for the whole length of the actual delay \, your delay is all cleared out. But you don't have to wait so long to start a new loop: Right after the new recording \, bring "feedback" up again or use "loud(feedb):on" to do so.
+;
+#X coords 0 -1 1 1 442 280 2 0 0;

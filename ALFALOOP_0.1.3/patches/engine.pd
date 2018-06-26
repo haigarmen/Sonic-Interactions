@@ -1,0 +1,390 @@
+#N canvas 705 189 428 323 10;
+#X obj 0 0 cnv 15 371 243 empty \$1-back empty 20 12 0 14 -262144 -262144
+0;
+#X obj 1 124 cnv 15 164 102 empty \$1-feedbackBaseIn empty 20 12 0
+14 -66577 -262144 0;
+#X obj 1 122 cnv 1 164 1 empty \$1-feedbackCanvasIn empty 20 9 0 10
+-262144 -262144 0;
+#X obj 1 1 cnv 15 164 102 empty \$1-red empty 52 51 0 50 -258699 -262144
+0;
+#X obj 1 31 cnv 15 164 42 empty \$1-recBg empty 52 51 0 50 -262144
+-262144 0;
+#X obj 31 1 cnv 15 104 102 empty \$1-recBg empty 52 51 0 50 -262144
+-262144 0;
+#X obj 11 11 cnv 15 144 82 empty \$1-recBg empty 52 51 0 50 -262144
+-262144 0;
+#X obj 74 49 cnv 4 8 4 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 74 40 cnv 4 7 4 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 89 43 cnv 2 2 2 empty \$1-recCanvasLight empty 20 12 0 14 -260818
+-262144 0;
+#X obj 86 40 cnv 2 2 2 empty \$1-recCanvasLight empty 20 12 0 14 -260818
+-262144 0;
+#X obj 86 41 cnv 3 3 3 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 82 40 cnv 4 5 4 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 87 44 cnv 4 4 3 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 87 42 cnv 3 3 3 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 69 43 cnv 2 2 2 empty \$1-recCanvasLight empty 20 12 0 14 -260818
+-262144 0;
+#X obj 72 40 cnv 2 2 2 empty \$1-recCanvasLight empty 20 12 0 14 -260818
+-262144 0;
+#X obj 73 40 cnv 4 5 4 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 69 44 cnv 4 4 9 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 70 42 cnv 3 3 3 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 71 41 cnv 3 3 3 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 86 51 cnv 2 2 2 empty \$1-recCanvasLight empty 20 12 0 14 -260818
+-262144 0;
+#X obj 89 48 cnv 2 2 2 empty \$1-recCanvasLight empty 20 12 0 14 -260818
+-262144 0;
+#X obj 82 49 cnv 4 5 4 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 87 45 cnv 4 4 3 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 87 48 cnv 3 3 3 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 86 49 cnv 3 3 3 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 72 60 cnv 2 2 2 empty \$1-recCanvasLight empty 20 12 0 14 -260818
+-262144 0;
+#X obj 69 57 cnv 2 2 2 empty \$1-recCanvasLight empty 20 12 0 14 -260818
+-262144 0;
+#X obj 73 58 cnv 4 17 4 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 69 53 cnv 4 4 5 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 70 57 cnv 3 3 3 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 71 58 cnv 3 3 3 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 42 40 cnv 4 4 22 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 46 40 cnv 4 8 4 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 61 43 cnv 2 2 2 empty \$1-recCanvasLight empty 20 12 0 14 -260818
+-262144 0;
+#X obj 58 40 cnv 2 2 2 empty \$1-recCanvasLight empty 20 12 0 14 -260818
+-262144 0;
+#X obj 58 41 cnv 3 3 3 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 54 40 cnv 4 5 4 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 59 44 cnv 4 4 5 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 59 42 cnv 3 3 3 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 98 43 cnv 2 2 2 empty \$1-recCanvasLight empty 20 12 0 14 -260818
+-262144 0;
+#X obj 101 40 cnv 2 2 2 empty \$1-recCanvasLight empty 20 12 0 14 -260818
+-262144 0;
+#X obj 102 40 cnv 4 17 4 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 98 44 cnv 4 4 8 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 99 42 cnv 3 3 3 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 100 41 cnv 3 3 3 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 101 60 cnv 2 2 2 empty \$1-recCanvasLight empty 20 12 0 14 -260818
+-262144 0;
+#X obj 98 57 cnv 2 2 2 empty \$1-recCanvasLight empty 20 12 0 14 -260818
+-262144 0;
+#X obj 102 58 cnv 4 17 4 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 98 53 cnv 4 4 5 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 99 57 cnv 3 3 3 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 100 58 cnv 3 3 3 empty \$1-recCanvasDark empty 20 12 0 14 -258699
+-262144 0;
+#X obj 206 1 cnv 15 164 102 empty \$1-green empty 52 51 0 50 -24198
+-262144 0;
+#X obj 236 1 cnv 15 104 102 empty \$1-overBg empty 52 51 0 50 -262144
+-262144 0;
+#X obj 216 11 cnv 15 144 82 empty \$1-overBg empty 52 51 0 50 -262144
+-262144 0;
+#X obj 206 31 cnv 15 164 42 empty \$1-overBg empty 52 51 0 50 -262144
+-262144 0;
+#X obj 31 124 cnv 15 104 102 empty empty empty 52 51 0 50 -262144 -262144
+0;
+#X obj 237 43 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 240 40 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 237 44 cnv 4 4 8 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 238 42 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 239 41 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 240 60 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 237 57 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 237 53 cnv 4 4 5 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 238 57 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 239 58 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 241 40 cnv 4 8 4 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 257 43 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 254 40 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 254 41 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 250 40 cnv 4 5 4 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 255 44 cnv 4 4 8 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 255 42 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 241 58 cnv 4 8 4 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 254 60 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 257 57 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 250 58 cnv 4 5 4 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 255 53 cnv 4 4 5 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 255 57 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 254 58 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 297 49 cnv 4 8 4 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 297 40 cnv 4 7 4 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 312 43 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 309 40 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 309 41 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 305 40 cnv 4 5 4 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 310 44 cnv 4 4 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 310 42 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 292 43 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 295 40 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 296 40 cnv 4 5 4 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 292 44 cnv 4 4 9 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 293 42 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 294 41 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 309 51 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 312 48 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 305 49 cnv 4 5 4 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 310 45 cnv 4 4 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 310 48 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 309 49 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 295 60 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 292 57 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 296 58 cnv 4 17 4 empty \$1-overCanvasDark empty 20 12 0 14
+-24198 -262144 0;
+#X obj 292 53 cnv 4 4 5 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 293 57 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 294 58 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 320 40 cnv 4 4 22 empty \$1-overCanvasDark empty 20 12 0 14
+-24198 -262144 0;
+#X obj 324 40 cnv 4 8 4 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 339 43 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 336 40 cnv 2 2 2 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 336 41 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 332 40 cnv 4 5 4 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 337 44 cnv 4 4 5 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 337 42 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 263 38 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 261 36 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 262 38 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 284 38 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 285 38 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 283 40 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 282 42 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 281 44 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 280 46 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 279 48 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 278 50 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 277 52 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 276 54 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 275 56 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 274 58 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 284 40 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 283 42 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 282 44 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 281 46 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 280 48 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 279 50 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 278 52 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 277 54 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 276 56 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 275 58 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 264 40 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 265 42 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 266 44 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 267 46 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 268 48 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 269 50 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 270 52 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 271 54 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 272 56 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 273 58 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 263 40 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 264 42 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 265 44 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 266 46 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 267 48 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 268 50 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 269 52 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 270 54 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 271 56 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 272 58 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 283 41 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 282 43 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 281 45 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 280 47 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 279 49 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 278 51 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 277 53 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 276 55 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 275 57 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 274 59 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 264 41 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 265 43 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 266 45 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 267 47 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 268 49 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 269 51 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 270 53 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 271 55 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 272 57 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 273 59 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 286 36 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 285 36 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 262 36 cnv 3 3 3 empty \$1-overCanvasLight empty 20 12 0 14
+-225271 -262144 0;
+#X obj 263 39 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 262 37 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 284 39 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 285 37 cnv 3 3 3 empty \$1-overCanvasDark empty 20 12 0 14 -24198
+-262144 0;
+#X obj 261 36 cnv 3 29 3 empty \$1-overBackBg empty 20 12 0 14 -262144
+-262144 0;
+#X obj 11 134 cnv 15 144 93 empty \$1-feedbackCanvasBgIn feedback:100
+37 -5 0 10 -262144 -1 0;
+#X obj 206 124 cnv 15 164 102 empty \$1-duckingBaseIn empty 20 12 0
+14 -66577 -262144 0;
+#X obj 206 122 cnv 1 164 1 empty \$1-duckingCanvasIn empty 20 12 0
+14 -262144 -262144 0;
+#X obj 235 124 cnv 15 104 102 empty empty empty 52 51 0 50 -262144
+-262144 0;
+#X obj 216 134 cnv 15 144 93 empty \$1-duckingCanvasBgIn ducking:100
+39 -5 0 10 -262144 -1 0;
+#X coords 0 -1 1 1 371 243 2 0 0;

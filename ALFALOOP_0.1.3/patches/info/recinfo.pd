@@ -1,0 +1,7 @@
+#N canvas 791 163 578 357 11;
+#X obj 0 0 cnv 15 442 285 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X text 13 6 
+REC This is an ordinary record-button. Assign it to a midi or key-controller (footswitch). The status toggles between rec/stop(rec). "rec" sets a new starting-point of the loop \, "stop(rec)" sets the endpoint and the recording starts instantly to loop. Assuming you have both "feedback" and "ducking" at full level \, and a previously recording is still playing \, the new recording will NOT delete the old one \, it just gets cut wherever you started/stopped your new recording. The level of the "old" recording is set by "ducking" \, which acts only while recording or overdubbing. Try that WITHOUT any new input to get used to it - just cut the existing loop (make it shorter/longer). Expl: Make a 4/4-loop. After that \, start "rec" again at the "one" \, wait for the next "one" \, let it pass and stop the recording on the "two" of the following bar. Voila \, there is your 5/4. Keep in mind that the "x-fade" is applied. If it is very long you end up with strange phasing-FX's. Short fade! "rec" is highly destructive - you get what you hear.
+;
+#X coords 0 -1 1 1 442 280 2 0 0;

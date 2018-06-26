@@ -1,0 +1,7 @@
+#N canvas 791 163 578 357 11;
+#X obj 0 0 cnv 15 442 285 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X text 13 6 
+AUTO(OVER/REC) "auto-over" turns on/off automatic overdubbing. Change the threshold-settings to your needs. If the input-level passes the "thresh-on"-level \, "over" is automatically started. Value is from 0 to 100\. After "wait4off" (milliseconds) \, the auto-mode starts to track the input-signal again - if it goes beneath the level of "thresh-off" overdubbing is stopped. After "wait4on" \, it starts to track the signal for passing "thresh-on" again etc. "test: on" lets you see the threshold-settings in action \, also if "auto-over" is set to "off". The green turning test-canvas "over" represents the real overdub behavior. Give at least one of the four threshold-settings a friendly value \, like 50 ms (for waiting) \, or some extreme levels (for tracking). If no friendliness is given \, the auto-mode tends to become quiet nervous. If setup properly it works like a charm... "over-rec" doesn't start recording \, but it uses the same auto-settings on the input-signal (more choppy sound...)
+;
+#X coords 0 -1 1 1 442 280 2 0 0;

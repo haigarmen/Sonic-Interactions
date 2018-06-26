@@ -1,0 +1,9 @@
+#N canvas 77 16 639 601 10;
+#X obj 0 0 cnv 15 306 173 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 9 74 midictl ducking \$1;
+#X obj 9 2 midictl rec \$1;
+#X obj 9 50 midictl feedback \$1;
+#X obj 9 26 midictl over \$1;
+#X obj 9 98 midictl auto-over \$1;
+#X coords 0 -1 1 1 306 173 2 0 0;

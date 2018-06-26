@@ -1,0 +1,7 @@
+#N canvas 791 163 578 357 11;
+#X obj 0 0 cnv 15 442 285 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X text 13 6 
+FADES(OVER/DUCKING) All these fades refer to overdubbing. The fades called "over..." are the fades of your input- signal. The "duck..."-fades refer to the "ducking" while recording ("duck-in" is the time to "duck-down" the previously recordings to the level set by "ducking" \, "duck-out" is the time to bring it back up after overdubbing). Since ALFALOOP is a time-machine too \, you can have the fade-in (over/duck) act even before you start overdubbing: "o/d-offset" sets the time to the past (or is it the future?). A good rule is \, to have the offset the double of fade-in \, both for over and duck (like "over-in:5" \, "o-offset:-10). You will never miss the starting-point of your overdubbing (attack). The duck-fades can act as kind of a side-chain-compressor: If you want to expose your freshly recorded sounds \, choose a "duck-in"- setting slightly earlier than "over-in" and a slow "duck-out". "inst: on/off" stands for instant ducking. "on" means instantly \, "off" means only the next round (loop).
+;
+#X coords 0 -1 1 1 442 285 2 0 0;

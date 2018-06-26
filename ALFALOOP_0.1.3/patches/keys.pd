@@ -1,0 +1,11 @@
+#N canvas 742 43 639 601 10;
+#X obj 0 0 cnv 15 306 173 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 9 2 keyctl rec \$1;
+#X obj 9 26 keyctl over \$1;
+#X obj 9 50 keyctl feedback+ \$1;
+#X obj 9 74 keyctl feedback- \$1;
+#X obj 9 98 keyctl ducking+ \$1;
+#X obj 9 122 keyctl ducking- \$1;
+#X obj 9 146 keyctl auto-over \$1;
+#X coords 0 -1 1 1 306 173 2 0 0;

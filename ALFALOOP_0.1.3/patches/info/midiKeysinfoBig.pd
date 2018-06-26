@@ -1,0 +1,8 @@
+#N canvas 791 163 578 357 12;
+#X obj 0 0 cnv 15 442 285 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X text 13 6 
+MIDI/KEYS Activate midi/key-controlling by clicking "midi/keys:passive/active" (icons). To change the controls \, choose either "show:keys" or "show:midi" (toggles back and forth). You can have both midi and keys active \, or only one \, or none. The visibility of the parameters doesn't affect the activity status.
+You assign a control by clicking on its name (name and some parameters starts to blink) \, then just tweak the pedal/fader/knob/key you want to assign. The ">"-sign stands for the inversion of the controller - ">" being normal \, "<" being inverted. This is useful to compensate for wrongly wired self-made midi-controllers. "clear" (in the box) clears the assignment of a single controller while "clear" (in the open field) clears all controllers (midi or keys \, not both). You'll be asked again before all the assignments are cleared and set to blank. Choose yes or no.
+;
+#X coords 0 -1 1 1 442 280 2 0 0;

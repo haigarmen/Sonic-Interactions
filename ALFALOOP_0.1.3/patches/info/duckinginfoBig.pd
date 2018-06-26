@@ -1,0 +1,7 @@
+#N canvas 791 163 578 357 12;
+#X obj 0 0 cnv 15 442 285 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X text 13 6
+DUCKING The "ducking"-level. Assign it to a controller (pedal/fader/knob for midi) or to two different keys (up/down). "ducking" is the level previously recordings get "ducked" down to while recording or overdubbing. If kept fully open \, nothing happens to the previous recording except the cutting. The way (timing) "ducking" acts is set by its settings ("duck-in"/"duck-out"/"d-offset"). A good starting-point is to have these settings equal to those of over ("over-in" etc). In that way \, new recordings get faded in the same way old recordings get faded out. The ducking- settings ("duck-in"/"duck-out"/"d-offset") are only taken into account when overdubbing. While recording instead\, only the level of "ducking" is used for the old recording but the only fade added to it is the loop-cross-fade "x-fade". To simulate side-chain-compressing \, while over- dubbing \, use a fast "duck-in" and a slow "duck-out" and do only very short overdubs (see "auto-over"). Keep "over" all the way down to clear-out while recording.
+;
+#X coords 0 -1 1 1 442 280 2 0 0;

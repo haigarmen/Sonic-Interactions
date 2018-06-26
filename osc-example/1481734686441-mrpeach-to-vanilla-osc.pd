@@ -1,0 +1,88 @@
+#N canvas 109 110 1033 553 10;
+#X msg 141 175 bang;
+#X obj 31 510 netsend -u -b;
+#X msg 104 455 connect localhost 9990;
+#X msg 105 483 disconnect;
+#X obj 627 238 oscparse;
+#X obj 31 400 list prepend send;
+#X obj 31 429 list trim;
+#X msg 627 177 listen 9990;
+#X obj 698 265 print RECV;
+#X obj 627 326 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 627 266 list trim;
+#X msg 246 176 bang;
+#X obj 297 159 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 294 183 5 0 0 0 - - -, f 5;
+#X obj 674 369 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 671 344 5 0 0 0 - - -, f 5;
+#X obj 246 208 oscformat /slider;
+#X obj 141 208 oscformat /bang;
+#X symbolatom 715 345 10 0 0 0 - - -, f 10;
+#X obj 31 208 oscformat /hello;
+#X msg 31 137 test;
+#X msg 77 137 world;
+#X obj 715 320 symbol;
+#X text 743 207 <--- replaces [udpreceive];
+#X obj 627 148 loadbang;
+#X obj 627 208 netreceive -u -b;
+#X text 821 294 <--- don't need [routeOSC]!;
+#X text 149 515 <--- replaces [udpsend];
+#X obj 104 431 loadbang;
+#X obj 31 174 symbol;
+#X text 697 239 <--- replaces [unpackOSC];
+#X text 606 49 2 Incoming addresses are broken apart and prepended
+to the variable list so you can use [route] instead of [routeOSC].
+;
+#X text 17 50 1 You don't send messages with the address at the head
+of the list. The address is set as the argument to an [oscformat] object.
+Also \, the slashes in the address are optional and you can use a list
+of symbols instead.;
+#X msg 248 260 bang;
+#X msg 264 322 bang;
+#X text 276 377 address slashes are optional!;
+#X obj 627 294 route bang slider hello deeper;
+#X obj 823 322 route address;
+#X obj 823 370 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 248 288 oscformat /deeper/address/x;
+#X obj 264 350 oscformat deeper address x;
+#X obj 823 347 route x;
+#X text 359 208 <--- similar to [packOSC];
+#X text 389 225 except you set the address here;
+#X text 17 16 mrpeach OSC to pd vanilla 0.46 OSC transition;
+#X connect 0 0 17 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 4 0 8 0;
+#X connect 4 0 10 0;
+#X connect 5 0 6 0;
+#X connect 6 0 1 0;
+#X connect 7 0 25 0;
+#X connect 10 0 36 0;
+#X connect 11 0 16 0;
+#X connect 12 0 13 0;
+#X connect 13 0 16 0;
+#X connect 15 0 14 0;
+#X connect 16 0 5 0;
+#X connect 17 0 5 0;
+#X connect 19 0 5 0;
+#X connect 20 0 29 0;
+#X connect 21 0 29 0;
+#X connect 22 0 18 0;
+#X connect 24 0 7 0;
+#X connect 25 0 4 0;
+#X connect 28 0 2 0;
+#X connect 29 0 19 0;
+#X connect 33 0 39 0;
+#X connect 34 0 40 0;
+#X connect 36 0 9 0;
+#X connect 36 1 15 0;
+#X connect 36 2 22 0;
+#X connect 36 3 37 0;
+#X connect 37 0 41 0;
+#X connect 39 0 5 0;
+#X connect 40 0 5 0;
+#X connect 41 0 38 0;
