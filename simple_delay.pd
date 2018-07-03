@@ -1,0 +1,22 @@
+#N canvas 635 402 811 674 10;
+#X obj 100 291 dac~;
+#X obj 122 151 delwrite~ delaymono 4000;
+#X floatatom 153 182 5 0 0 0 - - -, f 5;
+#X obj 152 203 sig~;
+#X obj 151 231 vd~ delaymono;
+#X obj 292 180 *~ 0.6;
+#X obj 15 123 adc~;
+#X obj 279 68 hsl 128 15 0 0.9 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 8400 1;
+#X floatatom 338 105 5 0 0 0 - - -, f 5;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
+#X connect 4 0 0 1;
+#X connect 4 0 5 0;
+#X connect 5 0 1 0;
+#X connect 6 0 1 0;
+#X connect 6 0 0 0;
+#X connect 6 0 0 1;
+#X connect 7 0 8 0;
+#X connect 8 0 5 1;
