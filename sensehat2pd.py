@@ -9,18 +9,7 @@ from sense_hat import SenseHat
 
 def send2Pd(message=''):
     # Send a message to Pd
-    os.system("echo '" + message + "' | pdsend 3000")
-
-def sendNote(x):
-    note = x
-    message = '1 ' + str(note) + ';' # make a string for use with Pdsend
-    send2Pd(message)
-
-def sendVolume(x):
-    volume = x
-    message = '2 ' + str(volume) + ';' # make a string for use with Pdsend
-    send2Pd(message)
-    print(volume)
+    os.system("echo '" + message + "' | pdsend 3000 localhost udp")
 
 x = y = 4
 hat = SenseHat()
@@ -43,7 +32,6 @@ def move_dot(event):
             'up': -1,
             'down': 1,
             }.get(event.direction, 0))
-    sendNote(x)
 
 update_screen()
 
@@ -60,11 +48,16 @@ while True:
     pitch = round(pitch, 1)
     roll = round(roll, 1)
     yaw = round(yaw, 1)    
-    print("pitch {0} roll {1} yaw {2}".format(pitch, roll, yaw))
-    note = pitch
-    volume = roll
-    timbre = yaw
-    sendNote(round(note))
-    sendVolume(round(volume))
-##    sendTimbre(round(timbre))
+#    print("pitch {0} roll {1} yaw {2}".format(pitch, roll, yaw))
+    positionX = int(pitch)
+    positionY = int(roll)
+    positionZ = int(yaw)
+    message = '0 ' + str(positionX) # make a string for use with Pdsend
+    send2Pd(message)
+    message = '1 ' + str(positionY)
+    send2Pd(message)
+    message = '2 ' + str(positionZ)
+    send2Pd(message)
+#    print(message)
     time.sleep(0.1)
+
