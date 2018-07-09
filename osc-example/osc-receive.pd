@@ -1,4 +1,0 @@
-#N canvas 580 80 450 300 10;
-#X obj 137 84 print udp;
-#X obj 139 45 netreceive -u 9000;
-#X connect 1 0 0 0;
