@@ -3,14 +3,15 @@ Sonic Interactions is a research project (http://sonicinteraction.design) that's
 
 Sonic Interactions Pi Kit
 It was important to us to create an accessible open source audio kit for the workshops. We chose to use the popular Raspberry Pi with the following add-ons:
-1. Lots of Pots expansion board (https://moderndevice.com/product/lots-of-pots-lop-board-for-raspberry-pi/).
+1. Lots of Pots expansion board
+(https://moderndevice.com/product/lots-of-pots-lop-board-for-raspberry-pi/)
 
 2. USB Audio Adapter
-The Pi comes with sound but only a low quality output, this adapter (https://www.adafruit.com/product/1475) adds higher quality input and output. 
+The Pi comes with sound but only a low quality output, this adapter (https://www.adafruit.com/product/1475) adds higher quality input and output.
 
 Using Python to read the potentiometers and send data to Pure Data (https://puredata.info/) to generate sequences and audio. The current communication protocol is SpiDev but I may try pyOSC to compare performance.
 
-![alt text](http://url/to/img.png)
+![Lots of Pots Board](http://sonicinteraction.design/wp-content/uploads/2018/07/lop3.jpg)
 
 <h3>Installing Software</h3>
 To install PureData on a Raspberry Pi type the following into the terminal window:
@@ -20,10 +21,3 @@ sudo apt-get install puredata
 
 <h3>Installing Externals for PureData</h3>
 The Vanilla version of PureData can be extended with libraries called Externals, which can be found under the help menu in Find Externals.
-
-<h3>References</h3>
-http://www.instructables.com/id/Pure-Pi-Control-custom-stompbox-effects-on-a-Raspb/
-
-http://www.instructables.com/id/PiMiDi-A-Raspberry-Pi-Midi-Box-or-How-I-Learned-to/
-
-https://guitarextended.wordpress.com/2011/12/12/installing-pure-data/
