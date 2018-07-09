@@ -1,0 +1,349 @@
+#N canvas 58 23 1194 755 10;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array saw_wave 100 float 5;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
+#X coords 0 1 100 -1 200 140 1 0 0;
+#X restore 225 56 graph;
+#N canvas 0 23 450 278 (subpatch) 0;
+#X array triangle_wave 100 float 5;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
+#X coords 0 1 100 -1 200 140 1 0 0;
+#X restore 113 254 graph;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array square_wave 100 float 5;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
+#X coords 0 1 100 -1 200 140 1 0 0;
+#X restore 457 54 graph;
+#X obj 802 718 dac~;
+#N canvas 0 23 450 278 (subpatch) 0;
+#X array noise 100 float 5;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
+#X coords 0 1 100 -1 200 140 1 0 0;
+#X restore 344 254 graph;
+#N canvas 0 23 450 278 (subpatch) 0;
+#X array sine_wave 100 float 5;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
+#X coords 0 1 100 -1 200 140 1 0 0;
+#X restore 575 250 graph;
+#N canvas 113 344 651 397 sawwave 0;
+#X floatatom 33 54 5 0 0 0 - - -, f 5;
+#X obj 33 84 phasor~;
+#X obj 33 116 *~ 2;
+#X obj 33 137 -~ 1;
+#X obj 33 21 r Freq;
+#X obj 81 147 r sawtog;
+#X obj 33 163 *~ 0;
+#X obj 33 194 outlet~;
+#X msg 213 126 bang;
+#X msg 263 126 stop;
+#X obj 150 110 r load;
+#X obj 213 155 metro 200;
+#X obj 213 179 tabwrite~ saw_wave;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 6 0;
+#X connect 4 0 0 0;
+#X connect 5 0 6 1;
+#X connect 6 0 7 0;
+#X connect 6 0 12 0;
+#X connect 8 0 11 0;
+#X connect 9 0 11 0;
+#X connect 10 0 8 0;
+#X connect 11 0 12 0;
+#X restore 73 532 pd sawwave;
+#N canvas 14 316 450 434 trianglewave 0;
+#X floatatom 22 49 5 0 0 0 - - -, f 5;
+#X obj 21 124 phasor~;
+#X obj 21 156 *~ 2;
+#X obj 21 177 -~ 1;
+#X obj 43 84 * -1;
+#X msg 126 46 0;
+#X obj 104 124 phasor~;
+#X obj 104 157 *~ 2;
+#X obj 104 179 -~ 1;
+#X obj 102 207 clip~ 0 1;
+#X obj 22 210 clip~ 0 1;
+#X obj 73 245 +~;
+#X obj 74 327 *~ 0;
+#X obj 74 276 *~ 2;
+#X obj 74 302 -~ 1;
+#X obj 22 8 r Freq;
+#X obj 158 312 r tritog;
+#X obj 126 12 r load;
+#X obj 74 359 outlet~;
+#X msg 255 290 bang;
+#X msg 305 290 stop;
+#X obj 255 319 metro 200;
+#X obj 203 274 r load;
+#X obj 255 343 tabwrite~ triangle_wave;
+#X connect 0 0 1 0;
+#X connect 0 0 4 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 10 0;
+#X connect 4 0 6 0;
+#X connect 5 0 1 1;
+#X connect 5 0 6 1;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 11 0;
+#X connect 10 0 11 0;
+#X connect 11 0 13 0;
+#X connect 12 0 18 0;
+#X connect 12 0 23 0;
+#X connect 13 0 14 0;
+#X connect 14 0 12 0;
+#X connect 15 0 0 0;
+#X connect 16 0 12 1;
+#X connect 17 0 5 0;
+#X connect 19 0 21 0;
+#X connect 20 0 21 0;
+#X connect 21 0 23 0;
+#X connect 22 0 19 0;
+#X restore 92 576 pd trianglewave;
+#N canvas 0 23 450 574 squarewave 0;
+#X floatatom 16 84 5 0 0 0 - - -, f 5;
+#X obj 13 155 phasor~;
+#X obj 80 156 phasor~;
+#X obj 69 117 * -1;
+#X msg 87 79 0;
+#X msg 134 78 0.5;
+#X obj 121 48 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 48 214 +~;
+#X obj 48 250 -~ 1;
+#X obj 48 280 *~ 1.98;
+#X obj 16 51 r Freq;
+#X obj 48 314 *~ 0;
+#X obj 124 299 r sqrtog;
+#X obj 145 32 r load;
+#X obj 48 360 outlet~;
+#X msg 221 277 bang;
+#X msg 271 277 stop;
+#X obj 221 306 metro 200;
+#X obj 156 262 r load;
+#X obj 221 330 tabwrite~ square_wave;
+#X connect 0 0 1 0;
+#X connect 0 0 3 0;
+#X connect 1 0 7 0;
+#X connect 2 0 7 1;
+#X connect 3 0 2 0;
+#X connect 4 0 1 1;
+#X connect 5 0 2 1;
+#X connect 6 0 4 0;
+#X connect 6 0 5 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 11 0;
+#X connect 10 0 0 0;
+#X connect 11 0 14 0;
+#X connect 11 0 19 0;
+#X connect 12 0 11 1;
+#X connect 13 0 6 0;
+#X connect 15 0 17 0;
+#X connect 16 0 17 0;
+#X connect 17 0 19 0;
+#X connect 18 0 15 0;
+#X restore 82 554 pd squarewave;
+#N canvas 40 59 450 300 noise 0;
+#X obj 90 19 noise~;
+#X obj 90 72 *~ 0;
+#X obj 21 56 r noitog;
+#X obj 89 118 outlet~;
+#X msg 222 53 bang;
+#X msg 272 53 stop;
+#X obj 222 82 metro 200;
+#X obj 164 28 r load;
+#X obj 222 113 tabwrite~ noise;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 1 0 8 0;
+#X connect 2 0 1 1;
+#X connect 4 0 6 0;
+#X connect 5 0 6 0;
+#X connect 6 0 8 0;
+#X connect 7 0 4 0;
+#X restore 102 598 pd noise;
+#N canvas 343 272 450 300 sinewave 0;
+#X obj 83 79 osc~;
+#X floatatom 83 47 5 0 0 0 - - -, f 5;
+#X obj 83 14 r Freq;
+#X obj 83 113 *~ 0;
+#X obj 17 97 r sintog;
+#X obj 82 156 outlet~;
+#X msg 227 94 bang;
+#X msg 277 94 stop;
+#X obj 227 123 metro 200;
+#X obj 169 69 r load;
+#X obj 227 154 tabwrite~ sine_wave;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 5 0;
+#X connect 3 0 10 0;
+#X connect 4 0 3 1;
+#X connect 6 0 8 0;
+#X connect 7 0 8 0;
+#X connect 8 0 10 0;
+#X connect 9 0 6 0;
+#X coords 0 300 1 299 10 5 0;
+#X restore 63 510 pd sinewave;
+#X obj 560 223 cnv 15 230 200 empty empty empty 10 12 0 14 -261234
+-66577 0;
+#X obj 560 223 cnv 15 230 200 empty empty empty 10 12 0 14 -261234
+-66577 0;
+#X obj 329 223 cnv 15 230 200 empty empty empty 20 12 0 14 -204786
+-66577 0;
+#X obj 98 223 cnv 15 230 200 empty empty empty 20 12 0 14 -261682 -66577
+0;
+#X obj 210 22 cnv 15 230 200 empty empty empty 20 12 0 14 -204800 -66577
+0;
+#X obj 441 22 cnv 15 230 200 empty empty empty 20 12 0 14 -203904 -66577
+0;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array combined_wave 100 float 5;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
+#X coords 0 1 100 -1 200 140 1 0 0;
+#X restore 336 495 graph;
+#X obj 208 636 metro 200;
+#X obj 63 666 +~;
+#X obj 802 689 *~;
+#X obj 817 651 r wavetotal;
+#X obj 208 603 loadbang;
+#X obj 208 681 tabwrite~ combined_wave;
+#X obj 321 463 cnv 15 230 200 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X obj 63 698 s~ combinedwave;
+#X obj 667 673 r~ combinedwave;
+#X obj 901 660 metro 200;
+#X obj 901 627 loadbang;
+#X obj 901 705 tabwrite~ combined_wave_adjusted;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array combined_wave_adjusted 100 float 5;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
+#X coords 0 1 100 -1 200 140 1;
+#X restore 573 495 graph;
+#N canvas 0 23 642 472 wave 0;
+#X obj 107 170 tgl 15 0 sawtog empty saw 17 7 0 10 -204800 -1 -1 0
+1;
+#X obj 107 188 tgl 15 0 sqrtog empty square 17 7 0 10 -203904 -1 -1
+0 1;
+#X obj 107 207 tgl 15 0 tritog empty triangle 17 7 0 10 -261682 -1
+-1 0 1;
+#X obj 107 226 tgl 15 0 noitog empty noise 17 7 0 10 -204786 -1 -1
+0 1;
+#X msg 40 166 1;
+#X floatatom 106 123 5 0 0 1 frequency - -, f 5;
+#X obj 326 138 s Freq;
+#X obj 106 44 loadbang;
+#X msg 106 79 440;
+#X obj 152 78 s load;
+#X obj 107 150 tgl 15 0 sintog empty sine 17 7 0 10 -261234 -1 -1 0
+1;
+#N canvas 468 196 643 468 wavecounter 0;
+#X obj 143 16 r sintog;
+#X obj 163 39 r sawtog;
+#X floatatom 143 199 5 0 0 0 - - -, f 5;
+#X floatatom 166 181 5 0 0 0 - - -, f 5;
+#X obj 70 115 metro 100;
+#X obj 183 61 r sqrtog;
+#X obj 143 131 pack f f f f f;
+#X obj 203 83 r tritog;
+#X obj 223 104 r noitog;
+#X obj 143 155 unpack f f f f f;
+#X floatatom 189 199 5 0 0 0 - - -, f 5;
+#X floatatom 212 180 5 0 0 0 - - -, f 5;
+#X obj 143 226 +;
+#X obj 189 226 +;
+#X obj 189 226;
+#X floatatom 143 254 5 0 0 0 - - -, f 5;
+#X floatatom 189 252 5 0 0 0 - - -, f 5;
+#X obj 143 283 +;
+#X floatatom 143 308 5 0 0 0 - - -, f 5;
+#X floatatom 236 199 5 0 0 0 - - -, f 5;
+#X obj 185 340 +;
+#X floatatom 185 366 5 0 0 0 - - -, f 5;
+#X obj 185 392 expr 1/$f1;
+#X floatatom 185 417 5 0 0 0 - - -, f 5;
+#X obj 185 440 s wavetotal;
+#X obj 12 99 loadbang;
+#X connect 0 0 6 0;
+#X connect 1 0 6 1;
+#X connect 2 0 12 0;
+#X connect 3 0 12 1;
+#X connect 4 0 6 0;
+#X connect 5 0 6 2;
+#X connect 6 0 9 0;
+#X connect 7 0 6 3;
+#X connect 8 0 6 4;
+#X connect 9 0 2 0;
+#X connect 9 1 3 0;
+#X connect 9 2 10 0;
+#X connect 9 3 11 0;
+#X connect 9 4 19 0;
+#X connect 10 0 13 0;
+#X connect 11 0 13 1;
+#X connect 12 0 15 0;
+#X connect 13 0 16 0;
+#X connect 15 0 17 0;
+#X connect 16 0 17 1;
+#X connect 17 0 18 0;
+#X connect 18 0 20 0;
+#X connect 19 0 20 1;
+#X connect 20 0 21 0;
+#X connect 21 0 22 0;
+#X connect 22 0 23 0;
+#X connect 23 0 24 0;
+#X connect 25 0 4 0;
+#X restore 105 19 pd wavecounter;
+#X connect 4 0 1 0;
+#X connect 4 0 0 0;
+#X connect 4 0 2 0;
+#X connect 4 0 3 0;
+#X connect 4 0 10 0;
+#X connect 5 0 6 0;
+#X connect 7 0 8 0;
+#X connect 7 0 9 0;
+#X connect 8 0 5 0;
+#X coords 0 -1 1 1 100 150 1 100 100;
+#X restore 821 245 pd wave controls;
+#X connect 6 0 19 0;
+#X connect 7 0 19 0;
+#X connect 8 0 19 0;
+#X connect 9 0 19 0;
+#X connect 10 0 19 0;
+#X connect 18 0 23 0;
+#X connect 19 0 23 0;
+#X connect 19 0 25 0;
+#X connect 20 0 3 0;
+#X connect 20 0 3 1;
+#X connect 20 0 29 0;
+#X connect 21 0 20 1;
+#X connect 22 0 18 0;
+#X connect 26 0 20 0;
+#X connect 27 0 29 0;
+#X connect 28 0 27 0;
+#X coords 0 755 1 754 200 200 0;
