@@ -25,5 +25,5 @@ sudo apt-get install puredata
 ### Installing Externals for PureData
 The Vanilla version of PureData can be extended with libraries called Externals, which can be found under the help menu in Find Externals
 
-
+### How the Software Stack in SIP Kit Works
 ![SIP Kit System Diagram](http://sonicinteraction.design/wp-content/uploads/2018/07/system-diagram.png)
