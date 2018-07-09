@@ -1,4 +1,4 @@
-#Sonic Interactions
+# Sonic Interactions
 Sonic Interactions is a research project (http://sonicinteraction.design) exploring what happens when people interact with technology to create music. For centuries we have carefully handcrafted the interactions of musical instruments, optimizing them for comfort, intuitive learning, and playability yet many of the newest tools of musical expression are cold, intangible and use technologies in ways that ignore hundreds of years of accumulated knowledge. This research aims to bridge cognitive and social science with computational and humanistic approaches to create more expressive musical experiences and to expand the practice of Interaction Design.
 
 
