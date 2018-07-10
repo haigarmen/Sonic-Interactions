@@ -14,7 +14,7 @@ It was important to us to create an accessible open source audio kit for the wor
 (https://moderndevice.com/product/lots-of-pots-lop-board-for-raspberry-pi/)
 
 2. USB Audio Adapter
-The Pi comes with sound but only a low quality output, this ![adapter](https://www.adafruit.com/product/1475) adds higher quality input and output.
+The Pi comes with sound but only a low quality output, this [adapter](https://www.adafruit.com/product/1475) adds higher quality input and output.
 
 Using Python to read the potentiometers and send data to Pure Data (https://puredata.info/) to generate sequences and audio. The current communication protocol is SpiDev but I may try pyOSC to compare performance.
 
