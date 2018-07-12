@@ -1,4 +1,4 @@
-#N canvas 596 190 1026 758 10;
+#N canvas 544 153 1026 758 10;
 #N canvas 598 258 680 532 tcpcom 0;
 #X text 77 65 Receive messages from Python and route them to the proper
 receive objects;
@@ -26,14 +26,14 @@ receive objects;
 #X connect 12 0 5 0;
 #X connect 12 0 11 0;
 #X restore 546 35 pd tcpcom;
-#X obj 546 92 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 12559 1;
+#X obj 546 92 vsl 15 128 0 3 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 12700 1;
 #X obj 546 67 r pot1;
 #X obj 600 92 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 12665 1;
+-1 -1 12065 1;
 #X obj 600 67 r pot2;
 #X obj 652 92 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 1799 1;
+-1 -1 4057 1;
 #X obj 706 92 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 652 67 r pot3;
@@ -60,23 +60,23 @@ receive objects;
 #X obj 654 566 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 654 589 s audoRecBtn;
-#N canvas 800 205 1078 750 routing 0;
+#N canvas 730 116 1078 750 routing 0;
 #X obj 139 72 hsl 80 15 0 360 0 0 empty empty empty -2 -8 0 10 -228856
--1 -1 7812 1;
+-1 -1 7878 1;
 #X obj 136 150 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 98.8889 256;
+-228856 -1 -1 99.7222 256;
 #X obj 136 96 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 356 256;
+-228856 -1 -1 359 256;
 #X obj 136 121 mapper, f 12;
 #X text 132 49 input pot 1;
 #X text 230 49 pot range;
 #X text 232 111 new range;
 #X obj 137 210 hsl 80 15 0 360 0 0 empty empty empty -2 -8 0 10 -228856
--1 -1 7878 1;
+-1 -1 7505 1;
 #X obj 134 288 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 99.7222 256;
+-228856 -1 -1 95 256;
 #X obj 134 234 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 359 256;
+-228856 -1 -1 342 256;
 #X obj 134 259 mapper, f 12;
 #X text 130 187 input pot 2;
 #X obj 45 71 r p1;
@@ -96,11 +96,11 @@ receive objects;
 #X text 282 296 high, f 5;
 #X msg 236 210 0;
 #X obj 140 362 hsl 80 15 0 360 0 0 empty empty empty -2 -8 0 10 -228856
--1 -1 1119 1;
+-1 -1 2524 1;
 #X obj 137 440 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 14.1667 256;
+-228856 -1 -1 31.9444 256;
 #X obj 137 386 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 51 256;
+-228856 -1 -1 115 256;
 #X obj 137 411 mapper, f 12;
 #X obj 51 391 unpack;
 #X text 236 342 pot range;
@@ -385,7 +385,7 @@ receive objects;
 #X obj 121 95 metro 500;
 #X obj 71 134 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 124 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 124 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 121 123 i;
 #X obj 166 123 + 1;
@@ -398,8 +398,12 @@ receive objects;
 #X obj 134 487 dac~, f 6;
 #X obj 134 409 osc~;
 #X obj 136 336 makenote 64 100;
+#X floatatom 489 96 5 0 0 0 - - -, f 5;
+#X floatatom 491 207 5 0 0 0 - - -, f 5;
 #X connect 1 0 30 0;
+#X connect 1 0 58 0;
 #X connect 2 0 1 0;
+#X connect 2 0 57 0;
 #X connect 4 0 3 0;
 #X connect 7 0 5 0;
 #X connect 8 0 6 0;
