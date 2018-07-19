@@ -1,4 +1,4 @@
-#N canvas 491 182 1131 766 10;
+#N canvas 548 125 1131 766 10;
 #X obj 135 337 makenote 64 250;
 #X msg 123 272 60;
 #X msg 158 272 62;
@@ -51,13 +51,13 @@ receive objects;
 #X connect 12 0 11 0;
 #X restore 546 35 pd tcpcom;
 #X obj 546 92 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 12559 1;
+-1 -1 12594 1;
 #X obj 546 67 r pot1;
 #X obj 600 92 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 12629 1;
+-1 -1 106 1;
 #X obj 600 67 r pot2;
 #X obj 652 92 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 1693 1;
+-1 -1 4304 1;
 #X obj 706 92 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 652 67 r pot3;
@@ -86,21 +86,21 @@ receive objects;
 #X obj 654 589 s audoRecBtn;
 #N canvas 800 205 1078 750 routing 0;
 #X obj 139 72 hsl 80 15 0 360 0 0 empty empty empty -2 -8 0 10 -228856
--1 -1 7812 1;
+-1 -1 7834 1;
 #X obj 136 150 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 98.8889 256;
+-228856 -1 -1 99.1667 256;
 #X obj 136 96 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 356 256;
+-228856 -1 -1 357 256;
 #X obj 136 121 mapper, f 12;
 #X text 132 49 input pot 1;
 #X text 230 49 pot range;
 #X text 232 111 new range;
 #X obj 137 210 hsl 80 15 0 360 0 0 empty empty empty -2 -8 0 10 -228856
--1 -1 7856 1;
+-1 -1 66 1;
 #X obj 134 288 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 99.4444 256;
+-228856 -1 -1 0.833333 256;
 #X obj 134 234 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 358 256;
+-228856 -1 -1 3 256;
 #X obj 134 259 mapper, f 12;
 #X text 130 187 input pot 2;
 #X obj 45 71 r p1;
@@ -120,11 +120,11 @@ receive objects;
 #X text 282 296 high, f 5;
 #X msg 236 210 0;
 #X obj 140 362 hsl 80 15 0 360 0 0 empty empty empty -2 -8 0 10 -228856
--1 -1 1053 1;
+-1 -1 2677 1;
 #X obj 137 440 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 13.3333 256;
+-228856 -1 -1 33.8889 256;
 #X obj 137 386 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 48 256;
+-228856 -1 -1 122 256;
 #X obj 137 411 mapper, f 12;
 #X obj 51 391 unpack;
 #X text 236 342 pot range;
@@ -397,6 +397,7 @@ receive objects;
 #X obj 235 49 r tempo;
 #X floatatom 240 116 5 0 0 0 - - -, f 5;
 #X obj 234 70 * 2;
+#X msg 29 86 \; pd dsp \$1;
 #X connect 0 0 18 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
@@ -409,6 +410,7 @@ receive objects;
 #X connect 9 0 10 0;
 #X connect 9 0 12 0;
 #X connect 11 0 9 0;
+#X connect 11 0 56 0;
 #X connect 12 0 13 0;
 #X connect 12 0 14 0;
 #X connect 13 0 12 1;
