@@ -1,4 +1,4 @@
-#N canvas 17 23 1263 755 10;
+#N canvas 0 303 1263 755 10;
 #X msg 123 293 60;
 #X msg 158 293 62;
 #X msg 196 294 64;
@@ -96,7 +96,7 @@
 #X msg 310 609 set saw;
 #X obj 137 559 sel 0 1 2;
 #X obj 137 539 hradio 15 1 0 3 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 1;
 #X obj 123 95 metro 500, f 11;
 #X obj 137 694 *~;
 #X obj 64 18 r startstop;
@@ -127,26 +127,26 @@ receive objects;
 #X connect 12 0 5 0;
 #X connect 12 0 11 0;
 #X restore 781 17 pd tcpcom;
-#X obj 781 74 vsl 15 128 2000 100 0 0 tempo empty empty 0 -9 0 10 -262144
--1 -1 10200 1;
+#X obj 781 74 vsl 15 128 1 500 0 0 attack empty empty 0 -9 0 10 -262144
+-1 -1 7300 1;
 #X obj 781 49 r pot1;
 #X obj 835 74 vsl 15 128 1 500 0 0 decay empty empty 0 -9 0 10 -262144
--1 -1 10600 1;
+-1 -1 2300 1;
 #X obj 835 49 r pot2;
 #X obj 887 74 vsl 15 128 1 500 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 5300 1;
+-1 -1 7400 1;
 #X obj 941 74 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 8400 1;
 #X obj 887 49 r pot3;
 #X obj 941 49 r pot4;
-#X obj 783 273 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+#X obj 783 273 vsl 15 128 50 500 0 0 tempo empty empty 0 -9 0 10 -262144
+-1 -1 5300 1;
 #X obj 837 273 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 5100 1;
 #X obj 889 273 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 943 273 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 8900 1;
+#X obj 943 273 vsl 15 128 0 1 0 0 attack empty empty 0 -9 0 10 -262144
+-1 -1 9300 1;
 #X obj 783 248 r pot5;
 #X obj 837 248 r pot6;
 #X obj 889 248 r pot7;
@@ -481,14 +481,14 @@ receive objects;
 #X obj 358 40 inlet;
 #X obj 359 437 outlet~;
 #X msg 358 90 bang;
-#X obj 116 135 hsl 128 15 1 500 0 0 empty empty Attack -2 -8 0 10 -262144
--1 -1 900 1;
+#X obj 116 135 hsl 128 15 1 500 0 0 empty attack Attack -2 -8 0 10
+-262144 -1 -1 7300 1;
 #X obj 553 203 delay;
 #X obj 358 198 pack;
 #X msg 400 150 1 \$1;
 #X obj 471 263 pack;
 #X obj 115 175 hsl 128 15 1 500 0 0 empty decay Decay -2 -8 0 10 -262144
--1 -1 10600 1;
+-1 -1 2300 1;
 #X msg 471 190 0 \$1;
 #X obj 585 150 float;
 #X obj 358 320 line~;
@@ -515,6 +515,7 @@ receive objects;
 #X obj 783 492 s forward;
 #X obj 780 523 r button3;
 #X obj 780 567 s wave;
+#X floatatom 251 73 5 0 0 0 - - -, f 5;
 #X connect 0 0 57 0;
 #X connect 1 0 57 0;
 #X connect 2 0 57 0;
@@ -541,6 +542,7 @@ receive objects;
 #X connect 14 0 20 0;
 #X connect 14 0 18 0;
 #X connect 17 0 30 1;
+#X connect 17 0 77 0;
 #X connect 18 0 23 0;
 #X connect 19 0 21 0;
 #X connect 20 0 22 0;
