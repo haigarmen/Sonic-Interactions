@@ -5,8 +5,11 @@ Sonic Interactions is a research project (http://sonicinteractions.org) explorin
 The Sonic Interactions workshops aims to expand our creative repertoire by introducing basic electronics and coding in the context of musical instruments to explore a variety of tangible ways for us to interact with sound to create music. Using design sprints and accessible prototyping tools like Raspberry Pi and sensors, we aim to combine emergent technologies with existing instruments to create new instruments optimized for musical expression and interactivity. This code repo is initially created to share the code used for the workshop, including the code used to create the Sonic Interactions Pi Kit.
 
 ### Workshop Goals:
-
-
+* Begin to learn how to prototype for physical interactions
+* Learn about the Raspberry Pi and it's capabilities
+* Learn how to create sound and music using PureData (open source)
+* Create an new musical instrument
+* Perform with your new instrument with others in the workshop
 
 ## Sonic Interactions Pi Kit
 It was important to us to create an accessible open source audio kit for the workshops. We chose to use the popular Raspberry Pi with the following add-ons:
