@@ -18,7 +18,7 @@ The Pi comes with sound but only a low quality output, this [adapter](https://ww
 
 Using Python to read the potentiometers and send data to Pure Data (https://puredata.info/) to generate sequences and audio. The current communication protocol is SpiDev but I may try pyOSC to compare performance.
 
-![Lots of Pots Board](http://sonicinteraction.design/wp-content/uploads/2018/07/lop3.jpg)
+![Lots of Pots Board](http://sonicinteractions.org/wp-content/uploads/2018/07/lop3.jpg)
 
 ### Installing Software
 To install PureData on a Raspberry Pi type the following into the terminal window:
@@ -30,7 +30,7 @@ sudo apt-get install puredata
 The Vanilla version of PureData can be extended with libraries called Externals, which can be found under the help menu in Find Externals
 
 ### How the Software Stack in SIP Kit Works
-![SIP Kit System Diagram](http://sonicinteraction.design/wp-content/uploads/2018/07/system-diagram.png)
+![SIP Kit System Diagram](http://sonicinteractions.org/wp-content/uploads/2018/07/system-diagram.png)
 
 Feedback from Workshop ECU (18.07.09)
 - preworkshop email with details about what is needed
