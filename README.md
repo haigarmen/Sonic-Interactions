@@ -6,8 +6,8 @@ The Sonic Interactions workshops aims to expand our creative repertoire by intro
 
 ### Workshop Goals:
 * Begin to learn how to prototype for physical interactions
-* Learn about the Raspberry Pi and it's capabilities
 * Learn how to create sound and music using PureData (open source)
+* Learn about the Raspberry Pi and its capabilities
 * Create an new musical instrument
 * Perform with your new instrument with others in the workshop
 
