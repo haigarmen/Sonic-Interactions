@@ -1,7 +1,7 @@
-#N canvas 261 252 1356 633 10;
+#N canvas 4 145 1276 633 10;
 #X obj 275 576 dac~;
 #X obj 142 56 adc~;
-#X obj 142 80 send~ audio;
+#X obj 551 171 send~ audio;
 #X obj 68 242 receive~;
 #X obj 268 241 receive~;
 #X obj 469 243 receive~;
@@ -153,8 +153,7 @@ receive objects;
 #X obj 722 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 518 43 bang;
-#X msg 610 95 open /home/pi/Sonic-Interactions/audio/funky_loop_01.wav
-\, 1;
+#X msg 610 95 open audio/funky_loop_01.wav \, 1;
 #X connect 3 0 16 0;
 #X connect 3 0 16 1;
 #X connect 4 0 14 0;

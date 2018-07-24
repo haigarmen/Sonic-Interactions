@@ -1,7 +1,7 @@
 #N canvas 618 121 609 605 10;
 #X obj 80 43 vradio 15 1 0 4 empty empty empty 0 -8 0 10 -262144 -1
--1 1;
-#N canvas 56 163 450 300 bpm 1;
+-1 0;
+#N canvas 56 163 450 300 bpm 0;
 #X obj 55 105 t b f;
 #X msg 37 128 60000;
 #X obj 67 151 /;
@@ -34,22 +34,20 @@
 #X restore 81 118 pd bpm;
 #X floatatom 124 148 5 0 0 0 - - -, f 5;
 #X obj 81 148 s bpm;
-#X obj 379 14 tgl 30 0 empty empty Start 36 7 0 10 -261234 -1 -1 1
+#X obj 379 15 tgl 30 0 empty empty Start 36 7 0 10 -261234 -1 -1 0
 1;
 #X obj 393 65 metro;
 #X obj 440 49 r bpm;
 #X obj 393 92 counter;
 #X obj 393 118 % 8;
 #X obj 393 144 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144
--1 -1 3;
+-1 -1 7;
 #X obj 394 169 expr melody[$f1+$f2];
 #X floatatom 537 144 5 0 0 0 - - -, f 5;
 #X floatatom 394 194 5 0 0 0 - - -, f 5;
 #X obj 392 251 makenote 64 250;
-#X obj 455 300 r bpm;
-#X obj 455 323 * 0.75;
-#X obj 30 37 vsl 30 128 20 200 0 1 tempo empty Tempo 0 -12 0 10 -262130
--1 -1 7300 1;
+#X obj 28 37 vsl 30 128 20 200 0 1 tempo empty Tempo 0 -12 0 10 -262130
+-1 -1 7100 1;
 #X floatatom 30 179 5 0 0 0 - - -, f 5;
 #N canvas 4 23 976 611 (subpatch) 0;
 #X array melody 8 float 2;
@@ -70,7 +68,7 @@
 #X connect 1 0 3 0;
 #X connect 4 0 5 0;
 #X connect 4 0 0 0;
-#X connect 4 0 25 0;
+#X connect 4 0 23 0;
 #X connect 5 0 7 0;
 #X connect 6 0 5 1;
 #X connect 7 0 8 0;
@@ -78,14 +76,12 @@
 #X connect 9 0 10 0;
 #X connect 10 0 12 0;
 #X connect 11 0 10 1;
-#X connect 12 0 27 0;
-#X connect 13 0 23 0;
-#X connect 13 0 24 0;
+#X connect 12 0 25 0;
+#X connect 13 0 21 0;
+#X connect 13 0 22 0;
 #X connect 14 0 15 0;
-#X connect 15 0 21 1;
-#X connect 16 0 17 0;
-#X connect 21 0 22 0;
-#X connect 21 0 22 1;
-#X connect 23 0 21 0;
-#X connect 27 0 13 0;
+#X connect 19 0 20 0;
+#X connect 19 0 20 1;
+#X connect 21 0 19 0;
+#X connect 25 0 13 0;
 #X coords 0 605 1 604 85 60 0;
