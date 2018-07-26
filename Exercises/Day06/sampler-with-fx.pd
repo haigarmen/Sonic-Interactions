@@ -1,16 +1,16 @@
 #N canvas 77 23 1099 754 10;
 #N canvas 0 22 450 278 (subpatch) 0;
-#X array channelL 604800 float 2;
-#X coords 0 1 604800 -1 200 140 1;
+#X array channelL 196394 float 2;
+#X coords 0 1 196394 -1 200 140 1;
 #X restore 239 19 graph;
 #N canvas 0 22 450 278 (subpatch) 0;
-#X array channelR 604800 float 2;
-#X coords 0 1 604800 -1 200 140 1 0 0;
+#X array channelR 196394 float 2;
+#X coords 0 1 196394 -1 200 140 1 0 0;
 #X restore 239 174 graph;
 #X obj 18 551 *~;
 #X obj 62 553 *~;
 #X obj 103 551 vsl 40 60 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 4200 1;
+-1 -1 3700 1;
 #X obj 12 26 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 12 47 openpanel;
@@ -37,9 +37,9 @@
 #X obj 337 473 r sampleSize;
 #X floatatom 272 523 10 0 0 0 - - -, f 10;
 #X obj 242 317 hsl 195 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 1372 1;
+-1 -1 9988 1;
 #X obj 95 256 hsl 128 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6813 1;
+-1 -1 7776 1;
 #X floatatom 92 277 5 0 0 0 - - -, f 5;
 #X msg 90 305 0;
 #X msg 125 305 0.5;
@@ -61,7 +61,7 @@
 #N canvas 390 377 1211 632 effects 0;
 #X floatatom 260 187 5 0 0 0 - - -, f 5;
 #X obj 107 127 vradio 15 1 0 4 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 1;
 #X text 129 127 Bypass;
 #X text 129 142 Delay;
 #X text 128 158 Chorus;
@@ -126,7 +126,7 @@
 #X restore 608 438 pd effects switch;
 #X obj 522 491 send~ none;
 #X obj 33 626 send~ audio;
-#X msg 92 233 0.0729167;
+#X msg 92 233 0.224549;
 #X connect 2 0 49 0;
 #X connect 4 0 2 1;
 #X connect 4 0 3 1;
