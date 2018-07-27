@@ -1,4 +1,4 @@
-#N canvas 524 263 1114 786 10;
+#N canvas 166 23 1114 755 10;
 #X obj 732 152 phasor~;
 #X obj 732 185 cos~;
 #X obj 732 212 *~ 2;
@@ -12,18 +12,18 @@
 #X obj 324 563 outlet~ left;
 #X obj 548 564 outlet~ right;
 #X obj 107 137 hsl 128 15 0.1 10 0 0 chorusSpeed choruspot1 Speed -2
--8 0 10 -262144 -1 -1 5505 1;
+-8 0 10 -262144 -1 -1 0 1;
 #X obj 107 176 hsl 128 15 0 3 0 0 chorusDepth choruspot5 Depth -2 -8
-0 10 -262144 -1 -1 7764 1;
-#X obj 110 214 hsl 128 15 0 0.9 0 0 chorusFeedback choruspot2 Feedback
--2 -8 0 10 -262144 -1 -1 6400 1;
+0 10 -262144 -1 -1 0 1;
+#X obj 106 212 hsl 128 15 0 0.9 0 0 chorusFeedback choruspot2 Feedback
+-2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 324 34 inlet~ left;
 #X obj 548 34 inlet~ right;
 #X obj 818 206 wrap~;
 #X obj 324 523 *~;
 #X obj 548 522 *~;
-#X obj 110 257 hsl 128 15 0 1 0 0 empty choruspot3 Dry/Wet -2 -8 0
-10 -262144 -1 -1 6362 1;
+#X obj 106 250 hsl 128 15 0 1 0 0 empty choruspot3 Dry/Wet -2 -8 0
+10 -262144 -1 -1 0 1;
 #X floatatom 644 414 5 0 0 0 - - -, f 5;
 #X obj 107 355 - 1;
 #X obj 107 376 * -1;
@@ -50,6 +50,10 @@
 #X msg 845 136 0.1;
 #X obj 940 399 loadbang;
 #X msg 905 415 0;
+#X obj 85 73 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 116 501 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
+0;
 #X connect 0 0 1 0;
 #X connect 0 0 5 0;
 #X connect 1 0 2 0;
@@ -103,3 +107,4 @@
 #X connect 45 0 46 0;
 #X connect 46 0 4 1;
 #X connect 46 0 9 1;
+#X coords 0 -1 1 1 200 200 1 100 100;

@@ -1,9 +1,9 @@
-#N canvas 823 69 1061 796 10;
+#N canvas 219 23 753 716 10;
 #X obj 142 56 adc~;
 #X obj 142 80 send~ audio;
-#X obj 68 242 receive~;
-#X obj 268 241 receive~;
-#X obj 469 243 receive~;
+#X obj 68 192 receive~;
+#X obj 278 191 receive~;
+#X obj 483 193 receive~;
 #N canvas 319 383 681 632 effects 0;
 #X floatatom 260 187 5 0 0 0 - - -, f 5;
 #X obj 107 127 vradio 15 1 0 4 empty empty empty 0 -8 0 10 -262144
@@ -69,11 +69,11 @@
 #X connect 26 0 23 0;
 #X connect 26 0 22 0;
 #X coords 0 -1 1 1 150 100 1 100 100;
-#X restore 228 49 pd effects switch;
-#X obj 68 219 r delayswitch;
-#X obj 268 218 r chorusswitch;
-#X obj 469 220 r tremoloswitch;
-#X obj 73 560 receive~;
+#X restore 278 49 pd effects switch;
+#X obj 68 169 r delayswitch;
+#X obj 278 168 r chorusswitch;
+#X obj 483 170 r tremoloswitch;
+#X obj 73 510 receive~;
 #X obj 142 102 send~ none;
 #N canvas 595 276 680 532 tcpcom 0;
 #X text 77 65 Receive messages from Python and route them to the proper
@@ -101,8 +101,8 @@ receive objects;
 #X connect 5 8 10 0;
 #X connect 12 0 5 0;
 #X connect 12 0 11 0;
-#X restore 656 37 pd tcpcom;
-#N canvas 178 326 1078 750 routing_buttons 0;
+#X restore 486 47 pd tcpcom;
+#N canvas 178 28 1078 750 routing_buttons 0;
 #X obj 135 42 r buttons;
 #X obj 135 70 unpack;
 #X obj 138 98 route 1 2 3 4;
@@ -140,15 +140,15 @@ receive objects;
 #X connect 12 0 17 0;
 #X connect 13 0 15 0;
 #X connect 14 0 18 0;
-#X restore 733 37 pd routing_buttons;
-#X obj 268 296 chorus;
-#X obj 73 536 r bypassswitch;
-#X obj 67 296 simpledelay;
-#X obj 468 296 tremolo;
-#X obj 276 671 dac~ 1 2;
-#X obj 275 639 *~;
-#X obj 319 641 *~;
-#X obj 364 636 vsl 40 60 0 1 0 0 empty pot8 empty 0 -9 0 10 -262130
+#X restore 563 47 pd routing_buttons;
+#X obj 278 246 chorus;
+#X obj 73 486 r bypassswitch;
+#X obj 67 246 simpledelay;
+#X obj 484 245 tremolo;
+#X obj 276 621 dac~ 1 2;
+#X obj 275 589 *~;
+#X obj 319 591 *~;
+#X obj 415 575 vsl 40 60 0 1 0 0 empty pot8 Volume 0 -9 0 10 -262130
 -1 -1 0 1;
 #X connect 0 0 1 0;
 #X connect 0 1 1 0;
