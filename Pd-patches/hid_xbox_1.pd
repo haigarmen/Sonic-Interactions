@@ -1,0 +1,96 @@
+#N canvas 406 242 1083 932 10;
+#X obj 128 110 hid;
+#X msg 130 50 print;
+#X msg 195 51 open \$1;
+#X obj 195 30 hradio 15 1 1 15 \$0-device-number empty choose_a_device
+0 -6 1 9 -225271 -1 -1 4;
+#X obj 68 65 tgl 25 0 empty empty start 1 12 1 9 -225271 -1 -1 1 1
+;
+#X msg 101 25 refresh;
+#X floatatom 255 50 5 0 0 0 - - -;
+#X obj 78 183 route abs key;
+#X obj 74 228 route abs_x abs_y;
+#X floatatom 77 267 8 0 0 0 - - -;
+#X floatatom 144 267 8 0 0 0 - - -;
+#X obj 75 299 s abs_x_pos;
+#X obj 151 298 s abs_y_pos;
+#N canvas 623 162 1205 1024 mapping_abs 0;
+#X obj 48 33 r abs_x_pos;
+#X obj 48 65 unpack;
+#X obj 51 92 hsl 128 15 -33000 33000 0 0 empty empty empty -2 -8 0
+10 -262144 -1 -1 4990 1;
+#X obj 47 115 nbx 7 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 -7069 256;
+#X obj 48 146 mapper, f 24;
+#X msg 232 119 0;
+#X msg 232 140 100;
+#X obj 47 178 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 39.2894 256;
+#X obj 47 210 s x_pos_new;
+#X obj 287 64 unpack;
+#X obj 290 91 hsl 128 15 -33000 33000 0 0 empty empty empty -2 -8 0
+10 -262144 -1 -1 6030 1;
+#X obj 286 114 nbx 7 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 -1662 256;
+#X obj 287 145 mapper, f 24;
+#X msg 471 118 0;
+#X msg 471 139 100;
+#X obj 286 177 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 47.4818 256;
+#X obj 288 33 r abs_y_pos;
+#X obj 286 209 s y_pos_new;
+#X msg 229 76 -33000;
+#X msg 229 96 33000;
+#X msg 468 75 -33000;
+#X msg 468 95 33000;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 7 0;
+#X connect 5 0 4 3;
+#X connect 6 0 4 4;
+#X connect 7 0 8 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 0;
+#X connect 11 0 12 0;
+#X connect 12 0 15 0;
+#X connect 13 0 12 3;
+#X connect 14 0 12 4;
+#X connect 15 0 17 0;
+#X connect 16 0 9 0;
+#X connect 18 0 4 1;
+#X connect 19 0 4 2;
+#X connect 20 0 12 1;
+#X connect 21 0 12 2;
+#X restore 78 428 pd mapping_abs;
+#X obj 71 334 r x_pos_new;
+#X floatatom 71 361 5 0 0 0 - - -;
+#X floatatom 151 361 5 0 0 0 - - -;
+#X obj 151 333 r y_pos_new;
+#X obj 158 148 print;
+#X obj 236 231 route btn_0 btn_1 btn_3 btn_4;
+#X floatatom 236 268 5 0 0 0 - - -;
+#X floatatom 278 269 5 0 0 0 - - -;
+#X floatatom 322 269 5 0 0 0 - - -;
+#X floatatom 364 267 5 0 0 0 - - -;
+#X connect 0 0 7 0;
+#X connect 0 0 18 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;
+#X connect 3 0 6 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 0;
+#X connect 7 0 8 0;
+#X connect 7 1 19 0;
+#X connect 8 0 9 0;
+#X connect 8 1 10 0;
+#X connect 9 0 11 0;
+#X connect 10 0 12 0;
+#X connect 14 0 15 0;
+#X connect 17 0 16 0;
+#X connect 19 0 20 0;
+#X connect 19 1 21 0;
+#X connect 19 2 22 0;
+#X connect 19 3 23 0;
