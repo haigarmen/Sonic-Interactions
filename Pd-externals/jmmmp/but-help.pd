@@ -1,0 +1,41 @@
+#N canvas 188 69 448 379 10;
+#X text 12 348 Released under the BSD License;
+#X text 198 160 Inlets;
+#X text 198 220 Outlets;
+#X text 198 90 Arguments;
+#X text 198 130 - TCL Color;
+#X text 198 180 - Bang;
+#X text 198 240 - Bang;
+#X obj 22 122 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 82 162 print;
+#X text 24 183 Always the same output;
+#X text 22 10 [but] - Monochrome Bang Button;
+#X text 22 40 [but] is a monochrome button that outputs a bang. It
+serves only to have a different graphic presentation.;
+#X text 12 298 Done following the concept of [Tot] by J. Kreidler.
+;
+#X text 12 268 To know which colors to use \, have a look at;
+#X obj 321 268 pd-colors;
+#X text 198 110 - Size (points);
+#N canvas 504 106 494 344 META 0;
+#X text 12 95 LICENSE BSD;
+#X text 12 75 LIBRARY jmmmp;
+#X text 13 115 WEBSITE http://puredata.info/Members/jmmmp;
+#X text 12 5 DESCRIPTION Monochrome Bang Button;
+#X text 12 35 KEYWORDS bang GOP;
+#X text 12 165 INLET_0 - bang;
+#X text 12 185 OUTLET_0 - bang;
+#X text 12 55 AUTHOR João Pais <jmmmpais@gmail.com>;
+#X text 12 135 VERSION 0.48;
+#X restore 382 347 pd META;
+#X obj 142 122 but 15 13;
+#X text 12 328 (C) 2008-2017 João Pais - jmmmpais@gmail.com;
+#X obj 82 122 but 15 22;
+#X obj 52 122 but 15 31;
+#X obj 112 122 but 15 16;
+#X connect 7 0 8 0;
+#X connect 17 0 8 0;
+#X connect 19 0 8 0;
+#X connect 20 0 8 0;
+#X connect 21 0 8 0;

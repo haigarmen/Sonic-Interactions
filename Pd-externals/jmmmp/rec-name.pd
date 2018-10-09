@@ -1,0 +1,105 @@
+#N canvas 144 119 753 484 10;
+#X declare -stdlib zexy;
+#X obj 122 227 time;
+#X obj 76 202 t b b;
+#X obj 76 182 bang;
+#X obj 43 227 date;
+#X obj 43 260 pack f f f f f f;
+#X msg 43 310 stop \, open \$1 \, start;
+#X obj 105 132 tgl 13 0 empty empty empty 0 -6 0 8 -24198 -1 -1 0 551250
+;
+#X obj 338 330 symbol;
+#X obj 306 300 t f b;
+#X obj 306 410 outlet read;
+#X obj 30 330 outlet save;
+#X obj 260 280 moses 1;
+#X obj 89 132 tgl 13 0 empty empty empty 0 -6 0 8 -258699 -1 -1 0 1
+;
+#X obj 30 162 moses 1;
+#X msg 30 182 stop;
+#X obj 105 52 inlet play;
+#X obj 89 32 inlet rec;
+#X text 13 6 [rec-name] - Automatic naming of a recording.;
+#N canvas 0 50 453 424 license 0;
+#X text 8 47 All rights reserved.;
+#X text 8 227 The names of its contributors may not be used to endorse
+or promote products derived from this software without specific prior
+written permission.;
+#X text 8 87 Redistribution and use in source and binary forms \, with
+or without modification \, are permitted provided that the following
+conditions are met:;
+#X text 8 127 Redistributions of source code must retain the above
+copyright notice \, this list of conditions and the following disclaimer.
+;
+#X text 8 297 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES \, INCLUDING
+\, BUT NOT LIMITED TO \, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT \, INDIRECT
+\, INCIDENTAL \, SPECIAL \, EXEMPLARY \, OR CONSEQUENTIAL DAMAGES (INCLUDING
+\, BUT NOT LIMITED TO \, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES
+;
+#X text 8 167 Redistributions in binary form must reproduce the above
+copyright notice \, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the distribution.
+;
+#X text 8 7 Copyright 2017 \, João Pais;
+#X text 8 27 jmmmpais@gmail.com;
+#X restore 15 455 pd license;
+#X text 350 60 Inlets;
+#X text 350 130 Outlets;
+#X text 350 200 GUI;
+#X text 350 80 - Bang / Toggle (Recording);
+#X text 350 150 - message to writesf~;
+#X text 350 170 - message to readsf~;
+#X text 350 220 - Click on the either toggle to start/stop recording
+or playback;
+#X obj 338 370 list;
+#X obj 151 92 t f f;
+#X obj 105 72 route bang float;
+#X text 350 100 - Bang / Toggle (Playback) / Sample playback index
+;
+#X obj 348 350 moses 0;
+#X obj 348 280 0;
+#X obj 105 92 t b b;
+#X msg 338 390 open \$1;
+#X obj 199 32 declare -stdlib zexy;
+#X msg 43 280 symbol \$1-\$2-\$3_\$4-\$5-\$6.wav;
+#X text 12 437 (C) 2007-17 João Pais - jmmmpais@gmail.com;
+#X connect 0 0 4 3;
+#X connect 0 1 4 4;
+#X connect 0 2 4 5;
+#X connect 1 0 3 0;
+#X connect 1 1 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 3 1 4 1;
+#X connect 3 2 4 2;
+#X connect 4 0 35 0;
+#X connect 5 0 10 0;
+#X connect 6 0 11 0;
+#X connect 7 0 26 0;
+#X connect 8 0 9 0;
+#X connect 8 1 7 0;
+#X connect 11 0 9 0;
+#X connect 11 1 8 0;
+#X connect 12 0 13 0;
+#X connect 13 0 14 0;
+#X connect 13 1 2 0;
+#X connect 14 0 10 0;
+#X connect 15 0 28 0;
+#X connect 16 0 12 0;
+#X connect 26 0 33 0;
+#X connect 27 0 6 0;
+#X connect 27 1 30 0;
+#X connect 28 0 32 0;
+#X connect 28 1 27 0;
+#X connect 28 2 6 0;
+#X connect 30 1 26 1;
+#X connect 31 0 30 0;
+#X connect 32 0 6 0;
+#X connect 32 1 31 0;
+#X connect 33 0 9 0;
+#X connect 35 0 7 1;
+#X connect 35 0 5 0;
+#X coords 0 -1 1 1 90 17 1 30 130;

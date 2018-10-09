@@ -1,0 +1,77 @@
+#N struct 1022-color float x float y float farbe;
+#N struct 1022-color-display float x float y float farbe;
+#N struct 1025-color float x float y float farbe;
+#N struct 1025-color-display float x float y float farbe;
+#N struct 1019-matrixctrl float x float y float size float color float
+state;
+#N struct 1034-color float x float y float farbe;
+#N struct 1034-color-display float x float y float farbe;
+#N struct 1037-color float x float y float farbe;
+#N struct 1037-color-display float x float y float farbe;
+#N struct 1031-matrixctrl float x float y float size float color float
+state;
+#N canvas 215 50 797 365 10;
+#N canvas 0 50 447 419 license 0;
+#X text 8 47 All rights reserved.;
+#X text 8 227 The names of its contributors may not be used to endorse
+or promote products derived from this software without specific prior
+written permission.;
+#X text 8 87 Redistribution and use in source and binary forms \, with
+or without modification \, are permitted provided that the following
+conditions are met:;
+#X text 8 127 Redistributions of source code must retain the above
+copyright notice \, this list of conditions and the following disclaimer.
+;
+#X text 8 297 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES \, INCLUDING
+\, BUT NOT LIMITED TO \, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT \, INDIRECT
+\, INCIDENTAL \, SPECIAL \, EXEMPLARY \, OR CONSEQUENTIAL DAMAGES (INCLUDING
+\, BUT NOT LIMITED TO \, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES
+;
+#X text 8 167 Redistributions in binary form must reproduce the above
+copyright notice \, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the distribution.
+;
+#X text 8 27 jmmmpais@gmail.com;
+#X text 8 7 Copyright 2017 \, João Pais;
+#X restore 14 335 pd license;
+#N canvas 564 268 494 344 META 0;
+#X text 12 95 LICENSE BSD;
+#X text 12 75 LIBRARY jmmmp;
+#X text 13 115 WEBSITE http://puredata.info/Members/jmmmp;
+#X text 12 6 DESCRIPTION dynamic dac~ outlet;
+#X text 12 36 KEYWORDS dac dac~ output;
+#X text 12 135 VERSION 0.48;
+#X text 12 55 AUTHOR João Pais <jmmmpais@gmail.com>;
+#X restore 104 335 pd META;
+#X text 11 11 [dacc~] - dynamic dac~ outlet up to 32 channels;
+#X obj 14 91 osc~ 440;
+#X obj 14 111 mat-~;
+#X floatatom 30 195 5 0 0 0 - - -, f 5;
+#X floatatom 46 265 5 0 0 0 - - -, f 5;
+#X text 46 245 Fade time;
+#X text 12 41 This abstraction is a dynamic version of the [dac~] object.
+The output channel(s) can be set anytime. To set the output channel(s)
+\, send an integer or a list to the middle input.;
+#X text 372 161 Inlets;
+#X text 372 221 - Fade time (ms). Default is 20ms.;
+#X text 372 111 Arguments;
+#X text 372 131 - list with channel(s). If not present \, there won't
+be any output until the channels are set.;
+#X text 372 181 - Audio signal;
+#X msg 40 215 1 3 8 16 25 32;
+#X obj 194 285 dacc~ 1 3 8 16 25 32;
+#X text 372 201 - Output channel(s) - integer or list of integers (max
+32);
+#X obj 14 285 dacc~;
+#X text 192 265 You can initiate the channels as arguments.;
+#X text 10 315 (C) 2016-2017 João Pais - jmmmpais@gmail.com;
+#X text 31 175 Send as an integer or a list of integers.;
+#X text 31 155 List of channels.;
+#X connect 3 0 4 0;
+#X connect 4 0 17 0;
+#X connect 5 0 17 1;
+#X connect 6 0 17 2;
+#X connect 14 0 17 1;
