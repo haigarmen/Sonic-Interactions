@@ -1,0 +1,119 @@
+#N canvas 222 359 465 290 10;
+#X obj 154 40 inlet;
+#X obj 104 40 inlet;
+#X obj 104 204 outlet;
+#N canvas 739 238 291 269 inside 0;
+#X obj 64 13 inlet;
+#X obj 64 243 outlet;
+#X obj 64 63 0;
+#X obj 94 63 + 1;
+#X obj 117 123 mod 60;
+#X obj 117 163 makefilename 0%d;
+#X obj 64 203 pack 0 s;
+#X obj 119 13 inlet;
+#X msg 119 33 0;
+#X obj 160 33 loadbang;
+#X obj 64 123 div 60;
+#X obj 64 93 t f f;
+#X msg 160 53 0;
+#X obj 9 123 outlet;
+#X obj 74 33 inlet;
+#X msg 64 223 symbol \$1:\$2;
+#X obj 170 183 makefilename %s;
+#X obj 117 143 moses 10;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 0 11 0;
+#X connect 3 0 2 1;
+#X connect 4 0 17 0;
+#X connect 5 0 6 1;
+#X connect 6 0 15 0;
+#X connect 7 0 8 0;
+#X connect 8 0 2 1;
+#X connect 8 0 12 0;
+#X connect 9 0 12 0;
+#X connect 10 0 6 0;
+#X connect 11 0 10 0;
+#X connect 11 0 13 0;
+#X connect 11 1 4 0;
+#X connect 12 0 11 0;
+#X connect 14 0 2 1;
+#X connect 14 0 11 0;
+#X connect 15 0 1 0;
+#X connect 16 0 6 1;
+#X connect 17 0 5 0;
+#X connect 17 1 16 0;
+#X restore 104 184 pd inside;
+#X msg 162 164 reset;
+#X obj 104 144 metro 1000;
+#X obj 10 80 cnv 15 62 20 empty \$0clock 0:36 5 11 0 14 -99865 -233017
+0;
+#X msg 214 204 label \$1;
+#X obj 214 224 s \$0clock;
+#X obj 154 60 route float;
+#X obj 73 80 tgl 10 0 empty empty empty 0 -6 0 8 -195568 -1 -1 1 1
+;
+#X obj 73 90 bng 10 250 50 0 empty empty empty 0 -6 0 8 -195568 -1
+-1;
+#X msg 73 60 set \$1;
+#X text 12 4 [clock] - Chronometer with display in seconds;
+#N canvas 0 50 450 419 license 0;
+#X text 8 47 All rights reserved.;
+#X text 8 227 The names of its contributors may not be used to endorse
+or promote products derived from this software without specific prior
+written permission.;
+#X text 8 87 Redistribution and use in source and binary forms \, with
+or without modification \, are permitted provided that the following
+conditions are met:;
+#X text 8 127 Redistributions of source code must retain the above
+copyright notice \, this list of conditions and the following disclaimer.
+;
+#X text 8 297 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES \, INCLUDING
+\, BUT NOT LIMITED TO \, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT \, INDIRECT
+\, INCIDENTAL \, SPECIAL \, EXEMPLARY \, OR CONSEQUENTIAL DAMAGES (INCLUDING
+\, BUT NOT LIMITED TO \, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES
+;
+#X text 8 167 Redistributions in binary form must reproduce the above
+copyright notice \, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the distribution.
+;
+#X text 8 7 Copyright 2017 \, João Pais;
+#X text 8 27 jmmmpais@gmail.com;
+#X restore 15 265 pd license;
+#X text 292 40 Inlets;
+#X text 292 60 - On / Off;
+#X text 292 110 Outlets;
+#X text 292 200 - On / Off;
+#X text 292 220 - Reset;
+#X text 292 180 GUI;
+#X text 292 80 - Set / Reset;
+#X text 292 130 - Second count (Float);
+#X obj 164 224 outlet;
+#X text 292 150 - GUI output;
+#X text 12 247 (C) 2017 João Pais - jmmmpais@gmail.com;
+#X obj 114 104 t b b;
+#X msg 114 124 0 \, 1;
+#X obj 154 80 t b f;
+#X connect 0 0 9 0;
+#X connect 1 0 5 0;
+#X connect 1 0 12 0;
+#X connect 3 0 2 0;
+#X connect 3 1 7 0;
+#X connect 3 1 23 0;
+#X connect 4 0 3 2;
+#X connect 5 0 3 0;
+#X connect 7 0 8 0;
+#X connect 9 0 28 0;
+#X connect 9 1 11 0;
+#X connect 10 0 5 0;
+#X connect 11 0 26 0;
+#X connect 12 0 10 0;
+#X connect 26 0 27 0;
+#X connect 26 1 4 0;
+#X connect 27 0 5 0;
+#X connect 28 0 27 0;
+#X connect 28 1 3 1;
+#X coords 0 -1 1 1 73 20 1 10 80;

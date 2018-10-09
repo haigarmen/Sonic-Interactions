@@ -1,0 +1,84 @@
+#N canvas 547 159 587 450 10;
+#X obj 20 370 outlet;
+#X obj 20 80 inlet;
+#X msg 184 180 size \$1;
+#X obj 161 120 t f f f;
+#X text 344 319 Inlets;
+#X text 344 379 Outlets;
+#X text 344 249 Arguments;
+#X text 344 269 - Size;
+#N canvas 0 50 447 418 license 0;
+#X text 8 47 All rights reserved.;
+#X text 8 227 The names of its contributors may not be used to endorse
+or promote products derived from this software without specific prior
+written permission.;
+#X text 8 87 Redistribution and use in source and binary forms \, with
+or without modification \, are permitted provided that the following
+conditions are met:;
+#X text 8 127 Redistributions of source code must retain the above
+copyright notice \, this list of conditions and the following disclaimer.
+;
+#X text 8 297 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES \, INCLUDING
+\, BUT NOT LIMITED TO \, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT \, INDIRECT
+\, INCIDENTAL \, SPECIAL \, EXEMPLARY \, OR CONSEQUENTIAL DAMAGES (INCLUDING
+\, BUT NOT LIMITED TO \, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES
+;
+#X text 8 167 Redistributions in binary form must reproduce the above
+copyright notice \, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the distribution.
+;
+#X text 8 27 jmmmpais@gmail.com;
+#X text 8 7 Copyright 2017 \, Jo„o Pais;
+#X restore 15 425 pd license;
+#X obj 161 230 s \$0-button;
+#X obj 161 250 namecanvas \$0-button;
+#X msg 161 210 donecanvasdialog 1 -1 2 0 -1 1 1 \$1 \$1 20 110 \, dirty
+0;
+#X obj 129 100 sel 0;
+#X msg 129 120 12;
+#X obj 20 110 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 20 280 t f f;
+#X text 344 288 - TCL Color (between 10 and 19);
+#X text 22 10 [butt] - Color-changing Toggle Button;
+#X msg 47 320 color \$1 \$1 22;
+#X obj 20 110 cnv 15 15 15 empty \$0-cnv empty 20 12 0 14 -143491 -1
+0;
+#X obj 47 340 s \$0-cnv;
+#X obj 207 160 s \$0-cnv;
+#X msg 207 140 vis_size \$1 \$1 \, size \$1;
+#X obj 231 320 + 10;
+#X obj 47 300 expr if ($f1 == 1 \, $f2 \, $f2+10);
+#X text 344 339 - Bang \, float (like a toggle);
+#X text 344 399 - 0 \, 1 (like a toggle);
+#X obj 129 80 \$1;
+#X obj 129 60 t b b;
+#X obj 129 40 loadbang;
+#X obj 261 280 \$2;
+#X text 12 405 (C) 2006-2017 Jo√£o Pais - jmmmpais@gmail.com;
+#X connect 1 0 14 0;
+#X connect 2 0 14 0;
+#X connect 3 0 11 0;
+#X connect 3 1 2 0;
+#X connect 3 2 22 0;
+#X connect 11 0 9 0;
+#X connect 12 0 13 0;
+#X connect 12 1 3 0;
+#X connect 13 0 11 0;
+#X connect 14 0 15 0;
+#X connect 15 0 0 0;
+#X connect 15 1 24 0;
+#X connect 18 0 20 0;
+#X connect 22 0 21 0;
+#X connect 23 0 18 0;
+#X connect 24 0 18 0;
+#X connect 27 0 12 0;
+#X connect 28 0 27 0;
+#X connect 28 1 30 0;
+#X connect 29 0 28 0;
+#X connect 30 0 23 0;
+#X connect 30 0 24 1;
+#X coords 0 -1 1 1 15 15 2 20 110;

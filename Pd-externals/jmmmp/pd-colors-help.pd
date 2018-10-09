@@ -1,0 +1,15 @@
+#N canvas 441 77 340 176 10;
+#X obj 107 81 pd-colors;
+#X text 12 139 Released under the BSD License;
+#N canvas 586 176 494 344 META 0;
+#X text 12 95 LICENSE BSD;
+#X text 12 75 LIBRARY jmmmp;
+#X text 13 115 WEBSITE http://puredata.info/Members/jmmmp;
+#X text 12 6 DESCRIPTION PD Color Palettes;
+#X text 12 36 KEYWORDS color tcl/tk data structures;
+#X text 12 55 AUTHOR João Pais <jmmmpais@gmail.com>;
+#X text 12 135 VERSION 2017;
+#X restore 262 146 pd META;
+#X text 13 15 PD Color Palettes;
+#X text 13 35 See the abstraction for further details.;
+#X text 11 122 (C) 2008-2017 João Pais - jmmmpais@gmail.com;
