@@ -1,4 +1,4 @@
-#N canvas 4 145 1276 633 10;
+#N canvas 449 249 1276 633 10;
 #X obj 275 576 dac~;
 #X obj 142 56 adc~;
 #X obj 551 171 send~ audio;
@@ -6,14 +6,14 @@
 #X obj 268 241 receive~;
 #X obj 469 243 receive~;
 #N canvas 390 377 1211 632 effects 0;
-#X floatatom 260 187 5 0 0 0 - - -, f 5;
+#X floatatom 260 187 5 0 0 0 - - -;
 #X obj 107 127 vradio 15 1 0 4 empty empty empty 0 -8 0 10 -262144
--1 -1 2;
+-1 -1 1;
 #X text 129 127 Bypass;
 #X text 129 142 Delay;
 #X text 128 158 Chorus;
 #X text 129 174 Tremolo;
-#X floatatom 363 113 5 0 0 0 - - -, f 5;
+#X floatatom 363 113 5 0 0 0 - - -;
 #X msg 363 31 bang;
 #X msg 482 31 bang;
 #X obj 260 145 loadbang;
@@ -89,7 +89,7 @@ receive objects;
 #X obj 347 198 s p7;
 #X obj 384 198 s p8;
 #X obj 433 198 s buttons;
-#X floatatom 402 125 5 0 0 0 - - -, f 5;
+#X floatatom 402 125 5 0 0 0 - - -;
 #X obj 80 102 netreceive 3000 1;
 #X connect 5 0 1 0;
 #X connect 5 1 2 0;
@@ -153,7 +153,7 @@ receive objects;
 #X obj 722 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 518 43 bang;
-#X msg 610 95 open audio/funky_loop_01.wav \, 1;
+#X msg 610 95 open ../audio/funky_loop_01.wav \, 1;
 #X connect 3 0 16 0;
 #X connect 3 0 16 1;
 #X connect 4 0 14 0;
