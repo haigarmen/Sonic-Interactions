@@ -35,6 +35,10 @@ Reading Making Music Apps (oreilly)
 get help on routeOSC and packOSC
 they are native in Pd - no, actually not native, part of mrpeach which doesn't work with pi
 
+#### 17.12.14
+Learning about Live Looping with Ableton using Apogee Gio.
+
+
 #### 18.02.07
 trying pyOSC python library that sends OSC messages, from here http://pdonapi.blogspot.ca/2015/10/using-sensors-in.html
 
@@ -670,7 +674,7 @@ https://en.wikipedia.org/wiki/Screen_tearing
 first need to detect both ADCs (MCP3008)
 try this command:
 sudo i2cdetect –y 1
-
+nope!
 
 https://elinux.org/Interfacing_with_I2C_Devices#External_Links
 
@@ -721,8 +725,7 @@ speaker bolted into back of cello to create a tight coupling of sound source (st
 Loop talk with Prince producer, Susan Rogers on working with Prince, audio perception, and making a career in music.
 Geggy Tah - Greg Kurstin and Tommy Jordan
 
-Greg Kurstin
-https://en.wikipedia.org/wiki/Greg_Kurstin
+[Greg Kurstin] | [https://en.wikipedia.org/wiki/Greg_Kurstin]
 
 melody logic:
 small intervals sound angry or sad
@@ -740,10 +743,14 @@ Philosophical thinking about perception has focused predominantly on vision. The
 
 3. CHALLENGE vision-based claims about perception. If falsifying evidence is discovered in non-visual cases, then theorizing beyond vision may force revision of general claims about perception that are supported by vision. For example, if olfactory experience is not diaphanous, the transparency thesis for perceptual experience fails.
 
-read more about Psychoacoustics
+read more about Psychoacoustics:
 
+    AudioUI02acoustics-buxton.pdf
+    psychoacoustics-book.pdf
+    sound-of-innovation-stanford-andrew-j-nelson6271
 
-## OhEye Coding continued:
+#### 2018.11.14
+## OhEye Board Coding (cntd):
 
 You can use the command find /sys/bus | grep spi in a terminal if you want to view the connected SPI devices. It will show you something a bit like this:
 
@@ -854,3 +861,178 @@ sensor16 = ((adc16[1]&3)<<8)+adc16[2]
 
 delay = 5
 ~~~~
+
+After a couple of tweaks I settled on the following code which works. Might need to test the performance but data seems to be coming in for all 16 channels.
+
+Would like to optimize the button code next.
+
+~~~~
+#!/usr/bin/python
+
+import os        # import os for sending messages to PD
+import spidev    # import the spidev module
+import time      # import time for the sleep function
+import RPi.GPIO as GPIO
+
+# Open SPI bus
+spi_1 = spidev.SpiDev()
+spi_2 = spidev.SpiDev()
+
+spi_1.open(0,0)
+spi_2.open(0,1)
+
+spi_1.max_speed_hz=1000000
+spi_2.max_speed_hz=1000000
+
+waitTime = .2
+bounceTime = 0.1
+
+btn1alreadyPressed = False
+btn2alreadyPressed = False
+btn3alreadyPressed = False
+btn4alreadyPressed = False
+
+GPIO.setmode(GPIO.BCM)
+## GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(4, GPIO.IN)
+GPIO.setup(17, GPIO.IN)
+GPIO.setup(18, GPIO.IN)
+GPIO.setup(27, GPIO.IN)
+
+def send2Pd(message=''):
+    # Send a message to Pd
+    os.system("echo '" + message + "' | pdsend 3000 localhost udp")
+
+def readadc(channel):
+    if channel > 7 or channel < 0:
+        return -1
+    # spi.xfer2 sends three bytes and returns three bytes:
+    # byte 1: the start bit (always 0x01)
+    # byte 2: configure bits, see MCP3008 datasheet table 5-2
+    # byte 3: don't care
+    r = spi_1.xfer2([1, 8 + channel << 4, 0])
+    # Three bytes are returned; the data (0-1023) is in the
+    # lower 3 bits of byte 2, and byte 3 (datasheet figure 6-1)
+    v = ((r[1] & 3) << 8) + r[2]
+
+    return v;
+
+def readadc2(channel):
+    if channel > 7 or channel < 0:
+        return -1
+    # spi.xfer2 sends three bytes and returns three bytes:
+    # byte 1: the start bit (always 0x01)
+    # byte 2: configure bits, see MCP3008 datasheet table 5-2
+    # byte 3: don't care
+    r = spi_2.xfer2([1, 8 + channel << 4, 0])
+    # Three bytes are returned; the data (0-1023) is in the
+    # lower 3 bits of byte 2, and byte 3 (datasheet figure 6-1)
+    v = ((r[1] & 3) << 8) + r[2]
+
+    return v;
+
+while True:
+    btn1pressed = not GPIO.input(4)
+    btn2pressed = not GPIO.input(17)
+    btn3pressed = not GPIO.input(18)
+    btn4pressed = not GPIO.input(27)
+
+    input_right = GPIO.input(4)
+    input_left = GPIO.input(17)
+    input_down = GPIO.input(18)
+    input_up = GPIO.input(27)
+
+    if btn1pressed and not btn1alreadyPressed:
+        message = '8 1'
+        send2Pd(message)
+    btn1alreadyPressed = btn1pressed
+
+    if btn2pressed and not btn2alreadyPressed:
+ #       print('2 Pressed')
+        message = '8 2'
+        send2Pd(message)
+    btn2alreadyPressed = btn2pressed
+
+    if btn3pressed and not btn3alreadyPressed:
+ #       print('3 Pressed')
+        message = '8 3'
+        send2Pd(message)
+    btn3alreadyPressed = btn3pressed
+
+    if btn4pressed and not btn4alreadyPressed:
+ #       print('4 Pressed')
+        message = '8 4'
+        send2Pd(message)
+    btn4alreadyPressed = btn4pressed
+
+    values = [0]*8
+    values2 = [0]*8
+
+    for i in range(8):
+        values[i] = readadc(i)
+        values2[i] = readadc2(i)
+        message = str(i) + ' ' + str(values[i]) # make a string for use with Pdsend
+        message = message + str(i+8) + ' ' + str(values2[i])
+        send2Pd(message)
+
+# consider creating a message that has all values in one string rather than separate messages
+    print('| {0:>4} | {1:>4} | {2:>4} | {3:>4} | {4:>4} | {5:>4} | {6:>4} | {7:>4} '.format(*values))
+    print('| {0:>4} | {1:>4} | {2:>4} | {3:>4} | {4:>4} | {5:>4} | {6:>4} | {7:>4} '.format(*values2))
+#    print(message)
+    time.sleep(waitTime)
+~~~~
+
+#### 2018.11.16
+After speaking with Adan last night I've decided that I'm going to try to get Nsynth working today.
+
+Here's what's wrong with it so far...
+1. when it starts up it intermittently doesn't engage the OLED screen, i think it's a connection problem because the RPi to board connection seems to not be sturdy and the RPi board moves.
+
+2. MIDI doesn't seem to work well with the DIN connection and I'd like to try to get the USBMIDI working.
+
+First up, how to get it connected to the net to update.
+
+Disk is readonly by default, here's how you change that:
+
+7. Lock the filesystem (optional)
+When you have set up your device and are happy with the configuration, it is advisable to lock the file system to prevent corruption upon a hard power down (i.e. when the power cable is removed from the device). Reconnect the keyboard and screen for these steps.
+
+Open fstab in a text editor
+
+$ sudo vi /etc/fstab
+Add ,ro to the root partition to lock the filesystem at next boot:
+
+proc 					/proc           proc    defaults  	        	0 		0
+PARTUUID=7762b82d-01 	/boot           vfat    defaults				0 		2
+PARTUUID=7762b82d-02 	/               ext4    defaults,noatime,ro 	0 		1
+Reboot, and test the filesystem by using touch xyz to create a new file named xyz. You should be denied this if the system is in read-only mode.
+
+To remount as read-write (to make changes), you can remove the ,ro flag from fstab. To make this change temporarily (e.g. to edit some files), you can remount the filesystem as read-write:
+
+$ sudo mount -o remount,rw /
+When you restart, the filesystem will once more be read-only. Your instrument is now fully set up – you can proceed to build it into a case and start to make music with it!
+_______________________________________
+
+compiles and works with my Akai MPKmini2, playable but you need to bang on keys to get the sound to register, I think I need to tweak some midi settings to make the sound work even with a softer touch. good for now...
+
+
+Next, let's try to get the nunchuck working with OhEye Board.
+
+#### 18.11.15
+got Python reading data from nunchuck, now to get that data sending to Pd
+
+a few resources:
+https://www.raspberrypi.org/magpi/wii-nunchucks-raspberry-pi/
+https://github.com/Boeeerb/Nunchuck
+
+Stumbled onto this interesting stuff about VR sound with Pd
+http://www.matthiaskronlachner.com/?tag=pure-data
+and this project
+https://github.com/kronihias/mcfx
+
+## OSC Again
+Maybe we can try OSC again for this (more of a standard protocol)
+https://rbnrpi.wordpress.com/sonic-pi-3-says-hello-to-raspberry-pi-gpio/
+
+
+*still need to get data from oi2pd.py into Pd

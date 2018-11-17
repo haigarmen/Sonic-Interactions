@@ -1,0 +1,23 @@
+#N canvas 318 128 834 606 10;
+#X obj 225 66 readsf~;
+#X msg 172 45 start;
+#X msg 219 45 stop;
+#X obj 292 418 dac~;
+#X obj 242 139 *~;
+#X obj 305 92 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 169 301 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 242 161 env~;
+#X floatatom 240 193 5 0 0 0 - - -;
+#X obj 239 212 - 100;
+#X msg 263 45 open ../audio/funky_drumer.wav;
+#X connect 0 0 4 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 4 0 7 0;
+#X connect 4 0 3 0;
+#X connect 5 0 4 1;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 6 0;
+#X connect 10 0 0 0;
