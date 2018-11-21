@@ -1034,5 +1034,16 @@ https://github.com/kronihias/mcfx
 Maybe we can try OSC again for this (more of a standard protocol)
 https://rbnrpi.wordpress.com/sonic-pi-3-says-hello-to-raspberry-pi-gpio/
 
+Using OSC will open up making instruments with phones as part of the interface:
+https://hexler.net/software/touchosc-android
 
-*still need to get data from oi2pd.py into Pd
+*still need to get data from oi2pd.py into Pd*
+
+### Ableton Magenta ML plugins
+very cool, needed to install Max 8 but didn't license it, still worked.
+just have to drag the magenta ableton file into a track.
+
+
+#### 18.11.21
+Back to nunchuck into Pd
+http://www.winko-erades.nl/uncategorized/making-music-using-a-computer-wiimote-and-puredata/
