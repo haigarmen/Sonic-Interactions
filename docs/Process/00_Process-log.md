@@ -1041,9 +1041,18 @@ https://hexler.net/software/touchosc-android
 
 ### Ableton Magenta ML plugins
 very cool, needed to install Max 8 but didn't license it, still worked.
-just have to drag the magenta ableton file into a track.
+just have to drag the magenta Ableton file into a track.
 
 
 #### 18.11.21
 Back to nunchuck into Pd
 http://www.winko-erades.nl/uncategorized/making-music-using-a-computer-wiimote-and-puredata/
+
+This site has some amazing interviews
+http://www.ubu.com/sound/
+
+listening to Brian Eno
+
+Ableton Live
+Figuring out how to get input from Lightblock (MPE - Midi polyphonic Expression)
+https://github.com/juhot/MPE_Util

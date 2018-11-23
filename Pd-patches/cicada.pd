@@ -1,3 +1,10 @@
-#N canvas 452 58 569 475 10;
-#X text 268 42 id = 'OO:EE:BD:DB:16:E1' id2 = 'DB:BD:E1:OO:EE:16' id3
+#N canvas 460 52 706 585 10;
+#X text 506 28 id = 'OO:EE:BD:DB:16:E1' id2 = 'DB:BD:E1:OO:EE:16' id3
 = 'BD:E1:OO:EE:16';
+#X obj 113 276 print;
+#X msg 129 50 OO:EE:BD:DB:16:E1, f 25;
+#X obj 125 157 zl slice 3;
+#X obj 132 91 a2l;
+#X connect 2 0 4 0;
+#X connect 3 0 1 0;
+#X connect 4 0 3 0;
