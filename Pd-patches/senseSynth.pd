@@ -1,0 +1,51 @@
+#N canvas 123 35 650 484 10;
+#X obj 83 179 osc~;
+#X obj 83 86 r Channel-A;
+#X obj 83 115 * 2000;
+#X obj 83 143 + 20;
+#X obj 83 209 *~ 0.3;
+#X obj 171 179 osc~;
+#X obj 171 115 * 2000;
+#X obj 171 143 + 20;
+#X obj 171 209 *~ 0.3;
+#X obj 171 86 r Channel-B;
+#X obj 263 179 osc~;
+#X obj 263 115 * 2000;
+#X obj 263 143 + 20;
+#X obj 263 209 *~ 0.3;
+#X obj 263 86 r Channel-C;
+#X obj 171 283 *~;
+#X obj 316 267 r Channel-D;
+#X obj 419 90 hsl 128 15 0 1 0 0 Channel-A empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 31 117 5 0 0 0 - - -;
+#X text 396 91 A;
+#X obj 419 121 hsl 128 15 0 1 0 0 Channel-B empty empty -2 -8 0 10
+-262144 -1 -1 0 1;
+#X text 396 121 B;
+#X obj 419 150 hsl 128 15 0 1 0 0 Channel-C empty empty -2 -8 0 10
+-262144 -1 -1 0 1;
+#X text 396 150 C;
+#X obj 419 180 hsl 128 15 0 1 0 0 Channel-D empty empty -2 -8 0 10
+-262144 -1 -1 0 1;
+#X text 397 180 D;
+#X obj 171 325 dac~;
+#X connect 0 0 4 0;
+#X connect 1 0 2 0;
+#X connect 1 0 18 0;
+#X connect 2 0 3 0;
+#X connect 3 0 0 0;
+#X connect 4 0 15 0;
+#X connect 5 0 8 0;
+#X connect 6 0 7 0;
+#X connect 7 0 5 0;
+#X connect 8 0 15 0;
+#X connect 9 0 6 0;
+#X connect 10 0 13 0;
+#X connect 11 0 12 0;
+#X connect 12 0 10 0;
+#X connect 13 0 15 0;
+#X connect 14 0 11 0;
+#X connect 15 0 26 0;
+#X connect 15 0 26 1;
+#X connect 16 0 15 1;

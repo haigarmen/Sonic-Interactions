@@ -1,0 +1,30 @@
+#N canvas 591 52 514 617 10;
+#X obj 37 72 udpreceive 5005;
+#X obj 49 109 unpackOSC;
+#X obj 49 136 pipelist;
+#X obj 15 163 print unpacked;
+#X floatatom 194 150 3 0 0 0 - - -;
+#X floatatom 221 150 3 0 0 0 - - -;
+#X floatatom 248 150 3 0 0 0 - - -;
+#X floatatom 275 150 3 0 0 0 - - -;
+#X text 154 149 from;
+#X obj 194 126 unpack 0 0 0 0 0;
+#X floatatom 303 150 8 0 0 0 - - -;
+#X obj 139 101 route received from;
+#X floatatom 139 173 5 0 0 0 - - -;
+#X text 175 173 bytes;
+#X text 29 19 Receiving values on port 5005 from python script. Send
+values from the iPhone to see the osc adress of the control for sending
+values;
+#X connect 0 0 1 0;
+#X connect 0 1 11 0;
+#X connect 1 0 2 0;
+#X connect 1 0 3 0;
+#X connect 1 1 2 1;
+#X connect 9 0 4 0;
+#X connect 9 1 5 0;
+#X connect 9 2 6 0;
+#X connect 9 3 7 0;
+#X connect 9 4 10 0;
+#X connect 11 0 12 0;
+#X connect 11 1 9 0;
