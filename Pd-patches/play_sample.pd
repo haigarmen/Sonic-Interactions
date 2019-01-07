@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #N canvas 449 249 1276 633 10;
 #X obj 275 576 dac~;
 #X obj 142 56 adc~;
@@ -144,7 +145,7 @@ receive objects;
 #X restore 733 37 pd routing_buttons;
 #X obj 268 296 chorus;
 #X obj 73 536 r bypassswitch;
-#X obj 67 296 simpledelay;
+#X obj 57 296 simpledelay;
 #X obj 468 296 tremolo;
 #X obj 610 145 readsf~;
 #X msg 447 60 start;
