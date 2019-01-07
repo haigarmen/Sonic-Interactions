@@ -1056,3 +1056,81 @@ listening to Brian Eno
 Ableton Live
 Figuring out how to get input from Lightblock (MPE - Midi polyphonic Expression)
 https://github.com/juhot/MPE_Util
+
+#### 18.11.22
+trying to figure out how to parse the UID's into a list of note values
+
+#### 18.11.24
+*My mom died today.
+everything is different*
+
+going to install Purr Data on OSx
+
+https://github.com/agraef/purr-data
+compiled PurrData, works, looks good has all the externals of extended but still didn't seem to load HID library.
+
+### Research on Pd Externals
+There are two types of external libraries, they either come compiled in a single binary pack or each object comes as a separate binary. The first case is the classic library format and needs to be loaded in Pd's startup (Preferences => Startup). The second case doesn't need any of that but you need to add the library's folder to the search paths (Preferences => Path).
+
+Some thoughts on research topics:
+- physical design of Instruments
+- perception of music, audio and Instruments
+- what is unique about my research?
+
+
+
+Learning about React:
+https://scrimba.com/p/p7P5Hd/cV7M2uR
+
+#### 18.12.16
+writing some music
+Tellegio
+Massive (Good Mourning)
+
+#### 18.12.19
+1. learning more about Ableton as composition tool
+2. how to use Ableton as an improvisational tool
+
+Sidechain compression
+https://www.ableton.com/en/blog/sidechain-compression-part-2-common-and-uncommon-uses/
+
+MasterClass with Herbie Hancock and Deadmau5
+https://learningmusic.ableton.com/notes-and-scales/keys-and-scales.html
+
+
+#### 19.01.02
+Finished Herbie and Deadmau5 tutorials
+writing Agnes in live
+
+make note of what was learned and Goals
+make goals for 2019
+
+https://trello.com/b/lyzvHLtm
+diets
+https://www.reddit.com/r/Fitness/wiki/faq#wiki_diet_details
+
+recording idea: compose and play armenian style songs all over during travel, invite people to play.
+
+Diaspora (title idea):
+from the Greek word diaspeirein, meaning “to scatter, spread about.”
+
+Displacement - to remove from the usual or proper place
+budge, dislocate, disturb, move, relocate, remove, reposition, shift, transfer, transpose
+
+
+## Cowrite with Morgan Friend
+a few ideas for songs:
+    Future seemed so swell
+    Hope Street
+    Armenian minor tune on the Piano
+
+
+Hope Street
+I'm feeling good today, I'm living on Hope St.
+Not much more to say, I'm living on Hope St.
+
+(write verses with Hero's journey idea)
+
+
+Write a manifesto (steve Martin)
+What's the thing that drives you?
