@@ -12,6 +12,8 @@ def send2Pd(message=''):
     os.system("echo '" + message + "' | pdsend 3000 localhost udp")
 
 x = y = 4
+press = False
+
 hat = SenseHat()
 
 def update_screen():
@@ -22,7 +24,7 @@ def clamp(value, min_value=0, max_value=7):
     return min(max_value, max(min_value, value))
 
 def move_dot(event):
-    global x, y
+    global x, y, press
     if event.action in ('pressed', 'held'):
         x = clamp(x + {
             'left': -1,
@@ -32,23 +34,22 @@ def move_dot(event):
             'up': -1,
             'down': 1,
             }.get(event.direction, 0))
-
-update_screen()
+    update_screen()
 
 while True:
     for event in hat.stick.get_events():
+        print(event.direction, event.action)
         move_dot(event)
-        update_screen()
         
     orientation = hat.get_orientation()
     pitch = orientation["pitch"]
     roll = orientation["roll"]
     yaw = orientation["yaw"]
     
-    pitch = round(pitch, 1)
-    roll = round(roll, 1)
-    yaw = round(yaw, 1)    
-#    print("pitch {0} roll {1} yaw {2}".format(pitch, roll, yaw))
+#    pitch = round(pitch, 1)
+#    roll = round(roll, 1)
+#    yaw = round(yaw, 1)    
+    print("pitch {0} roll {1} yaw {2}".format(pitch, roll, yaw))
     positionX = int(pitch)
     positionY = int(roll)
     positionZ = int(yaw)
