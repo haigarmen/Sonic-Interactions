@@ -1,4 +1,4 @@
-#N canvas 582 107 969 755 10;
+#N canvas 39 112 1861 1085 10;
 #X obj 33 473 +~;
 #X obj 30 174 +;
 #X obj 73 174 f;
@@ -20,13 +20,13 @@
 #X obj 199 517 delwrite~ del 1000;
 #X obj 213 240 * 600;
 #X obj 289 42 hsl 128 15 0 1 0 0 empty pot5 Arp_Speed -2 -8 0 10 -204800
--1 -1 6369 1;
+-1 -1 7039 1;
 #X obj 288 113 hsl 240 15 0 1 0 0 empty pot6 Pitch_Spread -2 -8 0 10
--261682 -1 -1 11798 1;
-#X obj 288 188 hsl 128 15 0 1 0 0 empty pot7 Delay_Time -2 -8 0 10
--204786 -1 -1 6331 1;
+-261682 -1 -1 11331 1;
+#X obj 294 180 hsl 128 15 0 1 0 0 empty pot7 Delay_Time -2 -8 0 10
+-204786 -1 -1 7163 1;
 #X obj 293 282 hsl 128 15 0 1 0 0 empty pot8 Regeneration -2 -8 0 10
--262130 -1 -1 6188 1;
+-262130 -1 -1 5915 1;
 #X obj 208 434 vd~ del;
 #X obj 219 263 + 20;
 #X obj 57 203 > 4;
@@ -38,7 +38,7 @@
 #X obj 72 403 line~;
 #X obj 34 434 *~;
 #X obj 154 358 1;
-#X obj 390 461 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 390 461 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 390 481 \; pd dsp \$1;
 #N canvas 595 276 680 532 tcpcom 0;
@@ -54,7 +54,7 @@ receive objects;
 #X obj 347 198 s p7;
 #X obj 384 198 s p8;
 #X obj 433 198 s buttons;
-#X floatatom 402 125 5 0 0 0 - - -, f 5;
+#X floatatom 402 125 5 0 0 0 - - -;
 #X obj 80 102 netreceive 3000 1;
 #X connect 5 0 1 0;
 #X connect 5 1 2 0;
@@ -109,21 +109,21 @@ receive objects;
 #X restore 733 37 pd routing_buttons;
 #N canvas 542 293 1078 750 routing_delay 0;
 #X obj 139 72 hsl 80 15 0 1023 0 0 empty empty empty -2 -8 0 10 -228856
--1 -1 3104 1;
+-1 -1 3877 1;
 #X obj 136 150 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 0.393346 256;
+-228856 -1 -1 0.491194 256;
 #X obj 136 96 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 402 256;
+-228856 -1 -1 502 256;
 #X obj 136 121 mapper, f 12;
 #X text 132 49 input pot 1;
 #X text 230 49 pot range;
 #X text 232 111 new range;
 #X obj 137 210 hsl 80 15 0 1023 0 0 empty empty empty -2 -8 0 10 -228856
--1 -1 3792 1;
+-1 -1 0 1;
 #X obj 134 288 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 479.492 256;
+-228856 -1 -1 0 256;
 #X obj 134 234 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 491 256;
+-228856 -1 -1 0 256;
 #X obj 134 259 mapper, f 12;
 #X text 130 187 input pot 2;
 #X obj 45 71 r p1;
@@ -162,11 +162,11 @@ receive objects;
 #X text 133 339 input pot 3;
 #X obj 51 362 r p3;
 #X obj 140 500 hsl 80 15 0 1023 0 0 empty empty empty -2 -8 0 10 -228856
--1 -1 1537 1;
+-1 -1 0 1;
 #X obj 137 578 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 0.194716 256;
+-228856 -1 -1 0 256;
 #X obj 137 524 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 199 256;
+-228856 -1 -1 0 256;
 #X obj 137 549 mapper, f 12;
 #X obj 51 529 unpack;
 #X text 236 480 pot range;
@@ -186,20 +186,20 @@ receive objects;
 #X obj 339 504 loadbang;
 #X obj 53 593 s pot4;
 #X obj 567 66 hsl 80 15 0 1023 0 0 empty empty empty -2 -8 0 10 -228856
--1 -1 3962 1;
+-1 -1 4379 1;
 #X obj 564 144 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 0.501466 256;
+-228856 -1 -1 0.554252 256;
 #X obj 564 90 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 513 256;
+-228856 -1 -1 567 256;
 #X obj 564 115 mapper, f 12;
 #X text 658 43 pot range;
 #X text 660 105 new range;
 #X obj 565 204 hsl 80 15 0 1023 0 0 empty empty empty -2 -8 0 10 -228856
--1 -1 3900 1;
+-1 -1 3745 1;
 #X obj 562 282 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 0.493646 256;
+-228856 -1 -1 0.474096 256;
 #X obj 562 228 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 505 256;
+-228856 -1 -1 485 256;
 #X obj 562 253 mapper, f 12;
 #X obj 473 94 unpack;
 #X obj 476 233 unpack;
@@ -216,11 +216,11 @@ receive objects;
 #X text 710 290 high, f 5;
 #X msg 664 204 0;
 #X obj 568 356 hsl 80 15 0 1023 0 0 empty empty empty -2 -8 0 10 -228856
--1 -1 3938 1;
+-1 -1 4456 1;
 #X obj 565 434 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 0.498534 256;
+-228856 -1 -1 0.564027 256;
 #X obj 565 380 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 510 256;
+-228856 -1 -1 577 256;
 #X obj 565 405 mapper, f 12;
 #X obj 479 385 unpack;
 #X text 664 336 pot range;
@@ -231,11 +231,11 @@ receive objects;
 #X text 713 442 high, f 5;
 #X msg 667 356 0;
 #X obj 568 494 hsl 80 15 0 1023 0 0 empty empty empty -2 -8 0 10 -228856
--1 -1 3846 1;
+-1 -1 3676 1;
 #X obj 565 572 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 0.48728 256;
+-228856 -1 -1 0.465753 256;
 #X obj 565 518 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--228856 -1 -1 498 256;
+-228856 -1 -1 476 256;
 #X obj 565 543 mapper, f 12;
 #X obj 479 523 unpack;
 #X text 664 474 pot range;
@@ -399,7 +399,8 @@ receive objects;
 #X restore 732 72 pd routing_delay;
 #X obj 393 417 r btn1;
 #X obj 115 568 hsl 128 30 0 1 0 0 empty pot1 Volume -2 -8 0 10 -232576
--1 -1 4995 1;
+-1 -1 6238 1;
+#X floatatom 291 220 5 0 0 0 - - -;
 #X connect 0 0 12 0;
 #X connect 1 0 2 0;
 #X connect 1 0 26 0;
@@ -429,6 +430,7 @@ receive objects;
 #X connect 20 0 28 0;
 #X connect 21 0 15 0;
 #X connect 22 0 19 0;
+#X connect 22 0 42 0;
 #X connect 23 0 11 1;
 #X connect 24 0 0 1;
 #X connect 24 0 11 0;
