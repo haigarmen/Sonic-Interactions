@@ -1134,3 +1134,487 @@ Not much more to say, I'm living on Hope St.
 
 Write a manifesto (steve Martin)
 What's the thing that drives you?
+
+Live tips:
+To deactivate, or mute, a note (or notes) in the MIDI Editor, select it and press 0
+
+Notes on a talk with Richard Freeman
+write 10 songs, record an album and do a tour of Canada
+instrumentation and arrangement are as important as the song
+
+https://medium.com/jampp/app-the-human-story-why-we-were-onboard-the-minute-we-heard-about-it-7f204281088f
+
+Improvising over Confirmation:
+https://www.jazzadvice.com/charlie-parkers-secrets-to-confirmation/
+
+Bebop scales
+https://www.jazzadvice.com/mastering-the-bebop-scale-and-jazz-improvisation/
+
+
+Workshop improvements:
+integrate the tech with fun/music -  play little pieces together.
+loops
+
+
+# Advice for new musicians:
+
+## 1. Less is more.
+Music production is complicated, so it’s ridiculously easy to go deeper, to always want more tools and tricks.
+
+But do you really need to watch YouTube tutorials on that latest gadget you bought or should you just spend some time with it. Do you
+
+Most professionals will tell you that learning one instrument inside and out will go much further than learning 5 different instruments at a mediocre level.
+
+I’m not saying there isn’t value in staying hungry (more on that later), but in my experience, less is because it forces you to make progress with your music by looking inside yourself instead of always reaching for something external or abstract.
+
+## 2. Chill, play the long game.
+Remember when you thought you could out-work all of your competition. And sure, it might’ve helped a little – but music doesn’t work that way. Life doesn’t work that way.
+
+So, take your time; there is literally no rush. The race is long and you've got all the time in the world.
+
+## 3. You are never too old to start.
+So first and foremost, it doesn’t matter how old you are, if making music is something you want to try, start today. Not tomorrow. Today!
+
+Just be clear about what kind of musician you want to become. Are you going to be a studio hire or a film composer? a hobbist performer or a sideman musician?
+
+## 4. Never stop learning
+You’ll have to realize that it never stops.
+
+Whether you’re a superstar like Skrillex, or just a kid in their mom’s basement, the drive to get better and learn more should never diminish. The second you think you have succeeded – whether commercial or personal – it’s only the next step in a never-ending staircase.
+
+## 5. Writer’s block is a myth.
+Speaking of creativity – writer’s block is absolutely, definitely, undeniably, 100% – a myth. Creating music is a sum of your habits. And you’ll need to learn that in order to get in the habit of starting, progressing and finishing music, you need to make finishing music an absolute priority.
+
+It doesn’t always come easy, but it does get easier. The hardest part is sitting down and getting started. But once the idea progresses, or you feel that initial spark of excitement – I often find that I get motivated after the fact.
+
+That means mood follows action. Next time you’re tired from a long day, or simply feel like shit for whatever reason – just sit down. And get started. You’ll be amazed by what follows.
+
+## 6. Put yourself out there.
+This one’s important – so listen up.
+
+Don’t be afraid to show the world who you truly are as an artist. Don’t get caught up in what’s cool right now. You don’t get burned-out because of the work itself, you get burned out because you forgot why you’re doing it in the first place.
+
+## 7. Kill self-doubt & fear.
+I can guarantee you that every great artist in history has gone through a period of self-doubt and frustration. One of the true measurements of your talent as an artist is simply your ability to foster self-doubt in a positive light.
+
+## 8. Trust your taste.
+At the end of the day, there are very few things that make producers different from each other. You have access to the same tools, the same sounds – you are playing the same game in the same reality as everyone else – but what really sets you apart? Well, it’s your taste.
+
+Your taste determines what we think is dope. It makes you different. It acts as a driving guideline and forces you to work towards certain standards.
+
+## 9. Check your ego.
+I’ll leave this one short. But hey, chill out on the ego. Be nicer to everyone.
+
+Disliking pop music doesn’t make you cool, it makes you short-sighted. Hating on the latest trends doesn’t make you some bad-ass hipster with better taste and ripped jeans – every style, every genre has something worth learning from. If you can’t eventually grasp that, you should find a different career.
+
+
+Different modes of music mixing
+listening
+Analyzing
+Balancing
+Optimizing
+Sweetening
+
+### Music Production Links
+https://www.attackmagazine.com/
+https://www.soundonsound.com/
+https://www.edmprod.com/
+https://music.tutsplus.com/
+https://theproaudiofiles.com/
+https://www.sonicacademy.com/
+https://bedroomproducersblog.com/
+http://futuremusic.com/
+https://howtomakeelectronicmusic.com/
+https://www.homestudiocorner.com/
+https://behindthespeakers.com/
+https://www.davidglennrecording.com/
+https://www.soundgym.co/?aff=9011
+
+San Holo Documentary of the making of a debut Album
+
+### Creating a good melody
+https://www.edmprod.com/ultimate-melody-guide/
+
+A melody is the main idea of the track. A motif or phrase is a short musical idea – it might be a few notes placed in a certain order or rhythm, but it isn’t the main feature.
+
+
+
+## LOOP kadenze course
+
+big take aways:
+variations: inversions, transpose, retrogrades
+vary rhythm or timing
+use Live in Session mode to launch a follow action after a loops
+by choosing 'other' from the follow action you can have it randomly create an arrangement
+
+Process composition (steve reich)
+Questions to ask when creating:
+1. Did you feel your agency as a composer diminish?
+2. Was that a positive thing for you?
+
+EQing your samples
+pinpoint specifics to accentuate, and remove unwanted
+
+##Strategies for getting blocked:
+
+Use contrast in arrangement:
+    loud/soft
+    fast/slow
+    harsh/smooth
+    rhythmic/non
+
+Give yourself constraints:
+- Limit the number of voices in a piece
+- exploit the unique qualities of the voice that you're working with
+- Use one method throughout whole piece, ie. specific delay - altered for each instrument
+- Limit your tweaking- give yourself 2mins to find a sound and get to recording the phrase, change sound later
+
+Create a container:
+study a variety of forms, not just musical forms but any form can inform...
+ie.
+the shape of a leaf can inspire the shape of your composition.
+the shape of a tree
+copy the form of something
+
+So much can be done with a computer, the options are virtually limitless and
+
+
+### 19.01.20
+Edit the 2nd Podcast Recording
+Refine the Intro to 1st. podcast
+
+
+Making Ambient music
+    - stretch out phrases and loops
+    - play with interpolation algorithms in Live
+    - offset loops
+
+### 19.01.21
+syncing pocket operators
+modePi working on battery - prepping for field Recording
+
+sonic interaction design. from Sonification Handbook
+One of the ultimate goals of SID is the ability to provide design and evaluation guidelines for interactive products with a salient sonic behavior. SID addresses the challenges of creating interactive, adaptive sonic interactions, which continuously respond to the gestures of one or more users. At the same time, SID investigates how the designed gestures and sonic feedback is able to convey emotions and engage expressive and creative experiences. SID also aims at identifying new roles that sound may play in the interaction between users and artifacts, services, or environments. By exploring topics such as multisensory experience with sounding artifacts, perceptual illusions, sound as a means for communication in an action-perception loop and sensorimotor learning through sound, SID researchers are opening up new domains of research and practice for sound designers and engineers, interaction and interface designers, media artists and product designers, among others1 . SID emerges from different established disciplines where sound has played an important role. Within the field of human-computer studies, the subtopics of auditory display and sonification have been of interest for a couple of decades
+
+## Making Music
+https://makingmusic.ableton.com/catalog-of-attributes
+
+### 1. Musical Attributes
+problem:
+Creative musicians find inspiration in other music. While we seek to make music that is uniquely our own, every other piece of music we hear is automatically processed and becomes an unconscious part of our musical vocabulary. Taking too much is theft. Taking too little fails to acknowledge our influences.
+
+Listen carefully—and many times—to the piece that inspires you (the “source”). Study it, element by element and layer by layer, until you can write down a catalog of its attributes. Once the catalog feels complete, set aside the original source, instead referring only to the catalog as a template for your own new work (the “target”).
+
+Consider the attributes of sound, harmony, melody, rhythm, and form. Write something concrete about what you hear for each attribute. If you re comfortable with notation, feel free to use it in your catalog, but sparingly; the goal is to capture only the framework or scaffolding of the source, including the aspects that make it inspiring, but without simply recreating it. You should end up with a description, not a transcription.
+
+### 2. Active Listening
+Problem:
+Although you listen to a lot of music, you don’t really have a sense that you’re learning from what you listen to. You know what you like, but you don’t really understand why you like it or how to extract compositional or technical ideas from what you hear so that you can reuse them in your own music.
+Active listening simply means listening as the primary activity, and it’s an important skill to develop. Rather than using music as the background for another activity, try listening without doing anything else. This requires time, quiet, and focus, which are skills you need for your own production work anyway. A good way to start is by just putting on some music and then turning your attention to it entirely. If you’re listening at your computer, close any open applications (and, ideally, your eyes as well). At this point, you’re not trying to listen with a particular focus, but rather a general one. If you can concentrate and avoid distraction, you’ll be amazed by how much more you hear than in a passive listening state.
+
+The next step in active listening is to start trying to deconstruct what’s happening in the music you’re listening to. Here are some tips for doing this:
+
+Listen in Layers
+A great way to actively listen is to listen to the same piece multiple times and force yourself to focus on a different specific parameter each time. For example, spend one pass listening only for:
+
+Sound: What are the timbral characteristics of this music? What instruments are used? What is the texture (dense vs. sparse)? Are there some specific production techniques that you recognize (either from your own or other music)? What kind of acoustic “space” is suggested by the music (dry vs. reverberant, near vs. far, etc.)?
+
+Harmony: What key (if any) is the song in? What chords are used? Is there a chord progression that happens throughout, or does it change from section to section? If there are no overt chords (as in some minimal or experimental music), is harmony implied in another way?
+Melody: What’s happening in the melody? Does it have a wide or narrow range? What is its general contour: Angular, with lots of leaps? Stepwise, with motion mostly by one or two semitones? What instrument or voice has the melody? Does this ever change? If there is no overt melody (as in some minimal or experimental music), is melody implied in another way?
+
+Rhythm: How are events distributed within short time ranges like a bar or phrase? Are there patterns that repeat, or do rhythmic gestures happen only once? Are rhythms and tempo overtly identifiable, or is the music free and largely arrhythmic? What instruments have the most impact on the rhythm? What do the less rhythmic instruments do?
+
+Form: How does the song evolve over time? Are there clear sectional divisions or are there Fuzzy Boundaries between regions? What defines one section versus another? Do certain instruments play only in some sections or is the instrumentation the same in every section?
+
+Additionally, if there are specific instrumental or vocal parts that you’d like to understand better, try spending an entire listening pass focusing entirely on only one part. For example, the best way to learn how the bass line works in a particular song is to tune out everything else and focus just on the bass line.
+
+Listen Subjectively
+In addition to helping you learn how a particular piece of music “works,” active listening can also help you understand your subjective responses to music. For example, are there particular aspects of the song that sound familiar, nostalgic, emotional, etc.? Can you explain why (perhaps with reference to the parameters discussed earlier)? When listening passively, it’s common to have some kind of emotional response. But via active listening, you have a chance to understand what it is, specifically, that causes that response. And once you understand a technique or musical gesture, you’ll be able to adapt it for use in your own music.
+
+
+## 3. Arbitrary Constraints
+My freedom thus consists in my moving about within the narrow frame that I have assigned to myself for each one of my undertakings. I shall go even further: my freedom will be so much the greater and more meaningful the more narrowly I limit my field of action and the more I surround myself with obstacles. Whatever diminishes constraint diminishes strength. The more constraints one imposes, the more one frees oneself of the claims that shackle the spirit.
+— Igor Stravinsky, Poetics of Music
+
+Problem:
+Music production with a computer offers a limitless field of possibilities. Any sound can be made, manipulated, re-recorded, re-manipulated, etc. But while an infinite range of options might sound appealing, it also means that decision making is hard. The more options you see, the more you need to make active choices about which ones to pursue and which ones to ignore.
+Limiting the field of possibilities isn’t just about making it easier to work. It’s also about making it possible to begin at all. If every possible starting direction is equally appealing, how could you ever choose one?
+
+
+### 19.01.26
+Faust Kadenze course
+https://faust.grame.fr/tools/editor/
+Ctrl-d to launch online documentation on a specific function where your cursor is.
+
+
+Song Arrangement and Structure
+
+https://ask.audio/articles/8-intelligent-music-arrangement-tips-for-producers
+
+Melody:
+A melody consists of, or is characterized by a few elements:
+
+Contour
+Range
+Intervals
+Structure
+Scale
+
+Contour
+A memorable melody follows a contour, a line that ascends, descends, arches or dips. There’s no particular formula. You don’t have to have a contour that rises and then falls, and you don’t need to have a certain number of drops or leaps. It’s completely down to preference. But you will notice how different contours elicit a different emotional reaction from the listener. For example: a melody that ascends may sound more uplifting than one that descends.
+
+Range
+The range is the distance between the highest and lowest note of the melody. Some melodies occupy a very large range (2 octaves and up) while others have a much smaller range (half an octave). Range is important to consider when writing melodies as a wide range will make a melody more difficult to hum, whistle, and remember – whereas a narrow range will have less variation in pitch and won’t sound as interesting.
+
+Intervals
+A melody uses more than one note, so there’ll always be at least one melodic interval. Does the melody jump up to certain notes? Or does it move up to them incrementally. It’s handy to know the different intervals and the musical quality they contain.
+
+Structure
+Melodies have structure too. You could have an A and B section to your melody, maybe even a C. Think call and response, up and down, etc.
+
+Scale
+Melodies are formed from scales. There are numerous types of scales:
+
+Modal: variable patterns of Major/minor scale. Starting at different points
+Major and minor: makes up the majority of Western music.
+Chromatic: all twelve notes.
+Pentatonic Scale: 5-note scale. Often used in blues and rock.
+
+Motif
+A motif or phrase is a short musical idea – it might be a few notes placed in a certain order or rhythm, but it isn’t the main feature. Another characteristic of motifs is that they’re generally repeated. Ideas that play frequently throughout the song and may vary slightly from section to section.
+
+## Music Arrangement Basics: Articulation
+
+Here are the topics that we are going to cover over the next 6 weeks:
+
+Pitch
+Rhythm
+Dynamics
+Timbre
+Articulation
+Level of Activity
+
+### Pitch
+A pitch is a reference to a note value that describes how high or low a note sounds.
+In music, a note value refers to a note such as C, D, E, F, G, A, B.
+Each note has a frequency. For example, note A (A4) above note middle C (C4) has a frequency of 440hz.
+The lower the frequency the lower the pitch of a note, the higher the frequency, the higher the pitch of a note.
+2. What does this mean in arrangement?
+
+When you string a few notes together of different pitches, you get a melody.
+As you would know, catchy melodies are usually melodies that have a good string of notes with varying pitches and rhythm.
+Crafting such melodies takes years of experience and attention to details.
+Because pitch relates to frequency, your instrument choice or melody you write, ultimately affects the sonic space of your arrangement.
+
+### Articulation
+Articulation specifies how individual notes are to be played or performed.
+In the classical world, there are four main types of articulation.
+Staccato: This means the note is to be played shorter than its duration.
+Tenuto: This means the note is held for its full value. Think of it as “leaning” into a note.
+Accent: This means that a note is to be played percussively – louder, with a strong attack.
+Marcato: This means the note has to be played even louder and harder. Usually used when a band stops right before a break.
+2. Articulation & Music Arrangement
+
+You may be wondering why and how articulation would help in producing and arranging music. Although it is not necessary to think of articulation in terms of its “classical” sense, it’s worth having knowledge about it and here’s why:
+
+Articulation will help with dynamics in your arrangement.
+Changing the ADSR and velocity parameters of a synth patch or drum hit, can add that extra bit of detail that your arrangement is lacking.
+Articulation is the foundation of the groove and vibe of a song. Playing a note hard or soft, holding it longer or shorter, all messes with the groove. Choosing the right kind of articulation for different rhythm and melodic patterns can steer your arrangement closer to where you vision it to be.
+
+### Rhythm
+Rhythm is the arrangement of sounds as they move through time.
+Specifically, each note and chord have a given time where sound is on and sound is off.
+This time value, in music, is known as rhythm notation or note length.
+Note lengths are relative to time signatures.
+Common time signatures are 4/4, 2/2, 3/4 , 6/8.
+2.  What does this mean in arrangement?
+
+Rhythm is one of the most important aspects of music and it’s everywhere.
+Most listeners are attracted to songs with a strongly crafted rhythm and groove.
+Most listeners would not be able to tell a bad note or a wrong chord, but most would be able to tell when the rhythm goes awry.
+Rhythms are usually written in patterns.  A mastery of common rhythm pattens can be great use to you as an arranger.
+Check this website out to learn more about developing rhythmic patterns.
+3. Practical Applications
+
+To improve your rhythm vocabulary, try writing down or notating your favorite songs. Do this for as many songs as you can and try to find a similar pattern and use that same pattern in your music arrangements.
+
+To put it simply, dynamics means how loud or soft a piece of music is.
+In classical music, composers would use Italian terms to mark different dynamic levels.
+Terms such as piano (p) means to play a phrase / section, softly or forte (f) means to play loudly.
+2. What does this mean in music arrangement?
+
+### Dynamics
+Dynamics is a form of expression and you can use it in various musical forms. You can plan out a dynamic structure for the length of your song or even dynamic structure for a specific instrument.
+Most pop / electronic music out there do not have much dynamics. That means, the loudest and softest part of the song are almost negligible. This is not ideal as your ears actually perceive music better when there’s a certain level of dynamic activity. What is worth noting is that a more dynamic mix would sound better on streaming platforms.
+Dynamics help tell your musical story. The ebb and flow of a dynamic music piece aid with conveying emotions in a song.
+
+Use dynamics to create tension and release. A typical example of dynamics is that you start your intro soft, slowly build dynamics through the verse, thus creating some tension, and release the loudest part of your song at the chorus. The larger the dynamic jumps between sections, the more of a dynamic range you’ll have.
+Make your MIDI drums more realistic by programming actual dynamics into the playing. You can vary the velocity of your hi-hat patterns to emulate how an actual drummer would play, or even change the velocity settings on the snare drums from soft to loud between verse and chorus to create a dynamic shift.
+
+### Timbre
+Timbre is the unique, distinguishing quality of a sound made by a music instrument.
+Timbre allows you to identify two different instruments playing the same note.
+For example, both a piano and a guitar may be playing the note C3, but because each instrument has its own unique timbre, the listener is able to identify that there are two different instruments playing.
+2. Timbre Qualities & Music Arrangement
+
+It is important to know what an instruments sounds like and to be able to describe it.
+Once you know the timbre quality of an instrument, you can make informed decisions on how to use it in your arrangements.
+For example, a violin may have a timbre quality of sounding delicate, high and penetrating when played at certain ranges. With that knowledge in hand, you might want to write a violin melody in that range, during a loud chorus to cut through your arrangement.
+Similarly, electronic instruments have timbre qualities as well but with greater shaping possibilities.
+When you built a sound from scratch, you are deciding the timbre qualities of your sound. The flexibility that synth sounds have over an acoustic instrument is that the timbre of your synth can change in any way you like and is not confined to the physicality of the instrument itself. It that sense, synths are very malleable.
+3. Practical Applications
+Keep a list of music / timbre descriptors when planning out your arrangement.
+Some examples of descriptors are: gloomy, smooth, narrow, metallic, sharp, soft, delicate, bright, round, high, low, damped, sandy.
+Tweaking the ADSR curve on your synth helps shape the timbre quality of an instrument.
+When arranging, try to listen and isolate the different instruments you have. If you can do that, it means you have a well defined timbre structure. If not, try re-thinking the arrangement and evaluating your sounds based on the descriptors above.
+
+### Level of activity
+We would like to assign different sounds / instruments a certain level of activity in a music arrangement.
+We categorize activity levels into three types: low, medium, and high.
+Levels of activity are essentially the rhythm that an instrument is playing.
+Think of activity as a big picture – ask yourself, what pulls your ear into your arrangement? The thing that sticks out the most, most likely has the highest level of activity.
+
+Instruments like pads have a low level of activity. There isn’t much “movement” to attract attention and is meant more of a foundation.
+However, certain synth lines or arpeggiated synths have high level of activity that often than not attract the listener’s attention.
+Level of activity and tone also go together. If you have a lead line that has a lot of movement, but has a dark tone in the mix, it is just going to create a lot of unnecessary confusion in your arrangement.
+Practical Applications
+When starting out an arrangement, think of your musical form and which instrument or part should take the highest level of activity.
+Should that be the melody? hook? a cool synth part?
+Bring instruments / parts forward or backward by giving them different levels of activity. Control what you want your listener to hear.
+
+#### next blog posting?
+amateur music making
+
+## 19.02.01 Starting February
+- starting with Fmaj riff from a long time ago. tracked in live
+- day2 added a second chord progression - could be a chorus
+- the theme is clothing and will write about "Coffee coloured shirt"
+
+spills and thrills
+drips
+
+## 19.02.07
+back from IxD19 Edu Summit, bored by the interaction folks and the same questions.
+
+Ableton video tutorials - finished, good for a tips but very standard song arranging approach.
+
+Masterclass - Hans Zimmer
+tempo
+Music Diary - write a piece everyday
+
+## Workshop Hardware:
+Order 8 Workshop Kits for Estonia - April 14-18
+
+Eesti Kunstiakadeemia, Interaktsioonidisain
+Põhja puiestee 7
+Tallinn 10412, Estonia
+
+Order Workshop Hardware for Stepanagert - April 20 -
+Order Workshop Hardware for Dundee - May 24
+
+##19.02.11
+## Write experiments on blog
+
+# Experiment 1 Sense Synth
+# Experiment 2 Nukulele
+# Experiment 3 nSynth
+publish this one:
+# Experiment 4 Cicada - phone uids into Melodies
+# Experiment 5: KalimPi
+# Experiment 6 sensor with OhEye
+
+
+Electronic circuits:
+http://www.pavouk.org/en_index.html
+
+
+Circuit bending
+https://www.youtube.com/watch?v=KHDL9iGxDPM
+
+Music and Tech at SFA
+song writing workshop
+https://blog.landr.com/write-song/
+
+19.02.22 Conversation with Ryan Betts - digital physical hybrids
+
+
+Materials for acoustic instruments
+ - windshield wipers. or spring steel
+
+voice
+percussion - shaker, rattle,
+strings - uke
+
+
+
+Kalimba - thumb piano
+https://www.instructables.com/id/Make-a-Thumb-Piano-Mbira/
+
+Marimba -
+https://www.instructables.com/id/Build-Your-Own-Marimba/
+
+
+Research Project on ResearchGate:
+https://www.researchgate.net/project/Sonic-Interactions
+
+
+Destroy the idea that you have to be constantly working or grinding in order to be successful. Embrace the concept that rest, recovery, reflection are essential parts of the progress towards a successful and happy life - Zach Galifianakis
+
+6 WAYS TO CAPTURE MAGIC IN THE STUDIO
+https://blog.kadenze.com/creative-technology/6-ways-to-capture-magic-in-the-studio/
+
+1. Leave the Mic Running
+The brief moments that precede and follow recorded audio takes can be packed with valuable content. A drummer sits on the throne and picks up her sticks, gently shutting the hats before giving the four-count. Band members converse excitedly as they enter the tracking room. The prospect of recording your music is exhilarating, and that energy might translate to tape. A live track’s conclusion is no different. Band members can’t help but laugh at how hard they just rocked. A dead-serious frontman sighs “That’s the one” after baring his soul on a lead vocal track. Not to mention, capturing your surroundings is a great way to establish the kind of atmosphere or energy you want your track to embody.
+
+For a lot of people, especially the die-hard fans, an artist revealing their personality is a special gift. By injecting a little humanity into your studio tracks, you can circumvent the sterile fourth wall that separates you from your audience.
+
+2. Go Organic
+Everybody’s process is different these days. But one constant across the spectrum of production routines is the use of digital audio processing. MIDI is completely non-destructive, giving you total control over your performance. Plug-ins are sounding better every day, and they’re much cheaper than their hardware counterparts. It’s easy to digitally produce a track, but you may find that something is missing when you listen back. And the answer is organic audio. If you’re shaking your head, thinking there’s no way you could afford the studio time or equipment, stop doing that. It doesn’t take much to infuse a little realness. Chances are you already have a microphone, so add real claps and stomps.
+
+Gabriel only used a computer to layer the 25 overdubs that build the claps & stomps of “6 8″, everything else was recorded directly to 2” tape. His track later got sampled on Drake’s track Jungle, one of his biggest songs to date.
+
+3. Utilize Outtakes and Ad-Libs
+If you’re running an efficient session, you know what needs to be captured and you do so methodically. Once you’ve got everything you need from your vocal or instrumental, create a new track and ditch the script. This is a time for the musician to have fun and do what comes naturally. Tracking ad-libs will surely improve the quality of your pop or hip-hop vocal. Allowing your guitarist to jam on the track could result in a fresh lick that drives the hook.
+Stimulate these vocal or instrumental fragments further by dropping them into Arcade and using its simple modulation engine to transform a sample into something extraordinary. Inspired moments like this, where anything can happen, are what take productions to the next level.
+
+4. Experiment with Plug-ins
+We’ve stressed the importance of organic elements, but let’s be honest. If it weren’t for 1’s and 0’s, modern music as we know it wouldn’t exist. The elements that set you apart in today’s scene will almost certainly require the use of a computer, whether it’s a software instrument or a glossy mix.
+
+Output focuses on instruments and plug-ins that challenge the standing ideologies of artists and producers. From the award-winning Rev to Analog Brass & Winds, our software puts a unique spin on familiar sounds, programmed to facilitate effortless modulation. Tweak some knobs, combine strange textures, or drop in your own samples and let Arcade do the work!
+
+5. Collaborate Often
+Sound familiar? Believe it or not, toiling alone in your cave with the curtains drawn for weeks on end will not yield optimal results. Falling into the trap of “I can do it myself” not only limits your resources, but it’s also rather unhealthy for the mind and spirit. Collaboration starts as a seed before blossoming into a full-on rain forest. On the most basic level, working with other minds will expand the possibilities of what your song can become.
+
+The right element to revitalize your track could come from anywhere at any moment, and being open to such an occurrence is paramount. On a broader scale, every positive collaborative experience will lead you to a larger network and, ultimately, more opportunities to work with inspirational artists. Community begets music, so engage yourself with your surroundings and witness real, human magic.
+
+6. …and One for Good Measure
+The oldest trick in the book. Once you’ve got the perfect take, especially after straining for hours to do so, you may be tempted to say “got it” before slamming your laptop shut (after saving the project) and heading to Denny’s. After all, they do have delicious all-day breakfast at affordable prices. You may think capturing the take you’ve been after is the knockout punch, but it’s more like your opponent leaving himself open for an uppercut. Once you’ve got a good take, the shackles of a high-pressure recording environment are broken, and your musician can breathe the sweet air of relief. Use this opportunity to get one or two more takes. When “messing up” is no longer a complete failure, an artist can really let go and, more often than not, cut a performance that’s far beyond what you’d imagined.
+
+https://output.com/arcade
+
+
+learning VR in kadenze
+SkyBox -  the cube that is the largest object in your VR World
+"Hello Skybox"
+
+
+Google Expeditions:
+create an expedition:
+https://support.google.com/edu/expeditions/answer/9103284?hl=en&ref_topic=9007515
+
+https://medium.com/master-of-code-global/how-to-create-virtual-reality-content-5000e0fdd68
+
+https://hackernoon.com/how-to-make-a-vr-app-with-zero-experience-927438e2dede
+
+https://aframe.io/showcase/
+
+# 19.02.06
+March 6
+creating Bluetooth Device Scanning synth
+installed Bluez
+
+found this interesting article about using python to send bluetooth messages - GATT server
+https://scribles.net/creating-ble-gatt-server-uart-service-on-raspberry-pi/
+
+more on GATT here:
+https://learn.adafruit.com/introduction-to-bluetooth-low-energy/gatt
