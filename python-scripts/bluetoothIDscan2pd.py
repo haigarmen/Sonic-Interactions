@@ -16,6 +16,6 @@ while True:
 
     for addr, name in nearby_devices:
         print("  %s - %s" % (addr, name))
-        message = '0 ' + addr # make a string for use with Pdsend
+        message = '9 ' + addr # make a string for use with Pdsend
         send2Pd(message)
     time.sleep(10)
