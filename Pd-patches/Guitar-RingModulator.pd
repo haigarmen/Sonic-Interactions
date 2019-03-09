@@ -1,4 +1,4 @@
-#N canvas 31 29 1024 692 10;
+#N canvas 394 106 1372 1050 10;
 #X obj 30 26 adc~;
 #X obj 12 654 dac~;
 #X obj 58 561 *~;
@@ -27,16 +27,16 @@
 0;
 #X obj 351 287 mtof;
 #X obj 354 269 hsl 128 15 0 127 0 0 empty manual_freq empty -2 -8 0
-10 -262144 -1 -1 5000 1;
+10 -262144 -1 -1 7700 1;
 #X obj 351 310 osc~;
 #X obj 343 16 cnv 15 200 200 empty empty LFO 20 12 0 14 -260097 -66577
 0;
 #X obj 354 52 hsl 128 15 0 127 0 0 empty lfo_upper Upper_limit -2 -8
-0 10 -262144 -1 -1 5000 1;
+0 10 -262144 -1 -1 1400 1;
 #X obj 354 101 hsl 128 15 0 127 0 0 empty lfo_lower Lower_limit -2
--8 0 10 -262144 -1 -1 3000 1;
-#X floatatom 351 119 6 0 0 0 - - -, f 6;
-#X floatatom 351 70 6 0 0 0 - - -, f 6;
+-8 0 10 -262144 -1 -1 200 1;
+#X floatatom 351 119 6 0 0 0 - - -;
+#X floatatom 351 70 6 0 0 0 - - -;
 #X obj 260 156 -;
 #X obj 260 134 bang;
 #X obj 301 195 mtof;
@@ -48,7 +48,7 @@
 #X obj 146 334 line~;
 #X obj 147 314 pack 0 5;
 #X obj 353 154 hsl 128 15 0 30 0 0 empty lfo_freq LFO_frequency -2
--8 0 10 -262144 -1 -1 1693 1;
+-8 0 10 -262144 -1 -1 8467 1;
 #X msg 350 177 set waveform_square;
 #X msg 350 197 set waveform_sine;
 #N canvas 0 22 450 300 random_manual 0;
@@ -57,8 +57,8 @@
 #X obj 162 236 s manual_freq;
 #X obj 162 197 line;
 #X obj 178 171 pack 0 0;
-#X floatatom 216 216 5 0 0 0 - - -, f 5;
-#X floatatom 268 194 5 0 0 0 - - -, f 5;
+#X floatatom 216 216 5 0 0 0 - - -;
+#X floatatom 268 194 5 0 0 0 - - -;
 #X obj 233 141 + 50;
 #X obj 163 91 metro 3000;
 #X obj 235 115 random 2950;
@@ -75,19 +75,19 @@
 #X connect 9 0 7 0;
 #X connect 10 0 8 0;
 #X restore 547 450 pd random_manual;
-#N canvas 0 22 607 397 random_LFO 0;
+#N canvas 214 358 633 439 random_LFO 0;
 #X obj 61 140 + 10;
 #X obj 59 194 line;
 #X obj 75 168 pack 0 0;
-#X floatatom 113 213 5 0 0 0 - - -, f 5;
-#X floatatom 165 191 5 0 0 0 - - -, f 5;
+#X floatatom 113 213 5 0 0 0 - - -;
+#X floatatom 165 191 5 0 0 0 - - -;
 #X obj 130 138 + 50;
 #X obj 132 112 random 2950;
 #X obj 233 113 random 120;
 #X obj 231 261 line;
 #X obj 247 235 pack 0 0;
-#X floatatom 285 280 5 0 0 0 - - -, f 5;
-#X floatatom 338 192 5 0 0 0 - - -, f 5;
+#X floatatom 285 280 5 0 0 0 - - -;
+#X floatatom 338 192 5 0 0 0 - - -;
 #X obj 303 139 + 50;
 #X obj 305 113 random 2950;
 #X obj 231 300 s lfo_lower;
@@ -98,8 +98,8 @@
 #X obj 384 141 + 10;
 #X obj 382 195 line;
 #X obj 398 169 pack 0 0;
-#X floatatom 436 214 5 0 0 0 - - -, f 5;
-#X floatatom 488 192 5 0 0 0 - - -, f 5;
+#X floatatom 436 214 5 0 0 0 - - -;
+#X floatatom 488 192 5 0 0 0 - - -;
 #X obj 453 139 + 50;
 #X obj 383 89 metro 3000;
 #X obj 455 113 random 2950;

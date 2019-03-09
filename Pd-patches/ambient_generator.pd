@@ -1,10 +1,10 @@
-#N canvas 273 23 843 182 10;
-#X obj 405 49 tgl 15 0 empty empty empty 17 7 0 10 -135137 -1 -1 1
+#N canvas 117 349 781 237 10;
+#X obj 405 49 tgl 15 0 empty empty empty 17 7 0 10 -135137 -1 -1 0
 1;
 #X text 429 48 <- Starts the patch;
-#N canvas 180 23 833 855 random_ambient 0;
+#N canvas 0 93 1920 1107 random_ambient 0;
 #X obj 247 820 dac~;
-#X obj 272 27 tgl 15 0 empty empty empty 17 7 0 10 -135137 -1 -1 1
+#X obj 272 27 tgl 15 0 empty empty empty 17 7 0 10 -135137 -1 -1 0
 1;
 #X obj 272 78 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;

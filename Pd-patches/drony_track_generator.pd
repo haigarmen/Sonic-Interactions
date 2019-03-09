@@ -1,221 +1,221 @@
-#N canvas -8 -8 1919 1033 10;
-#X msg 796 386 60 63 67 74;
-#X msg 881 386 60 65 68 74;
-#X msg 966 386 60 63 68 74;
-#X obj 796 440 mtof;
-#X obj 796 521 phasor~;
-#X obj 597 976 dac~;
-#X obj 878 440 mtof;
-#X obj 960 440 mtof;
-#X obj 1042 440 mtof;
-#X obj 812 629 *~ 500;
-#X obj 812 602 osc~ 0.02;
-#X obj 878 521 phasor~;
-#X obj 894 629 *~ 500;
-#X obj 960 521 phasor~;
-#X obj 976 629 *~ 500;
-#X obj 1042 521 phasor~;
-#X obj 1058 629 *~ 500;
-#X obj 976 602 osc~ 0.03;
-#X obj 894 602 osc~ 0.05;
-#X obj 1058 602 osc~ 0.07;
-#X obj 753 43 tgl 15 0 empty empty empty 17 7 0 10 -135137 -1 -1 0
+#N canvas 102 125 1615 1045 10;
+#X msg 551 388 60 63 67 74;
+#X msg 636 388 60 65 68 74;
+#X msg 721 388 60 63 68 74;
+#X obj 551 442 mtof;
+#X obj 551 523 phasor~;
+#X obj 352 978 dac~;
+#X obj 633 442 mtof;
+#X obj 715 442 mtof;
+#X obj 797 442 mtof;
+#X obj 567 631 *~ 500;
+#X obj 567 604 osc~ 0.02;
+#X obj 633 523 phasor~;
+#X obj 649 631 *~ 500;
+#X obj 715 523 phasor~;
+#X obj 731 631 *~ 500;
+#X obj 797 523 phasor~;
+#X obj 813 631 *~ 500;
+#X obj 731 604 osc~ 0.03;
+#X obj 649 604 osc~ 0.05;
+#X obj 813 604 osc~ 0.07;
+#X obj 508 45 tgl 15 0 empty empty empty 17 7 0 10 -135137 -1 -1 0
 1;
-#X obj 796 147 i;
-#X obj 828 147 + 1;
-#X obj 753 95 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 551 149 i;
+#X obj 583 149 + 1;
+#X obj 508 97 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 796 174 % 4;
-#X obj 796 334 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 551 176 % 4;
+#X obj 551 336 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 881 334 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 636 336 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 966 334 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 721 336 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1051 334 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 806 336 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 796 494 line~;
-#X obj 878 494 line~;
-#X obj 960 494 line~;
-#X obj 1042 494 line~;
-#X obj 812 656 +~ 520;
-#X obj 894 656 +~ 520;
-#X obj 976 656 +~ 520;
-#X obj 1058 656 +~ 520;
-#X obj 796 467 pack 0 200;
-#X obj 878 467 pack 0 200;
-#X obj 960 467 pack 0 200;
-#X obj 1042 467 pack 0 200;
-#X obj 796 683 vcf~ 5;
-#X obj 878 683 vcf~ 5;
-#X obj 960 683 vcf~ 5;
-#X obj 1042 683 vcf~ 5;
-#X obj 878 953 lop~ 1500;
-#X obj 796 201 sel;
-#X obj 796 228 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 551 496 line~;
+#X obj 633 496 line~;
+#X obj 715 496 line~;
+#X obj 797 496 line~;
+#X obj 567 658 +~ 520;
+#X obj 649 658 +~ 520;
+#X obj 731 658 +~ 520;
+#X obj 813 658 +~ 520;
+#X obj 551 469 pack 0 200;
+#X obj 633 469 pack 0 200;
+#X obj 715 469 pack 0 200;
+#X obj 797 469 pack 0 200;
+#X obj 551 685 vcf~ 5;
+#X obj 633 685 vcf~ 5;
+#X obj 715 685 vcf~ 5;
+#X obj 797 685 vcf~ 5;
+#X obj 633 955 lop~ 1500;
+#X obj 551 203 sel;
+#X obj 551 230 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 796 253 i;
-#X obj 828 253 + 1;
-#X obj 796 280 % 4;
-#X obj 753 68 metro 600;
-#X obj 692 575 osc~;
-#X obj 692 656 *~;
-#X obj 707 629 vline~;
-#X obj 692 548 vline~;
-#X msg 692 521 400 \, 40 30;
-#X obj 748 656 *~ -1;
-#X obj 748 683 +~ 1;
-#X obj 814 923 *~;
-#X msg 707 602 1 3 \, 0 100 3;
-#X obj 796 307 sel 0 1 2;
-#X obj 878 710 delread~ del1 600;
-#X obj 878 980 delwrite~ del1 600;
-#X obj 934 924 delwrite~ del3 300;
-#X obj 1056 924 delwrite~ del2 300;
-#X obj 713 710 delread~ del2 300;
-#X obj 597 710 delread~ del3 300;
-#X obj 440 629 noise~;
-#X obj 425 575 vline~;
-#X msg 425 386 1 \, 0 300;
-#X obj 425 602 pow~ 4;
-#X obj 425 656 *~;
-#X obj 425 253 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 551 255 i;
+#X obj 583 255 + 1;
+#X obj 551 282 % 4;
+#X obj 508 70 metro 600;
+#X obj 447 577 osc~;
+#X obj 447 658 *~;
+#X obj 462 631 vline~;
+#X obj 447 550 vline~;
+#X msg 447 523 400 \, 40 30;
+#X obj 503 658 *~ -1;
+#X obj 503 685 +~ 1;
+#X obj 569 925 *~;
+#X msg 462 604 1 3 \, 0 100 3;
+#X obj 551 309 sel 0 1 2;
+#X obj 633 712 delread~ del1 600;
+#X obj 633 982 delwrite~ del1 600;
+#X obj 689 926 delwrite~ del3 300;
+#X obj 811 926 delwrite~ del2 300;
+#X obj 468 712 delread~ del2 300;
+#X obj 352 712 delread~ del3 300;
+#X obj 195 631 noise~;
+#X obj 180 577 vline~;
+#X msg 180 388 1 \, 0 300;
+#X obj 180 604 pow~ 4;
+#X obj 180 658 *~;
+#X obj 180 255 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 473 710 vcf~ 10;
-#X obj 492 629 osc~ 0.11;
-#X obj 492 656 *~ 1000;
-#X obj 492 683 +~ 1500;
-#X obj 560 629 osc~ 0.11;
-#X obj 560 656 *~ 1000;
-#X obj 560 683 +~ 1500;
-#X msg 611 601 0.5;
-#X obj 541 710 vcf~ 10;
-#X obj 584 574 t b b;
-#X obj 425 332 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 228 712 vcf~ 10;
+#X obj 247 631 osc~ 0.11;
+#X obj 247 658 *~ 1000;
+#X obj 247 685 +~ 1500;
+#X obj 315 631 osc~ 0.11;
+#X obj 315 658 *~ 1000;
+#X obj 315 685 +~ 1500;
+#X msg 366 603 0.5;
+#X obj 296 712 vcf~ 10;
+#X obj 339 576 t b b;
+#X obj 180 334 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 492 332 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 247 334 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X msg 492 386 1 \, 0 3000;
-#X obj 425 278 random 4;
-#X obj 425 305 sel 0 1 2;
-#X obj 565 332 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X msg 247 388 1 \, 0 3000;
+#X obj 180 280 random 4;
+#X obj 180 307 sel 0 1 2;
+#X obj 320 334 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X msg 565 386 1 300 \, 0 0 300;
-#X obj 668 332 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X msg 320 388 1 300 \, 0 0 300;
+#X obj 423 334 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X msg 668 386 1 3000 \, 0 0 3000;
-#X obj 425 226 sel;
-#X obj 846 923 *~;
-#X obj 425 199 random 5;
-#X obj 584 547 loadbang;
-#X obj 1219 441 vline~;
-#X obj 1135 332 phasor~ 65;
-#X obj 1209 332 phasor~ 65.6;
-#X obj 1135 549 vcf~ 10;
-#X obj 1204 576 *~;
-#X obj 1219 468 pow~ 2;
-#X msg 1219 413 1 10 \, 0 8000 10;
-#X obj 1269 468 random 800;
-#X obj 1254 495 *~;
-#X obj 1254 522 +~ 130;
-#X obj 796 359 t b b b;
-#X obj 1204 603 hip~ 100;
-#X obj 1204 630 rev2~ 96 95 2000 20;
-#X obj 878 924 *~ 0.92;
-#X obj 1358 759 vline~;
-#X obj 1358 786 pow~ 4;
-#X obj 1343 628 cos~;
-#X obj 1343 813 *~;
-#X obj 1316 363 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X msg 423 388 1 3000 \, 0 0 3000;
+#X obj 180 228 sel;
+#X obj 601 925 *~;
+#X obj 180 201 random 5;
+#X obj 339 549 loadbang;
+#X obj 974 443 vline~;
+#X obj 890 334 phasor~ 65;
+#X obj 964 334 phasor~ 65.6;
+#X obj 890 551 vcf~ 10;
+#X obj 959 578 *~;
+#X obj 974 470 pow~ 2;
+#X msg 974 415 1 10 \, 0 8000 10;
+#X obj 1024 470 random 800;
+#X obj 1009 497 *~;
+#X obj 1009 524 +~ 130;
+#X obj 551 361 t b b b;
+#X obj 959 605 hip~ 100;
+#X obj 959 632 rev2~ 96 95 2000 20;
+#X obj 633 926 *~ 0.92;
+#X obj 1113 761 vline~;
+#X obj 1113 788 pow~ 4;
+#X obj 1098 630 cos~;
+#X obj 1098 815 *~;
+#X obj 1071 365 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1226 202 del 150;
-#X obj 1226 148 del 150;
-#X obj 1282 202 spigot;
-#X obj 1315 175 ==;
-#X obj 1313 228 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 981 204 del 150;
+#X obj 981 150 del 150;
+#X obj 1037 204 spigot;
+#X obj 1070 177 ==;
+#X obj 1068 230 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1299 256 spigot;
-#X obj 1332 229 ==;
-#X obj 1330 282 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1054 258 spigot;
+#X obj 1087 231 ==;
+#X obj 1085 284 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1316 310 spigot;
-#X obj 1349 283 ==;
-#X obj 1316 338 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1071 312 spigot;
+#X obj 1104 285 ==;
+#X obj 1071 340 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1226 175 t b b b b;
-#X obj 1226 229 t b b;
-#X obj 1226 256 del 150;
-#X msg 1343 520 60;
-#X msg 1380 520 65;
-#X msg 1418 520 63;
-#X msg 1456 520 67;
-#X msg 1493 520 72;
-#X msg 1531 520 70;
-#X obj 1343 468 sel 0 1 2 3 4;
-#X obj 1343 414 i;
-#X obj 1375 414 + 1;
-#X obj 1343 495 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 981 177 t b b b b;
+#X obj 981 231 t b b;
+#X obj 981 258 del 150;
+#X msg 1098 522 60;
+#X msg 1135 522 65;
+#X msg 1173 522 63;
+#X msg 1211 522 67;
+#X msg 1248 522 72;
+#X msg 1286 522 70;
+#X obj 1098 470 sel 0 1 2 3 4;
+#X obj 1098 416 i;
+#X obj 1130 416 + 1;
+#X obj 1098 497 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1380 495 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1135 497 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1418 495 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1173 497 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1456 495 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1211 497 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1493 495 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1248 497 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1531 495 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1286 497 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1343 547 mtof;
-#X obj 1343 441 % 6;
-#X obj 1315 148 random 2;
-#X obj 1316 388 t b b;
-#X obj 1343 601 pow~;
-#X obj 1343 574 phasor~;
-#X obj 1568 547 *~ 0.2;
-#X obj 1568 574 +~ 0.4;
-#X obj 1332 202 random 5;
-#X obj 1349 256 random 5;
-#X obj 1343 897 *~ 0.3;
-#X obj 1343 843 *~;
-#X obj 1568 520 osc~ 0.082;
-#X obj 597 949 *~;
-#X obj 629 949 *~;
-#X obj 425 683 *~ 0.1;
-#X obj 692 683 *~ 0.25;
-#X obj 1408 786 *~ 0.022;
-#X obj 1135 359 *~ 0.6;
-#X obj 1209 359 *~ 0.6;
-#X obj 1135 386 -~ 0.3;
-#X obj 1209 386 -~ 0.3;
-#X obj 796 548 *~ 0.12;
-#X obj 878 548 *~ 0.12;
-#X obj 960 548 *~ 0.12;
-#X obj 1042 548 *~ 0.12;
-#X obj 796 575 -~ 0.06;
-#X obj 878 575 -~ 0.06;
-#X obj 960 575 -~ 0.06;
-#X obj 1042 575 -~ 0.06;
-#X text 777 42 <- Starts the patch;
-#X obj 1343 870 hip~ 100;
-#X msg 1051 386 58 65 67 74;
-#X obj 1445 653 sel;
-#X obj 1445 626 random 9;
-#X msg 1358 705 1 300 \, 0 3 300;
-#X obj 1460 680 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1098 549 mtof;
+#X obj 1098 443 % 6;
+#X obj 1070 150 random 2;
+#X obj 1071 390 t b b;
+#X obj 1098 603 pow~;
+#X obj 1098 576 phasor~;
+#X obj 1323 549 *~ 0.2;
+#X obj 1323 576 +~ 0.4;
+#X obj 1087 204 random 5;
+#X obj 1104 258 random 5;
+#X obj 1098 899 *~ 0.3;
+#X obj 1098 845 *~;
+#X obj 1323 522 osc~ 0.082;
+#X obj 352 951 *~;
+#X obj 384 951 *~;
+#X obj 180 685 *~ 0.1;
+#X obj 447 685 *~ 0.25;
+#X obj 1163 788 *~ 0.022;
+#X obj 890 361 *~ 0.6;
+#X obj 964 361 *~ 0.6;
+#X obj 890 388 -~ 0.3;
+#X obj 964 388 -~ 0.3;
+#X obj 551 550 *~ 0.12;
+#X obj 633 550 *~ 0.12;
+#X obj 715 550 *~ 0.12;
+#X obj 797 550 *~ 0.12;
+#X obj 551 577 -~ 0.06;
+#X obj 633 577 -~ 0.06;
+#X obj 715 577 -~ 0.06;
+#X obj 797 577 -~ 0.06;
+#X text 532 44 <- Starts the patch;
+#X obj 1098 872 hip~ 100;
+#X msg 806 388 58 65 67 74;
+#X obj 1200 655 sel;
+#X obj 1200 628 random 9;
+#X msg 1113 707 1 300 \, 0 3 300;
+#X obj 1215 682 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1505 624 snapshot~;
-#X obj 1505 597 osc~ 0.03;
-#X obj 1460 705 pack 0 0;
-#X obj 1358 680 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1260 626 snapshot~;
+#X obj 1260 599 osc~ 0.03;
+#X obj 1215 707 pack 0 0;
+#X obj 1113 682 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X msg 1460 732 1 3 \, 0 \$2 3;
-#X obj 753 120 t b b b b b b b;
-#X obj 1505 652 * 450;
-#X obj 1505 678 + 530;
-#X obj 1408 813 +~ 0.09;
-#X obj 796 413 unpack f f f f;
-#X msg 543 601 0;
+#X msg 1215 734 1 3 \, 0 \$2 3;
+#X obj 508 122 t b b b b b b b;
+#X obj 1260 654 * 450;
+#X obj 1260 680 + 530;
+#X obj 1163 815 +~ 0.09;
+#X obj 551 415 unpack f f f f;
+#X msg 298 603 0;
 #X connect 0 0 191 0;
 #X connect 1 0 191 0;
 #X connect 2 0 191 0;
