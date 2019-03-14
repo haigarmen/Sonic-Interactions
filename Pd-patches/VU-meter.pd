@@ -5,12 +5,12 @@
 #X obj 292 418 dac~;
 #X obj 242 139 *~;
 #X obj 305 92 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 169 301 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
-#X obj 242 161 env~;
-#X floatatom 240 193 5 0 0 0 - - -;
-#X obj 239 212 - 100;
-#X msg 263 45 open ../audio/funky_drumer.wav;
+-1 -1 12700 1;
+#X obj 169 225 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 168 154 env~;
+#X floatatom 168 176 5 0 0 0 - - -;
+#X obj 168 198 - 100;
+#X msg 263 45 open audio/funky_drummer.wav;
 #X connect 0 0 4 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
