@@ -1,33 +1,33 @@
 #N canvas 2 119 1090 641 10;
 #X obj 108 265 hsl 128 15 0 1 0 0 empty delaypot3 Dry/Wet -2 -8 0 8
--262144 -1 -1 0 1;
+-262144 -1 -1 5500 1;
 #X obj 108 135 hsl 128 15 0 0.9 0 0 feedbackL delaypot1 Left_Feedback
 -2 -8 0 8 -262144 -1 -1 0 1;
 #X obj 108 167 hsl 128 15 0 0.9 0 0 feedbackR delaypot5 Right_Feedback
 -2 -8 0 8 -262144 -1 -1 0 1;
 #X obj 108 200 hsl 128 15 0 1000 0 0 timeL delaypot2 Left_Time -2 -8
-0 8 -262144 -1 -1 0 1;
+0 8 -262144 -1 -1 5200 1;
 #X obj 108 234 hsl 128 15 0 1000 0 0 timeR delaypot6 Right_Time -2
 -8 0 8 -262144 -1 -1 0 1;
-#X floatatom 244 135 5 0 0 0 - feedbackL -, f 5;
-#X floatatom 244 167 5 0 0 0 - feedbackR -, f 5;
-#X floatatom 245 199 5 0 0 0 - timeL -, f 5;
-#X floatatom 245 234 5 0 0 0 - timeR -, f 5;
+#X floatatom 244 135 5 0 0 0 - feedbackL -;
+#X floatatom 244 167 5 0 0 0 - feedbackR -;
+#X floatatom 245 199 5 0 0 0 - timeL -;
+#X floatatom 245 234 5 0 0 0 - timeR -;
 #X obj 603 354 sig~;
-#X floatatom 603 332 5 0 0 0 - - -, f 5;
-#X floatatom 779 332 5 0 0 0 - - -, f 5;
+#X floatatom 603 332 5 0 0 0 - - -;
+#X floatatom 779 332 5 0 0 0 - - -;
 #X obj 779 352 sig~;
 #X obj 535 245 delwrite~ delayRight 4000;
-#X floatatom 759 182 5 0 0.9 0 - - -, f 5;
+#X floatatom 759 182 5 0 0.9 0 - - -;
 #X obj 739 229 *~ 0;
 #X obj 531 202 *~ 0;
-#X floatatom 552 150 5 0 0.9 0 - - -, f 5;
+#X floatatom 552 150 5 0 0.9 0 - - -;
 #X obj 603 379 vd~ delayLeft;
 #X obj 779 381 vd~ delayRight;
-#X floatatom 461 326 5 0 0 0 - - -, f 5;
+#X floatatom 461 326 5 0 0 0 - - -;
 #X obj 344 333 - 1;
 #X obj 342 356 * -1;
-#X floatatom 342 380 5 0 0 0 - - -, f 5;
+#X floatatom 342 380 5 0 0 0 - - -;
 #X obj 315 431 *~;
 #X obj 446 445 *~;
 #X obj 597 466 *~;
@@ -39,7 +39,7 @@
 #X obj 360 83 inlet~ left;
 #X obj 487 81 inlet~ right;
 #X obj 383 431 *~;
-#N canvas 545 275 1078 750 routing_delay 0;
+#N canvas 756 195 1078 750 routing_delay 0;
 #X obj 139 72 hsl 80 15 0 1023 0 0 empty empty empty -2 -8 0 10 -228856
 -1 -1 0 1;
 #X obj 136 150 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
