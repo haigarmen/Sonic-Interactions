@@ -122,7 +122,12 @@ After desoldering a new header on LOP and having the same shorting out/no power 
 
 #### 18.05.12
 figure out how to convert UUID from phones to a sequence of notes for cicadaPi project.
-typical UUID OO:EE:BD:DB:16:E1
+typical U
+
+UID OO:EE:BD:DB:16:E1
+
+
+
 
 rhythm, notes, variation
 tried Text-to-music project, ruby script reads text from rss feed and sends
@@ -1518,6 +1523,7 @@ Order Workshop Hardware for Dundee - May 24
 # Experiment 1 Sense Synth
 # Experiment 2 Nukulele
 # Experiment 3 nSynth
+
 publish this one:
 # Experiment 4 Cicada - phone uids into Melodies
 # Experiment 5: KalimPi
@@ -1608,7 +1614,7 @@ https://hackernoon.com/how-to-make-a-vr-app-with-zero-experience-927438e2dede
 
 https://aframe.io/showcase/
 
-# 19.02.06
+# 19.03.06
 March 6
 creating Bluetooth Device Scanning synth
 installed Bluez
@@ -1745,3 +1751,22 @@ exists in memory.
 
 pg 165 Chapter 10
 Basic Objects and Principles of Operation
+
+# 19.03.15
+NonInstrument - 2 insta posts
+
+It's unethical to record people's UID numbers, but if I turn it into a melody and record that is it better?
+
+# 19.03.16
+Write about Sync and Ableton Link.
+expand on playing on the grid, quantization, groove templates and how humans actually play
+
+*- ALSO after listening to 20k podcast on the Booj*
+
+I want to write a piece of music that uses the formula and cliches of a movie trailer:
+1. start with a single note
+2. build to a quirky cover version of a known track
+3. A drop with a booj or two
+4. recap the cover with a build
+5. second drop
+6. the dramatic end
