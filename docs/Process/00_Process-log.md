@@ -700,20 +700,23 @@ https://elinux.org/Interfacing_with_I2C_Devices#External_Links
 amplipi (hifiberry)
 
 
-
+## 2018.11.
 ## PiSound with Modep (is amazing)
 https://blokas.io/modep/docs/
 Mod duo uses LV2 plugins (interesting)
 
+log into your pedal from a browser and configure from a web interface:
+http://modepi.local
+
+
 https://www.moddevices.com/blog/2016/09/08/create-lv2-plugin-part-1
 http://lv2plug.in/book/
 
-#### 2018.11.8
-went to LA for loop
-DIY instrument workshop was rubish, the Novalia boards look interesting but what has been made are all pretty lame marketing efforts, with the exception of the IceCube Album cover that had great art and a functional sampler.
+#### 2018.11.08
+went to LA for Ableton Loop
+DIY instrument workshop was rubbish, the Novalia boards look interesting but what has been made are all pretty lame marketing efforts, with the exception of the IceCube Album cover that had great art and a functional sampler.
 
 https://www.novalia.co.uk/
-
 
 watch talks from last year:
 https://www.ableton.com/en/blog/loop/talks/
@@ -1523,11 +1526,15 @@ Order Workshop Hardware for Dundee - May 24
 # Experiment 1 Sense Synth
 # Experiment 2 Nukulele
 # Experiment 3 nSynth
+# Experiment 4 Cicada - phone uids into Melodies
 
 publish this one:
-# Experiment 4 Cicada - phone uids into Melodies
 # Experiment 5: KalimPi
-# Experiment 6 sensor with OhEye
+# Experiment 6 sensor with OhEye - percussion instrument
+
+Optional:
+# Experiment 7: Open Theremin
+# Experiment 8: Pisound Pedalboard
 
 
 Electronic circuits:
@@ -1558,7 +1565,6 @@ https://www.instructables.com/id/Make-a-Thumb-Piano-Mbira/
 
 Marimba -
 https://www.instructables.com/id/Build-Your-Own-Marimba/
-
 
 Research Project on ResearchGate:
 https://www.researchgate.net/project/Sonic-Interactions
@@ -1627,11 +1633,56 @@ https://learn.adafruit.com/introduction-to-bluetooth-low-energy/gatt
 
 
 Pd Exercises:
-Day01/
+Day01/ Basics
     01.pd - Simple OSC and DAC
     02.pd - Simple OSC and DAC - changing frequency
     03.pd - OSC to play notes (mtof)
     04.pd - Slider, basic rounding
+    05.pd - Table, tabwrite
+    06.pd - Sin wave in Table refreshed
+    07.pd - Sin and Square waves combined using sampleHold
+
+activity: everyone plays a note of a chords
+record a progression
+
+One Thing - San Holo
+https://www.edmprod.com/theory-arrangement-san-holo-one-thing/
+
+C#m – A – E – F#m – C#m – A – E – B
+
+C#m: C# – E – G# (midi: 25, 44, 49, 52) (optional: 56, 61, 64)
+A: A – C# – E (midi: 33, 45, 49, 52) (optional: 57, 61, 64)
+E: E – G# – B (midi: 33, 44, 47, 52) (optional: 56, 59, 64)
+F#m: F# – A – C# (midi: 30, 44, 49, 54) (optional: 56, 61, 66)
+
+C#m: C# – E – G#
+A: A – C# – E
+E: E – G# – B
+B: F# – B – D# (midi: 35, 42, 47, 51, 54) (optional: 56, 61, 66)
+
+
+
+Day02/ Sequencers
+    08.pd - Simple Sequencer - write your own melody
+    09.pd - writing values to a table a- simple
+    10.pd - writing values to a table b. better visually
+    11.pd - Write values to table with expression
+    12.pd - Changing shape of note with Line
+    13.pd - Subpatch with BPM
+
+
+exercise 11
+
+Next steps:
+- use expression to populate table
+- add a subpatch for BPM
+- add an abstraction for BPM (new object type: sonicinteractions/bpm)
+- come up with a few melodies
+- Add random into sequence
+- learn the graph/canvas thingie?
+
+
+Day03/ Audio
 
 
 INTRO TO PD
@@ -1770,3 +1821,8 @@ I want to write a piece of music that uses the formula and cliches of a movie tr
 4. recap the cover with a build
 5. second drop
 6. the dramatic end
+
+
+Website How to...
+terms and conditions when first entering but never after
+https SSL certificate.
