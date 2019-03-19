@@ -72,14 +72,13 @@ to make sound.;
 #X connect 2 0 1 2;
 #X connect 4 0 1 0;
 #X restore 433 21 pd guts;
-#X obj 274 218 grid grid5 200 0 199 200 0 199 1 1 1 10 10 0 0;
 #X obj 467 424 * 40;
 #X obj 275 447 nbx 5 18 -1e+37 1e+37 0 0 frequency empty frequency
--8 26 1 12 -233017 -1 -1 0 256;
+-8 26 1 12 -233017 -1 -1 980 256;
 #X obj 467 447 nbx 5 18 -1e+37 1e+37 0 0 duration empty duration -2
-26 1 12 -233017 -1 -1 7960 256;
+26 1 12 -233017 -1 -1 2360 256;
 #X obj 549 24 vsl 22 200 0 150 0 0 master-lvl empty volume -9 -8 1
-8 -225271 -1 -1 0 1;
+8 -225271 -1 -1 12100 1;
 #X obj 63 404 bng 55 250 50 0 trigger empty trigger 0 -9 1 10 -24198
 -1 -1;
 #X text 72 370 click for one;
@@ -88,7 +87,7 @@ to make sound.;
 -1;
 #X obj 63 306 metro 1500;
 #X obj 192 212 vsl 25 128 30 3000 0 0 empty empty empty 0 -8 1 8 -262131
--1 -1 0 1;
+-1 -1 8200 1;
 #X text 44 241 click for many;
 #X obj 275 423 * 20;
 #X text 10 519 (C) Copyright 2004 Hans-Christoph Steiner <hans@at.or.at>
@@ -96,11 +95,15 @@ to make sound.;
 #X text 227 533 released under the GNU GPL;
 #X text 421 520 $Revision: 1.1 $$Date: 2005-05-05 20:35:48 $;
 #X text 422 533 $Author: eighthave $;
-#X connect 4 0 16 0;
-#X connect 4 1 5 0;
-#X connect 5 0 7 0;
-#X connect 11 0 13 0;
-#X connect 12 0 13 0;
-#X connect 13 0 9 0;
-#X connect 14 0 13 1;
-#X connect 16 0 6 0;
+#X obj 295 212 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 4900 1;
+#X obj 457 209 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 5900 1;
+#X connect 4 0 6 0;
+#X connect 10 0 12 0;
+#X connect 11 0 12 0;
+#X connect 12 0 8 0;
+#X connect 13 0 12 1;
+#X connect 15 0 5 0;
+#X connect 20 0 15 0;
+#X connect 21 0 4 0;
