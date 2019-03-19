@@ -1634,13 +1634,33 @@ https://learn.adafruit.com/introduction-to-bluetooth-low-energy/gatt
 
 Pd Exercises:
 Day01/ Basics
-    01.pd - Simple OSC and DAC
-    02.pd - Simple OSC and DAC - changing frequency
-    03.pd - OSC to play notes (mtof)
-    04.pd - Slider, basic rounding
-    05.pd - Table, tabwrite
-    06.pd - Sin wave in Table refreshed
-    07.pd - Sin and Square waves combined using sampleHold
+
+First activity:
+Make your first object
+
+To place an object on the canvas, select Put→Object from the menu or use
+CTRL+1 on the keyboard.
+An active, dotted box will appear.
+Move it somewhere on the canvas using the mouse and click to fix it in place.
+You can now type the name of the new object, so type the multiplication character into the box. When you have finished typing, click anywhere on the
+blank canvas to complete the operation.
+When Pure Data recognizes the object name you give, it immediately changes the object box boundary to a solid line and adds a number of inlets and outlets. You should see a |* | on the canvas now.
+
+    01.hello_world.pd
+    02.basic_elements.pd
+    03.getting_help.pd
+    04.edit_mode.pd
+    05.objects.pd
+    06.connections.pd
+    07.messages.pd
+    08.hello_audio.pd - Simple OSC and DAC
+    09-audio-creation.pd - Simple OSC and DAC - changing frequency
+    10-midi-notes.pd - OSC to play notes (mtof)
+    11-rounding-notes.pd - Slider, basic rounding
+    12-waveform.pd - Table, tabwrite
+    13-waveform-2.pd - Sin wave in Table refreshed
+    14-optional-samplehold.pd - Sin and Square waves combined using sampleHold
+
 
 activity: everyone plays a note of a chords
 record a progression
@@ -1661,7 +1681,6 @@ E: E – G# – B
 B: F# – B – D# (midi: 35, 42, 47, 51, 54) (optional: 56, 61, 66)
 
 
-
 Day02/ Sequencers
     08.pd - Simple Sequencer - write your own melody
     09.pd - writing values to a table a- simple
@@ -1670,138 +1689,15 @@ Day02/ Sequencers
     12.pd - Changing shape of note with |line~|
     13.pd - Subpatch with BPM
 
+    - Add random into sequence
 
-
-Next steps:
-- add a subpatch for BPM
-- add an abstraction for BPM (new object type: sonicinteractions/bpm)
-- Add random into sequence
-- learn the graph/canvas thingie?
 
 
 Day03/ Sampling
     14.pd Load an audio sample
 
-Edges of East Van
-A set of imagery that capture random moments that explore the passage of time.
-Tamar's photographs touch on the mundane, nostalgic, sometimes fleeting instances which challenge our memories. This work helps us discover remnants of past lives and present a contrast between the softer and harder edges of East Van.
 
-
-
-INTRO TO PD
-Soundwave
-The most common and useful representation of sound waveform, a pattern of pressure changes in time, and can be drawn as a two-dimensional graph with time as one axis and amplitude as the other.
-
-Samples
-Unlike real signals, digital sound signals are sampled. A stream of numbers
-called samples is captured or played back at a certain rate, called the sampling
-rate. Sampling gives us discontinuous or discrete signals where each step
-is a value that represents an amplitude at a single point in time.
-
-Pd
-Pure Data is a visual signal programming language which makes it easy to
-construct programs to operate on signals. We are going to use it extensively in
-this textbook as a tool for sound design. The program is in active development
-and improving all the time. It is a free alternative to Max/MSP that many see
-as an improvement.
-
-Objects
-In Pd we use a flowchart with lines connecting boxes together to build programs. We call these boxes objects. Stuff goes in, stuff comes out. For it to pass into or out of them, objects must have inlets or outlets. Inlets are at the top of an object box, outlets are at the bottom. Here is an object that has two inlets and one outlet. They are shown by small “tabs” on the edge of the object box.
-
-Connections
-The connections between objects are sometimes called cords or wires. They
-are drawn in a straight line between the outlet of one object and the inlet of
-another. It is okay for them to cross, but you should try to avoid this since it
-makes the patch diagram harder to read.
-
-Data
-The stuff or data being processed comes in a few flavours: sound signals,
-and messages. Objects give clues about what kind of data they process by their
-name. For example, an object that adds together two sound signals looks like |+ ~|. The + means that this is an addition object, and the ∼ (tilde character)
-means that its object operates on audio signals.
-
-Your first object
-
-To place an object on the canvas, select Put→Object from the menu or use
-CTRL+1 on the keyboard. An active, dotted box will appear. Move it somewhere
-on the canvas using the mouse and click to fix it in place. You can
-now type the name of the new object, so type the multiplication character
-* into the box. When you have finished typing, click anywhere on the
-blank canvas to complete the operation. When Pure Data recognises the object
-name you give, it immediately changes the object box boundary to a solid
-line and adds a number of inlets and outlets. You should see a |* | on the
-canvas now.
-
-Edit Mode and Wiring
-When you create a new object from the menu, Pd automatically enters edit
-mode, so if you just completed the instructions above you should currently be
-in edit mode. In this mode you can make connections between objects or delete
-objects and connections.
-Hovering over an outlet will change the mouse cursor to a new “wiring tool.” If you click and hold the mouse when the tool is active you will be able to drag a connection away from the object.
-
-
-Bang Message
-This is the most fundamental and smallest message. It just means “compute
-something.” Bangs cause most objects to output their current value or advance
-to their next state. Other messages have an implicit bang so they don’t need
-to be followed with a bang to make them work.
-
-Float Messages
-“Floats” is another name for numbers. As well as regular (integer) numbers like
-1, 2, 3 and negative numbers like −10 we need numbers with decimal points like −198753.2 or 10.576 to accurately represent numerical data. These are called
-floating point numbers, because of the way computers represent the decimal
-point position.
-
-Number Box
-For float numbers we have already met the number box, which is a dual-purpose GUI element. Its function is to either display a number or allow you to input
-one. A bevelled top right corner like this denotes that this object is a
-number box. Numbers received on the inlet are displayed and passed directly
-to the outlet. To input a number click and hold the mouse over the value field
-and move the mouse up or down. You can also type in numbers. Click on a
-number box, type the number and hit RETURN.
-
-Toggle box
-Another object that works with floats is a toggle box. Like a checkbox on any
-standard GUI or web form, this has only two states, on or off. When clicked a
-cross appears in the box like this and it sends out a number 1; clicking again
-causes it to send out a number 0 and removes the cross so that it looks like
-this .
-
-Sliders and Other Numerical GUI Elements
-GUI elements for horizontal and vertical sliders can be used as input and display
-elements. Their default range is 0 to 127, nice for MIDI controllers, but like
-all other GUI objects this can be changed in their properties window. Unlike
-those found in some other GUI systems, Pd sliders do not have a step value.
-
-Message Box
-These are visual containers for user-definable messages. They can be used to
-input or store a message. The right edge of a message box is curved inwards
-like this , and it always has only one inlet and one outlet. They behave as
-GUI elements, so when you click a message box it sends its contents to the
-outlet. This action can also be triggered if the message box receives a bang
-message on its inlet.
-
-Symbolic Messages
-A symbol generally is a word or some text. A symbol can represent anything;
-it is the most basic textual message in Pure Data. Technically a symbol in Pd
-can contain any printable or nonprintable character. But most of the time you
-will only encounter symbols made out of letters, numbers, and some interpunctuation
-characters like a dash, dot, or underscore.
-
-Lists
-A list is an ordered collection of any things, floats, symbols, or pointers that
-are treated as one. Lists of floats might be used for building melody sequences
-or setting the time values for an envelope generator. Lists of symbols can be
-used to represent text data from a file or keyboard input.
-
-Pointers
-As in other programming languages, a pointer is the address of some other
-piece of data. We can use them to build more complex data structures, such
-as a pointer to a list of pointers to lists of floats and symbols.
-
-Tables, Arrays, and Graphs
-A table is sometimes used interchangeably with an array to mean a two-dimensional data structure. An array is one of the few invisible objects. Once declared it just
-exists in memory.
+- learn the graph/canvas thingie?
 
 pg 165 Chapter 10
 Basic Objects and Principles of Operation
