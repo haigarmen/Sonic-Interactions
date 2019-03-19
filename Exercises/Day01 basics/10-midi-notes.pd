@@ -1,0 +1,43 @@
+#N canvas 509 162 668 557 10;
+#X obj 326 454 dac~;
+#X obj 325 392 osc~;
+#X floatatom 325 362 5 0 0 0 - - -;
+#X obj 325 328 mtof;
+#X floatatom 406 260 5 0 0 0 - - -;
+#X msg 178 190 60;
+#X msg 204 163 61;
+#X msg 228 190 62;
+#X msg 254 163 63;
+#X msg 278 190 64;
+#X msg 318 190 65;
+#X msg 347 163 66;
+#X msg 368 190 67;
+#X msg 397 163 68;
+#X msg 418 190 69;
+#X msg 447 163 70;
+#X msg 468 190 71;
+#X text 149 33 MIDI is an acronym that stands for Musical Instrument
+Digital Interface. It's a way to connect devices that make and control
+sound — such as synthesizers \, samplers \, and computers — so
+that they can communicate with each other \, using MIDI messages. Pd
+can use MIDI Notes to communicate note values;
+#X text 48 164 these are MIDI notes >>;
+#X text 183 323 This object converts MIDI into frequency;
+#X text 165 362 the resulting frequency;
+#X connect 1 0 0 0;
+#X connect 1 0 0 1;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 0;
+#X connect 6 0 3 0;
+#X connect 7 0 3 0;
+#X connect 8 0 3 0;
+#X connect 9 0 3 0;
+#X connect 10 0 3 0;
+#X connect 11 0 3 0;
+#X connect 12 0 3 0;
+#X connect 13 0 3 0;
+#X connect 14 0 3 0;
+#X connect 15 0 3 0;
+#X connect 16 0 3 0;

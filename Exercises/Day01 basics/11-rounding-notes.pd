@@ -1,0 +1,23 @@
+#N canvas 437 40 668 557 10;
+#X obj 264 389 dac~;
+#X obj 263 327 osc~;
+#X floatatom 263 297 5 0 0 0 - - -;
+#X obj 263 263 mtof;
+#X floatatom 263 225 5 0 0 0 - - -;
+#X obj 263 166 + 0.499999;
+#X floatatom 263 131 5 0 0 0 - - -;
+#X obj 263 196 int;
+#X obj 266 100 hsl 128 15 40 80 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 46 101 Slider to control MIDI note value;
+#X text 67 167 adding to round the number up;
+#X text 127 193 turning the value into a whole number;
+#X connect 1 0 0 0;
+#X connect 1 0 0 1;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X connect 5 0 7 0;
+#X connect 6 0 5 0;
+#X connect 7 0 4 0;
+#X connect 8 0 6 0;

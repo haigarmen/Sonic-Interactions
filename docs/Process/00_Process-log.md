@@ -1667,22 +1667,25 @@ Day02/ Sequencers
     09.pd - writing values to a table a- simple
     10.pd - writing values to a table b. better visually
     11.pd - Write values to table with expression
-    12.pd - Changing shape of note with Line
+    12.pd - Changing shape of note with |line~|
     13.pd - Subpatch with BPM
 
 
-exercise 11
 
 Next steps:
-- use expression to populate table
 - add a subpatch for BPM
 - add an abstraction for BPM (new object type: sonicinteractions/bpm)
-- come up with a few melodies
 - Add random into sequence
 - learn the graph/canvas thingie?
 
 
-Day03/ Audio
+Day03/ Sampling
+    14.pd Load an audio sample
+
+Edges of East Van
+A set of imagery that capture random moments that explore the passage of time.
+Tamar's photographs touch on the mundane, nostalgic, sometimes fleeting instances which challenge our memories. This work helps us discover remnants of past lives and present a contrast between the softer and harder edges of East Van.
+
 
 
 INTRO TO PD
@@ -1826,3 +1829,9 @@ I want to write a piece of music that uses the formula and cliches of a movie tr
 Website How to...
 terms and conditions when first entering but never after
 https SSL certificate.
+
+#19.03.18
+MachineLearning Resource
+https://github.com/ml4a/ml4a-guides
+
+# had trouble installing iemlib and zexy libraries on mac pd 0.49.1
