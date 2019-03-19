@@ -1,0 +1,34 @@
+#N canvas 708 58 450 300 10;
+#X obj 32 32 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 27 9 Square Wave Oscillator;
+#X obj 33 80 mtof;
+#X obj 34 106 phasor~;
+#X obj 33 143 expr~ $v1 > $v2;
+#X obj 38 200 dac~;
+#X obj 120 96 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 64 256;
+#X obj 120 118 / 100;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array pwm 100 float 5;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
+#X coords 0 1 99 -1 200 140 1;
+#X restore 217 36 graph;
+#X obj 116 183 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 116 206 metro 50;
+#X obj 116 234 tabwrite~ pwm;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 4 0 5 1;
+#X connect 4 0 11 0;
+#X connect 6 0 7 0;
+#X connect 7 0 4 1;
+#X connect 9 0 10 0;
+#X connect 9 0 11 0;
+#X connect 10 0 11 0;
