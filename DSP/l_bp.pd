@@ -1,4 +1,4 @@
-#N canvas 59 68 590 294 10;
+#N canvas 59 68 733 312 10;
 #X obj 81 187 plugin~ bandpass_iir;
 #X msg 19 170 print;
 #X msg 81 122 control #1 \$1;
@@ -19,7 +19,7 @@
 #X obj 25 25 inlet~;
 #X text 23 10 audio;
 #X obj 216 227 outlet~;
-#X text 292 162 Glame LADSPA plugin. into pd by jason.plumb www.noisybox.net
+#X text 292 262 Glame LADSPA plugin. into pd by jason.plumb www.noisybox.net
 nice tight bandpass \, but costs CPU at higher Q;
 #X obj 485 165 \$1;
 #X obj 484 211 \$3;
