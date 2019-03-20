@@ -10,7 +10,7 @@ spi = spidev.SpiDev()
 spi.open(0,0)
 spi.max_speed_hz=1000000
 
-waitTime = .1
+waitTime = .05
 bounceTime = 0.1
 
 btn1alreadyPressed = False
@@ -51,30 +51,26 @@ while True:
     btn3pressed = not GPIO.input(18)
     btn4pressed = not GPIO.input(27)
 
-    input_right = GPIO.input(4)
-    input_left = GPIO.input(17)
-    input_down = GPIO.input(18)
-    input_up = GPIO.input(27)
-
     if btn1pressed and not btn1alreadyPressed:
+        print('1 Pressed')
         message = '8 1'
         send2Pd(message)
     btn1alreadyPressed = btn1pressed
 
     if btn2pressed and not btn2alreadyPressed:
- #       print('2 Pressed')
+        print('2 Pressed')
         message = '8 2'
         send2Pd(message)
     btn2alreadyPressed = btn2pressed
 
     if btn3pressed and not btn3alreadyPressed:
- #       print('3 Pressed')
+        print('3 Pressed')
         message = '8 3'
         send2Pd(message)
     btn3alreadyPressed = btn3pressed
 
     if btn4pressed and not btn4alreadyPressed:
- #       print('4 Pressed')
+        print('4 Pressed')
         message = '8 4'
         send2Pd(message)
     btn4alreadyPressed = btn4pressed
