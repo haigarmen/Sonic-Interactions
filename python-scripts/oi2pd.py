@@ -69,7 +69,7 @@ while True:
     btn4pressed = not GPIO.input(27)
 
     input_right = GPIO.input(4)
-    input_left = GPIO.input(17)
+    input_left = GPIO.input(17) 
     input_down = GPIO.input(18)
     input_up = GPIO.input(27)
 
