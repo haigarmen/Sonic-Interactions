@@ -1,4 +1,4 @@
-#N canvas 168 542 790 300 10;
+#N canvas 120 204 790 300 10;
 #X msg 17 182 print;
 #X obj 256 253 outlet~;
 #X obj 93 211 plugin~ multivoiceChorus;
@@ -31,7 +31,6 @@
 #X obj 406 88 clip 0 5;
 #X obj 512 89 clip 2 30;
 #X obj 19 60 inlet~;
-#X text 356 218 i couldn't really notice this effect :(;
 #X connect 0 0 2 0;
 #X connect 2 1 1 0;
 #X connect 3 0 2 0;
