@@ -1609,7 +1609,6 @@ learning VR in kadenze
 SkyBox -  the cube that is the largest object in your VR World
 "Hello Skybox"
 
-
 Google Expeditions:
 create an expedition:
 https://support.google.com/edu/expeditions/answer/9103284?hl=en&ref_topic=9007515
@@ -1632,8 +1631,13 @@ more on GATT here:
 https://learn.adafruit.com/introduction-to-bluetooth-low-energy/gatt
 
 
-Pd Exercises:
-Day01/ Basics
+####Pd Exercises:
+
+01 Basics
+02 Sequencing
+03
+
+## Day01/ Basics
 
 First activity:
 Make your first object
@@ -1661,21 +1665,23 @@ When Pure Data recognizes the object name you give, it immediately changes the o
     13-waveform-2.pd - Sin wave in Table refreshed
     14-optional-samplehold.pd - Sin and Square waves combined using sampleHold
 
-
-activity: everyone plays a note of a chords
-record a progression
+#activity: everyone plays individual notes of a chord progression.
+1. program in the notes for each person.
+2. establish a tempo and a progression (use a drum beat to keep time)
+3. rehearse and then record.
+4. improvise and record again
 
 One Thing - San Holo
 https://www.edmprod.com/theory-arrangement-san-holo-one-thing/
 
-C#m – A – E – F#m – C#m – A – E – B
+C#min – A – E – F#min || C#min – A – E – B ||
 
-C#m: C# – E – G# (midi: 25, 44, 49, 52) (optional: 56, 61, 64)
+C#min: C# – E – G# (midi: 25, 44, 49, 52) (optional: 56, 61, 64)
 A: A – C# – E (midi: 33, 45, 49, 52) (optional: 57, 61, 64)
 E: E – G# – B (midi: 33, 44, 47, 52) (optional: 56, 59, 64)
-F#m: F# – A – C# (midi: 30, 44, 49, 54) (optional: 56, 61, 66)
+F#min: F# – A – C# (midi: 30, 44, 49, 54) (optional: 56, 61, 66)
 
-C#m: C# – E – G#
+C#min: C# – E – G#
 A: A – C# – E
 E: E – G# – B
 B: F# – B – D# (midi: 35, 42, 47, 51, 54) (optional: 56, 61, 66)
@@ -1691,7 +1697,16 @@ Day02/ Sequencers
 
     - Add random into sequence
 
+everyone use the same notes in C major pentatonic scale
+set a drumbeat and try to sync everyone's melodies
 
+talk about the issue of synchronization
+introduce Ableton Link
+Midi note numbers for C Pentatonic
+c2-36 d2-38 e2-40 g2-43 a2-45
+c3-48 d3-50 e3-52 g3-55 a3-57
+c4-60 d4-62 e4-64 g4-67 a4-69
+c5-72 d5-74 e5-76 g5-79 a5-81
 
 Day03/ Sampling
     14.pd Load an audio sample
@@ -1731,3 +1746,179 @@ MachineLearning Resource
 https://github.com/ml4a/ml4a-guides
 
 # had trouble installing iemlib and zexy libraries on mac pd 0.49.1
+
+
+
+*The Ultimate Guide to Starting Songs:
+22 Foolproof Techniques to Crush Writer’s Block
+“There’s a secret that real writers know that wannabe writers don’t, and the secret is this: it’s not the writing part that’s hard. What’s hard is sitting down to write.”
+– Steven Pressfield
+
+Have you ever paused to consider the amount of decisions that need to be made in music production? Chances are you’ve been too busy making music to count. But there’s no doubt about it – from initial conception through final mixdown, from sample choice to EQ moves, from composition to arrangement, the decisions number into the thousands. For every song.
+
+How many times have you stared at a blank DAW and decided “not today”? Maybe the pile of decisions in front of you seemed too insurmountable to even begin.
+
+There’s another secret that professionals know, no matter what the discipline may be. It may seem counterintuitive, but hear me out:
+
+Constraints breed creativity.
+
+Or in other words — limitations = freedom.
+
+Here’s why: When you’re faced with infinite options, decisions are hard. The mind is too busy weighing the costs of each viable option to actually move forward. As soon as you start making decisions — and committing to them – you are on the path of writing and finishing the song.
+
+So choose your BPM. Choose a key. Choose 3-5 references tracks that inspire you, that are targeted to the type of music you want to make. These decisions are prerequisites for anything that comes next.
+
+Remember this: where a song starts is less important than the fact that you’re making progress. The important things is to get started, and to keep moving forward to the best of your ability. Many well-remembered songs were written quickly, because hesitation is the death of creativity.
+
+Once you’ve identified the vibe you’re working with, you can use one of these fire-starters to get the track moving.
+
+Starting Songs: 22 Techniques
+1. Embrace a Change of Environment
+Any opportunity you have to step away from the studio is a chance to harness the power of observation and awareness. If you work from a laptop, head to a cafe or park every once in a while. Breathe in the fresh air, and see what ideas the open sky and environment inspires.
+
+Keep your ears open — are there snippets of conversation that catch your ears? You can take this even further and hold a songwriting retreat with friends. Rent a cabin for a weekend, and pick three samples to work from. Everyone has the same kindling — it’s fun to see what types of fires get started.
+
+2. Sample From a Song
+Don’t just take it from me. Mark Ronson put on an incredible Ted Talk about how sampling has changed modern music, and it’s well worth the watch.
+
+
+Sampling is an art form, and there are entire genres where it’s the default mode of starting and advancing ideas. In order to embrace the art of sampling, you need to be comfortable with bending the rules. It’s an important step to reach as a producer. Once you give yourself the greenlight to Steal Like an Artist, the world of recorded music becomes your playground.
+
+Think about how fun it would be to dig through records, searching for a texture or snippet to introduce into your own music. Not to mention the ways you could go about processing, warping, re-pitching, reversing, and manipulating the sample. I’m getting excited just writing about it.
+
+3. Use a Pen and Paper
+It can be really helpful to take a step back from the DAW when you’re trying to start. Especially for those producers writing their own lyrics – it’s so much easier to work ideas out without being locked into a backing track that may not even be complete.
+
+You can also use a pen and paper to become clear about your direction, otherwise known as defining your aesthetic principles.
+
+4. Choose Your Palette: Define the Aesthetic Before You Begin
+One of the biggest mistakes new producers make is using samples that simply don’t sound good to begin with. Think about it: if you were a painter, and you chose dull, lifeless colors, it would be damn near impossible to create something vibrant and illuminating.
+
+The same goes for productions: you must hold an extremely high bar for the samples you’re using (that’s one reason why sampling from an existing song can give you a leg up). Assemble a collection of great sounds to start with, and the track will practically write itself.
+
+You can take this idea a step further by applying it to the message of the song. Freewrite for 10 minutes, pure stream of consciousness, about any subject or destination that strikes you. Keep the pen moving The only mistake is to hesitate.
+
+Read through your freewrite, and circle ten phrases or words that interest you. Now consult your favorite rhyming dictionary (mine is b-rhymes.com), and find 5 rhymes for each. At this point, you’ve emptied the jigsaw pieces onto the table, and you’ve got the box in front of you. All you need to do is assemble the pieces.
+
+5. Go On an Inspiration Quest
+This is a tip from Ari Herstand from his book How to Make it in the New Music Business. Have you ever tried being intentional about seeking out events and experiences that will inspire and invigorate you? Create a list of Inspiration Quests that you can embark on with the intention of gathering details and experiences for a song. Here are some of mine:
+
+1. Get outdoors for a run or hike. Be open to what the world has to say.
+2. Go to a concert, show, or performance. Artists you love are always worth it, but it can be just as fun to experience something new. What about dance, or the theater?
+3. Get physically active in a new way. Try 80’s night at the Roller Disco, kickboxing, or taking a trampoline class at the local Trapeze gym.
+4. Wander through a used bookstore.
+5. Spend a day looking for (and taking) photos.
+6. Surprise someone you care about. You’ll be surprised yourself at how much it opens your heart and mind.
+
+6. Use a New Sample, Instrument or Plugin
+Did you just install a new Serum soundbank? How about that sample pack you purchased but haven’t browsed through yet? Embrace the fresh tools in your arsenal, and force yourself to use something new in your next track.
+
+Every single time I bought a new sample pack, I wouldn’t consider it ‘used up’ until I’d finish at least 1-2 new songs as a direct result of that sample pack. That way, I forced myself to truly utilize every pack I collected. If I couldn’t get a song or two out of it, than the pack wasn’t worth getting to begin with.
+
+Push yourself beyond the limits of using what’s comfortable and convenient, and you’ll find inspiration in unexpected places.
+
+7. Use a Reference Track for Arrangement
+Take one of the references you decided on in pre-production, and drag it into your DAW. Change the tempo of your session to match the reference track, and then create arrangement markers when each section begins (for example, intro, verse 1, buildup, hook, etc.). Once you’re done, you can delete the reference track, and you’re left with a roadmap for structure. At this point, you can change the session tempo to anything you like, and the markers will retain their same relative positions. I also create blank MIDI clips for each section so it’s easier to visualize.
+
+
+8. Record a Field Noise
+Not only is recording field noises a ton of fun, it also gives your track a unique edge that can’t be copied. The second I drop one of my personally recorded ambiences into the DAW, I instantly feel more connected to the song I’m working on. It creates a shared space where everything can live, and not just any shared space: somewhere I stood and breathed.
+
+If you’re really struggling to start a song, get out of the studio and go hunting for sounds. You’re bound to come up something that takes you in an entirely new direction, and with our current state of technology, you really have no excuses. Even your iPhone will get the job done when it comes to recording real world ambiances and atmospheres.
+
+9. Commit to One Hour of No Plugins
+One of the most insidious blockers to finishing music is getting too deep into processing before the track is complete. It can feel like you’re making progress, but if your computer is struggling for CPU and all you have is an 8-bar loop, you’ve ensnared yourself in the trap of too many plugins too soon.
+
+Songwriting is not called “idea processing.” You need to make progress by adding layers and structuring the track before you get deep into your mixing plugins. If you struggle with this, simply set a timer and commit to one hour of writing the song without using plugins.
+
+10. Write the Chord Progression
+When I’m stuck songwriting, it helps to return to the basics: chords and a melody. You will never go wrong by focusing on chords and a melody.
+
+If you need a jumpstart with your chords, try the Unison MIDI Chord Pack,  Xfer’s Cthulhu, or Captain Chords.
+
+11. Write with a Purpose in Mind
+Give yourself a reason to finish the track. Do you have a show coming up? Is there an online contest or giveaway you want to submit to? I find that having a purpose for the song I’m writing helps me execute and make decisions quicker.
+
+If you’re struggling with this, make a bet with a friend. Set a date when you’re going to play your finished tracks for each other, and stick to it.
+
+12. Throw a Song-Starting Bash
+This is one of my favorite techniques. Instead of spending all day working on one song, give yourself no more than 90 minutes to create an initial idea and to take it as far as you can. This is especially fun with friends, where you can bounce ideas off each other and improvise. Once the timer is up, save the session and create a new one.
+
+Writing this way takes the pressure off of starting a “perfect song.”  They’re all simply ideas, and you come to trust your idea generation muscle in the process.
+
+13. Get a Beat Going
+Creating a beat is the bread and butter of starting a song. It’s like running — once you start those muscles in motion, your body instinctively takes over. If you’re really stuck staring at a blank DAW, start by putting a snare on the 2 and the 4 as the backbeat. Pencil in your kickdrums on the first beat of every measure.
+
+It’s bare bones, sure. But from there you can start embellishing and adding details. The important part is to start and let the beat take on a life of its own.
+
+14. Use an Alter Ego
+If I asked you “How would Batman start that song?” you could wear your imagination hat and make believe, just the same way you did when you were a kid.
+
+The concept of alter egos is tremendously powerful: it’s really just human nature, but you see it everywhere among top performers. Just look at Beyoncé, who went by Sasha Fierce. Or David Bowie’s character Ziggy Stardust. Deadmau5, Daft Punk, Bruno Mars, Lana Del Rey: these are just a handful of artists who have embraced the idea of an alter ego to be intentional about how they are showing up on their field of play.
+
+For more on alter egos, check out this podcast with Hal Elrod and Todd Herman. If you’re interested, you can pick up Todd’s book The Alter Ego Effect. But again, the idea here is to pretend to be someone else. Try writing something out of your comfort zone, something YOU would never write. The results might surprise you.
+
+
+15. Use Videos to Awaken Your Emotions
+I like to keep an inspiration bin of photos and videos that move me. Have you seen the movie Up?
+
+If you have, you’ll remember the opening scene. It hits on just about every emotion in the book. There’s no way you can watch it without feeling a sense of love, sadness, longing, and hope along with the main character. Keep videos that move you handy to prime your emotions before a writing session. It’s like the difference between running a sprint without stretching vs. being fully warmed up and in the zone.
+
+To see this in action, check out 8 Creativity Hacks: How to Start a Song in an Empty Daw
+
+16. Play With the Idea of Negative Space
+Rest.
+Pause.
+Silence.
+
+These are some of your most essential tools as a songwriter. Embrace them!
+
+One of the best ways to advance a song is to experiment with leaving holes in one instrument for other sounds to occupy. It creates a push and pull, a tension and release. Your chords don’t need to be sustained for the entire measure. Creating a sense of groove in music is all about the interplay between staccato (short) and legato (sustained) notes.
+
+17. Build a “Superloop”
+Keep stacking layers and ideas, one on top of the other. Once you’ve got your drums, add the bass. Once your rhythm section is down, add your high frequency instruments like pads, guitars, keys, and and strings. This is the part of the process where you say “yes” to adding new things.
+
+Once the superloop is complete, copy and paste it across your timeline. Now mute out layers to create new sections. It takes some smoothing out the transitions, and there’s no doubt you still need to write and craft from here. But at this point, it’s all about moving with the big legos first.
+
+18. Use the Collision Exercise
+This was included in an earlier post: Writer’s Block Isn’t Real. It bears repeating here, because I’ve found this to be a useful exercise in songwriting and producing.
+
+Create two columns on a sheet of paper. The first is a list of adjectives you want someone to feel within your production.The second is all the elements that make up your song.
+
+
+Now the collisions begin! We’re looking for the strange and unusual pairings here. What would washed out vocals sound like? How could a gritty field recording enhance the vibe of your track?
+
+The collision exercise can also be used in the lyric writing phase to combine adjectives and nouns in new and interesting ways.
+
+19. Harness the Power of Words
+Perhaps there’s an image or phrase that speaks to you. Have you ever heard the story of King Midas? Midas’ story is about the sadness of gold. Macbeth teaches us about the danger of greed. Every great song is a story. Every story follows a trajectory that can be reverse engineered and filled in with your own words, examples, and life experiences.
+
+I find that it helps me to narrow the message of my song down to a simple, memorable phrase. “The Sadness of Gold.” “Leaving Too Soon.” “Over Waiting for an Apology.” Even if you’re not writing lyrics, finding a phrase that anchors you to the story of your song can help you make decisions and get the idea off the ground.
+
+20. Use Existing Midi
+Once in a while, I don’t have any ideas coming to me. And it’s in those cases that I have certain strategies that I rely on so I don’t fall into the worst version of myself (where I’ll order take out and watch Netflix).
+
+I avoid that guy but doing things like this: I’ve created a huge database of midi files that I can rely on for inspiration. Tweaking them and manipulating them to make them my own is an art form in and of itself, and I love how the music starts to take on a direction of its own once I get started.
+
+
+21. Tap Into Your Mood
+Life isn’t always sunshine and rainbows. Once in a while, I’m pissed off. Sure, that’s not a sustainable place or mindset to consistently create art, but there is nothing wrong with embracing that once in a while.
+
+Had a bad day? Write something angry. Feeling depressed? Write something nostalgic. The idea is to respond to our emotional state instead of fighting against it. Similarly to meditation, this can be strangely satisfying and teach you to be aware of what your emotions actually are: fleeting emotional and chemical responses that will pass.
+
+22. Schedule a Time to Sit Down and Do It
+I saved the best for last – this is the most important one of all. You can’t rely on inspiration to write your songs for you. Just like a day job, what’s important is that you show up regularly and on time.
+
+What’s important is that you try, that you go through the motions of creating a loop, starting a beat, writing the chords, structuring to a reference…what’s important is that you start. It doesn’t matter how you start, just that you do. And one of the best ways is to schedule a time and to show up to it.
+
+This is about consistency and effort. If you love music as much as you say you do, don’t you owe it to yourself to make it a priority?
+
+Where to Start?
+It all comes down to personal preference, but there are some unifying themes in the list above. First – if you wait for inspiration, you’ll spend your whole life waiting instead of doing. Inspiration comes from action, so take action first. Second, do anything you can to get out of your comfort zone and try something new. That could be as literal as producing in a new environment, or as tactical as breaking out the new soft synth you downloaded.
+
+Whatever you do, avoid the trap of “loopitis” – where you’re listening to your track on repeat without making any changes. Music is the change of sound over time, so you need to keep things moving, changing, and evolving as you write.
+
+Your life as a producer will be so much better if you commit to enjoying the process instead of being constantly impatient with a lack of results. Starting a song should be one of the most fun experiences any musician can have. So do what makes you happy, and take comfort knowing that there are many, many more songs to be written. This one doesn’t have to be perfect.*
+
+ORCA - open source live coding
+https://github.com/hundredrabbits/Orca

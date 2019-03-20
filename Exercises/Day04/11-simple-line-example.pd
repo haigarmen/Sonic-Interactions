@@ -1,0 +1,30 @@
+#N canvas 4 23 667 345 10;
+#X obj 77 54 notein;
+#X floatatom 77 91 5 0 0 0 - - -, f 5;
+#X floatatom 115 91 5 0 0 0 - - -, f 5;
+#X floatatom 154 91 5 0 0 0 - - -, f 5;
+#X obj 76 226 dac~;
+#X obj 77 123 mtof;
+#X obj 77 152 osc~;
+#X obj 77 191 *~;
+#X obj 115 123 / 127;
+#X obj 115 152 pack 0 50;
+#X obj 115 174 line~;
+#X text 209 195 Finally \, multiply the audio from the oscillator by
+the scaled Velocity number as it is interpolated by [line~];
+#X text 209 123 This section is our Attack/Decay Envelope Generator.
+[line ~] needs numbers \, a target and a time. The target is the scalled
+Velocity and the interpolation time is set here to 50 milliseconds.
+;
+#X connect 0 0 1 0;
+#X connect 0 1 2 0;
+#X connect 0 2 3 0;
+#X connect 1 0 5 0;
+#X connect 2 0 8 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 4 0;
+#X connect 7 0 4 1;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 10 0 7 1;
