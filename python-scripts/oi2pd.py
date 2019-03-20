@@ -68,34 +68,12 @@ while True:
     btn3pressed = not GPIO.input(18)
     btn4pressed = not GPIO.input(27)
 
-    input_right = GPIO.input(4)
-    input_left = GPIO.input(17) 
-    input_down = GPIO.input(18)
-    input_up = GPIO.input(27)
 
-    if btn1pressed and not btn1alreadyPressed:
+    if btn1pressed == False:
+        print('button Pressed')
         message = '8 1'
         send2Pd(message)
-        # once the message has been send make btn1 already pressed flag be true
-        # only problem with this is when does it get reset to false?
         
-    btn1alreadyPressed = btn1pressed
-
-    if btn2pressed and not btn2alreadyPressed:
-        message = '8 2'
-        send2Pd(message)
-    btn2alreadyPressed = btn2pressed
-
-    if btn3pressed and not btn3alreadyPressed:
-        message = '8 3'
-        send2Pd(message)
-    btn3alreadyPressed = btn3pressed
-
-    if btn4pressed and not btn4alreadyPressed:
-        message = '8 4'
-        send2Pd(message)
-    btn4alreadyPressed = btn4pressed
-
     values = [0]*8
     values2 = [0]*8
     
@@ -107,6 +85,6 @@ while True:
         send2Pd(message)
 
 # consider creating a message that has all values in one string rather than separate messages
-    print('| {0:>4} | {1:>4} | {2:>4} | {3:>4} | {4:>4} | {5:>4} | {6:>4} | {7:>4} '.format(*values) + '| {0:>4} | {1:>4} | {2:>4} | {3:>4} | {4:>4} | {5:>4} | {6:>4} | {7:>4} '.format(*values2))
+#    print('| {0:>4} | {1:>4} | {2:>4} | {3:>4} | {4:>4} | {5:>4} | {6:>4} | {7:>4} '.format(*values) + '| {0:>4} | {1:>4} | {2:>4} | {3:>4} | {4:>4} | {5:>4} | {6:>4} | {7:>4} '.format(*values2))
 #    print(message)
     time.sleep(waitTime)
