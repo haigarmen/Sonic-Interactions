@@ -1773,3 +1773,6 @@ connect a 10K resistor from the middle pin to GND.
     values. To prevent this, we've added a 10K pull-down resistor
     to the middle pin (output voltage). This will keep the output
     at zero volts when the pot is not being pressed.
+
+# Leonard Paul explaining Pd
+https://www.gamasutra.com/view/feature/131258/audio_prototyping_with_pure_data.php
