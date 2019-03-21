@@ -1713,14 +1713,17 @@ everyone on the same network.
 
 
 Day03/ Audio & DSP
-    14.pd Load an audio sample
+    14.pd Load an audio Sample
 
 
 # Activity: prepare a sampler with 3 samples, play with drum loop and others.
 
 
 Day04/ Hardware and mapping
-
+button
+Potentiometer
+Sensor (soft Potentiometer)
+xbox controller
 
 - learn the graph/canvas thingie?
 
@@ -1759,3 +1762,14 @@ https://github.com/ml4a/ml4a-guides
 
 ORCA - open source live coding
 https://github.com/hundredrabbits/Orca
+
+
+having trouble getting OI board to not have jumpy values. works with buttons with 10K pulldown resistor.
+Looking for how to wire soft pot and found this:
+connect a 10K resistor from the middle pin to GND.
+
+    TIP: the soft pot will only work while you're actively
+    pressing on it; at other times it will "float" to random
+    values. To prevent this, we've added a 10K pull-down resistor
+    to the middle pin (output voltage). This will keep the output
+    at zero volts when the pot is not being pressed.
