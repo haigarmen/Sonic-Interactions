@@ -1,11 +1,11 @@
-#N canvas 386 255 1314 865 10;
+#N canvas 591 153 1314 865 10;
 #X declare -lib hid;
 #X obj 128 110 hid;
 #X msg 130 50 print;
 #X msg 195 51 open \$1;
 #X obj 195 30 hradio 15 1 1 15 \$0-device-number empty choose_a_device
-0 -6 1 9 -225271 -1 -1 4;
-#X obj 68 65 tgl 25 0 empty empty start 1 12 1 9 -225271 -1 -1 0 1
+0 -6 1 9 -225271 -1 -1 3;
+#X obj 68 65 tgl 25 0 empty empty start 1 12 1 9 -225271 -1 -1 1 1
 ;
 #X msg 101 25 refresh;
 #X floatatom 255 50 5 0 0 0 - - -;
@@ -19,61 +19,61 @@
 #X obj 48 33 r abs_x_pos;
 #X obj 48 65 unpack;
 #X obj 51 97 hsl 128 15 -33000 33000 0 0 empty empty empty -2 -8 0
-10 -262144 -1 -1 4558 1;
+10 -262144 -1 -1 4860 1;
 #X obj 48 127 nbx 7 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 -9314 256;
-#X obj 48 156 mapper;
-#X msg 229 97 0;
+-262144 -1 -1 -7743 256;
+#X msg 229 127 0;
 #X obj 48 188 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 45.9365 256;
+-262144 -1 -1 48.9833 256;
 #X obj 48 217 s x_pos_new;
 #X obj 288 65 unpack;
 #X obj 291 97 hsl 128 15 33000 -33000 0 0 empty empty empty -2 -8 0
-10 -262144 -1 -1 6606 1;
+10 -262144 -1 -1 6435 1;
 #X obj 288 127 nbx 7 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 -1330 256;
+-262144 -1 -1 -444 256;
 #X msg 469 122 0;
 #X obj 288 188 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 66.5794 256;
+-262144 -1 -1 64.8611 256;
 #X obj 288 33 r abs_y_pos;
 #X obj 288 217 s y_pos_new;
 #X msg 229 65 -33000;
 #X msg 229 92 33000;
 #X obj 421 33 loadbang;
 #X obj 210 33 loadbang;
-#X obj 288 156 mapper;
-#X msg 229 129 128;
+#X msg 229 159 128;
 #X msg 468 144 128;
 #X msg 468 65 33000;
 #X msg 467 92 -33000;
+#X obj 48 156 sik/mapper;
+#X obj 288 156 sik/mapper;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
-#X connect 3 0 4 0;
-#X connect 4 0 6 0;
-#X connect 5 0 4 3;
-#X connect 6 0 7 0;
+#X connect 3 0 22 0;
+#X connect 4 0 22 3;
+#X connect 5 0 6 0;
+#X connect 7 0 8 0;
 #X connect 8 0 9 0;
-#X connect 9 0 10 0;
-#X connect 10 0 19 0;
-#X connect 11 0 19 3;
-#X connect 12 0 14 0;
-#X connect 13 0 8 0;
-#X connect 15 0 4 1;
-#X connect 16 0 4 2;
-#X connect 17 0 22 0;
-#X connect 17 0 23 0;
-#X connect 17 0 11 0;
-#X connect 17 0 21 0;
-#X connect 18 0 15 0;
-#X connect 18 0 16 0;
-#X connect 18 0 5 0;
-#X connect 18 0 20 0;
-#X connect 19 0 12 0;
-#X connect 20 0 4 4;
-#X connect 21 0 19 4;
-#X connect 22 0 19 1;
-#X connect 23 0 19 2;
+#X connect 9 0 23 0;
+#X connect 10 0 23 3;
+#X connect 11 0 13 0;
+#X connect 12 0 7 0;
+#X connect 14 0 22 1;
+#X connect 15 0 22 2;
+#X connect 16 0 20 0;
+#X connect 16 0 21 0;
+#X connect 16 0 10 0;
+#X connect 16 0 19 0;
+#X connect 17 0 14 0;
+#X connect 17 0 15 0;
+#X connect 17 0 4 0;
+#X connect 17 0 18 0;
+#X connect 18 0 22 4;
+#X connect 19 0 23 4;
+#X connect 20 0 23 1;
+#X connect 21 0 23 2;
+#X connect 22 0 5 0;
+#X connect 23 0 11 0;
 #X restore 77 538 pd mapping_abs;
 #X obj 71 334 r x_pos_new;
 #X floatatom 71 361 5 0 0 0 - - -;
@@ -100,7 +100,6 @@
 #X obj 516 306 moses 1;
 #X msg 520 347 76 60;
 #X msg 561 347 76 \$1;
-#X obj 236 231 route btn_0 btn_1 btn_2 btn_3;
 #X obj 63 419 ctlout 1;
 #X msg 94 393 21;
 #X obj 152 417 ctlout 1;
@@ -108,6 +107,10 @@
 #X obj 63 393 i;
 #X obj 153 392 i;
 #X obj 492 57 declare -lib hid;
+#X text 359 496 add a synth here buttons control note triggers maybe
+different octaves;
+#X obj 236 231 route btn_0 btn_1 btn_2 btn_3 btn_4;
+#X floatatom 423 270 5 0 0 0 - - -;
 #X connect 0 0 7 0;
 #X connect 0 0 18 0;
 #X connect 1 0 0 0;
@@ -117,14 +120,14 @@
 #X connect 4 0 0 0;
 #X connect 5 0 0 0;
 #X connect 7 0 8 0;
-#X connect 7 1 39 0;
+#X connect 7 1 47 0;
 #X connect 8 0 9 0;
 #X connect 8 1 10 0;
 #X connect 9 0 11 0;
 #X connect 10 0 12 0;
 #X connect 14 0 15 0;
-#X connect 15 0 44 0;
-#X connect 16 0 45 0;
+#X connect 15 0 43 0;
+#X connect 16 0 44 0;
 #X connect 17 0 16 0;
 #X connect 19 0 26 0;
 #X connect 20 0 28 0;
@@ -146,11 +149,12 @@
 #X connect 36 1 37 0;
 #X connect 37 0 35 0;
 #X connect 38 0 35 0;
-#X connect 39 0 19 0;
-#X connect 39 1 20 0;
-#X connect 39 2 21 0;
-#X connect 39 3 22 0;
-#X connect 41 0 40 1;
-#X connect 43 0 42 1;
-#X connect 44 0 40 0;
-#X connect 45 0 42 0;
+#X connect 40 0 39 1;
+#X connect 42 0 41 1;
+#X connect 43 0 39 0;
+#X connect 44 0 41 0;
+#X connect 47 0 19 0;
+#X connect 47 1 20 0;
+#X connect 47 2 21 0;
+#X connect 47 3 22 0;
+#X connect 47 4 48 0;

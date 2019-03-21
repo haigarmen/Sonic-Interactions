@@ -1,19 +1,13 @@
-#N canvas 394 106 1372 1050 10;
+#N canvas 406 111 1372 1050 10;
 #X obj 30 26 adc~;
 #X obj 12 654 dac~;
 #X obj 58 561 *~;
 #X obj 97 391 osc~;
 #X obj 230 477 line~;
 #X obj 231 457 pack 0 5;
-#X msg 632 39 \; pd dsp 1 \;;
-#X obj 632 16 loadbang;
 #X obj 96 132 phasor~;
 #X obj 93 214 tabread4~ waveform_square;
 #X obj 92 237 +~ 0.5;
-#X msg 632 149 \; waveform_sine sinesum 2051 1 \; waveform_sine normalize
-0.5 \;;
-#X obj 802 593 table waveform_square;
-#X obj 802 616 table waveform_sine;
 #X obj 85 495 *~;
 #X obj 207 503 *~;
 #X obj 105 470 line~;
@@ -27,14 +21,14 @@
 0;
 #X obj 351 287 mtof;
 #X obj 354 269 hsl 128 15 0 127 0 0 empty manual_freq empty -2 -8 0
-10 -262144 -1 -1 7700 1;
+10 -262144 -1 -1 5000 1;
 #X obj 351 310 osc~;
 #X obj 343 16 cnv 15 200 200 empty empty LFO 20 12 0 14 -260097 -66577
 0;
 #X obj 354 52 hsl 128 15 0 127 0 0 empty lfo_upper Upper_limit -2 -8
-0 10 -262144 -1 -1 1400 1;
+0 10 -262144 -1 -1 5144 1;
 #X obj 354 101 hsl 128 15 0 127 0 0 empty lfo_lower Lower_limit -2
--8 0 10 -262144 -1 -1 200 1;
+-8 0 10 -262144 -1 -1 1228 1;
 #X floatatom 351 119 6 0 0 0 - - -;
 #X floatatom 351 70 6 0 0 0 - - -;
 #X obj 260 156 -;
@@ -44,14 +38,14 @@
 #X obj 259 175 max 1;
 #X obj 286 222 min;
 #X obj 157 277 line~;
-#X obj 158 257 pack 0 5;
+#X obj 157 257 pack 0 5;
 #X obj 146 334 line~;
 #X obj 147 314 pack 0 5;
 #X obj 353 154 hsl 128 15 0 30 0 0 empty lfo_freq LFO_frequency -2
--8 0 10 -262144 -1 -1 8467 1;
+-8 0 10 -262144 -1 -1 1444 1;
 #X msg 350 177 set waveform_square;
 #X msg 350 197 set waveform_sine;
-#N canvas 0 22 450 300 random_manual 0;
+#N canvas 56 125 450 300 random_manual 0;
 #X obj 163 115 random 120;
 #X obj 164 143 + 10;
 #X obj 162 236 s manual_freq;
@@ -153,7 +147,7 @@
 #X connect 34 0 13 0;
 #X restore 445 450 pd random_LFO;
 #X obj 446 394 tgl 40 0 empty empty Random_LFO 0 -5 0 10 -258113 -1
--1 0 1;
+-1 1 1;
 #X obj 547 396 tgl 40 0 empty empty Random_Manual 0 -5 0 10 -4160 -1
 -1 0 1;
 #N canvas 0 22 612 483 equal_power_crossfade 0;
@@ -208,69 +202,77 @@
 #X restore 13 610 pd equal_power_crossfade;
 #X obj 350 508 hsl 128 25 0 1 0 0 empty crossfade Dry_---_Wet_(crossfade)
 -2 -8 0 10 -257985 -1 -1 6350 1;
-#X msg 632 201 \; manual_freq 50 \; lfo_freq 4 \; lfo_upper 50 \; lfo_lower
-30 \; toggle_man_lfo 1 \; crossfade 0.5 \;;
 #X obj 96 152 *~ 2048;
 #X obj 96 169 +~ 1;
-#X msg 633 75 \; waveform_square sinesum 2051 1 0 0.333333 0 0.2 0
+#X text 175 611 <-- Abstraction to crossfade smoothly between dry and
+wet.;
+#X text 655 450 <-- Control the patch using;
+#X text 679 465 these toggles and sliders.;
+#X obj 663 13 cnv 15 450 400 empty empty wavemaker 20 12 0 12 -262130
+-66577 0;
+#X msg 690 85 \; pd dsp 1 \;;
+#X obj 690 62 loadbang;
+#X msg 690 195 \; waveform_sine sinesum 2051 1 \; waveform_sine normalize
+0.5 \;;
+#X msg 690 247 \; manual_freq 50 \; lfo_freq 4 \; lfo_upper 50 \; lfo_lower
+30 \; toggle_man_lfo 1 \; crossfade 0.5 \;;
+#X msg 686 119 \; waveform_square sinesum 2051 1 0 0.333333 0 0.2 0
 0.142857 0 0.111111 0 0.090909 0 0.076923 0 0.066666 0 0.058823 0 0.052631
 0 0.047619 0 0.043478 0 0.04 0 0.037037 \; waveform_square normalize
 0.5 \;;
-#X text 175 611 <-- Abstraction to crossfade smoothly between dry and
-wet.;
-#X text 720 444 <-- Control the patch using;
-#X text 744 459 these toggles and sliders.;
-#X text 761 17 <-- Create the LFO waveforms and;
-#X text 785 32 initialize a bunch of parameters.;
+#X text 819 63 <-- Create the LFO waveforms and;
+#X text 843 78 initialize a bunch of parameters.;
+#X obj 689 352 table waveform_square;
+#X obj 689 375 table waveform_sine;
 #X connect 0 0 2 0;
-#X connect 0 0 48 0;
-#X connect 2 0 48 1;
-#X connect 3 0 14 0;
-#X connect 4 0 15 1;
+#X connect 0 0 43 0;
+#X connect 2 0 43 1;
+#X connect 3 0 9 0;
+#X connect 4 0 10 1;
 #X connect 5 0 4 0;
-#X connect 7 0 6 0;
-#X connect 7 0 53 0;
-#X connect 7 0 11 0;
-#X connect 7 0 50 0;
-#X connect 8 0 51 0;
-#X connect 9 0 10 0;
-#X connect 10 0 20 0;
-#X connect 14 0 2 1;
-#X connect 15 0 2 1;
-#X connect 16 0 14 1;
-#X connect 17 0 16 0;
-#X connect 18 0 17 0;
-#X connect 19 0 5 0;
+#X connect 6 0 45 0;
+#X connect 7 0 8 0;
+#X connect 8 0 15 0;
+#X connect 9 0 2 1;
+#X connect 10 0 2 1;
+#X connect 11 0 9 1;
+#X connect 12 0 11 0;
+#X connect 13 0 12 0;
+#X connect 14 0 5 0;
+#X connect 14 0 13 0;
+#X connect 15 0 16 0;
+#X connect 16 0 3 0;
+#X connect 18 0 20 0;
 #X connect 19 0 18 0;
-#X connect 20 0 21 0;
-#X connect 21 0 3 0;
-#X connect 23 0 25 0;
-#X connect 24 0 23 0;
-#X connect 25 0 15 0;
-#X connect 27 0 34 0;
-#X connect 28 0 33 0;
+#X connect 20 0 10 0;
+#X connect 22 0 29 0;
+#X connect 23 0 28 0;
+#X connect 26 0 30 0;
+#X connect 27 0 26 0;
+#X connect 28 0 26 1;
+#X connect 28 0 27 0;
+#X connect 28 0 31 0;
+#X connect 29 0 26 0;
+#X connect 29 0 31 1;
+#X connect 30 0 25 0;
+#X connect 30 0 33 0;
+#X connect 31 0 24 0;
 #X connect 31 0 35 0;
-#X connect 32 0 31 0;
-#X connect 33 0 31 1;
+#X connect 32 0 15 1;
 #X connect 33 0 32 0;
-#X connect 33 0 36 0;
-#X connect 34 0 31 0;
-#X connect 34 0 36 1;
-#X connect 35 0 30 0;
-#X connect 35 0 38 0;
-#X connect 36 0 29 0;
-#X connect 36 0 40 0;
-#X connect 37 0 20 1;
-#X connect 38 0 37 0;
-#X connect 39 0 21 1;
-#X connect 40 0 39 0;
-#X connect 41 0 8 0;
-#X connect 42 0 9 0;
-#X connect 43 0 9 0;
-#X connect 46 0 45 0;
-#X connect 47 0 44 0;
-#X connect 48 0 1 0;
-#X connect 48 0 1 1;
-#X connect 49 0 48 2;
-#X connect 51 0 52 0;
-#X connect 52 0 9 0;
+#X connect 34 0 16 1;
+#X connect 35 0 34 0;
+#X connect 36 0 6 0;
+#X connect 37 0 7 0;
+#X connect 38 0 7 0;
+#X connect 41 0 40 0;
+#X connect 42 0 39 0;
+#X connect 43 0 1 0;
+#X connect 43 0 1 1;
+#X connect 44 0 43 2;
+#X connect 45 0 46 0;
+#X connect 46 0 7 0;
+#X connect 52 0 51 0;
+#X connect 52 0 55 0;
+#X connect 52 0 53 0;
+#X connect 52 0 54 0;
