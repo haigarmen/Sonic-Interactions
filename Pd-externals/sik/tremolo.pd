@@ -1,5 +1,5 @@
 #N canvas 351 232 753 467 10;
-#N canvas 678 160 450 545 tremolo 1;
+#N canvas 678 160 450 545 tremolo 0;
 #X obj 14 259 inlet~ left;
 #X obj 104 259 inlet~ right;
 #X obj 34 452 outlet~ left;
@@ -14,12 +14,16 @@
 -1 -1 0 1;
 #X obj 105 168 hsl 128 15 1 20 0 0 empty empty Shape -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 106 202 hsl 128 15 0 0.5 0 0 empty empty Depth -2 -8 0 10 -262144
+#X obj 106 202 hsl 128 15 0 0.5 0 0 empty pot3 Depth -2 -8 0 10 -262144
 -1 -1 0 1;
 #X floatatom 335 235 5 0 0 0 - - -;
 #X obj 315 262 expr 1-$f1;
 #X floatatom 315 283 5 0 0 0 - - -;
 #X obj 34 47 loadbang;
+#X obj 102 68 * 1000;
+#X obj 102 42 r pot1;
+#X obj 164 68 * 20;
+#X obj 163 42 r pot2;
 #X connect 0 0 4 0;
 #X connect 1 0 4 0;
 #X connect 4 0 2 0;
@@ -39,6 +43,10 @@
 #X connect 16 0 10 0;
 #X connect 16 0 11 0;
 #X connect 16 0 12 0;
+#X connect 17 0 10 0;
+#X connect 18 0 17 0;
+#X connect 19 0 11 0;
+#X connect 20 0 19 0;
 #X coords 0 -1 1 1 145 130 1 100 100;
 #X restore 138 134 pd tremolo;
 #X obj 148 57 inlet~;

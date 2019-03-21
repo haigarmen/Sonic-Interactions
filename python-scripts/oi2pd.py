@@ -74,25 +74,25 @@ while True:
 
     if btn1pressed and not btn1alreadyPressed:
 #        print('1 Pressed')
-        message = '8 1'
+        message = '16 1'
         send2Pd(message)
     btn1alreadyPressed = btn1pressed
 
     if btn2pressed and not btn2alreadyPressed:
 #        print('2 Pressed')
-        message = '8 2'
+        message = '16 2'
         send2Pd(message)
     btn2alreadyPressed = btn2pressed
 
     if btn3pressed and not btn3alreadyPressed:
 #        print('3 Pressed')
-        message = '8 3'
+        message = '16 3'
         send2Pd(message)
     btn3alreadyPressed = btn3pressed
 
     if btn4pressed and not btn4alreadyPressed:
 #        print('4 Pressed')
-        message = '8 4'
+        message = '16 4'
         send2Pd(message)
     btn4alreadyPressed = btn4pressed
     
@@ -107,6 +107,6 @@ while True:
         send2Pd(message)
 
 # consider creating a message that has all values in one string rather than separate messages
-    print('| {0:>4} | {1:>4} | {2:>4} | {3:>4} | {4:>4} | {5:>4} | {6:>4} | {7:>4} '.format(*values) + '| {0:>4} | {1:>4} | {2:>4} | {3:>4} | {4:>4} | {5:>4} | {6:>4} | {7:>4} '.format(*values2))
+#    print('| {0:>4} | {1:>4} | {2:>4} | {3:>4} | {4:>4} | {5:>4} | {6:>4} | {7:>4} '.format(*values) + '| {0:>4} | {1:>4} | {2:>4} | {3:>4} | {4:>4} | {5:>4} | {6:>4} | {7:>4} '.format(*values2))
 #    print(message)
     time.sleep(waitTime)
