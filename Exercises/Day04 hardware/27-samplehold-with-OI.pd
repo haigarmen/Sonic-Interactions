@@ -1,0 +1,115 @@
+#N canvas 115 55 948 719 10;
+#X obj 114 285 osc~, f 7;
+#X floatatom 114 254 5 0 0 0 - - -;
+#N canvas 110 136 895 652 (subpatch) 0;
+#X array waveform 100 float 5;
+#A 0 0.677703 0.764342 0.838975 0.900428 0.947751 0.980202 0.997271
+0.998663 0.984381 0.954652 0.909942 0.850944 0.778574 0.693988 0.598511
+0.493641 0.381012 0.262402 0.139676 0.0147565 -0.110396 -0.233813 -0.353559
+-0.467756 -0.574614 -0.672448 -0.759717 -0.835063 -0.897305 -0.945467
+-0.978767 -0.996703 -0.998998 -0.985616 -0.95676 -0.912867 -0.854649
+-0.78302 -0.699102 -0.6042 -0.49981 -0.387577 -0.269262 -0.14672 -0.0218705
+0.10332 0.226889 0.346898 0.461461 0.568772 0.667157 0.755072 0.83114
+0.894145 0.943111 0.977278 0.996109 0.999304 0.986792 0.958795 0.915753
+0.85834 0.787441 0.704176 0.609862 0.505976 0.394149 0.276125 0.153769
+0.0290005 -0.096224 -0.219939 -0.340197 -0.455115 -0.562892 -0.661836
+-0.75038 -0.827141 -0.890922 -0.940722 -0.975758 -0.995453 -0.999528
+-0.987917 -0.960803 -0.918597 -0.861961 -0.791799 -0.709213 -0.615495
+-0.512102 -0.400672 -0.282955 -0.160797 -0.0361124 0.0891389 0.21299
+0.333498 0.448774 0.557;
+#X coords 0 1 100 -1 200 140 1;
+#X restore 286 74 graph;
+#X msg 287 264 bang;
+#X obj 114 224 mtof;
+#X floatatom 114 193 5 0 0 0 - - -;
+#X obj 114 134 + 0.499999;
+#X floatatom 114 99 5 0 0 0 - - -;
+#X obj 114 164 int;
+#X obj 97 70 hsl 128 15 0 127 0 0 empty sendFreq empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 287 345 tabwrite~ waveform;
+#X obj 120 502 dac~;
+#X obj 287 303 metro 100;
+#X msg 342 264 stop;
+#X msg 395 264 1;
+#X msg 442 264 0;
+#X obj 262 457 samphold~;
+#X obj 360 429 phasor~;
+#X msg 397 396 2500;
+#X msg 439 396 5000;
+#X msg 482 396 20000;
+#X msg 534 396 44000;
+#X obj 116 367 adc~;
+#X obj 285 232 r arraystart;
+#X obj 392 226 r arraystop;
+#X obj 535 339 r sampleUp;
+#X obj 491 318 r sampleDown;
+#X obj 459 373 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 585 382 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 496 277 \; pd dsp \$1;
+#X obj 496 257 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 624 52 cnv 15 300 500 empty empty routing 20 12 0 14 -204800
+-66577 0;
+#X obj 673 335 r button1;
+#X obj 673 358 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 779 334 r button2;
+#X obj 673 422 r button3;
+#X obj 779 422 r button4;
+#X obj 779 357 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 673 446 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 779 446 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 673 381 s arraystart;
+#X obj 779 380 s arraystop;
+#X obj 673 469 s sampleUp;
+#X obj 779 469 s sampleDown;
+#X obj 673 107 sik/routing;
+#X obj 675 145 r pot1;
+#X obj 675 173 * 127;
+#X obj 675 198 s sendFreq;
+#X connect 0 0 16 0;
+#X connect 1 0 0 0;
+#X connect 3 0 12 0;
+#X connect 4 0 1 0;
+#X connect 5 0 4 0;
+#X connect 6 0 8 0;
+#X connect 7 0 6 0;
+#X connect 8 0 5 0;
+#X connect 9 0 7 0;
+#X connect 12 0 10 0;
+#X connect 13 0 12 0;
+#X connect 14 0 12 0;
+#X connect 15 0 12 0;
+#X connect 16 0 10 0;
+#X connect 16 0 11 0;
+#X connect 16 0 11 1;
+#X connect 17 0 16 1;
+#X connect 18 0 17 0;
+#X connect 19 0 17 0;
+#X connect 20 0 17 0;
+#X connect 21 0 17 0;
+#X connect 23 0 3 0;
+#X connect 23 0 30 0;
+#X connect 24 0 13 0;
+#X connect 24 0 30 0;
+#X connect 25 0 21 0;
+#X connect 25 0 28 0;
+#X connect 26 0 27 0;
+#X connect 26 0 18 0;
+#X connect 30 0 29 0;
+#X connect 32 0 33 0;
+#X connect 33 0 40 0;
+#X connect 34 0 37 0;
+#X connect 35 0 38 0;
+#X connect 36 0 39 0;
+#X connect 37 0 41 0;
+#X connect 38 0 42 0;
+#X connect 39 0 43 0;
+#X connect 45 0 46 0;
+#X connect 46 0 47 0;

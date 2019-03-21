@@ -1,5 +1,5 @@
-#N canvas 100 113 1192 702 10;
-#X obj 36 16 cnv 15 808 250 empty empty incoming 20 12 0 14 -228856
+#N canvas 88 53 1192 682 10;
+#X obj 36 16 cnv 15 808 250 empty empty Incoming_Data 20 12 0 14 -228856
 -66577 0;
 #X text 223 30 Receive messages from Python and route them to the proper
 receive objects;
@@ -118,7 +118,7 @@ receive objects;
 #X msg 659 616 1;
 #X msg 659 529 1022;
 #X msg 658 506 0;
-#X obj 851 16 cnv 15 300 630 empty empty Buttons 20 12 0 14 -203904
+#X obj 851 16 cnv 15 300 625 empty empty Buttons 20 12 0 14 -203904
 -66577 0;
 #X obj 898 88 r buttons;
 #X obj 898 116 unpack;

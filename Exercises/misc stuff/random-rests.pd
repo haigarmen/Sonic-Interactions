@@ -1,0 +1,68 @@
+#N canvas 574 50 481 569 10;
+#X obj 91 121 metro 500;
+#X obj 91 145 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 142 98 random 1000;
+#X obj 91 165 random 1000;
+#X floatatom 91 186 5 0 0 0 - - -;
+#X obj 91 206 osc~;
+#X obj 91 247 *~;
+#X obj 141 308 *~ 0.4;
+#X obj 190 192 pipe 500;
+#X floatatom 190 213 5 0 0 0 - - -;
+#X obj 190 233 osc~;
+#X obj 190 274 *~;
+#X obj 141 409 *~;
+#X obj 141 460 dac~;
+#X obj 274 128 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 274 152 metro 500;
+#X obj 325 128 random 3000;
+#X obj 91 98 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X obj 211 67 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 274 176 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 274 216 f;
+#X obj 274 247 + 1;
+#X floatatom 274 278 5 0 0 0 - - -;
+#X msg 312 188 -1;
+#X obj 316 262 sel 1;
+#X obj 112 227 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 212 256 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X text 244 16 2.2.3.2.6 Rests in Pd-tutorial.com not working yet;
+#X connect 0 0 2 0;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 2 0 0 1;
+#X connect 3 0 4 0;
+#X connect 3 0 8 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 12 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 0;
+#X connect 11 0 7 0;
+#X connect 12 0 13 0;
+#X connect 12 0 13 1;
+#X connect 14 0 15 0;
+#X connect 15 0 19 0;
+#X connect 15 0 16 0;
+#X connect 16 0 15 1;
+#X connect 17 0 0 0;
+#X connect 18 0 17 0;
+#X connect 18 0 14 0;
+#X connect 19 0 20 0;
+#X connect 20 0 21 0;
+#X connect 21 0 22 0;
+#X connect 21 0 24 0;
+#X connect 22 0 12 1;
+#X connect 23 0 20 1;
+#X connect 24 0 23 0;
+#X connect 25 0 6 1;
+#X connect 26 0 11 1;

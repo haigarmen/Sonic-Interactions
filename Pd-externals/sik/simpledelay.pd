@@ -1,16 +1,16 @@
-#N canvas 588 102 1275 1000 10;
+#N canvas 5 23 1275 751 10;
 #X obj 100 100 cnv 15 200 200 empty empty Delay 20 12 0 14 -261682
 -66577 0;
-#X obj 123 273 hsl 128 15 0 1 0 0 empty pot3 Dry/Wet -2 -8 0 8 -262144
--1 -1 0 1;
-#X obj 123 143 hsl 128 15 0 0.9 0 0 feedbackL pot1 Left_Feedback -2
--8 0 8 -262144 -1 -1 0 1;
-#X obj 123 175 hsl 128 15 0 0.9 0 0 feedbackR pot1 Right_Feedback -2
--8 0 8 -262144 -1 -1 0 1;
-#X obj 123 208 hsl 128 15 0 1000 0 0 timeL pot2 Left_Time -2 -8 0 8
--262144 -1 -1 0 1;
-#X obj 123 242 hsl 128 15 0 1000 0 0 timeR pot2 Right_Time -2 -8 0
-8 -262144 -1 -1 0 1;
+#X obj 123 273 hsl 128 15 0 1 0 0 empty mix Dry/Wet -2 -8 0 8 -262144
+-1 -1 9500 1;
+#X obj 123 143 hsl 128 15 0 0.9 0 0 feedbackL feedback Left_Feedback
+-2 -8 0 8 -262144 -1 -1 5400 1;
+#X obj 123 175 hsl 128 15 0 0.9 0 0 feedbackR feedback Right_Feedback
+-2 -8 0 8 -262144 -1 -1 5500 1;
+#X obj 123 208 hsl 128 15 0 1000 0 0 timeL time Left_Time -2 -8 0 8
+-262144 -1 -1 5000 1;
+#X obj 123 242 hsl 128 15 0 1000 0 0 timeR time Right_Time -2 -8 0
+8 -262144 -1 -1 5000 1;
 #X floatatom 259 143 5 0 0 0 - feedbackL -;
 #X floatatom 259 175 5 0 0 0 - feedbackR -;
 #X floatatom 260 207 5 0 0 0 - timeL -;
