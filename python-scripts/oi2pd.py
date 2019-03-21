@@ -25,10 +25,14 @@ btn4alreadyPressed = False
 
 GPIO.setmode(GPIO.BCM)
 ## GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-GPIO.setup(4, GPIO.IN)
-GPIO.setup(17, GPIO.IN)
-GPIO.setup(18, GPIO.IN)
-GPIO.setup(27, GPIO.IN)
+GPIO.setup(5, GPIO.IN)
+GPIO.setup(6, GPIO.IN)
+GPIO.setup(13, GPIO.IN)
+GPIO.setup(19, GPIO.IN)
+GPIO.setup(26, GPIO.IN)
+GPIO.setup(6, GPIO.IN)
+GPIO.setup(13, GPIO.IN)
+GPIO.setup(19, GPIO.IN)
 
 def send2Pd(message=''):
     # Send a message to Pd
@@ -63,35 +67,35 @@ def readadc2(channel):
     return v;
 
 while True:
-    btn1pressed = not GPIO.input(4)
-    btn2pressed = not GPIO.input(17)
-    btn3pressed = not GPIO.input(18)
-    btn4pressed = not GPIO.input(27)
+    btn1pressed = not GPIO.input(5)
+    btn2pressed = not GPIO.input(6)
+    btn3pressed = not GPIO.input(13)
+    btn4pressed = not GPIO.input(19)
 
     if btn1pressed and not btn1alreadyPressed:
-        print('1 Pressed')
+#        print('1 Pressed')
         message = '8 1'
         send2Pd(message)
     btn1alreadyPressed = btn1pressed
 
     if btn2pressed and not btn2alreadyPressed:
-        print('2 Pressed')
+#        print('2 Pressed')
         message = '8 2'
         send2Pd(message)
     btn2alreadyPressed = btn2pressed
 
     if btn3pressed and not btn3alreadyPressed:
-        print('3 Pressed')
+#        print('3 Pressed')
         message = '8 3'
         send2Pd(message)
     btn3alreadyPressed = btn3pressed
 
     if btn4pressed and not btn4alreadyPressed:
-        print('4 Pressed')
+#        print('4 Pressed')
         message = '8 4'
         send2Pd(message)
     btn4alreadyPressed = btn4pressed
-        
+    
     values = [0]*8
     values2 = [0]*8
     
@@ -99,7 +103,7 @@ while True:
         values[i] = readadc(i)
         values2[i] = readadc2(i)
         message = str(i) + ' ' + str(values[i]) # make a string for use with Pdsend
-        message = message + str(i+8) + ' ' + str(values2[i])
+        message = message + ' ' + str(i+8) + ' ' + str(values2[i])
         send2Pd(message)
 
 # consider creating a message that has all values in one string rather than separate messages
