@@ -20,4 +20,3 @@ Multiple Sonic Views (Aural Perspectives) required
 		- Higher flow / satisfaction
 		-	Increased performance / less annoyance
 		- The more we can interact with sound the better
-

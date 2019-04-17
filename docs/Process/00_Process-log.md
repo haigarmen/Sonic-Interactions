@@ -1631,105 +1631,6 @@ more on GATT here:
 https://learn.adafruit.com/introduction-to-bluetooth-low-energy/gatt
 
 
-####Pd Exercises:
-
-01 Basics
-02 Sequencing
-03
-
-## Day01/ Basics
-
-First activity:
-Make your first object
-
-To place an object on the canvas, select Put→Object from the menu or use
-CTRL+1 on the keyboard.
-An active, dotted box will appear.
-Move it somewhere on the canvas using the mouse and click to fix it in place.
-You can now type the name of the new object, so type the multiplication character into the box. When you have finished typing, click anywhere on the
-blank canvas to complete the operation.
-When Pure Data recognizes the object name you give, it immediately changes the object box boundary to a solid line and adds a number of inlets and outlets. You should see a |* | on the canvas now.
-
-    01.hello_world.pd
-    02.basic_elements.pd
-    03.getting_help.pd
-    04.edit_mode.pd
-    05.objects.pd
-    06.connections.pd
-    07.messages.pd
-    08.hello_audio.pd - Simple OSC and DAC
-    09-audio-creation.pd - Simple OSC and DAC - changing frequency
-    10-midi-notes.pd - OSC to play notes (mtof)
-    11-rounding-notes.pd - Slider, basic rounding
-    12-waveform.pd - Table, tabwrite
-    13-waveform-2.pd - Sin wave in Table refreshed
-    14-optional-samplehold.pd - Sin and Square waves combined using sampleHold
-
-#activity: everyone plays individual notes of a chord progression.
-1. program in the notes for each person.
-2. establish a tempo and a progression (use a drum beat to keep time)
-3. rehearse and then record.
-4. improvise and record again
-
-One Thing - San Holo
-https://www.edmprod.com/theory-arrangement-san-holo-one-thing/
-
-C#min – A – E – F#min || C#min – A – E – B ||
-
-C#min: C# – E – G# (midi: 25, 44, 49, 52) (optional: 56, 61, 64)
-A: A – C# – E (midi: 33, 45, 49, 52) (optional: 57, 61, 64)
-E: E – G# – B (midi: 33, 44, 47, 52) (optional: 56, 59, 64)
-F#min: F# – A – C# (midi: 30, 44, 49, 54) (optional: 56, 61, 66)
-
-C#min: C# – E – G#
-A: A – C# – E
-E: E – G# – B
-B: F# – B – D# (midi: 35, 42, 47, 51, 54) (optional: 56, 61, 66)
-
-
-Day02/ Sequencers
-    08.pd - Simple Sequencer - write your own melody
-    09.pd - writing values to a table a- simple
-    10.pd - writing values to a table b. better visually
-    11.pd - Write values to table with expression
-    12.pd - Changing shape of note with |line~|
-    13.pd - Subpatch with BPM
-
-    - Add random into sequence
-
-#Activity: everyone use the same notes in C major pentatonic scale
-Midi note numbers for C Pentatonic
-c2-36 d2-38 e2-40 g2-43 a2-45
-c3-48 d3-50 e3-52 g3-55 a3-57
-c4-60 d4-62 e4-64 g4-67 a4-69
-c5-72 d5-74 e5-76 g5-79 a5-81
-
-set a drumbeat and try to sync everyone's melodies
-
-then: talk about the issue of synchronization
-
-introduce Ableton Link and create sequencer that syncs to my master Live
-everyone on the same network.
-
-
-Day03/ Audio & DSP
-    14.pd Load an audio Sample
-
-
-# Activity: prepare a sampler with 3 samples, play with drum loop and others.
-
-
-Day04/ Hardware and mapping
-button
-Potentiometer
-Sensor (soft Potentiometer)
-xbox controller
-
-- learn the graph/canvas thingie?
-
-pg 165 Chapter 10
-Basic Objects and Principles of Operation
-
 # 19.03.15
 NonInstrument - 2 insta posts
 
@@ -1776,3 +1677,354 @@ connect a 10K resistor from the middle pin to GND.
 
 # Leonard Paul explaining Pd
 https://www.gamasutra.com/view/feature/131258/audio_prototyping_with_pure_data.php
+
+#19.03.20
+Soft Pot Arduino code
+https://engineersportal.com/blog/2018/10/9/membrane-potentiometer-with-arduino-circular-softpot
+
+
+#19.03.21
+few days left before leaving for Europe.
+TO DO:
+finalize SIK Disk image and burn 12 SD cards - DONE
+Solder:
+    Breakout boards - where to put resistors so pots don't jump around- actually, they're fine without them. Just need to solder pins and buy 3wire connector cables. - DONE
+    OI boards - DONE
+    Mics - DO THIS LATER
+
+Guitar wiring diagrams
+    https://robrobinette.com/How_The_TMB_Tone_Stack_Works.htm
+
+#19.03.24
+working on IRCAM talk:
+
+twitter: people working on hybrid instruments:
+@instrumentslab - Andrew McPherson
+@fabiomorreale - Fabio Morreale - Magpick: an augmented Guitar Pick for Nuanced control.
+@Halldorophone: an electro-acoustic feedback instrument
+@belaplatform -
+@g_Giacomo Lepri
+
+Effect of Instrument Structure Alterations on Violin Performance:
+Psychology article:
+https://www.frontiersin.org/articles/10.3389/fpsyg.2018.02436/full
+
+quick quote:
+The relationship between performer and instrument is interesting both for its complexity and for the common experience “that the musical instrument has become part of the body” (Nijs et al., 2009). This phenomenon is explained by the theory of embodied music cognition (Leman, 2008; Loeffler et al., 2016), which suggests that the musical instrument is a mediation technology between the mind and a musical environment. At expert level, the instrument becomes transparent to the performer (Rabardel, 1995; Leman et al., 2010); the bodily operations of manipulating the instrument become automatic, so the performer's full attention can focus on the action of creating music (Nijs et al., 2009). In other words: the challenge of understanding performer-instrument interaction is precisely that the performer is not consciously thinking about the instrument while playing. Neuroscientists attribute this transparency to a number of internalized mental mechanisms that musicians acquire with time which guide complex motor activities needed to operate the instrument as if it was an extension of the body (Repp, 1999; Stambaugh, 2016).
+
+Sound and Physical Interaction (SOPI) @ Aalto
+https://sopi.aalto.fi/
+
+Mark Cetilia
+http://mark.cetilia.org/about/
+
+AUGMENTED PERFORMANCE LAB in Copenhagen
+https://www.en.cph.aau.dk/collaboration/students/labs-campus/labs/augmented-performance-lab.cid309567
+
+
+#IRCAM::
+<ircam talk notes>
+    #Why:
+    How can our design students rapidly prototype their musical instrument ideas?
+
+    Why do so little of the new instruments being launched have any success?
+
+    How do we create new instruments that have the qualities of acoustic instruments and the capabilities of modern digital music creation tools?
+
+    How do we leverage the nuanced relationship between the player and the instrument to learn how to create better instruments?
+
+    Is there something wrong with the approach of separating the controller/interface from the sound source?
+
+    How can the discipline of interaction design help advance the efforts in Instrument design?
+
+    Ultimately, I'm here to get feedback on this approach
+    suggestions on how to improve the workshop
+    evolve Sonic Interactions workshop into a formal stream of our IXD program.
+
+    #What:
+
+    Sonic Interactions Workshops
+        Requirements: Open Source Affordable Audio Prototyping Kit and iterative process.
+        Description: Provocation is to create an instrument that has immediate response and uses digital sound processing (DSP).
+        Technology: RaspberryPi, OhEye Board, USBAudio,
+        Structure: Combination of sketching, prototyping, coding and testing
+
+    Reflection:
+        Coding can be daunting for design students.
+        typical programming (computer science) approach doesn't work with designers and it potentially gender-biased
+
+        Interdisciplinary Approach: too much switching hats
+
+
+    Experiment Quickly
+        the whole idea behind rapid prototyping is to quickly create a convincing human trial to evaluate a concept.
+        Currently hardly any musical instrument companies use a rapid prototyping method beyond form explorations using 3D printing. Most people working to make new instruments are creating specific one of a kind instruments for personal use and performance.
+
+        The type of prototyping we need to be exploring in "how it works" prototypes rather than "how it looks"
+
+        Fender Musical Instruments
+        http://www.rapidprototyping-china.com/de/5-famous-examples-of-companies-using-rapid-prototyping/
+
+        Fender is an American Manufacturer of amplifiers and string instruments and mostly known all over the world for its famous Stratocaster used by many musicians like Eric Clapton and Jimi Hendrix. The Fender was founded in 1946 and has an international reputation for its famous electric, acoustic guitars and warm toned amplifiers. What is not very well known is that Fender uses in-house 3D printing for its rapid prototyping needs. Previously, Fender was using an external service for rapid prototyping its instruments’ parts, but a lead-time of about two weeks was too much for Fender to cope with. So they decided to purchase Stratasys industrial 3D printers and do it in-house. Fender now 3D prints prototypes overnight. According to the company, 3D printing one cubic inch of material costs about $4 USD. This is significantly less than they had to pay before moving the process in-house.
+
+        They utilize this technology for designing say new knobs on their amplifiers, new designs for guitars and much more. Their design team is not just the only group that is happy about this in-house capability. Marketing is thrilled too. For example, they can have a marketing and design meeting to discuss some new ideas and concepts and by the end of the day or next morning have a prototype. This accelerates their innovation and new product development enormously.
+
+    looking inside
+    Adrian Borda - http://www.adrianborda.com/
+</ircam talk notes>
+
+<IRCAM talk>
+    structure:
+    intro - who am I
+        1. Provocation:
+        2. Background: evidence of failures in instrument making (Jammy)
+        3. Methods: interviews, surveys, experiments, literary review
+        4. Findings: instruments need to be playable, expressive and social
+        5. Hybrid instruments - physical/acoustic merged with digital
+                social
+        6. Workshop new instruments by Hacking traditional ones.
+        7. The Kit
+        Workshop requirements:
+        open-source, embedded, realtime audio processing, audio input, sensor inputs, audio output, accessible for non-programmers.
+        8. Workshop Outcomes:
+        9. Moving forward
+        10. References:
+
+    why hybrid instruments?
+    Even today most people have a mental model of how music works based on traditional instruments like piano, guitar and violin. They visualize musical intervals and patterns based on these instruments, most new instruments build on this shared knowledge (ex. Ableton Push, Roli's seafoam keyboard).
+    Historically the interface of the instrument has been directly connected to the mechanism that makes the sound, creating a tight coupling of the user's action to the resulting sound. It's this tight auditory coupling that is at the heart of the relationship between the instrument and its player.
+    By hacking existing instruments we are forced to use the tight coupling and make something new.
+
+    Books:
+    The History of Musical Instruments - Curt Sachs
+    Origins and Development of Musical Instruments - Jeremy Montagu
+    Studies in Musical Acoustics and Psychoacoustics - Albrecht Schneider
+    Psychology for Musicians - Lehmann, Sloboda & Woody
+
+    Analog Days: The Invention and Impact of the Moog Synthesizer - Trevor Pinch
+    Pink Noise - Tara Rodgers
+    Sonification Handbook -
+    Promising Avenues:
+
+    1. Get a Pd external written in C that grabs sensor data with less overhead and latency. Currently the Python script takes 25-30% of CPU processing compared to Pd only using 5-8%.
+
+    x. Add a layer of Machine Learning
+
+    According to the paper: Rapid Prototyping of New Instruments with CodeCircle -
+    Zbyszynski, Grierson & Yee-King
+
+    Hartmann, Abdulla, Mittal and Klemer (2007)[7] have identied that "programming by demonstration" with a layer of machine learning technology can expedite the development process and improve results. RapidLib provides a machine learning library which allows such development andfits with the rapid prototyping philosophy of CodeCircle.
+
+    However, timing can be problematic. Web Audio API scripts are run in the browser's main thread, which can be prone to latency and jitter. As this paper will show, connectivity to sensors is also a potential pain point.
+
+    possibles direction: use Rebecca Fiebrink's Wekinator in RPi.
+</IRCAM talk>
+
+_______________________________________
+
+<Estonia IxDA talk>
+    Designers of Tomorrow
+    Description
+    We experience so many innovations daily that we tend to forget that before their acceptance, many of these innovations have been met by resistance among the public, or by people whose livelihoods are threatened by them. By looking into past innovation case studies we begin to understand the underlying reasons for resistance of innovations, and become better equipped to propose innovative designs for our uncertain future to become the designers of tomorrow.
+
+    Some things to add:
+    how to be a better designer in the future:
+        Learn more - up your game by adding new skills
+        Be a polymath - bring past life experience into your practice
+        Know your big why - ROI isn't enough, how will you make a difference
+        Adaptability - how can you become better at change
+</Estonia IxDA talk>
+
+<UX Tartu>
+    Panel talk
+
+    The Dark Side of Design
+    description:
+    Dark Patterns are deceptive interactions, designed to mislead or trick users into doing something they don’t want to do. In order to generate more sales, get subscriptions, and hit target numbers designers are constantly asked to create deceiving user interfaces to manipulate users. This talk will be about how we can all become better designers by saying no to Dark Patterns.
+
+    creating Dark Patterns is not a good, ethical practice and how designers should be responsible for their actions and focus on creating transparency with the users instead of manipulating them.
+
+    In terms of web now, Dark Patterns are much more complex and sneaky in nature. Brownlee (Fast Co. Design, 2015) illustrates a key example of that through LinkedIn and its automated follow-up email reminders on a new user’s behalf to any contacts harvested from his or her webmail accounts, which are presented in such a way that they appear as if they came directly from the user.
+
+    Campbell-Dollaghan (Fast Co. Design, 2017) believes that we are in a new era now. The main goal of the old world was to design ways to engage and make their lives easier but for the new era, she encourages us to “give users the agency to understand and challenge the products they’re being sold.”
+    https://www.fastcodesign.com/3066586/the-year-dark-patterns-won
+
+    There are no easy solutions or alternatives to dark patterns. Industry insiders like Bunker (2013) have suggested that designers should have an ethical code of conduct where privacy, honesty and respect should be the core elements.
+
+    “It’s become substantially worse,” agrees Brignull, discussing the practice he began critically chronicling almost a decade ago. “Tech companies are constantly in the international news for unethical behavior. This wasn’t the case 5-6 years ago. Their use of dark patterns is the tip of the iceberg. Unethical UI is a tiny thing compared to unethical business strategy.”
+</UX Tartu>
+
+
+*- Stuff to prepare for:
+1. is it 3 or 4 day workshop for EKA ?
+2. make 3 day schedule
+3. Prepare laptops with Pd, Bring headphones & bluetooth speaker(if you have one)
+4. prep workshop space - projector, speakers, wifi
+-*
+
+### challenge 1 : create a sonic composition that communicates a story (woke up this morning and...)
+
+### challenge 2 : create a non-verbal sonic conversation between two workshop participants
+
+### challenge 3: create a composition with 3 or more instruments, remember to use silence as an essential part of music making
+
+
+# Workshop Schedule:
+
+Day 2:
+    - Hardware Basics
+    - Pd with hardware
+    01 Basics
+    02 Sequencing and Hardware
+    03 DSP
+
+# Day 1
+<Day01>
+#   Introduction and Provocation
+#   AM:: Basics
+    <activity>First activity:
+        Make your first object
+
+        To place an object on the canvas, select Put→Object from the menu or use
+        CTRL+1 on the keyboard.
+        An active, dotted box will appear.
+        Move it somewhere on the canvas using the mouse and click to fix it in place.
+        You can now type the name of the new object, so type the multiplication character into the box. When you have finished typing, click anywhere on the
+        blank canvas to complete the operation.
+        When Pure Data recognizes the object name you give, it immediately changes the object box boundary to a solid line and adds a number of inlets and outlets. You should see a |* | on the canvas now.
+    </activity>
+    <Pd-exercises-1>
+                01.hello_world.pd
+                02.basic_elements.pd
+                03.getting_help.pd
+                04.edit_mode.pd
+                05.objects.pd
+                06.connections.pd
+                07.messages.pd
+                08.hello_audio.pd - Simple OSC and DAC
+                09-audio-creation.pd - Simple OSC and DAC - changing frequency
+                10-midi-notes.pd - OSC to play notes (mtof)
+                11-rounding-notes.pd - Slider, basic rounding
+                12-waveform.pd - Table, tabwrite
+                13-waveform-2.pd - Sin wave in Table refreshed
+                14-optional-samplehold.pd - Sin and Square waves combined using sampleHold
+    </Pd-exercises-1>
+
+#   PM::
+    <activity 1>
+        Play together:
+        everyone plays individual notes of a chord progression.
+
+        1. program in the notes for each person.
+        2. establish a tempo and a progression (use a drum beat to keep time)
+        3. rehearse and then record.
+        4. improvise and record again
+
+        One Thing - San Holo
+        https://www.edmprod.com/theory-arrangement-san-holo-one-thing/
+
+        C#min – A – E – F#min || C#min – A – E – B ||
+
+        C#min: C# – E – G# (midi: 61, 64, 68)
+        A: A – C# – E (midi: 61, 64, 69)
+        E: E – G# – B (midi: 64, 68, 71)
+        F#min: F# – A – C# (midi: 64, 66, 69)
+
+        C#min: C# – E – G#
+        A: A – C# – E
+        E: E – G# – B
+        B: F# – B – D# (midi: 61, 64, 71 )
+    </activity 1>
+    <sketch>
+        a scenario where two people are communicating non-verbally using sound/music.
+        describe/act/draw
+        list the features of the instrument
+        draw the instrument and how one interacts with it.
+    </sketch>
+</Day01>
+
+<Day02>
+#   Sequencing & Hardware
+#   AM::
+    <pd-exercises-2>
+        15.pd - Simple Sequencer - write your own melody
+        16.pd - writing values to a table a- simple
+        17.pd - writing values to a table b. better visually
+        18.pd - Write values to table with expression
+        19.pd - Changing shape of note with |line~|
+        19.pd - Envelope with Subpatch
+        20.pd - Subpatch with BPM
+        21.pd - Ableton_sync_sequencer
+        Challenge: Add random into sequence
+        22.pd - Samplehold-with-OI
+        23.pd - input-with-OI
+        24.pd - OI-master
+        25.pd - Simple OI synth
+    </pd-exercises-2>
+#   PM::
+    <Activity 2>
+        Everyone's Blues:
+        Improvise in C major pentatonic scale or A minor
+            Midi note numbers for C Pentatonic
+            36 38 40 43 45
+            48 50 52 55 57
+            60 62 64 67 69
+            72 74 76 79 81
+
+        Play:
+        pick a drumbeat on PO-16
+        trading bars: first 1 then 2 then 4 bars.
+
+        Issue: talk about the issue of synchronization
+        introduce Ableton Link and create sequencer that syncs to my master Live
+            everyone on the same network.
+    </Activity 2>
+    <prototype>
+        create the simplest prototype of your concept
+        what does it do in its simplest form
+        create the Pd version and move it over to the Pi
+    </prototype>
+</Day02>
+
+<Day03>
+#   Audio & DSP
+#   AM::
+
+<pd-exercises-3>
+
+</pd-exercises-3>
+<Activity 3>
+    Sample This:
+        Find/Steal/Record 3 Samples
+        prepare a sampler with 3 samples, play with drum loop and others.
+        Load these into the sampler.pd
+
+    Play:
+    pick a drumbeat on PO-16
+    trading bars: first 1 then 2 then 4 bars.
+
+    Issue: talk about the issue of synchronization
+    introduce Ableton Link and create sequencer that syncs to my master Live
+        everyone on the same network.
+</Activity 2>
+
+</Day03>
+
+
+    Day04/ Hardware and mapping
+    button
+    Potentiometer
+    Sensor (soft Potentiometer)
+    xbox controller
+
+    - learn the graph/canvas thingie?
+
+    pg 165 Chapter 10
+    Basic Objects and Principles of Operation
+
+TODO:
+
+Learn how to fold in Atom, what makes a fold, a tag? DONE
+Make an Ableton track in C major and A minor blues.
+Finish Designers of Tomorrow talk:
+Finish UX Dark Patterns talk
