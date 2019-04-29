@@ -45,7 +45,7 @@ with table;
 #X text 411 24 try these melodies:;
 #X msg 415 154 \; myTable 0 50 50 57 57 59 59 57 57 55 55 54 54 52
 52 50 50 \;;
-#X text 202 311 by adding or subtracting 12 we can change the MIDI
+#X text 137 508 by adding or subtracting 12 we can change the MIDI
 note by an octave;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;

@@ -1,7 +1,7 @@
-# Sonic Interactions Research log
+# Sonic Interactions Research Process log
 
 #### 17.11.08
-# 1. Install PD on Pi #
+## 1. Install PD on Pi #
 - Pd doesn’t work on Newest Raspbian OS (stretch)
 - Try on Jessie, Jessie lite is recommended (without gui)
 - without gui can’t configure wifi without command line
@@ -19,15 +19,16 @@ Successful installed Pd on Raspbian Stretch.
 
 #### 17.11.20
 ## how to get sensor data into PD?
-## 1. Serial messages or 2. OSC
-1. getting data from Sensor Hat in python
-Communication with python
-attempt 1: using socket - Pdsend
+### 1. Serial messages or 2. OSC
+1. getting data from Sensor Hat in python Communication with python attempt 1: using socket - Pdsend
 http://ccrma.stanford.edu/planetccrma/man/man1/pdsend.1.html
-17.11.24 - got it working
-17.11.26 sending joystick x value to Pd to change note
-17.11.26 accelerometer from sense hat sending data to Python script then port it over to Pd.
-Reading Making Music Apps (oreilly)
+
+#### 17.11.24 - got it working
+#### 17.11.26 sending joystick x value to Pd to change note
+#### 17.11.26
+- accelerometer from sense hat
+- sending data to Python script then port it over to Pd.
+- Reading Making Music Apps (oreilly)
 
 ## OSC communication
 [https://github.com/toddtreece/osc-examples.git](https://puredata.info/downloads/osc)
@@ -38,27 +39,31 @@ they are native in Pd - no, actually not native, part of mrpeach which doesn't w
 #### 17.12.14
 Learning about Live Looping with Ableton using Apogee Gio.
 
-
 #### 18.02.07
 trying pyOSC python library that sends OSC messages, from here http://pdonapi.blogspot.ca/2015/10/using-sensors-in.html
 
 On the pure data side, use a version 0.47 or later and use the [netsend]/[netreceive] and [oscformat]/[oscparse] objects
 
-#### Lots of Pots (shield)
+### Lots of Pots (shield)
 https://moderndevice.com/news/using-the-analog-input-on-the-lots-of-pots-board-for-raspberry-pi/
 https://moderndevice.com/wp-content/uploads/2013/07/LotsOfPots.pdf
 
 #### 18.02.10
-LOP shield built but not working yet, could be that it's made for older version of RPi, 26pin
-also, test the solder connections for connectivity (look at LOP schematic)
+- LOP shield built but not working yet, could be that it's made for older version of RPi, 26pin
+- try:
+    -   test the solder connections for connectivity
+    - look at LOP schematic)
+
 #### 18.02.12
-looks like the solder is fine, there's a few in the header that could be redone but the connections seem fine using my (iffy) multimeter.
+- looks like the solder is fine
+- there's a few in the header that could be redone but the connections seem fine using my (iffy) multimeter.
 
 
 #### 18.02.15
 Finally got Lots of Pots working! reinstalled Raspian and
 SPI software seems to be working, might test it with a breadboard and ADC MC3008
-try building the rpieffectsbox (in software folder)
+
+- try building the rpieffectsbox (in software folder)
 or this simple spi volume control example
 https://learn.adafruit.com/reading-a-analog-in-and-controlling-audio-volume-with-the-raspberry-pi/script
 
@@ -66,53 +71,58 @@ more about SPI here:
 https://elinux.org/RPi_SPI
 http://ipsolutionscorp.com/raspberry-pi-spi-utility/
 
-### 18.02.17
-Pedal-Pi in case, cut and drilled case to fit
-now working with looper effect running on startup
+#### 18.02.17
+- Pedal-Pi in case, cut and drilled case to fit
+- now working with looper effect running on startup
 https://guitarextended.wordpress.com/2012/08/28/running-pd-on-a-headless-raspberry-pi
 
-### 18.02.19
-added sensehat py scripts to Loppi repo
-make Loppi into synth first then try guitarFX - rpieffectbox (it's in software folder)
+#### 18.02.19
+- added sensehat py scripts to Loppi repo
+- make Loppi into synth first then try guitarFX - rpieffectbox (it's in software folder)
 
-### 18.02.25
- started getting lop2osc.py working
-18.02.26 getting buttons working on LOP, discovered that pots don't work with Pd, need to bug fix
+#### 18.02.25
+- started getting lop2osc.py working
+
+#### 18.02.26
+- getting buttons working on LOP, discovered that pots don't work with Pd, need to bug fix
 18.02.27 figured out the bug, can't use udp in python script, got buttons and pots working in py
 
 
 #### 18.03.03-05
 trying to get lop2pd.py and step-vibrato.pd launching on bootup
-#### 18.03.06
-got it working, had to put the bash script 'pd_startup.sh' into /etc/profile.d/
 
-Next: get buttons connected to functions in Pd - step-vibrato script.
-#### 18.04.04 - creating KalimPi
-a. figure out looper in Pd
-b. figure how to control looper with LotsOfPots
-c. figure how to assemble
-d. do I need a screen OLED for this project?
+#### 18.03.06
+- got it working
+- had to put the bash script 'pd_startup.sh' into /etc/profile.d/
+
+* Next: get buttons connected to functions in Pd - step-vibrato script.
+
+#### 18.04.04
+## creating KalimPi
+1. figure out looper in Pd
+2. figure how to control looper with LotsOfPots
+3. figure how to assemble
+4. do I need a screen OLED for this project?
 
 #### 18.04.28
-trying osc2pd using "socket" low-level UDP
-didn't work on OSx
-
-
-or pyOSC
+- trying osc2pd using "socket" low-level UDP
+- didn't work on OSx
+- or should I try pyOSC
 https://github.com/ptone/pyosc
 
 #### 18.04.29
-works on OSx but doesn't seem to work for python3 in pi
-works in python2, but gets an error because...
-and mrpeach routeOSC not working with PD on pi
+- works on OSx but doesn't seem to - work for python3 in pi
+- works in python2, but gets an error because...
+- mrpeach routeOSC not working with PD on pi
 
 #### 18.05.02
-kalimPi working but while trying to shoot video for Sound Intensive, board overheated and stopped working. now won’t even startup.
+- kalimPi working but while trying to shoot video for Sound Intensive
+- board overheated and stopped working. now won’t even startup. :-(
 
 #### 18.05.06
-Build Google nSynth Super project with Adan, Eli and Evan
-got them working with Pi3v1 not working with Pi3v2
-MicroUSB jack broke after using once, but the MicroUSB jack on the Pi seems to work fine, connect a powerboost100, battery and switch. MIDI keyboard only triggers some notes and there’s a delay.
+- Build Google nSynth Super project with Adan, Eli and Evan
+- got them working with Pi3v1 not working with Pi3v2
+- MicroUSB jack broke after using once, but the MicroUSB jack on the Pi seems to work fine, connect a powerboost100, battery and switch. MIDI keyboard only triggers some notes and there’s a delay.
 next steps: figure out how to get seamless notes, multi-note?
 seems like others in github issues have the same problem with the semi-assembled version of board.
 get refund or new board?
@@ -126,9 +136,6 @@ typical U
 
 UID OO:EE:BD:DB:16:E1
 
-
-
-
 rhythm, notes, variation
 tried Text-to-music project, ruby script reads text from rss feed and sends
 
@@ -140,8 +147,6 @@ sudo mount -o remount, rw/
 now my nsynth isn't working, screen or pots not working, tried firmware again but nothing.
 18.05.31
 worked on nsynth again, tried to recompile the code with the original MidiThread.cpp file but still getting the same problems.
-
-
 
 ### SoundPiKit (AudioRigPi)(AudioRpiKit)
 a taxonomy of different functions for workshop
@@ -1023,7 +1028,6 @@ _______________________________________
 
 compiles and works with my Akai MPKmini2, playable but you need to bang on keys to get the sound to register, I think I need to tweak some midi settings to make the sound work even with a softer touch. good for now...
 
-
 Next, let's try to get the nunchuck working with OhEye Board.
 
 #### 18.11.15
@@ -1165,8 +1169,7 @@ loops
 
 
 # Advice for new musicians:
-
-## 1. Less is more.
+1. Less is more.
 Music production is complicated, so it’s ridiculously easy to go deeper, to always want more tools and tricks.
 
 But do you really need to watch YouTube tutorials on that latest gadget you bought or should you just spend some time with it. Do you
@@ -1175,7 +1178,7 @@ Most professionals will tell you that learning one instrument inside and out wil
 
 I’m not saying there isn’t value in staying hungry (more on that later), but in my experience, less is because it forces you to make progress with your music by looking inside yourself instead of always reaching for something external or abstract.
 
-## 2. Chill, play the long game.
+2. Chill, play the long game.
 Remember when you thought you could out-work all of your competition. And sure, it might’ve helped a little – but music doesn’t work that way. Life doesn’t work that way.
 
 So, take your time; there is literally no rush. The race is long and you've got all the time in the world.
@@ -1511,14 +1514,20 @@ tempo
 Music Diary - write a piece everyday
 
 ## Workshop Hardware:
-Order 8 Workshop Kits for Estonia - April 14-18
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+
+- [x] Order 8 Workshop Kits for Estonia - April 14-18
+- [x] Order Workshop Hardware for Stepanagert - April 20
+- [x] Order Workshop Hardware for Dundee - May 24
+
+
 
 Eesti Kunstiakadeemia, Interaktsioonidisain
 Põhja puiestee 7
 Tallinn 10412, Estonia
 
-Order Workshop Hardware for Stepanagert - April 20 -
-Order Workshop Hardware for Dundee - May 24
+
+
 
 ##19.02.11
 ## Write experiments on blog
@@ -1871,18 +1880,12 @@ _______________________________________
 
 # Workshop Schedule:
 
-Day 2:
-    - Hardware Basics
-    - Pd with hardware
-    01 Basics
-    02 Sequencing and Hardware
-    03 DSP
-
-# Day 1
+## Day 1
+- AM:: Basics
+- Introduction Slides
 <Day01>
-#   Introduction and Provocation
-#   AM:: Basics
-    <activity>First activity:
+    <activity>
+    ### Activity 1
         Make your first object
 
         To place an object on the canvas, select Put→Object from the menu or use
@@ -1893,25 +1896,27 @@ Day 2:
         blank canvas to complete the operation.
         When Pure Data recognizes the object name you give, it immediately changes the object box boundary to a solid line and adds a number of inlets and outlets. You should see a |* | on the canvas now.
     </activity>
-    <Pd-exercises-1>
-                01.hello_world.pd
-                02.basic_elements.pd
-                03.getting_help.pd
-                04.edit_mode.pd
-                05.objects.pd
-                06.connections.pd
-                07.messages.pd
-                08.hello_audio.pd - Simple OSC and DAC
-                09-audio-creation.pd - Simple OSC and DAC - changing frequency
-                10-midi-notes.pd - OSC to play notes (mtof)
-                11-rounding-notes.pd - Slider, basic rounding
-                12-waveform.pd - Table, tabwrite
-                13-waveform-2.pd - Sin wave in Table refreshed
-                14-optional-samplehold.pd - Sin and Square waves combined using sampleHold
-    </Pd-exercises-1>
+<Pd-exercises-1>
+### Pd Exercises 1:
+        01.hello_world.pd
+        02.basic_elements.pd
+        03.getting_help.pd
+        04.edit_mode.pd
+        05.objects.pd
+        06.connections.pd
+        07.messages.pd
+        08.hello_audio.pd - Simple OSC and DAC
+        09-audio-creation.pd - Simple OSC and DAC - changing frequency
+        10-midi-notes.pd - OSC to play notes (mtof)
+        11-rounding-notes.pd - Slider, basic rounding
+        12-waveform.pd - Table, tabwrite
+        13-waveform-2.pd - Sin wave in Table refreshed
+        14-optional-samplehold.pd - Sin and Square waves combined using sampleHold
+</Pd-exercises-1>
 
-#   PM::
-    <activity 1>
+- PM::
+<activity 2>
+    ### Activity 2
         Play together:
         everyone plays individual notes of a chord progression.
 
@@ -1925,42 +1930,51 @@ Day 2:
 
         C#min – A – E – F#min || C#min – A – E – B ||
 
-        C#min: C# – E – G# (midi: 61, 64, 68)
-        A: A – C# – E (midi: 61, 64, 69)
-        E: E – G# – B (midi: 64, 68, 71)
-        F#min: F# – A – C# (midi: 64, 66, 69)
+        C#min:  C# – E – G# (midi: 61, 64, 68)
+        A:      C# – E - A (midi: 61, 64, 69)
+        E:      B - E – G# (midi: 59, 64, 68)
+        F#min:  C# - F# – A  (midi: 61, 66, 69)
 
-        C#min: C# – E – G#
-        A: A – C# – E
-        E: E – G# – B
-        B: F# – B – D# (midi: 61, 64, 71 )
-    </activity 1>
-    <sketch>
+        C#min:  C# – E – G# (midi: 61, 64, 68)
+        A:      C# – E - A (midi: 61, 64, 69)
+        E:      B - E – G# (midi: 59, 64, 68)
+        B:      B – D# - F# (midi: 61, 63, 66)
+</activity 2>
+<sketch>
+    # Activity 3
         a scenario where two people are communicating non-verbally using sound/music.
         describe/act/draw
         list the features of the instrument
         draw the instrument and how one interacts with it.
-    </sketch>
+</sketch>
 </Day01>
 
+## Day02
+    - AM:
+    - Sequencing & Hardware
+
 <Day02>
-#   Sequencing & Hardware
-#   AM::
-    <pd-exercises-2>
-        15.pd - Simple Sequencer - write your own melody
-        16.pd - writing values to a table a- simple
-        17.pd - writing values to a table b. better visually
-        18.pd - Write values to table with expression
-        19.pd - Changing shape of note with |line~|
-        19.pd - Envelope with Subpatch
-        20.pd - Subpatch with BPM
-        21.pd - Ableton_sync_sequencer
-        Challenge: Add random into sequence
-        22.pd - Samplehold-with-OI
-        23.pd - input-with-OI
-        24.pd - OI-master
-        25.pd - Simple OI synth
-    </pd-exercises-2>
+<activity 3>
+    ### Activity 3
+    Play a generative piece of music
+</activity 3>
+
+<Pd-exercises-2>
+## Pd Exercises 1:
+    15.pd - Simple Sequencer - write your own melody
+    16.pd - writing values to a table a- simple
+    17.pd - writing values to a table b. better visually
+    18.pd - Write values to table with expression
+    19.pd - Changing shape of note with |line~|
+    19.pd - Envelope with Subpatch
+    20.pd - Subpatch with BPM
+    21.pd - Ableton_sync_sequencer
+    Challenge: Add random into sequence
+    22.pd - Samplehold-with-OI
+    23.pd - input-with-OI
+    24.pd - OI-master
+    25.pd - Simple OI synth
+</pd-exercises-2>
 #   PM::
     <Activity 2>
         Everyone's Blues:
@@ -1991,10 +2005,9 @@ Day 2:
 #   AM::
 
 <pd-exercises-3>
-
 </pd-exercises-3>
-<Activity 3>
-    Sample This:
+<activity 3>
+    ### Sample This:
         Find/Steal/Record 3 Samples
         prepare a sampler with 3 samples, play with drum loop and others.
         Load these into the sampler.pd
@@ -2007,9 +2020,7 @@ Day 2:
     introduce Ableton Link and create sequencer that syncs to my master Live
         everyone on the same network.
 </Activity 2>
-
 </Day03>
-
 
     Day04/ Hardware and mapping
     button
@@ -2023,8 +2034,20 @@ Day 2:
     Basic Objects and Principles of Operation
 
 TODO:
+- [x] Learn how to fold in Atom, what makes a fold, a tag?
+- [x] Make an Ableton track in C major and A minor blues.
+- [x] Finish Designers of Tomorrow talk
+- [x] Finish UX Dark Patterns talk
 
-Learn how to fold in Atom, what makes a fold, a tag? DONE
-Make an Ableton track in C major and A minor blues.
-Finish Designers of Tomorrow talk:
-Finish UX Dark Patterns talk
+
+## idea: abandoned music, give life to ideas that are left as orphans. give them a home on the web -keyword searchable db
+
+https://wp.nyu.edu/maxhorwich/2017/11/13/generative-drone-music-in-p5/
+
+
+Algorithmic composition
+https://medium.com/processing-foundation/a-platform-for-algorithmic-composition-on-p5-js-271cd872d648
+
+https://github.com/processing/p5.js/blob/master/developer_docs/project_wrapups/junshern_gsoc_2018.md
+
+https://junshern.github.io/algorithmic-music-tutorial/part1.html
