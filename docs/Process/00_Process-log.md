@@ -2039,7 +2039,6 @@ TODO:
 - [x] Finish Designers of Tomorrow talk
 - [x] Finish UX Dark Patterns talk
 
-
 ## idea: abandoned music, give life to ideas that are left as orphans. give them a home on the web -keyword searchable db
 
 https://wp.nyu.edu/maxhorwich/2017/11/13/generative-drone-music-in-p5/
@@ -2051,3 +2050,15 @@ https://medium.com/processing-foundation/a-platform-for-algorithmic-composition-
 https://github.com/processing/p5.js/blob/master/developer_docs/project_wrapups/junshern_gsoc_2018.md
 
 https://junshern.github.io/algorithmic-music-tutorial/part1.html
+
+
+VR Coding:
+
+https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/Building_up_a_basic_demo_with_A-Frame#Environment_setup
+
+Reminded of Lerp function in P5 from Shiffman
+# use to finish zooming photo Mike Bernard project
+make photoframe that tracks your eyes. digital mona lisa
+
+setting up my Strats with perfect action:
+https://www.youtube.com/watch?v=1dEZxBykRto
