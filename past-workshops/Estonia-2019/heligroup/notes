@@ -1,0 +1,16 @@
+Preferences >> Raspberry Pi configuration
+hostname > food
+psw > frenchtoast
+
+mod (object)
+example> mod 8 = loops 8 numbers when 
+ctrl + d -- duplicate
+all selected objects will connect to the one connection.
+
+
+;
+notetable 0 36 38 40 43 45 48 50 52 55 57 60 62 64 67 69 72 74 76 79 81;
+
+EKA raspberry IP
+10.199.1.223/20
+
