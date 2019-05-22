@@ -2043,7 +2043,7 @@ TODO:
 
 https://wp.nyu.edu/maxhorwich/2017/11/13/generative-drone-music-in-p5/
 
-
+19.05.01
 Algorithmic composition
 https://medium.com/processing-foundation/a-platform-for-algorithmic-composition-on-p5-js-271cd872d648
 
@@ -2052,6 +2052,7 @@ https://github.com/processing/p5.js/blob/master/developer_docs/project_wrapups/j
 https://junshern.github.io/algorithmic-music-tutorial/part1.html
 
 
+19.05.02
 VR Coding:
 
 https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/Building_up_a_basic_demo_with_A-Frame#Environment_setup
@@ -2062,3 +2063,63 @@ make photoframe that tracks your eyes. digital mona lisa
 
 setting up my Strats with perfect action:
 https://www.youtube.com/watch?v=1dEZxBykRto
+
+19.05.07
+working on DiStefanoJaud site, researching wp themes:
+Impreza seems very fexible $50
+
+look into sliders: Soliloquy and Revolution slider
+https://soliloquywp.com/
+
+
+TODO:
+- [ ] Learn how to use Impreza
+    [x] home page - full screen slides with text
+    [x] Revolution slider - posts and animations
+    [x] portfolio - projects, categories
+    [ ] figure out different grid options for porfolio
+    [x] Project pages - slider
+    [X] Sticky header
+    [ ] Bring content under header for Main pages - not for Posts & Pages
+- [x] People custom post type - don't need a separate type, use page
+- [x] Studio pages
+- [x] Contact page
+- [ ] instagram feed in sidebar
+- [ ] Figure out DiStefano hosting
+
+#19.05.08
+trying to figure out Impreza theme options. layout, grid and custom layout for home page.
+
+Questions for DiStephano:
+how do we want to categorize the projects:
+commercial, industrial, institutional, residential?
+where do you see testimonials fit in and do you have any?
+The newsletter is something we should aim for but after we launch the site and we're confident that the content for a letter is achievable monthly.
+
+
+#19.05.09
+Trip to Brussels to visit Chris
+
+* IDEAS
+# Build a html/JS Fullscreen Video & Audio Player like Mirror.fm one and put content on music.haigarmen.com or inner.haigarmen.com
+
+# Fermata podcast name, get a domain for it.
+
+Songwriting Tips:
+https://www.secretsofsongwriting.com/
+
+#19.05.12
+
+Rewrite my website copy:
+
+For over 25 years I have been dedicated to becoming a great designer. Driven to learn everything there is to know about how we interact with each other, creating digital tools for work, creativity and music. My career has taken me to many unexpected places, which has lead me to teaching the next generation of designers.
+
+But it wasn't always like this. There was a time when I worked as a professional musician playing guitar all the time. For years I practiced my craft during the day and gigged constantly. I studied composition and jazz in university in Montréal and graduated with a huge interest in using computers as a tool in the studio. You have to consider that was the mid 1990s and there just wasn't that many people doing that. But this was a pivotal time for me, I realized that I interested in how we use technology in our creative practice. It's a theme that remains in almost all the work I do.
+
+But before that, I studied architecture and began working in an architectural firm in Ottawa. Over the years I have designed corporate identities, book covers, ads, album artwork and promotional items for prestigious clients like CBC, BMW, Chanel & Nokia. I used to run a design agency called LiFT studios and currently I'm a professor at Emily Carr University.All that to say, I've had a lot of interests throughout my life and not surprisingly, I'm focusing on where music and design intersect.
+
+If you're interested in a more official Biography click here
+
+
+#19.05.15
+Working on DJA website, learning new WP stuff, Impreza theme, Revolution Slider, WPBakery PageBuilder
