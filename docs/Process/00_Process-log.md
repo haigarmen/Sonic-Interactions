@@ -1978,7 +1978,7 @@ _______________________________________
 #   PM::
     <Activity 2>
         Everyone's Blues:
-        Improvise in C major pentatonic scale or A minor
+        compose a C major pentatonic melody
             Midi note numbers for C Pentatonic
             36 38 40 43 45
             48 50 52 55 57
@@ -1987,11 +1987,12 @@ _______________________________________
 
         Play:
         pick a drumbeat on PO-16
-        trading bars: first 1 then 2 then 4 bars.
+        trading bars: first 1 then 2 then 4 bars.zx
 
+        Option:
         Issue: talk about the issue of synchronization
         introduce Ableton Link and create sequencer that syncs to my master Live
-            everyone on the same network.
+        * is everyone on the same network?
     </Activity 2>
     <prototype>
         create the simplest prototype of your concept
@@ -2001,10 +2002,17 @@ _______________________________________
 </Day02>
 
 <Day03>
-#   Audio & DSP
+#   Audio & Hardware
 #   AM::
 
 <pd-exercises-3>
+Audio Sampler
+Hardware and mapping
+button
+Potentiometer
+Sensor (soft Potentiometer)
+xbox controller
+
 </pd-exercises-3>
 <activity 3>
     ### Sample This:
@@ -2019,19 +2027,9 @@ _______________________________________
     Issue: talk about the issue of synchronization
     introduce Ableton Link and create sequencer that syncs to my master Live
         everyone on the same network.
-</Activity 2>
+</Activity 3>
 </Day03>
 
-    Day04/ Hardware and mapping
-    button
-    Potentiometer
-    Sensor (soft Potentiometer)
-    xbox controller
-
-    - learn the graph/canvas thingie?
-
-    pg 165 Chapter 10
-    Basic Objects and Principles of Operation
 
 TODO:
 - [x] Learn how to fold in Atom, what makes a fold, a tag?
@@ -2123,3 +2121,225 @@ If you're interested in a more official Biography click here
 
 #19.05.15
 Working on DJA website, learning new WP stuff, Impreza theme, Revolution Slider, WPBakery PageBuilder
+
+# 19.06.17
+Algorithmic Composition Workshop at Tumo
+Day 1: lessons 1-13
+Day 2: review of 1-10, lessons 10-20 Sound Part I (lessons 1-5)
+Day 3: review of For loop, Lessons 21-30
+    20-24 grid (loop in loop),
+    25-
+Sound Part II
+OOP -
+Random vs. Noise:
+
+
+# 19.06.26
+Prepping VR Workshop
+
+here's what's written so far:
+Global Social Place-making in VR
+
+This design seminar explores the way in which physical places may intersect, digitally. VR seems the obvious platform for an immersion of this sort, however designing for specific (yet broadly geographic) intersections (for example, the Armenian diaspora) would seem to require a closer analysis of our relationship (the “viewer”’s relationship, that is) to place and perspective.
+
+This two week design seminar focuses on a theory of place in the 21st century met with an approach to designing meaningful immersive, digital experiences. Students will select local and (globally) remote sites that they want to connect in the context of the Armenian diaspora and create physical-virtual experiences to achieve this end. For example, a public park in Yerevan may have affinitive physical, emotional, cultural, digital or even aural touchpoints with a street corner in East Hollywood, CA.
+
+These explorations draw upon historical works and theory presented by various media and fine artists including Robert Smithson, Andy Goldsworth, James Turell and Kit Galloway and Sherrie Rabinowitz:
+
+“Public Communications Structures"
+https://iphiahenry.wordpress.com/2011/09/20/hole-in-space-1980-installation-by-kit-galloway-and-sherrie-rabinowitz
+
+“Site / Non-site Dialectic"
+https://www.robertsmithson.com/essays/provisional.htm
+
+“Sensing Spaces"
+https://www.artinamericamagazine.com/news-features/news/space-conditioning-james-turrell-and-las-vegas/
+
+“Ephemerality and collaborations with Nature"
+http://text-relations.blogspot.com/2010/12/andy-goldsworthys-transient-art.html
+
+Overall, the coursework will allow students to explore critical decision and experience making around the notion of connected spaces. Key questions of why site selection and framing are important for the meaningful construction of virtual-digital experiences as well as range of allowable human interaction within that frame will be considered. Applied learning is relevant to a variety of contexts including commercial retail, scientific exploration, geo-social cultural cohesion and emerging communications modalities.
+
+Students will be expected to work in teams of 2-3 and collaborate using shared or unique skill sets.
+
+Coursework >>
+
+Working from the Imagination
+Mon July 1 -
+Writing the Place
+	- 1.5 hour intro + review of VR media: early approaches + current examples*
+
+    Primary experience aspects to discuss:
+
+   			- “Spectacle”
+   			- “Communication”
+   			- “Immersion”
+   			- “Utility / Control"
+   			- “Empathy”
+   			- “Movement / Transition”
+   			- “Sound / Voice / Music”
+   			- “Instruction / Orientation”
+   			- “Performance”
+   			- “Presence"
+
+   		- How are these aspects related? Do they happen exclusively? Do they work in concert? What are your impressions of what works and what doesn’t?
+	- Discussion: What are these experiences trying to do?
+
+ASSIGNMENT: Write the Place: creating the (meaningful) narrative
+    INPUTS: discussion/presentation of exemplar media design and related technology platforms, research site selections: local + remote
+    OUTPUTS: draft storyline of site selection relative meaning/importance, description of desired interactions within the storyline “frame"
+
+
+--
+Tues July 2 - Draw the Encounter: choreograph the sequence of events
+    INPUTS: written site narrative, material + technological choices
+    OUTPUTS: storyboards depicting an “experience loop” that will connect the local + remote sites
+
+Working in the Field
+Wed July 3 - Figure the Ground: site visits and documentation
+    INPUTS: local site documentation, mapping/modeling of remote sites
+    OUTPUTS: co-locative model depicting associated geographies and key interactive touch-points and behaviors
+--
+Thu July 4 - We, the People: understanding who inhabits the site
+    INPUTS: ethnographic research interviews with humans in-and-around local site selections
+    OUTPUTS: Persona synthesis documentation describing target audiences
+
+Studio Charette A
+Fri July 5 - Rack Focus: blending the encounter, creating depth-of-field
+    INPUTS: Imagination + Field work from Week 1
+    OUTPUTS: develop tool + material experience design approaches; begin creating physical and digital “dioramas” using selected tools (eg. Unity, VR tool-kits, analog studio modeling tools and materials)
+
+—
+Studio Charette B
+Mon July 8 - Building (either site installation or diorama scale depending on complexity)
+    INPUTS: material + tool strategy
+    OUTPUTS: draft physical + digital site models
+--
+Tues July 9 - Rendering (digital intersection component(s) )
+    INPUTS: Physical + digital site models
+    OUTPUTS: draft interactive “instrumentation” of key experience touch-points
+
+Studio Charette C
+Wed July 10 - Blending (digital / physical “node” link-up…connecting d-site + p-site)
+    INPUTS: photo, video, scanned, rendered, other site constructural elements
+    OUTPUTS: prototype ensembles
+--
+Thu July 11 - Testing (working out the kinks all day)
+    INPUTS: All tools + materials to date
+    OUTPUTS: Final physical-virtual site constructs
+
+Presentations
+Fri July 12 - Seeing ( share + critique )
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+VR Shared Design Guidelines
+
+1. Support Shared Space:
+To make the most of a room-scale setup,
+design experiences should allow participants to come
+together in the shared space when needed and explore individually at other times. This will support the most flexible
+use of each person’s physical space while still supporting realwalking for locomotion and natural interaction in the shared
+virtual space.
+For example, remote collaboration for designing
+a large 3D object together where both need to freely move
+around the static objects or in education scenarios like viewing the structure of an enlarged molecule and viewing and
+manipulating it together.
+
+2. Leverage Asymmetry:
+Instead of trying to fit all types of tasks
+into one type of shared virtual space, designers should leverage the inherent advantages of the different sizes of tracked
+spaces and the resulting mappings to design relevant tasks.
+
+3. Design for Interaction:
+While all users are located in different
+physical spaces, they perceive the same virtual world. All
+users can hear and see each other doing things in VR, even if
+they are not directly involved with one another which can be
+distracting or engaging. Design tasks that require teamwork
+through shared manipulation of objects for creating challenging, productive and fun experiences.
+
+4. Natural Embodiment:
+Our empirical work confirms that participants highly valued having an avatar that gave them the ability to ‘‘physically’’ and naturally engage with each other.
+
+Similarly physically walking in VR provided a satisfying sense
+of presence. We encourage creators of collaborate VREs to design shared spaces and interactions using natural locomotion,
+and only use teleportation or related transportation methods
+as a fallback technique if the space limit requires it.
+
+
+#19.07.02
+A-frame examples:
+Tues:
+1-hello World - primitives
+2-360 image
+
+Wed:
+3-360 & primitives
+4-import model
+
+Thurs:
+5-links
+
+Friday:
+6-Networked VR
+
+
+# note: have made a subdomain with WP at music.haigarmen.com. start thinking about how to publish music there. original compositions, videos, performances, gig schedule,
+
+
+#19.07.09
+Week two of VR workshop:
+need to figure out how to do the following:
+[ ] bg images in networked vr
+[ ] switching scenes
+[X] simple animation
+
+[ ] ambient music loops
+
+#19.07.11
+# getting Node.js running on my server
+install node.js first - pretty straight forward
+https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04
+
+installed PM2
+
+then configured to run
+sudo pm2 start /var/www/vr.haigarmen.com/server/easyrtc-server.js systemctl
+
+sometimes doesn't work unless you do this:
+npm cache clean --force
+
+
+DistefanoJaud time blocks
+5 days (x 5hrs) in May = 25 hrs
+1 day (x 5hrs) June = 5hrs
+July 4 call - 1 hr
+july 17 - 5hrs
+
+#19.07.18
+started working on Derik Giner site.
+ - installed Impreza, updated and build the child theme.
+login: admin
+pwrd: DosTan.9
+
+DiStefano Home page white logo but iPad needs color version:
+
+.home .ush_image_1{
+    content: url(http://test.distefanojaud.com/wp-content/uploads/2019/06/logo-distefano-jaud-architecture-white.png);
+}
+<!-- this works for home page but then it can't be overridden -->
+
+@media (max-width: 899px) and (min-width: 600px)
+.home .w_image_h {
+    content: url(http://test.distefanojaud.com/wp-content/uploads/2019/06/logo-distefano-jaud-architecture.png);
+}
+
+#Final Revisions from Pablo - July 26
+
+[ ] Footer line breaks on mobile
+[X] Title on Team member page vertical align - 2 column
+[X] Instagram vertical alignment
+[X] Instagram title could be smaller
+[X] Social media links in footer
+
+[ ] Floor Plans for project pages
