@@ -235,7 +235,7 @@ https://www.e-rm.de/2017/11/09/4gg445g-2/
 https://disquiet.com/2010/04/11/arius-blaze-folktek/
 
 
-try LeapMotion for Max object
+LeapMotion for Max object
 http://akamatsu.org/aka/max/objects/
 
 Arduino Ribbon Synth

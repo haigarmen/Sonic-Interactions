@@ -2343,3 +2343,80 @@ DiStefano Home page white logo but iPad needs color version:
 [X] Social media links in footer
 
 [ ] Floor Plans for project pages
+
+#Final Revisions for DistefanoJaud from Pablo - Sept 22
+
+[X] Check Instagram account link (latest Instagram posts not loading)
+
+[X] Please send me the Wordpress login information, I will start loading some projects for them.
+
+[X] Fix the spelling of “Essence” on the Home Page, it is also hard to read on the photograph
+
+[X] They mentioned you were going to add some icons to each project, that would work as link to associated “Notes” entries.
+
+[X] Logo not seen on some projects, check mobile view too.
+Logo - 50% black for Distefano, 20% architecture
+
+Oct 7th DistefanoJaud
+[X] update theme 1 hr
+[X] upload Images 2 hrs
+[X] upload new projects 5 hrs
+[x] links to postings 1 hr
+
+Oct 14th DiStefanoJaud
+[X] upload favicon
+[X] upload writing for prato 1
+[ ] upload images for prato 1
+[X] upload writing for prato 2
+[ ] upload images for prato 2
+[X] upload content for Eco Lock
+
+Oct 15th
+[X] Husky Autism (remove what is currently there)
+[X] St Michael (add plan besides text)
+[X] Water St. Condos (add plan)
+
+Nov 9th
+[X] Update Theme and Plugins - 1hr
+[X] make logo smaller in iPad size 2hrs
+[X] get rid of grey above header in iPad view (not quite fixed)
+
+
+
+Composition and improvisation
+Difference between song and performance
+https://en.wikipedia.org/wiki/Sonic_interaction_design
+
+http://www.naturalpatterns.no/composition-and-improvisation/
+Improvisation is an ongoing dialogue, and is usually based on communication from the very moment it starts, with other improvisers and the audience. Composing music on paper is usually a solitary process until just before it is performed.
+
+The improviser works with spontaneity and intuition in real-time, and can not change something which has been played. The composer, on the other hand, can plan the length and timing of every event in a musical structure if she wants to, change her mind and move sections around as many times as she’d like.
+
+In the article ”Generating and Organizing Variety in the Arts” (Eno 1981), Brian Eno describes a ”scale of orientation” or continuum from right to left between composition ”tending to subdue variety in performance”, i.e. predetermined music, for example prerecorded electronic music on the extreme right, and composition ”tending to encourage variety in performance”, i.e free improvisation, on the extreme left. In between we find all the facets from classical music, various folk musics to jazz, free jazz etc.  Even free improvisation is rarely completely invented on the spot, but influenced by a host of different factors.
+
+
+the design of these interactions brings under a magnifying glass a phenomenon that has recently received a great deal of attention on the part of psychologists interested in perception: the tight coupling between auditory perception and action [3].
+
+In this design, the athletes' movements modulated the auditory feedback in real time. In turn, the sound helped the athletes to adapt their movements. Sounds had a great advantage in this case, because auditory perception and action are naturally and tightly coupled. Therefore, the intention was that the rowers would not be expected to consciously “decode” the information conveyed by the sounds, nor to think about how modifying their action would modify the sound. The sound-action loop was supposed to be intuitive. After all, this is what happens in “natural” interactions through sound.
+
+Alan Kay's tennis example
+
+Sonic interactions have a great potential to help a user become more proficient at the fine movements required in sports, as illustrated by the rowing example, but also in music, dance, surgery, and the complicated manipulation of tools
+
+Ableton Making Music book
+https://makingmusic.ableton.com/
+
+#idea:
+Making a generative piece of music by randomly launching clips with the follow action function in Live.
+
+
+Alex Ruthmann - NYU met him at IRCAM and Music Experience Design Lab
+collaborative design focus
+https://wp.nyu.edu/musedlab/
+
+Designing for Music & Emerging Technologies
+
+Notes from Podcast NYU-Music
+what constitutes Music Technology?
+what is emergent?
+physical/digital interfaces for music making and interdisciplinary connections among coding, music, technology, and creative expression.

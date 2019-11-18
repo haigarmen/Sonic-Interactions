@@ -1,3 +1,6 @@
+#Inspiration
+
+#books:
 [270 Mini Electronic Projects](https://www.researchgate.net/publication/275208316_270_MINI_ELECTRONICS_PROJECT_WITH_CIRCUIT_DIAGRAM)
 
 [Bang](https://puredata.info/groups/pd-graz/label/book)
