@@ -2420,3 +2420,104 @@ Notes from Podcast NYU-Music
 what constitutes Music Technology?
 what is emergent?
 physical/digital interfaces for music making and interdisciplinary connections among coding, music, technology, and creative expression.
+
+deterministic stances - manifestation artistic endeavour that enables creative possibilites or it can used in an instrumental sense to dehumanize human reality.
+
+Music Therapy - what are the design opportunities?
+
+
+Hacking Music - hackathon or Meetup
+
+
+https://forum.ircam.fr/article/detail/report-ateliers-du-forum/
+
+
+SABBATICAL Presentation:
+
+IRCAM
+The Ircam Forum Workshop, a key international meeting with a community at the crossroads of arts and science composed of young designers, developers and teachers.
+
+This year, from March 26-29, we’ve welcomed 300 participants from 17 countries. Mexico, Brazil, Canada, USA, Denmark, England, Sweden, Germany, Switzerland, Italy, Spain, Taiwan, New Zealand, France, Russia, Turkey, South Korea) including hundreds of students and designers. Over 3 days we attended 50 presentations, 11 hands-on workshops.
+
+Garth Paine
+https://zkm.de/en/media/video/garth-paine-future-perfect
+https://wp.nyu.edu/musedlab/
+
+art of craft
+http://guitarcrafthistory.com/the-guitar-circle-book/one-the-art-of-craft
+
+Design of Musical Instruments - camille goudeseune
+The design of musical instruments illuminates XD, because these devices present interfaces that are sophisticated, elaborate, refined over centuries, beautiful, and exquisitely adapted to the shape, capabilities, and senses of the human body. (To prepare for rapid change in the future, it helps to take a long view of history.) The interfaces of musical instruments also demand—and reward—tens of thousands of hours of continued use and study.
+
+http://guitarcrafthistory.com/the-primary-exercises
+
+#19.11.27
+Creative Tech Talk Description
+
+Back from his year sabbatical abroad, Haig Armen presents his exploration of music, technology and design. Haig's research focuses on new ways of teaching and learning about designing and rapidly prototyping musical instruments through his research in Sonic Interactions. In his talk Haig details the Instruments Hacking workshops he facilitated in 6 different countries, demos a few outcomes and outlines future plans. Along the way Haig reflects on the importance of switching hats, shifting gears and hacking creativity.
+
+Multidisciplinarity draws on knowledge from different disciplines but stays within their boundaries.
+
+Interdisciplinarity analyzes, synthesizes and harmonizes links between disciplines into a coordinated and coherent whole.
+
+Transdisciplinarity integrates the natural, social and health sciences in a humanities context, and transcends their traditional boundaries
+
+
+portfolios
+
+http://davidgurman.com/
+
+
+five steps to a successful sabbatical
+https://www.sciencemag.org/features/2013/02/five-steps-successful-sabbatical
+
+1. Go for it
+Go all the way, they say. Take a full year and go to a new city or country, if you can.
+“Being out of your ordinary surroundings makes you establish new relationships and collaborations and lets you present your ideas in a different context.” People in other countries or even other institutes view your work from a different perspective, informed by the prevailing models and cultures of their region, he says. “They give you reactions and feedback that are different from your colleagues at home.”
+
+2. Get Away
+“The trick to a sabbatical is getting away from things that you find stressful,” says Paul Spector, professor of organizational psychology at the University of South Florida, and an author on the study. “Don’t just do the same work somewhere else.”
+
+3. Be Organized
+You’ll need details about your research plan, your collaborative arrangement, and the facilities at the institute you will be visiting. In addition, you must describe the larger goals of your fellowship and how you intend to achieve them. The application requires a complete description of your collaborator’s research and mentoring achievements
+
+4. Expect the unexpected
+“It’s exceeding unlikely that your sabbatical project will proceed exactly as planned, but be open-minded and you’ll see opportunities for collaborations and other sources of value that you didn’t see going into your sabbatical.”
+
+5. Let Them Come to you
+
+Sabbatical
+Sabbaticals are no longer defined by the absence of work - in fact they are defined by the presence of it. Sabbaticals aren’t just another word for vacation. They’re the new word for an active pursuit of purpose.
+
+It’s not a vacation in the lying-on-the-beach-sipping-margaritas sense. But rather an opportunity to refresh your mind and body while continuing to do your most important work.
+
+Sagmeister
+“Like many things in my life that I actually love, I adapt to them and over time, get bored by them. And in our case, our work started to look the same.”
+
+Sagmeister first got the idea to take a work sabbatical when he started to think about the typical flow of our lives. By his estimate, most people spend 25 years learning, 40 years working their career, and then 15-plus years in retirement. But, Sagmeister thought, what if we cut off five years of retirement and interspersed them in between the working years?
+
+DISCONNECT FOR ONE HOUR A DAY
+According to Harvard psychologist Shelley Carson, one of the best ways to enhance your creative output is to separate work and consumption. As she explains, even taking an hour a day to be in an “absorb” state where you gather information and inspiration without doing any work can be an easy way to get new ideas.
+
+If you’re feeling stressed, unmotivated, and burnt out, there’s no point in trying to just push through.
+
+Instead, our best ideas often come when we’re not working. And a sabbatical–no matter how long–is a fantastic way to rest and rethink how you’re approaching hard problems.
+
+
+Polymaths
+
+Being a polymath depends on how one is presented for individual opinions of the concept. For instance: Is a master of arts or sciences that are closer to each other — such as sociology and anthropology — a polymath as much as a master of contrasting ways — such as civil engineering and philosophy — is a polymath? How deep must be one’s knowledge in order to be a polymath?
+
+Polymaths wanted at London Interdisciplinary School, Britain’s first new university in 40 years
+https://www.thetimes.co.uk/article/polymaths-wanted-at-london-interdisciplinary-school-britain-s-first-new-university-in-40-years-k0hbzdvlq
+
+A polymath is someone who excels at manipulating knowledge in different fields on their behalf through mastery of three ways: collecting, managing, and investing in information.
+https://medium.com/better-marketing/on-the-persistence-of-polymaths-dd63ea6f48e
+
+In the UK at least, higher education is overly focused on narrow degree courses, where institutional prestige often trumps the value of what students are taught. This reflects an academic research community in which various perverse incentives have created a climate where the arts and humanities have become overspecialised, often to the point of irrelevance, and where the whole integrity of the social and life sciences is threatened by the replication crisis.
+
+https://www.theguardian.com/commentisfree/2019/mar/04/young-people-education-political-university-students
+
+
+Replication Crisis:
+https://www.theguardian.com/science/audio/2018/mar/19/a-neuroscientist-explains-psychologys-replication-crisis-podcast
