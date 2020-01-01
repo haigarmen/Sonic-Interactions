@@ -2504,8 +2504,7 @@ If you’re feeling stressed, unmotivated, and burnt out, there’s no point in 
 Instead, our best ideas often come when we’re not working. And a sabbatical–no matter how long–is a fantastic way to rest and rethink how you’re approaching hard problems.
 
 
-Polymaths
-
+# Polymaths
 Being a polymath depends on how one is presented for individual opinions of the concept. For instance: Is a master of arts or sciences that are closer to each other — such as sociology and anthropology — a polymath as much as a master of contrasting ways — such as civil engineering and philosophy — is a polymath? How deep must be one’s knowledge in order to be a polymath?
 
 Polymaths wanted at London Interdisciplinary School, Britain’s first new university in 40 years
@@ -2518,6 +2517,24 @@ In the UK at least, higher education is overly focused on narrow degree courses,
 
 https://www.theguardian.com/commentisfree/2019/mar/04/young-people-education-political-university-students
 
-
 Replication Crisis:
 https://www.theguardian.com/science/audio/2018/mar/19/a-neuroscientist-explains-psychologys-replication-crisis-podcast
+
+
+### Dev Tools for Music
+# 2019.12.31
+
+OpenFrameworks - on RPi
+Camomile - Pd to plugin
+Docker - local to prod vm
+
+today TO DO
+[x] update xCode
+    - xCode 11.2 doesn't work with Sierra 10.12.6
+    - deleted xCode 9.0 now downloading 9.2
+[x] update python, homebrew, node...
+[x] try building Camomile plugin - FAIL
+[x] Camomile compiled
+[x] OpenFrameworks update 0.11
+[x] build OF Projects to test
+[] continue OF tutorials - 
