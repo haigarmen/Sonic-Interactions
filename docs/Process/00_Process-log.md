@@ -2535,6 +2535,11 @@ today TO DO
 [x] update python, homebrew, node...
 [x] try building Camomile plugin - FAIL
 [x] Camomile compiled
+[ ] Create Camomile Pd plugin
+    https://github.com/pierreguillot/Camomile/wiki/How-to-generate-plugins
+
 [x] OpenFrameworks update 0.11
 [x] build OF Projects to test
-[] continue OF tutorials - 
+[] continue OF tutorials -
+
+[] build pedal breadboard - audio jacks, power and footswitch
