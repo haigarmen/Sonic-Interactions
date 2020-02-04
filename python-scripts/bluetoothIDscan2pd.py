@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# install Bluez Python module
+# sudo apt-get install python-bluez
 
 import os
 import time

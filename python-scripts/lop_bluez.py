@@ -5,6 +5,10 @@ import spidev    # import the spidev module
 import time      # import time for the sleep function
 import RPi.GPIO as GPIO
 
+# install Bluez Python module
+# sudo apt-get install python-bluez
+import bluetooth
+
 # Open SPI bus
 spi = spidev.SpiDev()
 spi.open(0,0)
@@ -20,10 +24,10 @@ btn4alreadyPressed = False
 
 GPIO.setmode(GPIO.BCM)
 ## GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-GPIO.setup(4, GPIO.IN)
-GPIO.setup(17, GPIO.IN)
-GPIO.setup(18, GPIO.IN)
-GPIO.setup(27, GPIO.IN)
+GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(27, GPIO.IN, pull_up_down=GPIO.PUD_UP)
  
 def send2Pd(message=''):
     # Send a message to Pd
@@ -44,12 +48,23 @@ def readadc(channel):
     v = ((r[1] & 3) << 8) + r[2]
 
     return v;
+    
+def scanBlue():
+    nearby_devices = bluetooth.discover_devices(lookup_names=True)
+    print("found %d devices" % len(nearby_devices))
+
+    for addr, name in nearby_devices:
+        print("  %s - %s" % (addr, name))
+        message = '9 ' + addr # make a string for use with Pdsend
+        send2Pd(message)
+
 
 while True:
     btn1pressed = not GPIO.input(4)
     btn2pressed = not GPIO.input(17)
     btn3pressed = not GPIO.input(18)
     btn4pressed = not GPIO.input(27)
+
 
     if btn1pressed and not btn1alreadyPressed:
 #        print('1 Pressed')
@@ -73,6 +88,7 @@ while True:
 #        print('4 Pressed')
         message = '8 4'
         send2Pd(message)
+#        scanBlue() this is problematic when it's in the main loop, pauses everything when scanning
     btn4alreadyPressed = btn4pressed
 
     values = [0]*8
