@@ -5,10 +5,6 @@ import spidev    # import the spidev module
 import time      # import time for the sleep function
 import RPi.GPIO as GPIO
 
-# install Bluez Python module
-# sudo apt-get install python-bluez
-import bluetooth
-
 # Open SPI bus
 spi = spidev.SpiDev()
 spi.open(0,0)
@@ -48,16 +44,6 @@ def readadc(channel):
     v = ((r[1] & 3) << 8) + r[2]
 
     return v;
-    
-def scanBlue():
-    nearby_devices = bluetooth.discover_devices(lookup_names=True)
-    print("found %d devices" % len(nearby_devices))
-
-    for addr, name in nearby_devices:
-        print("  %s - %s" % (addr, name))
-        message = '9 ' + addr # make a string for use with Pdsend
-        send2Pd(message)
-
 
 while True:
     btn1pressed = not GPIO.input(4)
