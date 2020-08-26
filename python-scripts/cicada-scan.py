@@ -1,8 +1,11 @@
 #!/usr/bin/python3
+# install Bluez Python module
+# sudo apt-get install python-bluez
 
 import os
 import time
 import bluetooth
+import timeit
 
 # my python script that communications with Pd
 
@@ -11,6 +14,7 @@ def send2Pd(message=''):
     os.system("echo '" + message + "' | pdsend 3000 localhost udp")
 
 while True:
+    print("started scanning")
     nearby_devices = bluetooth.discover_devices(lookup_names=True)
     print("found %d devices" % len(nearby_devices))
 
