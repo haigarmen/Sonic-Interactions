@@ -1,4 +1,4 @@
-# Sonic Interactions Research Process log
+ # Sonic Interactions Research Process log
 
 #### 17.11.08
 ## 1. Install PD on Pi #
@@ -7,9 +7,10 @@
 - without gui can’t configure wifi without command line
 update: Feb 2018 PD nows works on Raspbian Stretch
 
-[https://guitarextended.wordpress.com/2013/01/28/rpi-as-guitar-effects-processor-installing-and-configuring-pd/](https://ccrma.stanford.edu/wiki/Lab1_Making_FX_in_Pd_2013)
-
-[https://github.com/redFrik/raspberrypiWorkshop/blob/master/README.md](https://ccrma.stanford.edu/wiki/Lab1_Making_FX_in_Pd_2013)
+[RPi as Guitar Effects Processor - GuitarExtended](https://guitarextended.wordpress.com/2013/01/28/rpi-as-guitar-effects-processor-installing-and-configuring-pd/)
+[Stanford Stompbox Workshop 2016] (https://ccrma.stanford.edu/wiki/Stompbox_2016)
+[Stanford Stompbox lab 2013] (https://ccrma.stanford.edu/wiki/Lab1_Making_FX_in_Pd_2013)
+[RPi Workshop - redFrik] (https://github.com/redFrik/raspberrypiWorkshop/blob/master/README.md)
 
 controlling Pd from command line:
 <code> pd -stderr -nogui -verbose testsines.pd</code>
@@ -337,7 +338,8 @@ http://www.katjaas.nl/home/home.html
 
 
 #### 18.06.19
-Researching Arthur Carabot
+## Research
+Arthur Carabot
 https://www.arthurcarabott.com/
 https://github.com/acarabott
 
@@ -354,7 +356,7 @@ http://www.nervoussquirrel.com/ferrofluid.html
 https://contextsequencer.wordpress.com/
 
 
-Notes on Field Recording
+### Notes on Field Recording
 https://www.creativefieldrecording.com/start-here/
 
 http://daily.redbullmusicacademy.com/2017/03/the-art-of-field-recording
@@ -362,15 +364,17 @@ http://daily.redbullmusicacademy.com/2017/03/the-art-of-field-recording
 OSC
 https://en.wikipedia.org/wiki/Open_Sound_Control
 
+#### 18.07.02
+- Goals of the workshop
+- Explore ways of creating instruments
+- Better understand the nuances of how
+- humans interact with instruments
+- What makes a great instrument -   
+    playability, responsiveness, social
+- Explore the liminal space between digital and analogue
 
-Goals of the workshop
-Explore ways of creating instruments
-Better understand the nuances of how humans interact with instruments
-What makes a great instrument - playability, responsiveness, social
-Explore the liminal space between digital and analogue
 
-
-<h3>References</h3>
+## References
 http://www.instructables.com/id/Pure-Pi-Control-custom-stompbox-effects-on-a-Raspb/
 http://www.instructables.com/id/PiMiDi-A-Raspberry-Pi-Midi-Box-or-How-I-Learned-to/
 https://guitarextended.wordpress.com/2011/12/12/installing-pure-data/
@@ -388,7 +392,7 @@ https://musictechfest.net/
 http://www.vahakn.co.uk/
 
 
-Sonic Interactions Mission
+## Sonic Interactions Mission
 https://musictechfest.net/musictechifesto/
 
 Seeing that the fertility of music technology as a subject that bridges computational, scientific, social scientific and humanistic approaches, we looked for common ground across those areas.
@@ -399,8 +403,7 @@ Meaningful innovation is sustainable and just – yet the current landscape of m
 
 We call for technologies to be created with an eye for the long-term. Musical objects should last as long as the materials out of which they are made or they should be modular, recyclable, or transformable. They should be forward-compatible whenever possible. Data must be portable and not bound to a particular company or platform. At the same time, standards must not become coercive. Music is not standard. We must cultivate the freedom to build and use nonstandard tools.
 
-
-workshop
+## Workshop Notes
 - explain intention (workshop goals)
 - show structure
 - theory
@@ -411,23 +414,23 @@ Reaching out to other Schools
 McGill marcelo.wanderley@mcgill.ca
 
 
-####  July 2018 - Tumo Notes
-
-students thought it was more about programming.
+## Tumo Notes
+#### 18.08.20
+Students thought it was more about programming.
 need more women and musicians in the class
 
-went through Pd exercises 1-7 in first class
-played a chord at the end of exercises
+**Day 1**
+- went through Pd exercises 1-7 in first class
+- played a chord at the end of exercises
 
-Day 2
+**Day 2**
 - play music - explain rhythm connect
 - connect physical control. (midi keyboard or Push)
 - look for game controllers
 
+**Day 2 Plan:**
 
-Day 2 Plan:
-
-Pd Exercises
+#### Pd Exercises
 1. Tables, Graphs and Arrays
 http://write.flossmanuals.net/pure-data/arrays-graphs-tables/
 
@@ -442,66 +445,66 @@ http://write.flossmanuals.net/pure-data/step-sequencer/
 4. MIDI Controller
 http://write.flossmanuals.net/pure-data/controlling-the-synth/
 
-Day2 notes:
+#### Day2 notes:
 Today went well.
 went through 4 Pd exercises and had them build their own sequences.
 Spent too much time letting them find their own audio files.
 
-
-Day 3
+**Day 3**
 A. RPi - audio and LOP soldering
 B. Music - play simple rhythm together
 C. Pd Exercises
 
-
-Pd Exercises
+#### Pd Exercises
 1. Audio input (exercises 12-13) & connecting to LOP board
 2. Simple Sequencer and synth (14-15)
 3. Delay FX (16)
 4. Audio playback manipulation (17)
 
-Day 4
-Talked about making the instrument, looked at some ideas.
-Played music -
-Pd Sequencer
+**Day 4**
+- Talked about making the instrument, looked at some ideas.
+- Played music - Pd Sequencer
 
-Day 5 Monday
-start building instruments
-Pd - learn how to make fx
+**Day 5 Monday**
+- start building instruments
+- Pd - learn how to make fx
 
-Day 6 Tuesday
-Start building instruments
-Pretty good day
+**Day 6 Tuesday**
+- more building instruments
+- Pretty good day
 
-Day 7 Wednesday
-slow to build instruments because of materials
-don't know how to add buttons to Pi, buttons have LED and need power
-Looked at Sampling again - Pd - fx and sampling
+**Day 7 Wednesday**
+- slow to build instruments because of materials
+- don't know how to add buttons to Pi, buttons have LED and need power
+- Looked at Sampling again - Pd - fx and sampling
 
-Day 8 Last day to build instruments
-if we don't have an instrument for each team -  I will assign the ukelele or Kalimpi to group
+**Day 8 Last day**
+-  to build instruments
+if we don't have an instrument for each team
+- I will assign the ukelele or Kalimpi, drum machine to groups, if need be.
+
 Simple drum machine
-Sampler- looper
-https://www.rebeltech.org/2016/05/18/pure-data-tutorial-2-sampler-looper/
-Synth with delay
-https://www.rebeltech.org/patch-library/patch/Arp_with_Delay_and_Envelope
 
+[Sampler- looper](https://www.rebeltech.org/2016/05/18/pure-data-tutorial-2-sampler-looper/)
+
+[Synth with delay](https://www.rebeltech.org/patch-library/patch/Arp_with_Delay_and_Envelope)
+
+##### Final Obserations:
 Spent a lot of time getting Pi startup script working properly. lots of voodoo
 paths, permissions
 looks like one group has pd file running, you can hear the mic and fx but python doesn't seem to be communicating even though its running.
 
 Also, spent a lot of time rebuilding files because everyone is altering their version of simple delay, chorus and tremolo.
 
-* for next time, build FX into the file as an abstraction, instead of separate pd file
+- for next time, build FX into the file as an abstraction, instead of separate pd file
 
-#### 18.09.01
-courses on kadenze
-    machine learning for musicians
-    reinventing the piano
-    concurrence in python
+### 18.09.01
+- courses on kadenze
+- machine learning for musicians
+- reinventing the piano
+- concurrence in python
 
-
-#### 18.09.26
+### 18.09.26
 bought new sensors (soft Potentiometers and sliders)
 desoldered one pot and connected a soft Potentiometer
 
@@ -510,6 +513,7 @@ came across https://www.circuito.io/app?components=512,8680,11021
 
 Cheetomoskeeto uses the hid Pd library - https://www.youtube.com/watch?v=HB_oVny33wA
 
+#### HID (Human Interface Devices)
 got hid working on pd extended on mac.
 but hid doesn't seem to work properly with Pd .48
 FB comment says that it needs to be compiled:
@@ -637,7 +641,7 @@ Alter the way that the pick hits the string. use spring to have the pick bounce 
 
 
 #### 18.10.10 - 30
-mom in hospital, no much to work on research, but thinking about a few things:
+mom in hospital, not much work on research, but thinking about a few things:
 
 - other ways of getting sensor data to Pd quicker (more responsive).
 - looked into OpenFrameworks to create a script to pull data, maybe quicker and lower overhead
@@ -709,6 +713,10 @@ amplipi (hifiberry)
 ## PiSound with Modep (is amazing)
 https://blokas.io/modep/docs/
 Mod duo uses LV2 plugins (interesting)
+
+login into pi
+username: modep
+pswrd: babel67
 
 log into your pedal from a browser and configure from a web interface:
 http://modepi.local
@@ -2095,20 +2103,21 @@ where do you see testimonials fit in and do you have any?
 The newsletter is something we should aim for but after we launch the site and we're confident that the content for a letter is achievable monthly.
 
 
-#19.05.09
+### 19.05.09
 Trip to Brussels to visit Chris
 
 * IDEAS
-# Build a html/JS Fullscreen Video & Audio Player like Mirror.fm one and put content on music.haigarmen.com or inner.haigarmen.com
+- Build a html/JS Fullscreen Video & Audio Player like Mirror.fm one and put content on music.haigarmen.com or inner.haigarmen.com
 
-# Fermata podcast name, get a domain for it.
+- ## Fermata podcast name,
+    - get a domain?
 
 Songwriting Tips:
 https://www.secretsofsongwriting.com/
 
-#19.05.12
+### 19.05.12
 
-Rewrite my website copy:
+## Rewrite my website copy:
 
 For over 25 years I have been dedicated to becoming a great designer. Driven to learn everything there is to know about how we interact with each other, creating digital tools for work, creativity and music. My career has taken me to many unexpected places, which has lead me to teaching the next generation of designers.
 
@@ -2119,23 +2128,23 @@ But before that, I studied architecture and began working in an architectural fi
 If you're interested in a more official Biography click here
 
 
-#19.05.15
+### 19.05.15
 Working on DJA website, learning new WP stuff, Impreza theme, Revolution Slider, WPBakery PageBuilder
 
-# 19.06.17
+### 19.06.17
 Algorithmic Composition Workshop at Tumo
-Day 1: lessons 1-13
-Day 2: review of 1-10, lessons 10-20 Sound Part I (lessons 1-5)
-Day 3: review of For loop, Lessons 21-30
-    20-24 grid (loop in loop),
+##### Day 1: lessons 1-13
+##### Day 2: review of 1-10, lessons 10-20 Sound Part I (lessons 1-5)
+##### Day 3: review of For loop, Lessons 21-30
+ - 20-24 grid (loop in loop),
     25-
-Sound Part II
-OOP -
-Random vs. Noise:
+- Sound Part II
+- OOP -
+- Random vs. Noise:
 
 
-# 19.06.26
-Prepping VR Workshop
+### 19.06.26
+### Prepping VR Workshop
 
 here's what's written so far:
 Global Social Place-making in VR
@@ -2146,26 +2155,26 @@ This two week design seminar focuses on a theory of place in the 21st century me
 
 These explorations draw upon historical works and theory presented by various media and fine artists including Robert Smithson, Andy Goldsworth, James Turell and Kit Galloway and Sherrie Rabinowitz:
 
-“Public Communications Structures"
+- “Public Communications Structures"
 https://iphiahenry.wordpress.com/2011/09/20/hole-in-space-1980-installation-by-kit-galloway-and-sherrie-rabinowitz
 
-“Site / Non-site Dialectic"
+- “Site / Non-site Dialectic"
 https://www.robertsmithson.com/essays/provisional.htm
 
-“Sensing Spaces"
+- “Sensing Spaces"
 https://www.artinamericamagazine.com/news-features/news/space-conditioning-james-turrell-and-las-vegas/
 
-“Ephemerality and collaborations with Nature"
+- “Ephemerality and collaborations with Nature"
 http://text-relations.blogspot.com/2010/12/andy-goldsworthys-transient-art.html
 
 Overall, the coursework will allow students to explore critical decision and experience making around the notion of connected spaces. Key questions of why site selection and framing are important for the meaningful construction of virtual-digital experiences as well as range of allowable human interaction within that frame will be considered. Applied learning is relevant to a variety of contexts including commercial retail, scientific exploration, geo-social cultural cohesion and emerging communications modalities.
 
 Students will be expected to work in teams of 2-3 and collaborate using shared or unique skill sets.
 
-Coursework >>
+### Coursework >>
 
-Working from the Imagination
-Mon July 1 -
+#### Working from the Imagination
+- Mon July 1 -
 Writing the Place
 	- 1.5 hour intro + review of VR media: early approaches + current examples*
 
@@ -2182,67 +2191,66 @@ Writing the Place
    			- “Performance”
    			- “Presence"
 
-   		- How are these aspects related? Do they happen exclusively? Do they work in concert? What are your impressions of what works and what doesn’t?
+   	- How are these aspects related? Do they happen exclusively? Do they work in concert? What are your impressions of what works and what doesn’t?
 	- Discussion: What are these experiences trying to do?
 
-ASSIGNMENT: Write the Place: creating the (meaningful) narrative
+#### ASSIGNMENT:
+Write the Place: creating the (meaningful) narrative
     INPUTS: discussion/presentation of exemplar media design and related technology platforms, research site selections: local + remote
     OUTPUTS: draft storyline of site selection relative meaning/importance, description of desired interactions within the storyline “frame"
 
 
 --
-Tues July 2 - Draw the Encounter: choreograph the sequence of events
-    INPUTS: written site narrative, material + technological choices
-    OUTPUTS: storyboards depicting an “experience loop” that will connect the local + remote sites
+#### Tues July 2 - Draw the Encounter: choreograph the sequence of events
+- INPUTS: written site narrative, material + technological choices
+- OUTPUTS: storyboards depicting an “experience loop” that will connect the local + remote sites
 
-Working in the Field
-Wed July 3 - Figure the Ground: site visits and documentation
-    INPUTS: local site documentation, mapping/modeling of remote sites
-    OUTPUTS: co-locative model depicting associated geographies and key interactive touch-points and behaviors
+#### Working in the Field
+#### Wed July 3 - Figure the Ground: site visits and documentation
+- INPUTS: local site documentation, mapping/modeling of remote sites
+- OUTPUTS: co-locative model depicting associated geographies and key interactive touch-points and behaviors
 --
-Thu July 4 - We, the People: understanding who inhabits the site
-    INPUTS: ethnographic research interviews with humans in-and-around local site selections
-    OUTPUTS: Persona synthesis documentation describing target audiences
+#### Thu July 4 - We, the People: understanding who inhabits the site
+- INPUTS: ethnographic research interviews with humans in-and-around local site selections
+- OUTPUTS: Persona synthesis documentation describing target audiences
 
-Studio Charette A
-Fri July 5 - Rack Focus: blending the encounter, creating depth-of-field
-    INPUTS: Imagination + Field work from Week 1
-    OUTPUTS: develop tool + material experience design approaches; begin creating physical and digital “dioramas” using selected tools (eg. Unity, VR tool-kits, analog studio modeling tools and materials)
+#### Studio Charette A
+#### Fri July 5 - Rack Focus: blending the encounter, creating depth-of-field
+- INPUTS: Imagination + Field work from Week 1
+- OUTPUTS: develop tool + material experience design approaches; begin creating physical and digital “dioramas” using selected tools (eg. Unity, VR tool-kits, analog studio modeling tools and materials)
 
-—
-Studio Charette B
-Mon July 8 - Building (either site installation or diorama scale depending on complexity)
-    INPUTS: material + tool strategy
-    OUTPUTS: draft physical + digital site models
---
-Tues July 9 - Rendering (digital intersection component(s) )
-    INPUTS: Physical + digital site models
-    OUTPUTS: draft interactive “instrumentation” of key experience touch-points
+#### Studio Charette B
+#### Mon July 8 - Building (either site installation or diorama scale depending on complexity)
+- INPUTS: material + tool strategy
+- OUTPUTS: draft physical + digital site models
 
-Studio Charette C
-Wed July 10 - Blending (digital / physical “node” link-up…connecting d-site + p-site)
-    INPUTS: photo, video, scanned, rendered, other site constructural elements
-    OUTPUTS: prototype ensembles
---
-Thu July 11 - Testing (working out the kinks all day)
-    INPUTS: All tools + materials to date
-    OUTPUTS: Final physical-virtual site constructs
+#### Tues July 9 - Rendering (digital intersection component(s) )
+- INPUTS: Physical + digital site models
+- OUTPUTS: draft interactive “instrumentation” of key experience touch-points
 
-Presentations
-Fri July 12 - Seeing ( share + critique )
+#### Studio Charette C
+#### Wed July 10
+- Blending (digital / physical “node” link-up…connecting d-site + p-site)
+- INPUTS: photo, video, scanned, rendered, other site constructural elements
+- OUTPUTS: prototype ensembles
+
+#### Thu July 11 - Testing (working out the kinks all day)
+- INPUTS: All tools + materials to date
+- OUTPUTS: Final physical-virtual site constructs
+
+#### Presentations
+#### Fri July 12 - Seeing ( share + critique )
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-VR Shared Design Guidelines
+## VR Shared Design Guidelines
 
 1. Support Shared Space:
 To make the most of a room-scale setup,
-design experiences should allow participants to come
-together in the shared space when needed and explore individually at other times. This will support the most flexible
+design experiences should allow participants to come together in the shared space when needed and explore individually at other times. This will support the most flexible
 use of each person’s physical space while still supporting realwalking for locomotion and natural interaction in the shared
 virtual space.
 For example, remote collaboration for designing
-a large 3D object together where both need to freely move
-around the static objects or in education scenarios like viewing the structure of an enlarged molecule and viewing and
+a large 3D object together where both need to freely move around the static objects or in education scenarios like viewing the structure of an enlarged molecule and viewing and
 manipulating it together.
 
 2. Leverage Asymmetry:
@@ -2252,56 +2260,47 @@ spaces and the resulting mappings to design relevant tasks.
 
 3. Design for Interaction:
 While all users are located in different
-physical spaces, they perceive the same virtual world. All
-users can hear and see each other doing things in VR, even if
-they are not directly involved with one another which can be
-distracting or engaging. Design tasks that require teamwork
-through shared manipulation of objects for creating challenging, productive and fun experiences.
+physical spaces, they perceive the same virtual world. All users can hear and see each other doing things in VR, even if they are not directly involved with one another which can be
+distracting or engaging. Design tasks that require teamwork through shared manipulation of objects for creating challenging, productive and fun experiences.
 
 4. Natural Embodiment:
 Our empirical work confirms that participants highly valued having an avatar that gave them the ability to ‘‘physically’’ and naturally engage with each other.
 
-Similarly physically walking in VR provided a satisfying sense
-of presence. We encourage creators of collaborate VREs to design shared spaces and interactions using natural locomotion,
-and only use teleportation or related transportation methods
-as a fallback technique if the space limit requires it.
+Similarly physically walking in VR provided a satisfying sense of presence. We encourage creators of collaborate VREs to design shared spaces and interactions using natural locomotion, and only use teleportation or related transportation methods as a fallback technique if the space limit requires it.
 
-
-#19.07.02
+### 19.07.02
 A-frame examples:
-Tues:
-1-hello World - primitives
-2-360 image
+- Tues:
+    1. hello World - primitives
+    2. 360 image
+- Wed:
+    3. 360 & primitives
+    4. import model
+- Thurs:
+    5. create links
 
-Wed:
-3-360 & primitives
-4-import model
-
-Thurs:
-5-links
-
-Friday:
-6-Networked VR
+- Friday:
+    6. Networked VR
 
 
-# note: have made a subdomain with WP at music.haigarmen.com. start thinking about how to publish music there. original compositions, videos, performances, gig schedule,
+# IDEA:
+ made *music.haigarmen.com.* start thinking about how to publish music there. original compositions, videos, performances, gig schedule,
 
 
-#19.07.09
+### 19.07.09
 Week two of VR workshop:
 need to figure out how to do the following:
-[ ] bg images in networked vr
-[ ] switching scenes
-[X] simple animation
+- [x] bg images in networked vr
+- [x] switching scenes
+- [X] simple animation
+- [x] ambient music loops
 
-[ ] ambient music loops
-
-#19.07.11
-# getting Node.js running on my server
+### 19.07.11
+- getting Node.js running on my server
 install node.js first - pretty straight forward
 https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04
 
-installed PM2
+- [X] install PM2
 
 then configured to run
 sudo pm2 start /var/www/vr.haigarmen.com/server/easyrtc-server.js systemctl
@@ -2310,13 +2309,13 @@ sometimes doesn't work unless you do this:
 npm cache clean --force
 
 
-DistefanoJaud time blocks
-5 days (x 5hrs) in May = 25 hrs
-1 day (x 5hrs) June = 5hrs
-July 4 call - 1 hr
-july 17 - 5hrs
+### DistefanoJaud time blocks
+- 5 days (x 5hrs) in May = 25 hrs
+- 1 day (x 5hrs) June = 5hrs
+- July 4 call - 1 hr
+- july 17 - 5hrs
 
-#19.07.18
+### 19.07.18
 started working on Derik Giner site.
  - installed Impreza, updated and build the child theme.
 login: admin
@@ -2334,56 +2333,58 @@ DiStefano Home page white logo but iPad needs color version:
     content: url(http://test.distefanojaud.com/wp-content/uploads/2019/06/logo-distefano-jaud-architecture.png);
 }
 
-#Final Revisions from Pablo - July 26
+### 19.07.26
+### Final Revisions from Pablo
 
-[ ] Footer line breaks on mobile
-[X] Title on Team member page vertical align - 2 column
-[X] Instagram vertical alignment
-[X] Instagram title could be smaller
-[X] Social media links in footer
+- [X] Footer line breaks on mobile
+- [X] Title on Team member page vertical align
+- [X] 2 column
+- [X] Instagram vertical alignment
+- [X] Instagram title could be smaller
+- [X] Social media links in footer
+- [x] Floor Plans for project pages
 
-[ ] Floor Plans for project pages
+### 19.08.00
+## back home
+getting ready for School
 
-#Final Revisions for DistefanoJaud from Pablo - Sept 22
+### 19.09.22
+### Final Revisions for DistefanoJaud from Pablo
 
-[X] Check Instagram account link (latest Instagram posts not loading)
-
-[X] Please send me the Wordpress login information, I will start loading some projects for them.
-
-[X] Fix the spelling of “Essence” on the Home Page, it is also hard to read on the photograph
-
-[X] They mentioned you were going to add some icons to each project, that would work as link to associated “Notes” entries.
-
-[X] Logo not seen on some projects, check mobile view too.
+- [X] Check Instagram account link (latest Instagram posts not loading)
+- [X] Please send me the Wordpress login information, I will start loading some projects for them.
+- [X] Fix the spelling of “Essence” on the Home Page, it is also hard to read on the photograph
+- [X] They mentioned you were going to add some icons to each project, that would work as link to associated “Notes” entries.
+- [X] Logo not seen on some projects, check mobile view too.
 Logo - 50% black for Distefano, 20% architecture
 
-Oct 7th DistefanoJaud
-[X] update theme 1 hr
-[X] upload Images 2 hrs
-[X] upload new projects 5 hrs
-[x] links to postings 1 hr
+### 19.10.07
+More DistefanoJaud Revisions
+- [X] update theme 1 hr
+- [X] upload Images 2 hrs
+- [X] upload new projects 5 hrs
+- [x] links to postings 1 hr
 
-Oct 14th DiStefanoJaud
-[X] upload favicon
-[X] upload writing for prato 1
-[ ] upload images for prato 1
-[X] upload writing for prato 2
-[ ] upload images for prato 2
-[X] upload content for Eco Lock
+### 19.10.14
+DiStefanoJaud
+- [X] upload favicon
+- [X] upload writing for prato 1
+- [x] upload images for prato 1
+- [X] upload writing for prato 2
+- [x] upload images for prato 2
+- [X] upload content for Eco Lock
 
-Oct 15th
-[X] Husky Autism (remove what is currently there)
-[X] St Michael (add plan besides text)
-[X] Water St. Condos (add plan)
+### 19.10.15
+- [X] Husky Autism (remove what is currently there)
+- [X] St Michael (add plan besides text)
+- [X] Water St. Condos (add plan)
 
-Nov 9th
-[X] Update Theme and Plugins - 1hr
-[X] make logo smaller in iPad size 2hrs
-[X] get rid of grey above header in iPad view (not quite fixed)
+### 19.11.09
+- [X] Update Theme and Plugins - 1hr
+- [X] make logo smaller in iPad size 2hrs
+- [X] get rid of grey above header in iPad view (not quite fixed)
 
-
-
-Composition and improvisation
+## Composition and improvisation
 Difference between song and performance
 https://en.wikipedia.org/wiki/Sonic_interaction_design
 
@@ -2394,21 +2395,20 @@ The improviser works with spontaneity and intuition in real-time, and can not ch
 
 In the article ”Generating and Organizing Variety in the Arts” (Eno 1981), Brian Eno describes a ”scale of orientation” or continuum from right to left between composition ”tending to subdue variety in performance”, i.e. predetermined music, for example prerecorded electronic music on the extreme right, and composition ”tending to encourage variety in performance”, i.e free improvisation, on the extreme left. In between we find all the facets from classical music, various folk musics to jazz, free jazz etc.  Even free improvisation is rarely completely invented on the spot, but influenced by a host of different factors.
 
-
 the design of these interactions brings under a magnifying glass a phenomenon that has recently received a great deal of attention on the part of psychologists interested in perception: the tight coupling between auditory perception and action [3].
 
 In this design, the athletes' movements modulated the auditory feedback in real time. In turn, the sound helped the athletes to adapt their movements. Sounds had a great advantage in this case, because auditory perception and action are naturally and tightly coupled. Therefore, the intention was that the rowers would not be expected to consciously “decode” the information conveyed by the sounds, nor to think about how modifying their action would modify the sound. The sound-action loop was supposed to be intuitive. After all, this is what happens in “natural” interactions through sound.
 
-Alan Kay's tennis example
+### *Alan Kay's tennis example*
 
 Sonic interactions have a great potential to help a user become more proficient at the fine movements required in sports, as illustrated by the rowing example, but also in music, dance, surgery, and the complicated manipulation of tools
 
-Ableton Making Music book
+### Ableton Making Music book
 https://makingmusic.ableton.com/
 
-#idea:
+## *idea:*
 Making a generative piece of music by randomly launching clips with the follow action function in Live.
-
+- [x] Create Generative Piece in Live
 
 Alex Ruthmann - NYU met him at IRCAM and Music Experience Design Lab
 collaborative design focus
@@ -2528,18 +2528,1115 @@ OpenFrameworks - on RPi
 Camomile - Pd to plugin
 Docker - local to prod vm
 
-today TO DO
-[x] update xCode
+#### Today TO DO
+- [x] update xCode
     - xCode 11.2 doesn't work with Sierra 10.12.6
     - deleted xCode 9.0 now downloading 9.2
-[x] update python, homebrew, node...
-[x] try building Camomile plugin - FAIL
-[x] Camomile compiled
-[ ] Create Camomile Pd plugin
+- [x] update python, homebrew, node... (2 days later..)
+- [x] try building Camomile plugin - FAIL
+- [x] Camomile compiled
+- [ ] Create Camomile Pd plugin
     https://github.com/pierreguillot/Camomile/wiki/How-to-generate-plugins
 
-[x] OpenFrameworks update 0.11
-[x] build OF Projects to test
-[] continue OF tutorials -
+- [x] OpenFrameworks update 0.11
+- [x] build OF Projects to test
+- [ ] continue OF tutorials -
+- [ ] build pedal breadboard - audio jacks, power and foot-switch
 
-[] build pedal breadboard - audio jacks, power and footswitch
+# Composing and Playing daily
+
+composition techniques:
+vary approaches:
+    - write rhythm first
+    - write chord progression first
+    - write melody and then harmonize
+
+sketching - different ways of jotting down concept. draw out structure.
+think about a texture map
+
+spontaneity - small phrases - phrase-storming (writing 10 phrases)
+envision entire piece
+
+loosening techniques - extension and expansion
+
+### 20.01.04
+## Happy 2020
+
+Sick for the last few days but spending time learning more about OF and Pd with Gem.
+
+### I'm excited about bringing together:
+1. Jazz and electronic music
+2. Guitar improvisation and generative music
+3. music and visuals
+4. nature and creativity - improvised music in outdoors
+
+#### to do
+- [ ] continue OF tutorials -
+    https://openframeworks.cc/learning/
+    https://www.youtube.com/watch?v=Gitox8YHHFU&list=PL4neAtv21WOlqpDzGqbGM_WN2hc5ZaVv7&index=13
+
+- [X] build pedal breadboard - audio jacks, power and foot-switch
+- [ ] Pd syncing with Live
+- [ ] Prepare Data Vis Course
+    - [ ] Structure & lectures
+    - [ ] Assignments
+    - [ ] Practice Activities
+
+- [ ] Syncing Pocket Operators with Ableton
+
+    - http://little-scale.blogspot.com/2017/01/audio-pulse-link-sync.html
+
+    - https://hackaday.com/2017/02/05/sync-your-pocket-synth-with-ableton/
+
+20.01.05
+Pedals:
+http://diy.smallbearelec.com/HowTos/HowTos.html
+
+building my first guitar pedal. Premier Guitar Distortion pedal by Joe Gore. PDF
+build two and alter some parts to see how they're different.
+Then try a tube screamer clone.
+
+https://www.diystompboxes.com/pedals/schematics.html
+http://www.generalguitargadgets.com/how-to-build-it/technical-help/schematics/
+http://www.pedalpartsplus.com/
+https://www.reddit.com/r/diypedals/
+https://www.diystompboxes.com/pedals/schematics.html
+
+“People who are really serious about software should make their own hardware.”
+-Alan Kay
+
+20.02.01
+Building Kliche Mini (Tubescreamer klone)
+https://forum.pedalpcb.com/threads/kliche-mini-problem.280/
+can't find this IC anywhere but Mouser: OPA2134
+it's a high performance audio opamp Texas Instruments - Burr Brown.
+
+
+and building Magnetron Delay ()
+
+# 20.02.03
+Revisiting Sonic Interactions Raspberry Pi (SiRP) or SirPi:
+1. cicadaPi - get working and in stompbox
+2. PedalPi - get working
+3. LCD Pi in Pedal enclosure - what's the function? multiFX box?
+
+document the process of getting SI going again on new OS
+install PD
+ - sudo apt-get install puredata
+- problem with mapper, need to install Pd libraries
+
+for bluetooth script on python need some work - getting error must install bluetooth module
+
+## problem with CicadaPi
+trying to get the bluetooth scan to be independent from the LOP pots and buttons loop.
+bluetooth scan every 10 secs
+Pots scanned every .05 secs
+
+when they're in the same main loop it pauses the pots from working while it's scans bluetooth.
+
+## 20.02.07
+Building Pedals:
+Kliche Mini and Magnetron Delay
+missing a few capacitors and have to order more parts from Tayda
+
+stumbled upon this >
+https://pi.processing.org/tutorial/visual-synth/
+
+##
+
+# 20.02.18
+## Sonic Interactions Grant application (Gillespie)
+
+- [X] structure of application
+- [X] what is Gillespie looking for?
+- [X] team members? & CVs
+- [] industry partner? nope
+- [X] write summary
+- [X] write description
+- [X] write strategic alignment
+- [X] embodied cognition
+- [X] embodied interactions
+
+# 20.02.19
+figure out what's wrong with Magnetron Delay I built
+built audio probe to go through the circuit, audio doesn't seem to get the IC with any strong signal.
+asked on PedalPCB forum and someone said I have a few wrong resistors. had put 100k's instead of 10k's. Replaced those and it all works.
+
+
+# 20.02.20
+Now I need to figure out the OCD klone from Tayda which doesn't seem to work on the breadboard
+Resistors all seem right, go through it a second time and then look at caps Next
+https://www.taydakits.com/instructions/ocd-overdrive/pages/designators-and-components--29
+tayda site is sort of useless.
+
+http://zadvitsky.com/index.php/projects/pedals/ocd-overdrive-diy.html
+
+# 20.02.21
+preparing for jazz quintet gig at Seymour Art Gallery.
+http://garyleemusic.com/create-beautiful-music-charts-plus-free-sibelius-template/
+
+
+# 20.02.17 -
+Writing Gillespie Fund Application for Sonic Interactions
+https://www.google.com/search?q=phenomenology+of+musical+instruments&oq=phenomenology+of+musical+instruments&aqs=chrome..69i57.12971j0j7&sourceid=chrome&ie=UTF-8
+
+
+
+https://econtact.ca/10_4/magnusson_hurtado_survey.html
+
+came across these books
+
+The Tangible in Music: The Tactile Learning of a Musical Instrument
+Marko Aho
+
+Embodied Music Cognition and Mediation Technology
+By Marc Leman
+
+
+#20.02.28
+the KlicheMini sounds good but noisy, very high pitch frequency
+
+CicadaPi project - build standalone version in pedal box.
+Speaker and amp
+charger & battery
+
+first get the LOP script working well and then the Bluetooth UID scaning.
+does it make sense to use two separate scripts or bring them into one?
+experimenting with different loops>
+
+### Python looping test
+
+loopA = range(1)
+loopB = range(100)
+
+def loop_a():
+    print("a")
+
+def loop_b():
+    print("b")
+
+for i in loopA:
+    loop_a()
+    for j in loopB:
+        loop_b()
+
+
+#20.03.09
+built klon klone (Kliche-Mini), tape echo (Magnetron), Arpeggiator (Haarp), overdrive/dist (OCD clone),
+
+laser cut boxes - designed with Processing patterns of audio signals.
+
+bought haigster.com domain
+ - put up a site with my music products - amps, speaker cabs, pedals, instruments
+
+REB application review:
+
+"Resilience is the ability for an individual, or a system, to recover or adapt to change. Handwork, improvisation, reflection, and evaluation are all aspects of material practice that can be used to develop attributes of resilience that can both prepare individuals for eventual loss, change, or disaster, but when established as a habit, has the potential to extend outward from the individual."
+
+A series of heuristic inquiries, material investigations, and intensive reflective writing has led to the development of a series of daily exercises structured to lead participants through the development of a material practice.
+
+Objectives: Participants will progress through two weeks of guided observation and making exercises in order to build evaluation/reflection, making, deconstruction, improvisation, and social reflection skills.
+
+What will be learned: The daily exercises will be validated as participants reflect and determine the impact of learned skills on their ability to process and work through failure, problem solve, and reevaluate the function and value of their material possession/environment- all identified indicators of developing both resilience and a material practice.
+
+This workbook addresses the process of practice development through the lens of resilience- focusing on the aspects of making that develop individual ability to become personally competent in reusing objects or materials that may have been disposed of otherwise. It directly addresses the role of reflection in processing the connection between making/material practice and negotiation of failure. The results of the exercises will also connect the role of daily material interactions, as well as the duration of the interactions (the date and length of time committed to each exercise is to be recorded and reported). As participants are encouraged to invite others to make with them there will be a natural invitation for newly involved individuals to complete the exercises as well- though their participation will not be recorded in the research. Through these invitations a making community will emerge and practices will propagate, with further invitations being extended as new practitioners make use of the workbook.
+
+Most material practices are subject to risks of an everyday nature. Occasionally one is exposed to minor cuts bumps and bruises when working with materials.
+
+Participants will be invited to cease making if they feel unsafe for any reason. They will be referred to resources to confirm if the objects they would like to study- particularly electronics- might be hazardous to disassemble and will be advised as to confirm if the objects they wish to dissect, study, and make with are included in these resources. Each participant will be invited to take advantage of an open line of communication with the graduate researcher if they have any questions, are uncertain, or feel they may be asked to complete any actions that would cause them harm. Participants will be notified that they are permitted to withdraw from participation at any time, or to voluntarily skip any actions that make them feel unsafe.
+
+As all research materials are to be completed individually by participants in spaces that are unsupervised by the researchers, they will be asked to submit images of their workbook (and any other images of making that they consent to be included in the research documentation.) The intent of this research is in the validation of the daily exercises in the workbook and the collection and evaluation of the completed workbooks is critical to that objective.
+
+
+#20.03.13
+Corona virus is getting bad... SFA was closed down
+
+want to build more pedals but the virus is stopping the shipment of pedal parts, all the online distributors are low on everything.
+
+figure out why my OCD clone is so squealy,
+http://tagboardeffects.blogspot.com/2012/02/fulltone-ocd-all-versions.html
+
+"In this very OCD circuit, you get noticeable less noise with the 10uf+100nf, than with a single 100uf, you can try it :)"
+
+Fuller used to use a larger cap, and then swapped it for a 10uf + 100nf, but this is what he said about the caps used in the Fulldrive, so I don't know if he's also changed his philosophy back for the OCD:
+
+"Back in the 90’s, I always used very large value capacitors (in the power section) because it was my opinion that they added a warmth and feel to the pedal.
+Somewhere in the 2000’s, as I was re-laying out the PCB, an Electronic Engineer convinced me to drop those large caps down to 10uf and he added a tiny 100nf bypass cap, a trick used in many hi-end audio power supplies. Life moved on and I never directly compared an old FD2-Mos to a new one again UNTIL I pulled a bunch of old FD2’s out while researching for the Custom shop FullDrive3.
+
+I noticed right away how the older ones were browner sounding and had a slight 'sag' to the feel, irrespective of whether they were Mosfet or non-Mosfet.
+The only difference was in these power supply caps, and after a quick substitute of these for the larger value and a snip-snip of that little bypass cap and BINGO! There was that old FD2 sound…back again!"
+
+But all the gut shots I can see of the earlier versions certainly appear to have the 10u cap and so I'm assuming also the 100n in parallel, so I've changed the layouts to reflect that. If Fuller opts for a larger cap in any further updated version of the pedal then I can alter it then. Cheers for the heads up matey
+
+What value of diode should i use for D1? TIA
+
+Reply
+Replies
+
+dbat6928 October 2014 at 12:35
+You could try the usual suspects like a 1N4148, 1N4001 or a Ge diode like a 1N34 etc. Try socketing the diode and try a few different ones. But the OCD V4 is possibly the worst version, well it is the worst version, so you may not get a decent sound from it - as others have found out above.
+
+
+Sorry guys, total noob here. Where does the 100uF cap go? What I have is two 10uF and one 100uF caps while all the three caps on the diagram are 10u. What should I do?
+
+Thanks
+
+Reply
+Replies
+
+IvIark28 October 2014 at 12:43
+Put the 100u where the top left hand 10u is on the layout, above the 33K resistor. They're power supply filter caps so if anything the 100u will do a better job, but that part was rejigged after the discussions above. They're filters for the power supply and so shouldn't make a significant difference to the sound from the audio components in the circuit.
+
+
+dbat6928 October 2014 at 12:49
+A 100u cap is usually used for a power filter cap. Looking at the layout this would be the top left hand cap which connects between the 100R and ground. So replace that one with the 100u. You could socket it until you get a 10u if you are concerned although I doubt it will make a difference to the sound
+
+Unknown3 February 2015 at 19:27
+I built the V3 of this pedal and sounds good, except for when I turn the Gain knob towards noon and buzzing (ground hum??) is introduced into the sound. I've replaced, IC, used battery instead of PS, checked connections, razored between strips on board multiple times, etc.
+
+When there is nothing plugged into the input, there is a very high pitched (15Khz or more) squeal. Turning the gain and volume knob changes pitch slightly. Any Ideas on how to stop the squealing? I was looking at some schematics and saw that there are two diodes that are not included on this vero layout. especially the one from +9v to ground (some call for a 1N4148, another 1N34A before one of the transistors). Could the lack of this be introducing noise?? I got diodes on the way for another pedal I'm building so I'll give it a try... I'm kinda new at this stuff...so help please!
+
+PS: Just Gotta say to keep up the good work, I am falling in love with building my own pedals, and without this site, i would be lost
+
+Unknown4 February 2015 at 19:41
+UPDATE! So after looking at the schematic, I ended up putting a 1N4148 diode connecting at the 1st and 3rd rail (negative anode on 3rd) all the way to the right hand side by the 10uf capacitors and the noise is gone! This solved my noise issue, so this solution is worth a try if your having any humming/noise issues while the pedal is engaged.
+
+
+_______________________________________
+I'm guessing it's opamp feedback. I would try a 100pf cap between the input and out pins. You can test it without soldering, just touch against both pins.
+
+Edit: could also try beefing up the existing feedback caps to something like 400pf.
+
+_______________________________________
+is it a grounding issue?
+http://tagboardeffects.blogspot.com/2012/02/offboard-wiring.html
+
+Pedal projects:
+1. figure out OCD clone's noise problem
+2. first distortion pedal, led change and shine up
+3. Parentheses Mini Fuzz (checked parts)
+4. KlicheMini (checked parts)
+5. Little Green Scream Machine
+6. ADHD (OCD clone) (checked parts)
+7. Aion Klon (check parts)
+
+Learning about Opamps here: https://www.khanacademy.org/science/electrical-engineering/ee-amplifiers/ee-opamp/v/ee-opamp-intro
+
+# 20.03.16
+
+COVID virus is getting real. Canada shutting borders. University classes all online/remote
+
+Writing an article about Stompboxes for blog
+ - use OCD as case study, figure out the noise problem too.
+
+# Cicada Project
+map out all the steps:
+- [X] Startup scripts testing
+- [X] Button holes and install
+- [x] Power Section - placement & install  
+- [x] Power Switch - placement & install  
+- [x] Battery - placement & install  - blue cylinder or flat battery - velco?
+- [x] Amp - placement & install
+- [x] Speaker - placement & install  
+- [x] Headphone jack - placement & install  
+
+# 20.03.17-18
+testing different methods of running scripts/apps on startup
+tried rc.local first, but apparently it runs more than one time.
+then crontab as sudu - which didn't seem to work
+then crontab as user pi - which sort of worked, python scripts both worked but pd not
+then crontab user pi with ownership and permissions set to pi worked
+
+this was useful even though I ended up not using any of the methods:
+https://learn.sparkfun.com/tutorials/how-to-run-a-raspberry-pi-program-on-startup/all
+
+# 20.03.20
+fixed OCD pedal, it was improperly grounded. took it apart and tested AGAIN on the breadboard and it works fine. Made sure that it's well grounded.
+
+Still found another problem with the pedal, it's output is uneven when in a sequence between Klon and Analogy Delay pedal, when Analogy is off it's very quiet but when it's on it jumps up in volume. Must be a buffering thing. With a bit of googling I found that the OCD does not have an output buffer and that makes it not play nice with other pedals.
+
+
+#20.04.02
+Pandemic getting worse...
+still building pedals and recording short tunes.
+
+building at TubeScreamer from PedalPCB.
+can't find 51 pF capacitor, what's an acceptable substitute?
+
+found this message in https://www.diystompboxes.com/smfforum/index.php?topic=38082.0
+
+
+Memorize this formula - Freq = 1 / [2*pi*R*C] - and you will be able to answer many questions like the one you asked.
+
+When the Gain pot is turned up full on the TS9, you will have 500k + 51k = 551k of resistance in parallel with 51pf of capacitance.  This will provide a high end rolloff at around 1/[2*3.1416*.551*.000051] = 5663hz.  If the Gain pot is at min resistance, then the rolloff starts around 61khz.
+With a 47pf cap, those rolloffs change to 6145hz and 66.4khz.
+With a 56pf cap, they change to 5157hz and 55.7khz.
+With 68pf they change to 4247hz and 45.9khz.
+
+The bottom line is that you can go upwards or downwards from 51pf quite a bit and have no impact on the tone at min gain settings.  If you tend to max out your gain however, you will notice tonal differences when you start to diverge more than 10% in either direction.  Values smaller than 51pf will tend to keep more treble when the gain is set high, and values larger will tend to roll off more treble when the gain is set high.  Increases in treble can be compensated for with the tone control, however cranking the tone up to compensate for treble loss resulting from cap choice (or lack thereof) will tend to increase hiss a bit.
+
+So, both directions of change in cap value will "work", but one may be more to your liking and needs than the other.
+_______________________________________
+
+watch The Witcher
+
+20.04.06
+Troubleshooting the Kliche Mini
+
+just about to post to forum and I stop and think maybe it's the opamps TL072, which don't look right. turns out they were not right! tried some other TL072s and works great.
+
+CBC Creative Fund
+https://www.cbc.ca/creativerelief/?fbclid=IwAR36wg8FqpKE4CJ811NSVAqS-7fRvVoW_gWiNZzN5jxjJ-FJwDBZW1Iq854
+
+Good Electronics Resources:
+https://learn.sparkfun.com/tutorials/how-to-read-a-schematic/all
+
+# 20.04.13
+## Things I'm doing these days:
+ - still building pedals - orders a few more and had Aion send a new refractor, original order was lost in CanadaPost (surprise, surprise). will check if I have all the components
+ - recording music daily, an improvisation, new song I've learned or an old cover
+ - collaborating with others on music, David Sherwin, Keith MacLauglin, Morgan Friend
+ - Recording songs with Jill:
+    1. You don't know what love is
+    2. Come Rain or Come Shine
+    3. Moon River
+    4. Sunnyside of the Street
+
+Going over pedal component inventory and prepping for new pedals:
+
+found this:
+https://hackaday.com/2016/12/07/you-can-have-my-lm386s-when-you-pry-them-from-my-cold-dead-hands/
+
+and this cool little amp made with a LM386
+http://www.runoffgroove.com/ruby.html
+
+# 20.04.14
+Thinking about making a portable amp that works on my pedalboard.
+built in speaker.
+
+Also, making the pedalboard battery powered? car battery is too big but a big power charger?
+
+
+# 20.04.20
+Dad's been moved to Evergreen Home. He seems happy.
+
+Here's some papers that might be interesting:
+https://www.hildegardwesterkamp.ca/writings/writingsby/?post_id=14&title=%E2%80%8Bsoundwalking-as-ecological-practice-
+
+http://www.arpjournal.com/asarpwp/the-meaning-in-the-mix-tracing-a-sonic-narrative-in-%E2%80%98when-the-levee-breaks%E2%80%99/
+
+https://ocw.mit.edu/courses/music-and-theater-arts/21m-380-music-and-technology-sound-design-spring-2016/readings-and-assignments/
+
+https://oli.cmu.edu/jcourse/workbook/activity/page?context=df3e96db0a0001dc780ebc167b2a57d9
+
+# Hacking the Pocket Operator
+http://hackingthepo.weebly.com/
+
+https://djtechtools.com/2017/10/16/diy-build-arcade-controller-pocket-operators/
+
+# 20.05.01
+- [ ] Pedal Building - goals and conclusion
+- [ ] Refractor in enclosure
+    - [X] redo Klonology graphics for new layout
+    - [X] test print with decal
+    - [X] printed on inkjet decal but with Laser printer - blurred
+    - [X] printed on inkjet decal but inkjet ran out of ink -
+    - [X] ordered inkjet refills
+    - [X] decide on two grey or one grey, one black or two blacks
+- [X] graphics for Screamer - Tubology
+- [X] graphics for ParenthesisMini - Fuzzology
+
+# 20.05.06
+- [ ]  Music Making Goals - and plan
+Finish album of songs- record, mix, master, release,
+- [ ] build a board with Noel
+   - [X] schedule call to brainstorm
+   - [X] ideas:
+   - embedded FX board
+   - mini sequencer
+   - ebow
+   - musical sketchbook vocoder-beatbox-looper
+   - mini @coustic looper- onboard mic sends audio loop to network to be played or synced.
+- [ ] instrument building - guitar building and efx combined?
+
+##### Sanding Aluminum Pedal Enclosures:
+http://andysk8inman.blogspot.com/2010/07/20100719-monday-polishing-aluminum.html
+
+## Finishing Pedals Techniques:
+
+https://www.coda-effects.com/2017/10/enclosure-art-how-to-make-good-looking.html
+
+1. Pedal Etching
+http://music.codydeschenes.com/?page_id=2035
+
+2. Decals
+https://www.youtube.com/watch?v=e2X_HL-4F90
+
+3. Laser engraving
+Some folks use a laser etching maching to remove the paint and engraved their design.
+However, it does not work very well with dark colors scheme because of the color of the aluminum (dark grey). One other problem is that you will have to have access to a laser cutting machine, or find a supplier that would accept low volumes, and this can be difficult or expensive
+
+4. Laser etched plate
+More and more common on commercial effects these days. All the Greer amps pedals are made this way for instance.
+
+4. Silkscreening
+This technique is used by many professional pedal builders. It looks great and you can make hundred of enclosures in a few hours. Walrus used it for their pedals for instance:
+
+
+Ruby Amp:
+http://runoffgroove.com/ruby.html
+https://robrobinette.com/How_the_Ruby_Amp_Works.htm
+https://robrobinette.com/How_Amps_Work.htm
+http://langster1980.blogspot.com/2014/05/lm386-ruby-amplifier.html
+
+Researching Remote Teaching
+critique of remote:
+https://placesjournal.org/article/field-notes-on-pandemic-teaching-6/
+http://thephilosophicalsalon.com/the-worst-part-of-teaching-online-is-what-we-are-teaching
+
+
+Planning Hybrid Learning
+
+what activities need/are better to be done in person?
+
+Scope out the key issues:
+    1) facilities/technical support etc.
+    2) community
+    3) dealing with the problems of the (aesthetic) limitations of representing hand-fabricated artifacts through the photographic image — so perhaps f2f needing to deal with those sorts of issues?
+
+This is great!
+https://the-syllabus.com/
+
+Jivan's Garden project:
+https://www.robotics.org.za/SHT10-5M
+https://www.bc-robotics.com/tutorials/controlling-a-solenoid-valve-with-arduino/
+
+
+https://www.hastac.org/blogs/cathy-davidson/2020/05/11/single-most-essential-requirement-designing-fall-online-course
+http://thephilosophicalsalon.com/the-worst-part-of-teaching-online-is-what-we-are-teaching/
+
+
+http://gradshow.ecuad.ca/
+
+
+### Gillespie Grant:
+
+May 21st. meeting with Steve
+1. Rework the budget - timeline
+2. Leanne - what is eligible for budget - books, equipment, RA's
+3. Tech Form
+
+Ask Jill, Laurel, Richard Hill about indigenous music connections (instruments and improvisation)
+
+Hire Grad student to admin - meetings, note taking, documentation, podcasting production schedule.
+https://www.chairs-chaires.gc.ca/chairholders-titulaires/index-eng.aspx?r=&k=indigenous#results
+
+
+## Game of Apps:
+#20.05.23
+see game-of-apps-2020.txt for notes
+
+## 20.05.25
+Monday, May 25
+
+Ordering new electronics:
+1. finish order parts for existing pedals and Ruby amp
+2. order Amp kit - JTM45
+
+
+https://www.gapcb.com/support/plexi-se
+
+## 20.05.29
+Friday and I'm still deliberating over which JTM45 kit to purchase:
+here are the three top options:
+1. ValveStorm:
+http://valvestorm.com/JTM45%20Kit
+
+2. Mojotone:
+https://www.mojotone.com/kits/BritishAmpKits_x/Mojotone-British-45-Watt-Style-Head-Amplifier-Kit_2
+
+3. Ceriatone:
+http://www.ceriatone.com/ordering-info/
+
+* Explore laser-etching on bamboo and other woods
+
+ - [ ] Talk with Jesse (woodshop next door) about building a guitar
+
+Continue with breadboarding RubyAmp
+article about FET preamp - might be useful
+http://www.till.com/articles/GuitarPreamp/
+
+
+## 20.06.05
+Teensy 4.1 has come in
+looking into how to program it.
+
+TODO:
+- [ ] graphics for OCD x 2 - chrome - best with laser engraving
+    - I decided I don't like decals on chrome
+- [X] Acupulco Gold Build - ClockworkOrangeCrush
+- [ ] Delyk pedals build
+    - [X] OCD3 build
+        - [X] orange1590B enclosure
+        - [ ] graphics
+    - [X] Alpaca purple mini
+        - [X] enclosure
+        - [ ] graphics
+    - [ ] Timmy green mini
+        - [ ] enclosure
+        - [ ] graphics
+    - [ ] Dist+ yellow mini
+        - [ ] enclosure
+        - [ ] graphics
+    -  [X] 212 light blue 1590B
+        - [X] debugging for days to figure out why there was no output, turns out a scratch was on the PCB board.
+        - [X] enclosure
+        - [ ] graphics
+- [ ] Pedal PCB order: Where is it?
+    - [ ] FV-1 Dev pedal build
+        - [ ] enclosure
+        - [ ] graphics
+
+    - [ ] Parenthesis Fuzz build
+        - [ ] enclosure
+        - [ ] graphics
+- [ ] Ruby amp
+    - [ ] enclosure
+    - [ ] graphics
+
+# 20.06.05
+Teensy
+https://www.pjrc.com/teensy/gui/index.html
+
+Audio adapter board:
+https://www.pjrc.com/store/teensy3_audio.html
+Ordered board on June 6th
+
+Wavetable Synth:
+https://github.com/TeensyAudio/Wavetable-Synthesis
+
+Read more James Bridle: https://jamesbridle.com/writing
+https://medium.com/@jamesbridle/something-is-wrong-on-the-internet-c39c471271d2
+
+## 20.06.09
+
+## Conversation with Sophie Gaur
+Sonic Interactions Podcast brainstorm:
+
+https://bandura.ukrzen.in.ua/en#lvivbandurfest
+https://www.bbc.co.uk/sounds/play/m000j969
+
+* How do we define terms like "new music", instruments, non-rhythmic?
+* What is cultural in instrumentation, Are there non-cultural instruments?
+* how do we make instruments that only sound for the person playing it?
+    - a personal musical experience - music made by you for you.
+    - inverse: what kind of music does your body make, how can we listen to our bodies in new ways, hearing our heartbeats and blood pump, our temperatures rising...
+
+inner practice of music vs. the externalization/expression of music
+
+Remote - how do we interact to create music with others remotely?
+
+Who is the audience for the podcast?
+Designers - looking for a deeper understanding of instruments or more generally, how to make interfaces more nuances and intimate
+Musicians - interested in ways of creating unique instruments, altering existing instruments
+History buffs -  interested in how music was shaped by technology
+Technologists interested in ways of using emergent technology to create instruments, music and sound.
+
+How can we make instruments more inclusive?
+    - making instruments more welcoming, take away the intimidation, learning curve and psychological barriers
+    - bring music making to those that have barriers - physical or mental.
+
+Cymatics -  look into it more
+
+Podcast workflow:
+1. Establish theme/topic
+2. Research topic and plan interview (5-8 questions)
+3. Find experts in topic and invite
+4. Create supporting resources - videos, images, written documentation
+5. Design a small workshop around making with this topic
+6. Record interview and edit
+7. Future discussion: invite audience to contribute ideas to SI Talk - new instrument ideas, experiments, prototypes and future plans
+
+Interactions with Natural World:
+ - What is the music of the natural world?
+ - How can we create instruments to help us hear/interact with the natural world?
+ - How can we collaborate with nature to create music?
+
+try Spleeter:
+https://maxforlive.com/library/device/5956/spleeter-for-max
+
+## 20.06.23
+Improvisation and Nature:
+Some research with Julie Van Oyen
+
+https://www.thewholenote.com/index.php/booksrecords2/jazzaimprovised/29900-something-in-the-air-forging-a-guitar-identity-in-improvised-music-april-2020
+
+Getting Nsynth working again:
+Midi via USB not working
+http://andrewdotni.ch/blog/2015/02/28/midi-synth-with-raspberry-p/
+
+JTM45 Kit:
+Didn't include the transformers. This is getting expensive.
+
+Mercury Transformers:
+https://www.mercurymagnetics.com/model/jtm45/
+P4550JT-G2 - $281.00 USD
+O45JT-16 - $260.00 USD
+
+Metro Transformers:
+PT Drake 1202-55 - $165 USD
+OT Drake 784-103 - $150 USD
+
+Ordered transformers from Triode
+CLASSICTONE Transformers  40-18033         102.72
+CLASSICTONE Transformers  40-18039         86.40
+Subtotal  189.12
+Shipping   69.95
+Total  259.07
+
+http://tubebooks.org/index.html
+http://www.guitarhq.com/index.html
+https://www.amazon.ca/Fender-Jazzmaster-Control-Pickguard-Scratch/dp/B07X52RPJQ/
+
+## 20.07.13
+
+July 13
+Bought Hammond A035 tube amp for conversion to a guitar amp
+watched a few videos, here's some links
+https://www.youtube.com/watch?v=GVLRmCbPfbs
+
+This video describes the process of converting a Hammond AO-35 Reverb Driver into a guitar amplifier. This increasingly popular conversion can produce an exceptionally fine 18 watt (approx.) amplifier with outstanding tone and power at a very reasonable cost.
+
+Here is a schematic for the Hammond AO-35 Reverb Amplifier:
+http://www.captain-foldback.com/Hammond_sub/schematics/AO35.JPG
+
+Here is a link to a site that contains lots of helpful hints and a schematic reflecting all the circuit changes involved in the conversion:  http://www.tdpri.com/forum/amp-centra...
+
+Here is a list of the changes made to the circuit:
+1.) Increase R1 to 33K
+2.) Increase R1a to 1 Meg
+3.) Remove C1 (.0056 uf)
+4.) Decrease R9 to 220K
+5.) Decrease C8 to .001 uf
+6.) Remove R6 and insert VC and TC after C4 and before pin 7 of V1B (see Tone Stack Diagrams for suggestions. I used the Moonlight stack)
+7.) Be sure to ground the gray wire that went to "Switch" (8) on terminal panel
+
+Here is a site that has all sorts of Tone Stack Diagrams:  http://amps.zugster.net/articles/tone...
+
+I hope you enjoy this video and consider creating your own guitar amp. It's a fairly simple and very rewarding procedure. I also hope you subscribe to my channel and stay tuned for many more videos featuring classic vintage amps, jukeboxes, and homemade projects. Thanks !!!
+
+https://www.youtube.com/watch?v=iXh4H0TvWuk
+
+https://mhuss.com/18watt/schematics/
+
+## July 13th
+guitar: learn James again https://www.youtube.com/watch?v=tClgkO7pZcs
+
+Reasons to use Figma:
+https://engageinteractive.co.uk/blog/6-reasons-why-we-switched-to-figma
+
+
+## 20.07.17
+
+July 17: tried to have some time to start testing the JTM45.
+There's a few voltages that seem high so I'm reading about voltages on JTM45 forums:
+
+Interesting bit about Grid Resistors by
+http://forum.metropoulos.net/viewtopic.php?f=7&t=39082&p=389852&hilit=jtm45+rectifier+voltage+standby#p390145
+
+The 5k6 resistors are very good to have. They are called "grid stoppers". They will have no negative effects on the tone/feel of the amp. In fact you can go much larger in value before noticing any high frequency loss. Basically, they interact with the internal "miller capacitance" of the tube to form a low-pass filter which rolls off very high frequencies above the audible range (radio, etc.). This can help prevent oscillation and red-plating tubes among other things. It's best to put them right on the tube socket like you had.
+
+Regarding break-in time, the amp (mainly signal capacitors and OT) will gradually settle in within about 20 hours of use. You may notice it becoming "clearer", "tighter", more "musical" for lack of better terms. Speakers can take longer, depending on what you have and how loud you play.
+
+I normally wouldn't post a quote from another site but Aiken's site ( http://www.aikenamps.com/" onclick="window.open(this.href);return false; ) currently has it's links messed up. Below is a quote from him about grid stoppers, which is very informative.
+
+__________________________________
+From aikenamps.com:
+
+Grid Resistors - Why Are They Used?
+
+General
+
+If you look at the schematic of a typical guitar amplifier, you will notice that there is a resistor in series with the grid of the first tube, usually around 68K or so, and there is also a resistor in series with the grid of the power tubes, usually 1.5K or 5.6K, and you may occasionally see very large value resistors, such as 470K or greater, in series with tube grids in high-gain preamps. Some amplifiers have no such grid resistors, and occasionally people will recommend removing them to supposedly "increase the gain" of that stage. What is the purpose of these resistors, and should you remove them?
+
+Reasons for the resistors
+
+These resistors, which are commonly called "grid stoppers", are not put on the control grid of the tube for signal level attenuation purposes; rather, they act as a very high frequency low-pass filter in conjunction with the input capacitance of the triode (which is the sum of the grid-to-cathode capacitance and the Miller capacitance, and can get as high as 100pF or more). In the normal operating mode of a vacuum tube, the grid is biased negatively with respect to the cathode. Because of this, there is no current flow into the grid element, and it looks like a very high impedance circuit node. This means that there can be little or no midband attenuation of the input signal, because the voltage divider formed by the series resistor and the high input impedance of the tube is very small. For all practical purposes, the attenuation is negligible at midband, so there is no "increase in gain" by removing these resistors. Attenuation only occurs at the higher frequencies, above the frequency breakpoint caused by the series resistance and the input capacitance.
+
+The grid resistor accomplishes the following things:
+
+It helps prevent high frequency parasitic oscillation in the tube itself
+It helps prevent radio frequencies from getting into the input stage, where they can be rectified and lowpass filtered (AM detection) and become audible at the amplifier output
+It can limit grid current when the tube is driven into the positive grid region, which helps in preventing "blocking" distortion
+
+Where to put the resistors
+
+In order to take advantage of the parasitic suppression benefits of these grid resistors, they must be placed as close as possible to the socket pin of the tube, preferably soldered directly to the pin with a very short lead. The resistor should be placed after the grid-to-ground resistor (usually 1 Meg or so), to avoid attenuation and to keep the signal path short. If the resistor is connected in series with the input jack and before the 1 Meg grid resistor, there is a small loss of the input signal, although, in most cases the attenuation is not enough to be concerned with (0.94 times for a 68K grid stopper and a 1 Meg grid resistor), and in amplifiers with a high and low level input, the grid stoppers also serve as attenuators. When designing an amplifier, it is better to use separate resistors for input attenuation purposes in order to be able to locate the grid stoppers as close to the input grid pins as possible, rather than mounting them on the input jacks.
+
+How large should they be?
+
+The grid resistor value typically varies from as low as 1.5K to as high as 470K.
+
+Most output stages use relatively small grid resistors, such as the 1.5K seen on the grids of 6L6 tubes in most Fenders, and the 5.6K seen on the grids of EL34 tubes in most Marshalls. In general, the grid resistor at the grid of the power tubes can be as high as 56K to 100K before any noticeable loss of high frequencies occurs. Higher values can help in reducing "blocking" distortion as noted above, and can also take some of the "edge" off of an overly brittle sounding output stage. If the resistor value is made too low, it may not be enough to prevent parasitic oscillations, and the amplifier may exhibit instability in the higher frequency range. This may or may not be audible. Symptoms of oscillations include: high-pitched "squeal", glowing plates at "safe" bias currents, harsh treble response, lack of power, undesirable overtones, and unusual frequency response which makes the amp sound funny. Note that power tubes have a specification for maximum resistance that can be in series with the grid terminal before the tube becomes unstable due to grid current. The maximum allowable resistance is larger in cathode biased circuits than it is in fixed bias circuits because the cathode bias provides some "self-limiting" protection against bias runaway. The total resistance is the sum of the series grid resistor and the bias feed or "grid-to-ground" resistances, so if the max spec is 300K, for example, and there is a 220K bias feed resistor, the largest grid resistance that can safely be used is 80K. Of course, in practice, tubes should not be run that close to the edge of their specifications, to insure reliability.
+
+The grid resistor on the preamp stages typically ranges from 0 to 68K, although very large values, such as 470K, are sometimes used in high-gain preamps to shape the frequency response and prevent "blocking" distortion in the preamp section under heavy overdrive conditions. The Miller capacitance of a typical 12AX7 is around 151pF, so the upper frequency response -3dB cutoff point of a stage using a 68K grid resistor is around 15.5kHz. The frequency response drops to around 2.2kHz if a 470k grid resistor is used. This "free" response rolloff can be used to tame the "buzziness" of high-gain preamp stages without having to add additional rolloff capacitors. Perhaps the most important grid resistor is the one that goes to the grid of the very first stage, right after the input jack. This resistor is the one that prevents oscillations and pickup of radio stations and other noise due to long or poorly-shielded cables. It is not usually a good idea to eliminate this resistor. Ideally, it should be soldered directly to the grid pins of the socket, with very short leads.
+
+
+https://www.doktorsewage.com/tools-of-the-trade-light-bulb-limiter/
+
+http://www.valvewizard.co.uk/standby.html
+
+jtm45 Troubleshooting
+http://forum.metropoulos.net/viewforum.php?f=15
+
+https://www.thegearpage.net/board/index.php?search/80819039/&q=jtm45+rectifier+voltage+standby&o=date&c[node]=11
+
+https://ceriatoneforum.com/jtm-45-50/
+
+https://www.thegearpage.net/board/index.php?threads/jtm45-build-please-help-me-troubleshoot.2159118/#post-30772703
+
+
+Hammond Conversion:
+https://www.youtube.com/watch?v=GVLRmCbPfbs
+https://el34world.com/Forum/index.php?topic=16384.0
+https://www.youtube.com/watch?v=iXh4H0TvWuk
+
+https://monster.partyhat.co/article/amplifier-tone-stacks/
+
+https://robrobinette.com/5e3_Modifications.htm#Light_Bulb_Current_Limiter
+
+
+https://fpf.org/2017/03/30/smart-cities/
+
+Build my own Attenuator:
+https://guitar.com/guides/diy-workshop/diy-workshop-build-your-own-attenuator/
+
+
+Bassman Mods
+https://robrobinette.com/5F6A_Modifications.htm
+
+## 20.07.23
+Still testing the JTM45.
+- works but volume very low
+- voltages all seem fine
+- thought it was the choke wiring so I tried a different wiring and it didn't make a difference.
+- found a wire going to V1 pin 6 that was not soldered, but that didn't fix it.
+- next steps:
+    - [] check all the components are correct
+    - [] check all the solder joints are good
+    - [] check the pots wiring - treble and bass don't seem to make a difference, all the other pots work
+
+### GOT THE JTM45 WORKING!
+sounds great
+
+next steps:
+
+- [] build head cabinets
+    - [X] find correct dimensions
+    - [X] buy wood & tolex
+    - [X] cut wood
+    - [X] corners and handles
+
+- [] check out Mods
+
+Talked to the guys that started Awesome Music Project:
+Amp4life.ca 
+theawesomemusicproject.com
+
+
+## 20.08.11
+Writing paper with Julie Van Oyen, researching improvisation and the Fripp Guitar Circle
+
+### Guitar Circle
+
+1. Six Principles of the Performance Event
+https://www.dgmlive.com/in-depth/six-principles-of-the-performance-event
+
+A principle is universal, a rule is inflexible, a law is invariable
+
+Music so wishes to be heard that sometimes it calls on unlikely characters to give it voice, and to give it ears. This wishing-to-be heard calls into existence the Performance Event; where music, musician and audience may come together as one, in communion.
+
+This communion has six different forms of being and experiencing itself (plus an invisible seventh); and these forms, or principles, are simultaneously present within the Performance.
+
+I
+When people get together with music, something happens.
+
+When people get together, something happens.
+When people get together with music, something remarkable happens.
+
+When musician, audience and music come together in a performance, this something remarkable has a quality of its own.
+The something remarkable is Music taking on a life of its own.
+
+The Creation continues being created.
+
+II
+In a performance, things come together, mysteriously; and go better than we might anticipate; and better than we deserve.
+
+In a performance event, the Benevolence that gives rise to Music brings together musicians and audience.
+
+Things come together, mysteriously; and go better than we deserve, or might expect them to.
+
+III A performance can take on a life and character of its own.
+
+Any particular performance event  - with these people, in this place, at this time - defines the conditions of the performance: the where, when and what of the event.
+This is on the outside.
+
+The conditions of time, place and persons do not govern the quality of our experiencing of this performance.
+Our experiencing is on the inside.
+
+That the event happens is a given.
+How we participate, listen, respond, is open and available.
+
+What happens within the performance, that is, whether the performance comes to life or not, is to be created and discovered.
+
+If this is so, the performance can take on a life and character of its own.
+It is unique.
+
+IV Any one performance is a multiplicity of performances.
+
+The degree to which we act as one, as a whole person, is a measure of our integration; that is, a measure of our Being.
+
+The degree to which the performance is a whole event, depends upon the extent to which Musician and Audience and Music are able to enter into Communion as One.
+
+Until this point, the performance event is as many performances as participants.
+Beyond this point, the Whole Performance is every Performance: it is eternal.
+
+The distinction between both is less than we might believe it to be.
+
+So, any one performance is a multiplicity of performances.
+
+V
+The possible is possible.
+
+We are able to be with others only to the degree that we are able to be ourselves.
+This being so, we can only be in the performance to the degree that we can be ourselves: to be who we are.
+
+It is possible to be who we are.
+So, the possible is possible.
+
+We begin with the possible, and move gradually towards the impossible.
+
+VI
+The impossible is possible.
+
+Normality is what we might achieve, given who we are, what we are, the conditions and limitations of the world we work within.
+
+Our “norm” is what we “ought” to be.
+
+This is what is asked of us: to be who we were born to be, and to do what we were born to do.
+This is already asking too much: it is impossible.
+
+Nevertheless, we begin with the possible and move gradually towards the impossible; trusting that the Benevolence which gives rise to Music is never far away.
+
+So, the impossible is possible.
+
+The Seventh Principle resides within Silence.
+
+The Six Principles assume a common aim, goodwill and a willingness to participate in good spirit within the event, and the capacity to do so.
+
+In a sense the Six Principles are available when the highest in us comes together; in the knowledge that, essentially, we are the same person.
+
+When the lowest takes charge, the performance event downgrades; and the possible becomes increasingly restricted.
+The impossible becomes impossible.
+The best is then, that the possible remains possible.
+
+The worst is, that the possible becomes impossible.
+This is the Null Event: nothing happens.
+
+A Null Event has no life span, no persistence, no present moment of its own.
+The event disappears, as if it never was; and, really, it wasn’t.
+The Null Event is a complete waste of time and energy.
+Something is lost.
+
+But, it doesn’t have to be like that.
+
+May we trust the inexpressible Benevolence of the Creative Impulse.
+
+
+# Seven Assumptions For Work in the Circle
+https://www.dgmlive.com/in-depth/seven-assumptions-for-work-in-the-circle
+
+
+Intention
+Presence
+Goodwill
+Common Practice
+Playing In Tune
+Playing In Time
+Listening
+
+ - 1. Intention.
+
+Our entry to the Circle is intentional.
+
+One simple, practical example: when entering the room, crossing the liminal threshold into the sacred space of the Circle, we pay attention to our first footfall.
+
+Our attendance is not by accident, nor is our participation arbitrary. This implies that we have an aim.
+
+ - 2. Presence.
+
+We cultivate a sense and awareness of our personal presence, of the Circle and our place within it. This is determined and governed by the quality of our volitional attention.
+
+ - 3. Goodwill.
+
+We participate in a spirit of goodwill. We leave any negativity at the door, outside the room, and enter holding goodwill towards the others in the Circle: without judgment, without criticism, without hostility.
+
+The quality of our feeling lives is revealed in the quality of sound we produce from our instrument: the depth and richness of timbre. This is the personal correspondence to playing in tone.
+
+ - 4. Common Practice.
+We assume familiarity and a sufficiency of competence in the
+elements of a common practice:
+
+the morning sitting and Doing Nothing;
+the Guitar Craft, C pentatonic major, tuning;
+specific guitar techniques, such as the Primaries:
+NB the GC repertoire is useful but not necessary;
+entering, moving within and leaving the Circle;
+circulating;
+the scale of C major / A natural minor;
+the GC House Rules.
+
+5. Playing in tune.
+This is indicative of our personal state.
+
+6. Playing in time.
+This is indicative of our personal harmony.
+One practical example: punctuality.
+
+7. Listening.
+This is indicative of our station; ie our level of Being.
+If we can’t listen to ourselves while speaking, we’re not quite present with what we are saying.
+If we are absent from our speaking, our words are empty: there is nothing to be said.
+If we have nothing to say, better to say nothing. For some, this is very hard.
+So, if we don’t listen to ourselves while speaking, better to be quiet.
+
+(This is part of the practice of Necessary Speaking employed in the GC Kitchen).
+
+If this is true of words, how much more of music?
+
+The Eighth Assumption:
+The Assumption of Virtue.
+
+3. A COMMON PRACTICE
+https://www.dgmlive.com/in-depth/a-common-practice
+
+A common practice provides a context of ongoing experience which we all share.
+A common language develops to express our mutual, ongoing-experiencing.
+This enables us to communicate our experience in a clear and straightforward manner.
+This moves from discussing what we do, to how and why we do it.
+
+That is, a common practice establishes a foundation for a group of people, working together over time, to speak to each other with increasing definition, clarity and certainty of their experience.
+In speaking of your experience, you address my experience.
+In better understanding your practice, I better understand my own.
+
+Without a common, shared practice we may have “meaningful discussions”; but, without each party understanding what the other party means: closer to meaning-light discussions.
+
+Playing the guitar is something we do.
+Being a guitarist is someone we become.
+Whether we will become a guitarist, or not, is something else again.
+
+
+4. WORK IN THE CIRCLE
+https://www.dgmlive.com/in-depth/work-in-the-circle
+
+In the Circle: 43 guitars. We each moved to our chair, brought part of our attention to the soles of the feet; the top of our head; and to what is in between. What is in front of us; what is behind us. Returning our attention to ourselves, the soles of our feet, the top of our head, and what is in between. Then, moving the attention out from ourselves to the whole of the auditorium. Returning the attention to ourselves, and into the right hand.
+
+Then, with the right hand we took the pick and chose a note. Any note. For those who have not played the guitar for a week, or perhaps 4.5 days, this was their first intentional note for that period.
+
+When ready, please begin to play your note. Circa 5 minutes.
+
+When ready, please begin. This moved to a circulation, naturally and from itself. Then Robert stepped into the Circle and asked: When the note is moving around the Circle, what is moving?
+
+Various answers were presented: sound, intention, music, love. So we moved some more love around the Circle, along with the note. Perhaps also some sound, music and intention moved with it. Then the love moved in two directions: love moved on the downbeat in one group and the upbeat in the other. Love became complicated at this point because downbeat and upbeat, as is proper to a loving relationship, became intertwined and indistinguishable. Love is love, after all. Why differentiate between down and up?
+
+Then Love moved quickly around the Circle, noting that quick is living. Finally, three directed love chords, with the moment held at the end of this, and the meeting was completed.
+
+5. QUALITIES OF IMPROVISING
+https://www.dgmlive.com/in-depth/a-few-words-on-the-qualities-of-improvising
+
+This also applies to how we each comprise our own personal orchestra; those parts of our personality, the many smaller persons, that are our own rank and file; those parts of us that assume responsibility for overseeing the actions of the smaller persons; the principal player among the section leaders; the conductor of our life; and the part of us that is represented by The Composer.
+
+The different qualities of improvising might be referred to as…
+
+ 	Spontaneous Composition	 
+Extemporisation
+Developing Variations
+ 	Improvisation
+ 	Riffing / Jamming	 
+
+
+… and correspond to the degrees of musicianship…
+
+Genius
+
+Professional / Craftsman                                       Master / Mystery
+
+Happy Gigster / Journeyman
+
+… acknowledging the gendered language; redressing this to some extent in recognising that mastery in musicianship confers a sense of the mystery which is involved in being part of the musical process, the bringing of music into the world.
+
+These degrees of musicianship are characterized by the quality of volitional attention that is available to each; a corresponding Present Moment and region of geographical influence that is appropriate to each degree of intensity of personal presence, integrity or Being, and capacity to bear suffering.
+
+The primary modes of extemporizing: to initiate, to respond, to do nothing. Examples of these: soloing, accompanying, tacit. Doing nothing, properly undertaken, provides a necessary field within which the action takes place. This particular role is generally overlooked and, when effective, is sometimes referred to as radical neutrality: the doing nothing that enables doing everything.
+
+Forcing our tricks and licks and riffs onto the other members of an ensemble is a form of force, and for them amounts to musical imprisonment.
+
+The primary importance lies in the connections between these degrees of musicianship, as exemplified in the players, rather than in the players (or stations) themselves. For example, the distinguishing element of the connection between Master / Mystery and Journeyman is discipline. In our own lives, when the Master / Mystery Person in us undertakes a commitment, it is in the knowledge that all the smaller parts in us may be relied upon to follow direction, and the totality of what we are will discharge that commitment: even God can count on this! The connection between the Professional and the Journeyman is flexibility. The connection between what is represented as Professional and Genius is spontaneity; and between Master / Mystery and Genius (the creative spark at the centre of who we are) is the capacity to see what is Right Action in any particular confluence of time, place and person: right judgement.
+
+One small example: in a piece of music at the Master / Mystery level, each note is necessary. At the Happy Gigster level (perhaps Level Two – Three in GC terminology) there are notes that are, musically, superfluous; albeit possibly serving a functional utility, as in continuous cross-picking to hold time.
+
+A few rough words, roughly indicating the centre of gravity of the subject, from a working player’s perspective.
+
+
+
+## 20.08.12
+finish building hammond A035 Tube Amp Conversion
+- [X] get pilot light working
+- [] cut/sand plexi to fit in box
+- [] secure back panel and install speaker jack
+- [] possible schematics
+    - [] Carmen Ghia (phoenix schematic)
+    - [] Brown Note 18watt liteB
+- [] Soldering
+    - [] solder input
+    - [] Volume & Tone control
+    - [] Speaker output
+
+## 20.08.14
+Trying to figure out hammond amp conversion
+- [X] read How to read Amp schmatics:
+    https://robrobinette.com/Reading_Tube_Amp_Schematics.htm
+- [X] watch Guitologist's hammond conversion:
+    https://www.youtube.com/watch?v=iXh4H0TvWuk
+
+Voicing an Amp
+https://robrobinette.com/Voicing_an_Amp.htm
+
+1/4 power switch
+https://robrobinette.com/5e3_Modifications.htm#Switch
+
+## 20.08.16
+* Finally got the A0-35 working.
+now to refine the sound:
+- [X] 1. get Volume and Tone working
+    https://monster.partyhat.co/article/amplifier-tone-stacks
+- [X] 2. Master volume
+    https://robrobinette.com/Generic_Tube_Amp_Mods.htm#Trainwreck_Type-3_Master_Volume
+- [X] 3. more drive for V1?
+- [X] 4. Switch for Negative Feedback
+    https://robrobinette.com/Generic_Tube_Amp_Mods.htm#3-Way_Negative_Feedback_Switch
+
+## 20.08.18
+- [X] cut/sand plexi to fit the AO-35 cabinet
+- [X] drill holes for controls
+- [X] cut/sand plexi for Marshall cabinet
+- [] install Tolex and piping
+- [] Marshall cabinet hardware - corners, handle, logo, footing
+- [] AO-35 cabinet handle, logo, footing
+
+
+- [] test/build JTM45 pedal
+- [] test/build second 212 pedal
+
+- [] design guitar for Jesse
+https://www.electricherald.com/how-to-draw-a-guitar-template-adobe-illustrator/
