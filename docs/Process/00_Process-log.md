@@ -3630,9 +3630,11 @@ now to refine the sound:
 - [X] cut/sand plexi to fit the AO-35 cabinet
 - [X] drill holes for controls
 - [X] cut/sand plexi for Marshall cabinet
-- [] install Tolex and piping
-- [] Marshall cabinet hardware - corners, handle, logo, footing
-- [] AO-35 cabinet handle, logo, footing
+
+## 20.08.24
+- [X] install Tolex and piping
+- [X] Marshall cabinet hardware - corners, handle, logo, footing
+- [X] AO-35 cabinet handle, logo, footing
 
 
 - [] test/build JTM45 pedal
@@ -3640,3 +3642,156 @@ now to refine the sound:
 
 - [] design guitar for Jesse
 https://www.electricherald.com/how-to-draw-a-guitar-template-adobe-illustrator/
+
+## 20.08.29
+Still waiting for PedalPCB order with compressor and FV-1 dev pedal.
+https://mstratman.github.io/fv1-programs/
+
+https://github.com/HolyCityAudio/SpinCAD-Designer
+
+https://electric-canary.com/fv1start.html
+
+https://medium.com/@hipsters_unite/designing-the-atom-smasher-spin-fv1-pedal-1c63ad3b3f8e
+
+How to make an EEPROM programmer with RPI
+https://www.richud.com/wiki/Rasberry_Pi_I2C_EEPROM_Program
+
+
+
+ECU
+notes Sept 3
+http://blogs.eciad.ca/interactiondesign/workshops/
+https://docs.google.com/spreadsheets/d/1bGibe3-c7NuRd4l2ruhZQ_Vr6p16gG97rKFUEssS1Bo/edit#gid=0
+
+https://meet.jit.si/
+https://civiclaboratory.nl/2019/08/12/decolonizing-your-syllabus-you-might-have-missed-some-steps/
+
+https://www.ecuad.ca/on-campus/shops-studios/interaction-design
+https://myec.ecuad.ca/faculty/Pages/default.aspx
+https://hello.processing.org/
+
+
+
+Welcome email.
+group agreement
+pronouns
+tech requirements
+office hours
+group checkins
+
+Friday afternoons (alternating admin and research topics)
+set up zooms schedule
+
+ECUIXD social media channel
+__________________________________
+
+
+
+
+
+
+Proposed Timeline:
+1. Initial understanding & problem definition
+2. Research context and users
+3. Brainstorming & UX Sketching
+4. Concept Divergence & Validation
+5. Personas, Scenarios & use cases
+6. Concept Presentation & feedback
+7. Design Refinement & UI mockups
+8. Prototyping
+9. Testing and revision
+10. Final Presentation
+
+
+1. Welcome and introductions (hopes, expectations and requests)
+2. Group agreement - as a group we will decide on how we will engage
+3. Course Content, teaching strategies & two assignments
+4. Office Hours
+5. Design Warm up, breakout group discussions and share back
+
+Group Agreement
+This is a method for creating ownership and accountability for a shared set of expectations in the studio. Please be prepared to discuss with your peers and to hand this sheet in.
+
+Expectations of self
+Expectations of peers
+Expectations of the instructor and school
+
+##20.09.12
+Call with David Sherwin, Sept 12
+    Coming close to finishing our first batch of tunes.
+    Focus on finishing tracking for songs 6, 15, 17
+    Next Song titles & project names
+    Visuals
+
+
+INTD300
+
+Readings:
+
+Home 1
+https://www.theatlantic.com/health/archive/2011/12/the-psychology-of-home-why-where-you-live-means-so-much/249800/
+
+
+user stories:
+https://www.freecodecamp.org/news/a-radical-simple-approach-to-user-stories/
+
+Sprint
+https://www.youtube.com/watch?v=JTqCR84fzeg
+
+
+
+#20.09.16
+Mix Workshop
+7 steps to pro mixes
+1. 80/20 gear
+2. Remove the room
+3. Vocal Recording
+4. 7 plugins
+5. mix philosophy
+6.
+7. learning loop
+Framework - proven workflow, plan or blueprint for learning process, framework for using each tool (approaching EQ same way each time)
+Practice - implement, trial and error
+Feedback - this it what you're doing wrong
+if your to immersed in your own music
+Guidance - someone to help you with specifics
+
+
+
+Delay
+EQ
+Compression
+Reverb -
+Gate - usually only for acoustic drums
+Gain
+Limit - on the mix bus
+
+FabFilter - compressor or EQ
+Eventide
+virtual mix rack
+
+Goal 1: Balance  - certain instruments are naturally louder than others
+
+Goal 2: Emotion - enhance the original intention of song
+
+Focus Mindset:
+focus on the right things,
+
+Composition & arrangement
+source tone room
+record quality
+volumen balance
+EQ and compression
+3 core tools
+2 key effects
+
+#20.09.19
+song 7 and 17 - finish tracking
+
+#20.09.21
+
+This week Jivan turns 15!
+also, looking back and thinking about how people use to make/build and tinker more before, now we're discouraged from going 'under the hood'
+Evidenced by looking at older magazines and seeing the growing trend in the 60-80's to build your own.. DIY culture is dying not growing!
+
+https://worldradiohistory.com/ETI_Magazine.htm
